@@ -1,0 +1,62 @@
+@keyframes animate-circle-left {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  28% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-circle-middle {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  38% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-circle-right {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.circleLeft,
+.circleMiddle,
+.circleRight {
+  will-change: opacity;
+}
+
+.overflowMenuHorizontalMotion:hover .circleLeft {
+  animation: animate-circle-left 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+}
+
+.overflowMenuHorizontalMotion:hover .circleMiddle {
+  animation: animate-circle-middle 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+}
+
+.overflowMenuHorizontalMotion:hover .circleRight {
+  animation: animate-circle-right 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+}

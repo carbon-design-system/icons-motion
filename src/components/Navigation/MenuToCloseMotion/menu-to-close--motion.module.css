@@ -1,0 +1,60 @@
+
+
+@keyframes menu-close { 
+    0% { transform: rotate(0deg) scaleX(1); }
+    10% { transform: rotate(0deg) scaleX(1); }
+    20% { transform: rotate(90deg) scaleX(0); }
+    100% { transform: rotate(90deg) scaleX(0); }
+}
+
+@keyframes close-open { 
+    0% { transform: rotate(0deg) scaleX(0); }
+    10% { transform: rotate(0deg) scaleX(0); }
+    20% { transform: rotate(90deg) scaleX(1); }
+    100% { transform: rotate(90deg) scaleX(1); }
+}
+
+.CloseBar1, .CloseBar2,
+.MenuBar1, .MenuBar2, .MenuBar3, .MenuBar4 {
+    will-change: transform;
+    transform-origin: center;
+}
+
+.MenuLines, 
+.CloseLines {
+    stroke:#000000;
+    stroke-width: 20;
+    stroke-miterlimit: 10;
+}
+
+.CloseLines {
+    visibility: hidden;
+}
+
+.MenuToCloseMotion:hover .CloseLines {
+    visibility: visible;
+}
+
+.MenuToCloseMotion:hover .MenuBar1 {
+    animation: menu-close infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+}
+
+.MenuToCloseMotion:hover .MenuBar2 {
+    animation: menu-close infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+}
+
+.MenuToCloseMotion:hover .MenuBar3 {
+    animation: menu-close infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+}
+
+.MenuToCloseMotion:hover .MenuBar4 {
+    animation: menu-close infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+}
+
+.MenuToCloseMotion:hover .CloseBar1 {
+    animation: close-open infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+}
+
+.MenuToCloseMotion:hover .CloseBar2 {
+    animation: close-open infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+}

@@ -1,0 +1,420 @@
+.IconSelectWindow {
+  width: 32px;
+  height: 32px;
+}
+
+.FillNone,
+.Window2,
+.Window3,
+.Window4,
+.Window5,
+.Window6 {
+  fill: none;
+}
+
+.Window2,
+.Window3,
+.Window4,
+.Window5,
+.Window6,
+.Window7,
+.Window8,
+.Window9,
+.Window10,
+.Window11,
+.Window12 {
+  transform: scale(0);
+}
+
+.Glass {
+  will-change: transform;
+  transform-origin: 20px;
+}
+
+.IconSelectWindow:hover .Glass {
+  animation: glass cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+}
+
+@keyframes glass {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  12% {
+    transform: scale(1.2) translate(-2px, -2px);
+  }
+  24% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  100% {
+    transform: scale(1) translate(0px, 0px);
+  }
+}
+
+/*      ------------1-------------            */
+
+.Window1 {
+  will-change: transform;
+}
+
+.IconSelectWindow .Window1 {
+  animation: window1 2s;
+}
+
+@keyframes window1 {
+  0% {
+    transform: scale(1);
+  }
+  5.999% {
+    transform: scale(1);
+  }
+  6% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      -------------2-------------            */
+
+.Window2 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window2 {
+  animation: window2 2s;
+}
+
+@keyframes window2 {
+  0% {
+    transform: scale(0);
+  }
+  5.999% {
+    transform: scale(0);
+  }
+  6% {
+    transform: scale(1);
+  }
+  8% {
+    transform: scale(1);
+  }
+  8.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------3-------------            */
+.Window3 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window3 {
+  animation: window3 2s;
+}
+
+@keyframes window3 {
+  0% {
+    transform: scale(0);
+  }
+  7.999% {
+    transform: scale(0);
+  }
+  8% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1);
+  }
+  10.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------4-------------          */
+
+.Window4 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window4 {
+  animation: window4 2s;
+}
+
+@keyframes window4 {
+  0% {
+    transform: scale(0);
+  }
+  9.999% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(1);
+  }
+  12% {
+    transform: scale(1);
+  }
+  12.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------5-------------          */
+
+.Window5 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window5 {
+  animation: window5 2s;
+}
+
+@keyframes window5 {
+  0% {
+    transform: scale(0);
+  }
+  11.999% {
+    transform: scale(0);
+  }
+  12% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1);
+  }
+  14.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------6-------------          */
+.Window6 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window6 {
+  animation: window6 2s;
+}
+
+@keyframes window6 {
+  0% {
+    transform: scale(0);
+  }
+  13.999% {
+    transform: scale(0);
+  }
+  14% {
+    transform: scale(1);
+  }
+  16% {
+    transform: scale(1);
+  }
+  16.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------7-------------          */
+
+.Window7 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window7 {
+  animation: window7 2s;
+}
+
+@keyframes window7 {
+  0% {
+    transform: scale(0);
+  }
+  15.999% {
+    transform: scale(0);
+  }
+  16% {
+    transform: scale(1);
+  }
+  18% {
+    transform: scale(1);
+  }
+  18.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------8-------------          */
+
+.Window8 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window8 {
+  animation: window8 2s;
+}
+
+@keyframes window8 {
+  0% {
+    transform: scale(0);
+  }
+  17.999% {
+    transform: scale(0);
+  }
+  18% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  20.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------9-------------          */
+
+.Window9 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window9 {
+  animation: window9 2s;
+}
+
+@keyframes window9 {
+  0% {
+    transform: scale(0);
+  }
+  19.999% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  22% {
+    transform: scale(1);
+  }
+  22.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------10-------------          */
+
+.Window10 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window10 {
+  animation: window10 2s;
+}
+
+@keyframes window10 {
+  0% {
+    transform: scale(0);
+  }
+  21.999% {
+    transform: scale(0);
+  }
+  22% {
+    transform: scale(1);
+  }
+  24% {
+    transform: scale(1);
+  }
+  24.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------11-------------          */
+
+.Window11 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window11 {
+  animation: window11 2s;
+}
+
+@keyframes window11 {
+  0% {
+    transform: scale(0);
+  }
+  23.999% {
+    transform: scale(0);
+  }
+  24% {
+    transform: scale(1);
+  }
+  26% {
+    transform: scale(1);
+  }
+  26.001% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*      ------------12-------------          */
+
+.Window12 {
+  will-change: transform;
+  transform: scale(0);
+}
+
+.IconSelectWindow:hover .Window12 {
+  animation: window12 2s;
+}
+
+@keyframes window12 {
+  0% {
+    transform: scale(0);
+  }
+  25.999% {
+    transform: scale(0);
+  }
+  26% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
