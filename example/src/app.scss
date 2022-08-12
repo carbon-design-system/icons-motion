@@ -1,12 +1,58 @@
-
-
-svg {
-	width: 32px;
-	height: 32px;
-	margin: 48px 56px;
+.app {
+	width: 100vw;
+	height: 100vh;
+	padding: 32px 0;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-svg:hover {
+.page-title {
+	padding: 28px 0;
+	opacity: 0;
+	transform: scale(0.8);
+	will-change: opacity, transform;
+	animation: .5s fade-in-and-pop .25s forwards linear;
+}
+
+.tiles-container {
+	width: 980px;
+	max-width: 80%;
+	padding: 8px;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	opacity: 0;
+	animation: .2s fade-in .38s forwards ease-in;
+}
+
+.icon-tile {
+	margin: 8px;
+	padding: 12px;
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
 	cursor: pointer;
+
+	svg {
+		margin: 48px 60px;
+	}
+}
+
+h3 {
+	font-size: 12px;
+}
+
+@keyframes fade-in-and-pop { 
+	55% { opacity: 1; transform: scale(1.05)}
+	100% { opacity: 1; transform: scale(1)}
+ }
+
+@keyframes fade-in {
+	100% { opacity: 1 }
 }
 

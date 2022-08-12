@@ -14,5 +14,4 @@ import SelectWindowMotion from './SelectWindowMotion';
 import UpToTopMotion from './UpToTopMotion';
 import ZoomInAreaMotion from './ZoomInAreaMotion';
 
-
 export { AddToSubtractMotion, ArrowUpMotion, ChevronDownMotion, ChevronUpMotion, DownToBottomMotion, DraggableMotion, HomeMotion, MenuToCloseMotion, OverflowMenuHorizontalMotion, SelectWindowMotion, PageFirstMotion, PageLastMotion, SwitcherToCloseMotion,UpToTopMotion, ZoomInAreaMotion };

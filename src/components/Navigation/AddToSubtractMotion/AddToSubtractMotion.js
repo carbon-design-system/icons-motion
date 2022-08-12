@@ -1,9 +1,28 @@
-import React from 'react'
-import styles from './add-to-subtract--motion.module.css'
+import React, { useRef, useState, useEffect } from 'react'
+import styles from './add-to-subtract--motion.module.scss'
 
-const AddToSubtractMotion = () => {
+const AddToSubtractMotion = (props) => {
+  const iconRef = useRef(null)
+  const [isAnimating, setIsAnimating] = useState(props.isAnimating)
+
+  let iconStyles = {
+    width: props.width,
+    height: props.height,
+  }
+
+  React.useEffect(() => {
+    setIsAnimating(props.isAnimating);
+  }, [props.isAnimating])
+
+  const shouldAnimate = isAnimating ? styles.isAnimating : ''
+
   return (
+      <div
+        ref={iconRef}
+        className={`${shouldAnimate}`}
+      >
     <svg
+      style={iconStyles}
       className={styles.AddToSubtractMotion}
       x='0px'
       y='0px'
@@ -27,8 +46,9 @@ const AddToSubtractMotion = () => {
           y2='16'
         />
       </g>
-      <rect fill='none' x='0' y='0' width='32' height='32'></rect>
+      // <rect fill='none' x='0' y='0' width='32' height='32'></rect>
     </svg>
+    </div>
   )
 }
 

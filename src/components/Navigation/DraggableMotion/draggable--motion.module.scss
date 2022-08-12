@@ -1,0 +1,38 @@
+@keyframes draggable-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.draggableRectOne,
+.draggableRectTwo,
+.draggableRectThree,
+.draggableRectFour,
+.draggableRectFive,
+.draggableRectSix {
+  will-change: opacity;
+}
+
+.isAnimating {
+  .draggableRectOne {
+    animation: draggable-fade-in 0.85s ease-in 0.15;
+  }
+  .draggableRectTwo {
+    animation: draggable-fade-in 0.85s ease-in 0.3;
+  }
+  .draggableRectThree {
+    animation: draggable-fade-in 0.85s ease-in 0.45;
+  }
+  .draggableRectFour {
+    animation: draggable-fade-in 0.85s ease-in 0.6;
+  }
+  .draggableRectFive {
+    animation: draggable-fade-in 0.85s ease-in 0.75;
+  }
+  .draggableRectSix {
+    animation: draggable-fade-in 0.85s ease-in;
+  }
+}

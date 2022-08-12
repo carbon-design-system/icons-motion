@@ -24,6 +24,7 @@
 .Window11,
 .Window12 {
   transform: scale(0);
+  will-change: transform;
 }
 
 .Glass {
@@ -31,8 +32,57 @@
   transform-origin: 20px;
 }
 
-.IconSelectWindow:hover .Glass {
-  animation: glass cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+.isAnimating {
+  .Glass {
+    animation: glass cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+
+  .Window1 {
+    animation: window1 2s;
+  }
+
+  .Window2 {
+    animation: window2 2s;
+  }
+
+  .Window3 {
+    animation: window3 2s;
+  }
+
+  .Window4 {
+    animation: window4 2s;
+  }
+  .Window5 {
+    animation: window5 2s;
+  }
+
+  .Window6 {
+    animation: window6 2s;
+  }
+
+  .Window7 {
+    animation: window7 2s;
+  }
+
+  .Window8 {
+    animation: window8 2s;
+  }
+
+  .Window9 {
+    animation: window9 2s;
+  }
+
+  .Window10 {
+    animation: window10 2s;
+  }
+
+  .Window11 {
+    animation: window11 2s;
+  }
+
+  .Window12 {
+    animation: window12 2s;
+  }
 }
 
 @keyframes glass {
@@ -50,16 +100,6 @@
   }
 }
 
-/*      ------------1-------------            */
-
-.Window1 {
-  will-change: transform;
-}
-
-.IconSelectWindow .Window1 {
-  animation: window1 2s;
-}
-
 @keyframes window1 {
   0% {
     transform: scale(1);
@@ -73,17 +113,6 @@
   100% {
     transform: scale(0);
   }
-}
-
-/*      -------------2-------------            */
-
-.Window2 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window2 {
-  animation: window2 2s;
 }
 
 @keyframes window2 {
@@ -107,16 +136,6 @@
   }
 }
 
-/*      ------------3-------------            */
-.Window3 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window3 {
-  animation: window3 2s;
-}
-
 @keyframes window3 {
   0% {
     transform: scale(0);
@@ -136,17 +155,6 @@
   100% {
     transform: scale(0);
   }
-}
-
-/*      ------------4-------------          */
-
-.Window4 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window4 {
-  animation: window4 2s;
 }
 
 @keyframes window4 {
@@ -170,17 +178,6 @@
   }
 }
 
-/*      ------------5-------------          */
-
-.Window5 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window5 {
-  animation: window5 2s;
-}
-
 @keyframes window5 {
   0% {
     transform: scale(0);
@@ -200,16 +197,6 @@
   100% {
     transform: scale(0);
   }
-}
-
-/*      ------------6-------------          */
-.Window6 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window6 {
-  animation: window6 2s;
 }
 
 @keyframes window6 {
@@ -233,17 +220,6 @@
   }
 }
 
-/*      ------------7-------------          */
-
-.Window7 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window7 {
-  animation: window7 2s;
-}
-
 @keyframes window7 {
   0% {
     transform: scale(0);
@@ -263,17 +239,6 @@
   100% {
     transform: scale(0);
   }
-}
-
-/*      ------------8-------------          */
-
-.Window8 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window8 {
-  animation: window8 2s;
 }
 
 @keyframes window8 {
@@ -297,17 +262,6 @@
   }
 }
 
-/*      ------------9-------------          */
-
-.Window9 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window9 {
-  animation: window9 2s;
-}
-
 @keyframes window9 {
   0% {
     transform: scale(0);
@@ -327,17 +281,6 @@
   100% {
     transform: scale(0);
   }
-}
-
-/*      ------------10-------------          */
-
-.Window10 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window10 {
-  animation: window10 2s;
 }
 
 @keyframes window10 {
@@ -361,17 +304,6 @@
   }
 }
 
-/*      ------------11-------------          */
-
-.Window11 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window11 {
-  animation: window11 2s;
-}
-
 @keyframes window11 {
   0% {
     transform: scale(0);
@@ -391,17 +323,6 @@
   100% {
     transform: scale(0);
   }
-}
-
-/*      ------------12-------------          */
-
-.Window12 {
-  will-change: transform;
-  transform: scale(0);
-}
-
-.IconSelectWindow:hover .Window12 {
-  animation: window12 2s;
 }
 
 @keyframes window12 {
