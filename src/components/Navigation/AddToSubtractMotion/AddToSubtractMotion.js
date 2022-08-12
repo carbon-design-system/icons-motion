@@ -3,7 +3,7 @@ import styles from './add-to-subtract--motion.module.scss'
 
 const AddToSubtractMotion = (props) => {
   const iconRef = useRef(null)
-  const [isPlaying, setIsPlaying] = useState(props.isPlaying)
+  const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
   let iconStyles = {
     width: props.width,
@@ -11,10 +11,10 @@ const AddToSubtractMotion = (props) => {
   }
 
   React.useEffect(() => {
-    setIsPlaying(props.isPlaying);
-  }, [props.isPlaying])
+    setIsAnimating(props.isAnimating);
+  }, [props.isAnimating])
 
-  const shouldAnimate = isPlaying ? styles.isPlaying : ''
+  const shouldAnimate = isAnimating ? styles.isAnimating : ''
 
   return (
       <div
@@ -46,7 +46,7 @@ const AddToSubtractMotion = (props) => {
           y2='16'
         />
       </g>
-      <rect fill='none' x='0' y='0' width='32' height='32'></rect>
+      // <rect fill='none' x='0' y='0' width='32' height='32'></rect>
     </svg>
     </div>
   )

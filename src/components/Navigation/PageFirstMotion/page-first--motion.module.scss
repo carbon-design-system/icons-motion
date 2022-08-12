@@ -1,0 +1,25 @@
+@keyframes page-first-arrow {
+  0% {
+    transform: translateX(6px);
+  }
+  8% {
+    transform: translateX(6px);
+  }
+  25% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.PageFirstArrow {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .PageFirstArrow {
+    animation: page-first-arrow 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

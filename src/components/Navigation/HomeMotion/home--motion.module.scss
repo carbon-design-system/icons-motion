@@ -43,25 +43,27 @@
   }
 }
 
-.HomeDoorTop {
-  transform-origin: 14px 16px;
-  will-change: transform;
-}
+.isAnimating {
+  .HomeDoorTop {
+    transform-origin: 14px 16px;
+    will-change: transform;
+  }
 
-.HomeMotion:hover .HomeDoorTop {
-  animation: home-door-top 2s cubic-bezier(0.4, 0.14, 0.3, 1);
-}
+  .HomeDoorTop {
+    animation: home-door-top 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
 
-.HomeDoorRight,
-.HomeDoorLeft {
-  transform-origin: 18px 26px;
-  will-change: transform;
-}
+  .HomeDoorRight,
+  .HomeDoorLeft {
+    transform-origin: 18px 26px;
+    will-change: transform;
+  }
 
-.HomeMotion:hover .HomeDoorRight {
-  animation: home-door-right 2s cubic-bezier(0.4, 0.14, 0.3, 1);
-}
+  .HomeDoorRight {
+    animation: home-door-right 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
 
-.HomeMotion:hover .HomeDoorLeft {
-  animation: home-door-left 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  .HomeDoorLeft {
+    animation: home-door-left 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
 }

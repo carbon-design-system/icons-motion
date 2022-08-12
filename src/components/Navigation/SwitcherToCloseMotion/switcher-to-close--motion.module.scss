@@ -24,22 +24,23 @@
   transform-origin: center;
 }
 
-.IconSwitcherToClose:hover .Box1,
-.IconSwitcherToClose:hover .Box2,
-.IconSwitcherToClose:hover .Box3,
-.IconSwitcherToClose:hover .Box4,
-.IconSwitcherToClose:hover .Box5,
-.IconSwitcherToClose:hover .Box5,
-.IconSwitcherToClose:hover .Box6,
-.IconSwitcherToClose:hover .Box7,
-.IconSwitcherToClose:hover .Box8,
-.IconSwitcherToClose:hover .Box9 {
-  animation: box-collapse infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
-}
+.isAnimating {
+  .Box1,
+  .Box2,
+  .Box3,
+  .Box4,
+  .Box5,
+  .Box6,
+  .Box7,
+  .Box8,
+  .Box9 {
+    animation: box-collapse infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
 
-.IconSwitcherToClose:hover .X1,
-.IconSwitcherToClose:hover .X2 {
-  animation: close-open infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  .X1,
+  .X2 {
+    animation: close-open infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
 }
 
 @keyframes box-collapse {
