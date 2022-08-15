@@ -14,26 +14,25 @@ If you want to request an icon/category to be animated, please open an issue usi
 We will do our very best to keep these icons in sync with the Carbon icons but if there is a change to the Carbon icon, it may not yet be reflected in our library- if you encounter this, please open a **Update icon animation** issue to alert us.  
 
 
+## Using the icons
 
-
-## Install
+### Install
+To us the icons in your project, first install the package: 
 
 ```bash
 npm install --save carbon-10-icon-animations
 ```
 
-## Usage
+### Usage
+
+Next, import and use the icon component and css file from the package:
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'carbon-10-icon-animations'
+import HomeMotion from 'carbon-10-icon-animations'
 import 'carbon-10-icon-animations/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const myComponent = () => {
+  <HomeMotion />
 }
 ```
 
@@ -42,10 +41,10 @@ class Example extends Component {
 If you would like to contribute a new animated icon, please use the **New icon animation** template to open an issue for the icon you are working on, so we don't end up with multiple people working on the same icon.  When your code is complete, you may submit a PR directly, or you can put a link in your issue to a Codepen/Code Sandbox/other source, and someone can get your code from there and add it to the repo for you. 
 
 
-## Working in the repo
+### Working in the repo
 This project repo contains the library of icons themselves, as well as an example app where you can import and utilize the icons to see what they look like as you are working on them.  The icons themselves are located in `src/components` and the example app is located in `/example`.  
 
-So, for example, if you wanted to work on the animation for the **Home** icon, you would do that in `src/components/Navigation/HomeMotion` and then you can see where it is imported and used in `example/src/App.js`, which displays it in the example app for you to preview as you are working on it. 
+So, for example, if you wanted to work on the animation for the **Home** icon, you would do that in `src/components/Navigation/HomeMotion` and then you can see where the icon is imported and used in the example app in `example/src/App.js`. 
 
 
 ## Feedback
