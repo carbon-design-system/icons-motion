@@ -38,9 +38,11 @@ class Example extends Component {
 ```
 
 
-## Contribution
+## Contributing
 If you would like to contribute a new animated icon, please use the **New icon animation** template to open an issue for the icon you are working on, so we don't end up with multiple people working on the same icon.  When your code is complete, you may submit a PR directly, or you can put a link in your issue to a Codepen/Code Sandbox/other source, and someone can get your code from there and add it to the repo for you. 
 
+
+## Working in the repo
 This project repo contains the library of icons themselves, as well as an example app where you can import and utilize the icons to see what they look like as you are working on them.  The icons themselves are located in `src/components` and the example app is located in `/example`.  
 
 So, for example, if you wanted to work on the animation for the **Home** icon, you would do that in `src/components/Navigation/HomeMotion` and then you can see where it is imported and used in `example/src/App.js`, which displays it in the example app for you to preview as you are working on it. 
