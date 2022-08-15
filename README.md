@@ -2,9 +2,9 @@
 
 # Carbon Icon Animations
 
-> This is a package of animated icons which mirrors the icons in [Carbon Design System](https://carbondesignsystem.com/guidelines/icons/library/) icons.
-> It enables developers to import an animated icon directly from this library, in place of importing the existing static icon from the Carbon Design System library. 
-> 
+This is a package of animated icons which mirrors the icons in [Carbon Design System](https://carbondesignsystem.com/guidelines/icons/library/) icons.
+It enables developers to import an animated icon directly from this library, in place of importing the existing static icon from the Carbon Design System library. 
+
 Check out what the animations look like in this [example app](https://pages.github.ibm.com/Krista-Starr/carbon-10-icon-animations/).
 
 We will be adding onto this library one category at a time - the first release includes the **Navigation** icons.  
