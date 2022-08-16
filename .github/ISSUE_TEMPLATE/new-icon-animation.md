@@ -17,5 +17,8 @@ assignees: ''
 **Team/product requesting:**
 * optional - has this been requested for a specific product, use case, etc? 
 
+**Contacts:**
+* Who should be contacted in case of questions?
+
 **When is this needed?**
 * optional - is there a specific deadline
