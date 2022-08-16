@@ -59,7 +59,7 @@ We'd especially love feedback in the following areas:
 - Implementation feedback - Did the icons work for your use case? Did you need different props? 
 
 ## Contributors
-This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @John-Bister, @Liz-Tremblay, Mike Olasov
+This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @John-Bister, @Liz-Tremblay, @Mike-Olasov
 
 ## License
 
