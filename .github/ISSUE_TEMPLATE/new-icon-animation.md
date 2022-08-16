@@ -8,14 +8,14 @@ assignees: ''
 
 ---
 
-Name of icon to be animated(as shown in [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/):
+**Name of icon to be animated(as shown in [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/):**
 *ex - Overflow menu horizontal*
 
-Category of icon: 
+**Category of icon:**
 *ex- Navigation*
 
-Team/product requesting: 
+**Team/product requesting:**
 * optional - has this been requested for a specific product, use case, etc? 
 
-When is this needed by?
+**When is this needed?**
 * optional - is there a specific deadline
