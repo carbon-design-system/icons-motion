@@ -13,8 +13,8 @@ File this issue if you discover something in this icon package that differs from
 *ex - Overflow menu horizontal*
 
 **Icon category:**
-*ex - Navigation
+*ex - Navigation*
 
-**What do you see that needs to be updated*?*
+**What do you see that needs to be updated?**
 
 **Anything else we should know?**
