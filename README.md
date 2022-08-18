@@ -82,11 +82,11 @@ In the second tab:
 If you are new to working with SVG and creating SVG animations, I recommend this tutorial series from CSS Tricks: [Everything you need to know about SVG](https://css-tricks.com/lodge/svg/). While all the information is good, #1, #7, and #22 will be good ones to focus on for working on this particular project.  
 
 Here is the workflow for creating icon animations: 
-1. Download the SVG code for the icon from (Carbon Icon Library)[https://carbondesignsystem.com/guidelines/icons/library/]
+1. Download the SVG code for the icon from [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/)
 2. Open the file in the text editor of your choice to see the svg code
 3. As you explore the SVG code, you will likely discover that you need to make some changes to it in Illustrator in order to execute the animations you have in mind. In many cases you may find that the icon consists of one single path or shape, when you need elements of the svg to be separated in order for them to be animated.  For example, if you wanted to animate the "Bee" icon to make it's wings flap, you would need to make sure the paths for the wings are separate from the paths for the bee body, so the wings can be animated in isolation. (CodePen examples coming soon!)
-4. When you're happy with the code that is exported from Illustrator, it is best practice to use a tool to optimize the code to reduce file size and simplify the code to make it easier to work with.  I typically use (SVG OMG)[https://jakearchibald.github.io/svgomg/]
-5. Now you are ready to create the CSS keyframes! Here's an example on (Codepen)[https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166]
+4. When you're happy with the code that is exported from Illustrator, it is best practice to use a tool to optimize the code to reduce file size and simplify the code to make it easier to work with.  I typically use [SVG OMG](https://jakearchibald.github.io/svgomg/)
+5. Now you are ready to create the CSS keyframes! Here's an example on [Codepen](https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166)
 
 <br />
 
