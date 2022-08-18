@@ -25,7 +25,7 @@ npm install carbon-10-icon-animations
 
 ### Usage
 
-Next, import and use the icon component and css file from the package:
+Next, import and use the icon component and CSS file from the package. Example:
 
 ```jsx
 import HomeMotion from 'carbon-10-icon-animations'
@@ -49,7 +49,7 @@ The component takes 3 props:
 ## Contributing ##
 If you would like to contribute a new animated icon, please use the **New icon animation** template to open an issue for the icon you are working on, so we don't end up with multiple people working on the same icon. 
 
-The icons are svgs made into React components, using CSS keyframes for the animations.  
+The icons are SVGs made into React components, using CSS keyframes for the animations.  
 
 ### Methods of submitting work ###
 1. You can on your icon the repo directly and submit a PR when you are ready to contribute your icon. 
@@ -79,12 +79,12 @@ In the second tab:
 
 ## New to creating animations? ##
 
-If you are new to working with svgs and creating SVG animations, I recommend this tutorial series from CSS Tricks: [Everything you need to know about SVG](https://css-tricks.com/lodge/svg/). While all the information is good, #1, #7, and #22 will be good ones to focus on for working on this particular project.  
+If you are new to working with SVG and creating SVG animations, I recommend this tutorial series from CSS Tricks: [Everything you need to know about SVG](https://css-tricks.com/lodge/svg/). While all the information is good, #1, #7, and #22 will be good ones to focus on for working on this particular project.  
 
 Here is the workflow for creating icon animations: 
-1. Download the svg code for the icon from (Carbon Icon Library)[https://carbondesignsystem.com/guidelines/icons/library/]
+1. Download the SVG code for the icon from (Carbon Icon Library)[https://carbondesignsystem.com/guidelines/icons/library/]
 2. Open the file in the text editor of your choice to see the svg code
-3. As you explore the svg code, you will likely discover that you need to make some changes to it in Illustrator in order to execute the animations you have in mind. In many cases you may find that the icon consists of one single path or shape, when you need elements of the svg to be separated in order for them to be animated.  For example, if you wanted to animate the "Bee" icon to make it's wings flap, you would need to make sure the paths for the wings are separate from the paths for the bee body, so the wings can be animated in isolation. (CodePen examples coming soon!)
+3. As you explore the SVG code, you will likely discover that you need to make some changes to it in Illustrator in order to execute the animations you have in mind. In many cases you may find that the icon consists of one single path or shape, when you need elements of the svg to be separated in order for them to be animated.  For example, if you wanted to animate the "Bee" icon to make it's wings flap, you would need to make sure the paths for the wings are separate from the paths for the bee body, so the wings can be animated in isolation. (CodePen examples coming soon!)
 4. When you're happy with the code that is exported from Illustrator, it is best practice to use a tool to optimize the code to reduce file size and simplify the code to make it easier to work with.  I typically use (SVG OMG)[https://jakearchibald.github.io/svgomg/]
 5. Now you are ready to create the CSS keyframes! Here's an example on (Codepen)[https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166]
 
@@ -98,7 +98,7 @@ We'd especially love feedback in the following areas:
 - Animation feedback - too fast/slow/bouncy/whatever; conformance to existing animation guidelines
 - Package feedback - improvements to code quality, efficiency, dependencies etc related to the actual package icon components
 - Example app feedback - ideas on how to make the included demo app super engaging 
-- Documentation feedback - Is the readme clear? Did you have the information you needed to successfully edit/create icons, or use icons in your project?
+- Documentation feedback - Is the ReadMe clear? Did you have the information you needed to successfully edit/create icons, or use icons in your project?
 - Implementation feedback - Did the icons work for your use case? Did you need different props? 
 
 <br />
