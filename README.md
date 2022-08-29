@@ -86,7 +86,33 @@ Here is the workflow for creating icon animations:
 2. Open the file in the text editor of your choice to see the svg code
 3. As you explore the SVG code, you will likely discover that you need to make some changes to it in Illustrator in order to execute the animations you have in mind. In many cases you may find that the icon consists of one single path or shape, when you need elements of the svg to be separated in order for them to be animated.  For example, if you wanted to animate the "Bee" icon to make it's wings flap, you would need to make sure the paths for the wings are separate from the paths for the bee body, so the wings can be animated in isolation. (CodePen examples coming soon!)
 4. When you're happy with the code that is exported from Illustrator, it is best practice to use a tool to optimize the code to reduce file size and simplify the code to make it easier to work with.  I typically use [SVG OMG](https://jakearchibald.github.io/svgomg/)
-5. Now you are ready to create the CSS keyframes! Here's an example on [Codepen](https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166)
+5. Now you are ready to animate! Check out [this Codepen example](https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166) of animations created using CSS keyframes. 
+
+<br />
+
+When it comes to designing animations, there are a few options - do whatever works best for you:
+   - Design and code the animations yourself 
+   - Partner with a motion designer to discuss and plan what the animation should look like, and then code it
+   - Obtain reference videos and/or specs from a designer to reference as you code (Ex - an AfterEffects file) 
+   - If you've created a reference video and need someone to code it, open an issue and find a developer to partner with, or we can connect you with one!
+ 
+<br />
+
+Make sure to adhere to existing [Carbon motion guidelines](https://carbondesignsystem.com/guidelines/motion/overview/).  Additional guidance specific to designing and using icon animations is in progress.   
+
+<br />
+
+## Requesting help 
+Use of the issue labels to request designer help or developer help: 
+- Illustrator help - you need help modifying svg files in Illustrator in order to animate them with code
+- Designing animations help - you want to code an animation but want someone to help you design it
+- Coding animations help - you need someone to code the animation you designed
+- CSS help - you need advice on creating CSS keyframes or working on code in the repo
+- Add to library help - you have your animation coded in an external tool but need a developer to add it into the codebase for you 
+
+If you can provide help in any of the above areas, feel free to assign yourself to an issue and begin collaboration! 
+ 
+You can also reach out directly on Slack to @Krista Starr or @john-bister if you have any questions
 
 <br />
 
