@@ -1,19 +1,15 @@
 import React from 'react'
-import './app.scss'
-import 'carbon-10-icon-animations/dist/index.css'
-
-import NavigationSection from './components/NavigationSection'
+import { Route, Switch } from 'react-router-dom'
+import CollectionPage from './pages/CollectionPage'
+import TriggerDemoPage from './pages/TriggerDemoPage'
 
 const App = () => {
   return (
-    <div className='bx--grid'>
-      <div className='bx--row'>
-        <div className='header'>
-          <h1>Carbon Animated Icons Collection</h1>
-        </div>
-      </div>
-      <NavigationSection></NavigationSection>
-    </div>
+    <Switch>
+      <Route exact path='/' component={CollectionPage} />
+      <Route path='/collection' component={CollectionPage} />
+      <Route path='/trigger-demo' component={TriggerDemoPage} />
+    </Switch>
   )
 }
 
