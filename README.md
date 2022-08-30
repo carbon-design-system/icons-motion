@@ -39,7 +39,7 @@ const myComponent = () => {
 }
 ```
 
-The component takes 3 props:
+The component takes two props:
 - `isAnimating` is a boolean; to trigger the animation, change this prop to `true`
 - `size` is an integer which will set the width and height of the icon in px 
 
