@@ -102,7 +102,7 @@ Make sure to adhere to existing [Carbon motion guidelines](https://carbondesigns
 <br />
 
 ## Requesting help 
-Use of the issue labels to request designer help or developer help: 
+Use the issue labels to request designer help or developer help: 
 - Illustrator help - you need help modifying svg files in Illustrator in order to animate them with code
 - Designing animations help - you want to code an animation but want someone to help you design it
 - Coding animations help - you need someone to code the animation you designed
