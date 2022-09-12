@@ -1,0 +1,25 @@
+@keyframes add-plus {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.2, 1.2);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.AddPlus{
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .AddPlus {
+    animation: add-plus 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

@@ -1,0 +1,25 @@
+@keyframes chevron-up-arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-8px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ChevronUp {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .ChevronUp {
+    animation: chevron-up-arrow 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

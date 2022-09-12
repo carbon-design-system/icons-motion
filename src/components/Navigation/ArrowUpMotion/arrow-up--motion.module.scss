@@ -1,0 +1,48 @@
+@keyframes arrow-up {
+  0% {
+    transform: translatey(0px);
+  }
+  5% {
+    transform: translatey(0px);
+  }
+  6% {
+    transform: translatey(11px);
+  }
+  25% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes arrow-up {
+  0% {
+    transform: translatey(0px);
+  }
+  10% {
+    transform: translatey(-4px);
+  }
+  20% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.ArrowUpTip,
+.ArrowUpShaft {
+  will-change: transform;
+}
+
+.isAnimating {
+  .ArrowUpTip {
+    animation: arrow-up infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+
+  .ArrowUpShaft {
+    animation: arrow-shaft infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+    transform-origin: 16px 28px;
+  }
+}

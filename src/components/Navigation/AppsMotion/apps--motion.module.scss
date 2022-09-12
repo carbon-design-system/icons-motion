@@ -1,0 +1,112 @@
+@keyframes apps-box1 {
+  0% { transform: scale(1, 1); }
+  5% { transform: scale(1.2, 1.2); }
+  10% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box2 {
+  1% { transform: scale(1, 1); }
+  6% { transform: scale(1.2, 1.2); }
+  11% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box3 {
+  2% { transform: scale(1, 1); }
+  7% { transform: scale(1.2, 1.2); }
+  12% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box4 {
+  3% { transform: scale(1, 1); }
+  8% { transform: scale(1.2, 1.2); }
+  13% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box5 {
+  4% { transform: scale(1, 1); }
+  9% { transform: scale(1.2, 1.2); }
+  14% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box6 {
+  5% { transform: scale(1, 1); }
+  10% { transform: scale(1.2, 1.2); }
+  15% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box7 {
+  6% { transform: scale(1, 1); }
+  11% { transform: scale(1.2, 1.2); }
+  16% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box8 {
+  7% { transform: scale(1, 1); }
+  12% { transform: scale(1.2, 1.2); }
+  17% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes apps-box9 {
+  8% { transform: scale(1, 1); }
+  13% { transform: scale(1.2, 1.2); }
+  18% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+
+
+
+
+
+.AppsBox1,
+.AppsBox2,
+.AppsBox3,
+.AppsBox4,
+.AppsBox5,
+.AppsBox6,
+.AppsBox7,
+.AppsBox8,
+.AppsBox9 {
+  will-change: transform;
+  transform-origin: 16px 16px;
+}
+
+
+
+.isAnimating {
+  .AppsBox1 {
+    animation: apps-box1 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox2 {
+    animation: apps-box2 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox3 {
+    animation: apps-box3 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox4 {
+    animation: apps-box4 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox5 {
+    animation: apps-box5 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox6 {
+    animation: apps-box6 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox7 {
+    animation: apps-box7 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox8 {
+    animation: apps-box8 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .AppsBox9 {
+    animation: apps-box9 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+}

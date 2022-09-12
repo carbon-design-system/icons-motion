@@ -1,0 +1,54 @@
+@keyframes menu-bar1 {
+  0% { transform:  translateY(0px); }
+  8% { transform:  translateY(3px); }
+  16% { transform: translateY(0px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes menu-bar2 {
+  2% { transform:  translateY(0px); }
+  10% { transform:  translateY(3px); }
+  18% { transform: translateY(0px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes menu-bar3 {
+  4% { transform:  translateY(0px); }
+  12% { transform:  translateY(3px); }
+  20% { transform: translateY(0px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes menu-bar4 {
+  6% { transform:  translateY(0px); }
+  14% { transform:  translateY(3px); }
+  22% { transform: translateY(0px); }
+  100% { transform: translateY(0px); }
+}
+
+
+
+.MenuBar1,
+.MenuBar2,
+.MenuBar3,
+.MenuBar4 {
+  will-change: transform;
+  transform-origin: 16px 16px;
+}
+
+
+
+.isAnimating {
+  .MenuBar1 {
+    animation: menu-bar1 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .MenuBar2 {
+    animation: menu-bar2 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .MenuBar3 {
+    animation: menu-bar3 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .MenuBar4 {
+    animation: menu-bar4 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+}

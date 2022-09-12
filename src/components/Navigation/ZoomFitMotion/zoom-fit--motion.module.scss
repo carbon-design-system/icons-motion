@@ -1,0 +1,51 @@
+@keyframes zoom-fit-glass {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(.8, .8);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes zoom-fit-window {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.2, 1.2);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.ZoomFitGlass{
+  transform-origin: 13px 13px;
+  will-change: transform;
+}
+
+.ZoomFitWindow{
+  transform-origin: 13px 13px;
+  will-change: transform;
+}
+
+.isAnimating {
+  .ZoomFitGlass {
+    animation: zoom-fit-glass 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .ZoomFitWindow {
+    animation: zoom-fit-window 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

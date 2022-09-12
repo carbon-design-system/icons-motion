@@ -1,0 +1,26 @@
+
+
+.ZoomAreaGlass {
+  will-change: transform;
+}
+
+.isAnimating {
+  .ZoomAreaGlass {
+    animation: zoom-area-glass cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+@keyframes zoom-area-glass {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-7px, -7px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

@@ -1,0 +1,25 @@
+@keyframes up-to-top-arrow {
+  0% {
+    transform: translateY(0px);
+  }
+ 10% {
+    transform: translateY(-5px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.UpToTopArrow {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .UpToTopArrow {
+    animation: up-to-top-arrow 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

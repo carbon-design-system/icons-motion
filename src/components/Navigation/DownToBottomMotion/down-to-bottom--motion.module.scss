@@ -1,0 +1,25 @@
+@keyframes down-to-bottom-arrow {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(5px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.DownToBottomArrow {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .DownToBottomArrow {
+    animation: down-to-bottom-arrow 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

@@ -1,0 +1,65 @@
+@keyframes draggable-rect-one {
+  0% { transform: translateX(0px) ; }
+  10% { transform: translateX(8px) ; }
+  100% { transform: translateX(8px) ; }
+}
+
+@keyframes draggable-rect-two {
+  0% { transform: translateX(0px) ; }
+  10% { transform: translateX(-8px) ; }
+  100% { transform: translateX(-8px) ; }
+}
+
+@keyframes draggable-rect-three {
+  3% { transform: translateX(0px) ; }
+  13% { transform: translateX(8px) ; }
+  100% { transform: translateX(8px) ; }
+}
+
+@keyframes draggable-rect-four {
+  3% { transform: translateX(0px) ; }
+  13% { transform: translateX(-8px) ; }
+  100% { transform: translateX(-8px) ; }
+}
+
+@keyframes draggable-rect-five {
+  6% { transform: translateX(0px) ; }
+  16% { transform: translateX(8px) ; }
+  100% { transform: translateX(8px) ; }
+}
+
+@keyframes draggable-rect-six {
+  6% { transform: translateX(0px) ; }
+  16% { transform: translateX(-8px) ; }
+  100% { transform: translateX(-8px) ; }
+}
+
+.draggableRectOne,
+.draggableRectTwo,
+.draggableRectThree,
+.draggableRectFour,
+.draggableRectFive,
+.draggableRectSix {
+  will-change: transform;
+}
+
+.isAnimating {
+  .draggableRectOne {
+    animation: draggable-rect-one 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .draggableRectTwo {
+    animation: draggable-rect-two 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .draggableRectThree {
+    animation: draggable-rect-three 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .draggableRectFour {
+    animation: draggable-rect-four 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .draggableRectFive {
+    animation: draggable-rect-five 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .draggableRectSix {
+    animation: draggable-rect-six 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+}
