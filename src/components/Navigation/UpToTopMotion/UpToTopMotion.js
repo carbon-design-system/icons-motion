@@ -6,8 +6,13 @@ const UpToTopMotion = (props) => {
   const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
   let iconStyles = {
+<<<<<<< HEAD
     width: props.width,
     height: props.height
+=======
+    width: props.size,
+    height: props.size
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
   }
 
   React.useEffect(() => {

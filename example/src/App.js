@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 import './app.scss'
 import 'carbon-10-icon-animations/dist/index.css'
@@ -642,6 +643,20 @@ const App = () => {
       </li>
     </ul>
     </div>
+=======
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+import CollectionPage from './pages/CollectionPage'
+import TriggerDemoPage from './pages/TriggerDemoPage'
+
+const App = () => {
+  return (
+    <Switch>
+      <Route exact path='/' component={CollectionPage} />
+      <Route path='/collection' component={CollectionPage} />
+      <Route path='/trigger-demo' component={TriggerDemoPage} />
+    </Switch>
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
   )
 }
 

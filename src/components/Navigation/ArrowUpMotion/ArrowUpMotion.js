@@ -6,8 +6,13 @@ const ArrowUpMotion = (props) => {
   const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
   let iconStyles = {
+<<<<<<< HEAD
     width: props.width,
     height: props.height
+=======
+    width: props.size,
+    height: props.size
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
   }
 
   React.useEffect(() => {
@@ -23,16 +28,43 @@ const ArrowUpMotion = (props) => {
         className={styles.ArrowUpMotion}
         viewBox='0 0 32 32'
       >
+<<<<<<< HEAD
         <title>arrow up</title>
         <path
           className={styles.ArrowUpTip}
           d="M16,4L6,14l1.4,1.4L15,7.8v7.6h2V7.8l7.6,7.6L26,14L16,4z"
         />
         <path d="M15,7.8V28h2V7.8H15z" />
+=======
+        <g className={styles.ArrowUpTip}>
+          <polyline
+            points='25.28 14.7 16 5.42 6.72 14.7'
+            stroke='#000'
+            fill='none'
+            strokeMiterlimit='10'
+            strokeWidth='2'
+          />
+        </g>
+        <g className={styles.ArrowUpShaft}>
+          <line
+            x1='16'
+            y1='5.31'
+            x2='16'
+            y2='27.98'
+            stroke='#000'
+            strokeMiterlimit='10'
+            strokeWidth='2'
+          />
+        </g>
+        <rect fill='none' x='0' y='0' width='32' height='32'></rect>
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
       </svg>
     </div>
   )
 }
+<<<<<<< HEAD
  
+=======
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 
 export default ArrowUpMotion

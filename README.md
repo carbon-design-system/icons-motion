@@ -34,6 +34,7 @@ import 'carbon-10-icon-animations/dist/index.css'
 const myComponent = () => {
   <HomeMotion 
     isAnimating={false}
+<<<<<<< HEAD
     height={32}
     width={32}/>
   
@@ -43,6 +44,16 @@ const myComponent = () => {
 The component takes 3 props:
 - `isAnimating` is a boolean; to trigger the animation, change this prop to `true`
 - `width` and `height` are integers which let you specify the width and height properties in px 
+=======
+    size={32}
+  />
+}
+```
+
+The component takes two props:
+- `isAnimating` is a boolean; to trigger the animation, change this prop to `true`
+- `size` is an integer which will set the width and height of the icon in px 
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 
 <br />
 
@@ -61,7 +72,11 @@ If you want to work in the repo directly, here are a few things you should know:
 
 The repo contains the library of icons themselves, as well as an example app where you can import and utilize the icons to see what they look like as you are working on them.  The icons themselves are located in `src/components` and the example app is located in `/example`.  
 
+<<<<<<< HEAD
 So, for example, if you wanted to work on the animation for the **Home** icon, you would do that in `src/components/Navigation/HomeMotion`.  Then, you can see where the icon is imported and used in the example app in `example/src/App.js`. 
+=======
+So, for example, if you wanted to work on the animation for the **Home** icon, you would do that in `src/components/Navigation/HomeMotion`.  Then, you can see where the icon is imported and used in the example app in `/example/src/App.js`. 
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 
 To run the app, you will want to have two separate tabs open in your terminal.
 
@@ -79,14 +94,48 @@ In the second tab:
 
 ## New to creating animations? ##
 
+<<<<<<< HEAD
 If you are new to working with SVG and creating SVG animations, I recommend this tutorial series from CSS Tricks: [Everything you need to know about SVG](https://css-tricks.com/lodge/svg/). While all the information is good, #1, #7, and #22 will be good ones to focus on for working on this particular project.  
+=======
+If you are new to working with SVGs and creating SVG animations, I recommend this tutorial series from CSS Tricks: [Everything you need to know about SVG](https://css-tricks.com/lodge/svg/). While all the information is good, #1, #7, and #22 will be good ones to focus on for working on this particular project.  
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 
 Here is the workflow for creating icon animations: 
 1. Download the SVG code for the icon from [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/)
 2. Open the file in the text editor of your choice to see the svg code
 3. As you explore the SVG code, you will likely discover that you need to make some changes to it in Illustrator in order to execute the animations you have in mind. In many cases you may find that the icon consists of one single path or shape, when you need elements of the svg to be separated in order for them to be animated.  For example, if you wanted to animate the "Bee" icon to make it's wings flap, you would need to make sure the paths for the wings are separate from the paths for the bee body, so the wings can be animated in isolation. (CodePen examples coming soon!)
 4. When you're happy with the code that is exported from Illustrator, it is best practice to use a tool to optimize the code to reduce file size and simplify the code to make it easier to work with.  I typically use [SVG OMG](https://jakearchibald.github.io/svgomg/)
+<<<<<<< HEAD
 5. Now you are ready to create the CSS keyframes! Here's an example on [Codepen](https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166)
+=======
+5. Now you are ready to animate! Check out [this Codepen example](https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166) of animations created using CSS keyframes. 
+
+<br />
+
+When it comes to designing animations, there are a few options - do whatever works best for you:
+   - Design and code the animations yourself 
+   - Partner with a motion designer to discuss and plan what the animation should look like, and then code it
+   - Obtain reference videos and/or specs from a designer to reference as you code (Ex - an AfterEffects file) 
+   - If you've created a reference video and need someone to code it, open an issue and find a developer to partner with, or we can connect you with one!
+ 
+<br />
+
+Make sure to adhere to existing [Carbon motion guidelines](https://carbondesignsystem.com/guidelines/motion/overview/).  Additional guidance specific to designing and using icon animations is in progress.   
+
+<br />
+
+## Requesting help 
+Use the issue labels to request designer help or developer help: 
+- Illustrator help - you need help modifying svg files in Illustrator in order to animate them with code
+- Designing animations help - you want to code an animation but want someone to help you design it
+- Coding animations help - you need someone to code the animation you designed
+- CSS help - you need advice on creating CSS keyframes or working on code in the repo
+- Add to library help - you have your animation coded in an external tool but need a developer to add it into the codebase for you 
+
+If you can provide help in any of the above areas, feel free to assign yourself to an issue and begin collaboration! 
+ 
+You can also reach out directly on Slack to @Krista Starr or @john-bister if you have any questions
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 
 <br />
 

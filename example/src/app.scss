@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .app {
 	width: 100vw;
 	height: 100vh;
@@ -26,6 +27,18 @@
 	justify-content: center;
 	opacity: 0;
 	animation: .2s fade-in .38s forwards ease-in;
+=======
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 160px 0 32px 0;
+	opacity: 0;
+	transform: scale(0.8);
+	will-change: opacity, transform;
+	animation: 0.5s fade-in-and-pop 0.25s forwards linear;
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 }
 
 .icon-tile {
@@ -37,6 +50,11 @@
 	align-items: flex-start;
 	justify-content: space-between;
 	cursor: pointer;
+<<<<<<< HEAD
+=======
+	opacity: 0;
+	animation: 0.2s fade-in 0.38s forwards ease-in;
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 
 	svg {
 		margin: 48px 60px;
@@ -47,6 +65,7 @@ h3 {
 	font-size: 12px;
 }
 
+<<<<<<< HEAD
 @keyframes fade-in-and-pop { 
 	55% { opacity: 1; transform: scale(1.05)}
 	100% { opacity: 1; transform: scale(1)}
@@ -56,3 +75,38 @@ h3 {
 	100% { opacity: 1 }
 }
 
+=======
+.bx--grid {
+	padding-left: 64px;
+}
+
+.bx--tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 2px;
+}
+
+h2 {
+	font-size: 28px;
+	margin: 80px 0 16px 64px;
+}
+
+@keyframes fade-in-and-pop {
+	55% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+	}
+}
+>>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
