@@ -6,8 +6,8 @@ const ArrowDownMotion = (props) => {
   const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
   let iconStyles = {
-    width: props.width,
-    height: props.height
+    width: props.size,
+    height: props.size
   }
 
   React.useEffect(() => {

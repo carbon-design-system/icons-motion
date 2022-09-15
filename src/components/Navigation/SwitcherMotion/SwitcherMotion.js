@@ -6,8 +6,8 @@ const SwitcherMotion = (props) => {
   const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
   let iconStyles = {
-    width: props.width,
-    height: props.height
+    width: props.size,
+    height: props.size
   }
 
   React.useEffect(() => {
@@ -17,7 +17,7 @@ const SwitcherMotion = (props) => {
   const shouldAnimate = isAnimating ? styles.isAnimating : ''
 
   return (
-    <div ref={iconRef} className={`${shouldAnimate}`}>
+     <div ref={iconRef} className={`${shouldAnimate}`}>
       <svg 
         className={styles.SwitcherMotion} 
         viewBox='0 0 32 32'  

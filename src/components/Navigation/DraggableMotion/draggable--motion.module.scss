@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @keyframes draggable-rect-one {
   0% { transform: translateX(0px) ; }
   10% { transform: translateX(8px) ; }
@@ -33,15 +32,6 @@
   6% { transform: translateX(0px) ; }
   16% { transform: translateX(-8px) ; }
   100% { transform: translateX(-8px) ; }
-=======
-@keyframes draggable-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
->>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 }
 
 .draggableRectOne,
@@ -50,16 +40,11 @@
 .draggableRectFour,
 .draggableRectFive,
 .draggableRectSix {
-<<<<<<< HEAD
   will-change: transform;
-=======
-  will-change: opacity;
->>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
 }
 
 .isAnimating {
   .draggableRectOne {
-<<<<<<< HEAD
     animation: draggable-rect-one 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
   .draggableRectTwo {
@@ -76,23 +61,5 @@
   }
   .draggableRectSix {
     animation: draggable-rect-six 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
-=======
-    animation: draggable-fade-in 0.85s ease-in 0.15;
-  }
-  .draggableRectTwo {
-    animation: draggable-fade-in 0.85s ease-in 0.3;
-  }
-  .draggableRectThree {
-    animation: draggable-fade-in 0.85s ease-in 0.45;
-  }
-  .draggableRectFour {
-    animation: draggable-fade-in 0.85s ease-in 0.6;
-  }
-  .draggableRectFive {
-    animation: draggable-fade-in 0.85s ease-in 0.75;
-  }
-  .draggableRectSix {
-    animation: draggable-fade-in 0.85s ease-in;
->>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
   }
 }

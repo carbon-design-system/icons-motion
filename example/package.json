@@ -17,10 +17,7 @@
     "node-sass": "^4.14.1",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
-<<<<<<< HEAD
-=======
     "react-router-dom": "^5.0.0",
->>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
     "react-scripts": "file:../node_modules/react-scripts",
     "sass": "^1.29.0",
     "style-loader": "^0.23.1"

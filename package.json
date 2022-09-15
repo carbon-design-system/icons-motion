@@ -1,10 +1,6 @@
 {
   "name": "carbon-10-icon-animations",
-<<<<<<< HEAD
-  "version": "2.0.0",
-=======
   "version": "2.0.2",
->>>>>>> 81ca42f41dfaacb1012bb58322dd8455e72d91db
   "description": "Animated icons based on Carbon 10 icons",
   "author": "Krista-Starr",
   "license": "MIT",
