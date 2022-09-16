@@ -1,10 +1,37 @@
-@keyframes draggable-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+@keyframes draggable-rect-one {
+  0% { transform: translateX(0px) ; }
+  10% { transform: translateX(8px) ; }
+  100% { transform: translateX(8px) ; }
+}
+
+@keyframes draggable-rect-two {
+  0% { transform: translateX(0px) ; }
+  10% { transform: translateX(-8px) ; }
+  100% { transform: translateX(-8px) ; }
+}
+
+@keyframes draggable-rect-three {
+  3% { transform: translateX(0px) ; }
+  13% { transform: translateX(8px) ; }
+  100% { transform: translateX(8px) ; }
+}
+
+@keyframes draggable-rect-four {
+  3% { transform: translateX(0px) ; }
+  13% { transform: translateX(-8px) ; }
+  100% { transform: translateX(-8px) ; }
+}
+
+@keyframes draggable-rect-five {
+  6% { transform: translateX(0px) ; }
+  16% { transform: translateX(8px) ; }
+  100% { transform: translateX(8px) ; }
+}
+
+@keyframes draggable-rect-six {
+  6% { transform: translateX(0px) ; }
+  16% { transform: translateX(-8px) ; }
+  100% { transform: translateX(-8px) ; }
 }
 
 .draggableRectOne,
@@ -13,26 +40,26 @@
 .draggableRectFour,
 .draggableRectFive,
 .draggableRectSix {
-  will-change: opacity;
+  will-change: transform;
 }
 
 .isAnimating {
   .draggableRectOne {
-    animation: draggable-fade-in 0.85s ease-in 0.15;
+    animation: draggable-rect-one 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
   .draggableRectTwo {
-    animation: draggable-fade-in 0.85s ease-in 0.3;
+    animation: draggable-rect-two 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
   .draggableRectThree {
-    animation: draggable-fade-in 0.85s ease-in 0.45;
+    animation: draggable-rect-three 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
   .draggableRectFour {
-    animation: draggable-fade-in 0.85s ease-in 0.6;
+    animation: draggable-rect-four 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
   .draggableRectFive {
-    animation: draggable-fade-in 0.85s ease-in 0.75;
+    animation: draggable-rect-five 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
   .draggableRectSix {
-    animation: draggable-fade-in 0.85s ease-in;
+    animation: draggable-rect-six 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
 }

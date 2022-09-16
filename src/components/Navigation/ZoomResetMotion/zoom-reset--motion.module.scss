@@ -1,0 +1,23 @@
+@keyframes zoom-reset-loop {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-360deg);;
+  }
+  100% {
+    transform: rotate(-360deg);;
+  }
+}
+
+.ZoomResetLoop{
+  transform-origin: 14px 14px;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .ZoomResetLoop {
+    animation: zoom-reset-loop 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

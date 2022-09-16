@@ -42,7 +42,6 @@ const myComponent = () => {
 The component takes two props:
 - `isAnimating` is a boolean; to trigger the animation, change this prop to `true`
 - `size` is an integer which will set the width and height of the icon in px 
-
 <br />
 
 ## Contributing ##
@@ -60,7 +59,7 @@ If you want to work in the repo directly, here are a few things you should know:
 
 The repo contains the library of icons themselves, as well as an example app where you can import and utilize the icons to see what they look like as you are working on them.  The icons themselves are located in `src/components` and the example app is located in `/example`.  
 
-So, for example, if you wanted to work on the animation for the **Home** icon, you would do that in `src/components/Navigation/HomeMotion`.  Then, you can see where the icon is imported and used in the example app in `/example/src/App.js`. 
+So, for example, if you wanted to work on the animation for the **Home** icon, you would do that in `src/components/Navigation/HomeMotion`.  Then, you can see where the icon is imported and used in the example app in `example/src/App.js`. 
 
 To run the app, you will want to have two separate tabs open in your terminal.
 

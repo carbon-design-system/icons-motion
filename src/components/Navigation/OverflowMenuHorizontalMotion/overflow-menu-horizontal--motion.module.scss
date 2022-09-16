@@ -1,64 +1,64 @@
 @keyframes animate-circle-left {
   0% {
-    opacity: 0;
+    transform: translateX(0px); }
+  8% {
+    transform: translateX(5px) ;
   }
-  15% {
-    opacity: 0;
-  }
-  28% {
-    opacity: 1;
+  16% {
+    transform: translateX(0px ) ;
   }
   100% {
-    opacity: 1;
+    transform: translateX(0px ) ;
   }
 }
 
 @keyframes animate-circle-middle {
-  0% {
-    opacity: 0;
+  1% {
+    transform: translateX(0px);
   }
-  25% {
-    opacity: 0;
+  9% {
+    transform: translateX(5px) ;
   }
-  38% {
-    opacity: 1;
+  17% {
+    transform: translateX(0px ) ;
   }
   100% {
-    opacity: 1;
+    transform: translateX(0px ) ;
   }
 }
 
 @keyframes animate-circle-right {
-  0% {
-    opacity: 0;
+  2% {
+    transform: translateX(0px);
   }
-  35% {
-    opacity: 0;
+  10% {
+    transform: translateX(5px) ;
   }
-  48% {
-    opacity: 1;
+  18% {
+    transform: translateX(0px ) ;
   }
   100% {
-    opacity: 1;
+    transform: translateX(0px ) ;
   }
 }
 
 .circleLeft,
 .circleMiddle,
 .circleRight {
-  will-change: opacity;
+  will-change: transform;
 }
 
 .isAnimating {
   .circleLeft {
-    animation: animate-circle-left 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: animate-circle-left 2s cubic-bezier(0.2, 0, 0.38, 0.9);
   }
 
   .circleMiddle {
-    animation: animate-circle-middle 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: animate-circle-middle 2s cubic-bezier(0.2, 0, 0.38, 0.9);
   }
 
   .circleRight {
-    animation: animate-circle-right 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: animate-circle-right 2s cubic-bezier(0.2, 0, 0.38, 0.9);
   }
 }
+

@@ -1,0 +1,25 @@
+@keyframes chevron-left-arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-8px);
+  }
+ 20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.ChevronLeft {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .ChevronLeft {
+    animation: chevron-left-arrow 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

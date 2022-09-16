@@ -1,20 +1,19 @@
+
 @keyframes arrow-up {
   0% {
     transform: translatey(0px);
   }
-  5% {
-    transform: translatey(0px);
+  10% {
+    transform: translatey(-4px);
   }
-  6% {
-    transform: translatey(11px);
-  }
-  25% {
+  20% {
     transform: translatey(0px);
   }
   100% {
     transform: translatey(0px);
   }
 }
+
 
 @keyframes arrow-shaft {
   0% {

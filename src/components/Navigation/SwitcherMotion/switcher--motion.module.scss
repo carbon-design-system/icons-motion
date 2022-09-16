@@ -1,0 +1,108 @@
+@keyframes switcher-box1 {
+  0% { transform: scale(1, 1); }
+  5% { transform: scale(1.2, 1.2); }
+  10% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box2 {
+  1% { transform: scale(1, 1); }
+  6% { transform: scale(1.2, 1.2); }
+  11% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box3 {
+  2% { transform: scale(1, 1); }
+  7% { transform: scale(1.2, 1.2); }
+  12% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box4 {
+  3% { transform: scale(1, 1); }
+  8% { transform: scale(1.2, 1.2); }
+  13% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box5 {
+  4% { transform: scale(1, 1); }
+  9% { transform: scale(1.2, 1.2); }
+  14% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box6 {
+  5% { transform: scale(1, 1); }
+  10% { transform: scale(1.2, 1.2); }
+  15% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box7 {
+  6% { transform: scale(1, 1); }
+  11% { transform: scale(1.2, 1.2); }
+  16% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box8 {
+  7% { transform: scale(1, 1); }
+  12% { transform: scale(1.2, 1.2); }
+  17% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+@keyframes switcher-box9 {
+  8% { transform: scale(1, 1); }
+  13% { transform: scale(1.2, 1.2); }
+  18% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
+}
+
+
+.SwitcherBox1,
+.SwitcherBox2,
+.SwitcherBox3,
+.SwitcherBox4,
+.SwitcherBox5,
+.SwitcherBox6,
+.SwitcherBox7,
+.SwitcherBox8,
+.SwitcherBox9 {
+  will-change: transform;
+  transform-origin: 16px 16px;
+}
+
+
+
+.isAnimating {
+  .SwitcherBox1 {
+    animation: switcher-box1 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox2 {
+    animation: switcher-box2 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox3 {
+    animation: switcher-box3 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox4 {
+    animation: switcher-box4 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox5 {
+    animation: switcher-box5 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox6 {
+    animation: switcher-box6 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox7 {
+    animation: switcher-box7 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox8 {
+    animation: switcher-box8 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SwitcherBox9 {
+    animation: switcher-box9 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+}

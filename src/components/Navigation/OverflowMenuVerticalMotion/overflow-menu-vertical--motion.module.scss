@@ -1,0 +1,63 @@
+@keyframes overflow-menu-vertical-top {
+  0% {
+    transform: translateY(0px); }
+  8% {
+    transform: translateY(5px) ;
+  }
+  16% {
+    transform: translateY(0px ) ;
+  }
+  100% {
+    transform: translateY(0px ) ;
+  }
+}
+
+@keyframes overflow-menu-vertical-middle {
+  1% {
+    transform: translateY(0px);
+  }
+  9% {
+    transform: translateY(5px) ;
+  }
+  17% {
+    transform: translateY(0px ) ;
+  }
+  100% {
+    transform: translateY(0px ) ;
+  }
+}
+
+@keyframes overflow-menu-vertical-bottom {
+  2% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(5px) ;
+  }
+  18% {
+    transform: translateY(0px ) ;
+  }
+  100% {
+    transform: translateY(0px ) ;
+  }
+}
+
+.OverflowMenuVerticalTop,
+.OverflowMenuVerticalMiddle,
+.OverflowMenuVerticalBottom {
+  will-change: transform;
+}
+
+.isAnimating {
+  .OverflowMenuVerticalTop {
+    animation: overflow-menu-vertical-top 2s cubic-bezier(0.2, 0, 0.38, 0.9);
+  }
+
+  .OverflowMenuVerticalMiddle {
+    animation: overflow-menu-vertical-middle 2s cubic-bezier(0.2, 0, 0.38, 0.9);
+  }
+
+  .OverflowMenuVerticalBottom  {
+    animation: overflow-menu-vertical-bottom 2s cubic-bezier(0.2, 0, 0.38, 0.9);
+  }
+}
