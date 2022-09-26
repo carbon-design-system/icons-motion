@@ -6,8 +6,8 @@ const AddMotion = (props) => {
   const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
   let iconStyles = {
-    width: props.size,
-    height: props.hsize
+    width: props.width,
+    height: props.height
   }
 
   React.useEffect(() => {
@@ -20,7 +20,8 @@ const AddMotion = (props) => {
     <div ref={iconRef} className={`${shouldAnimate}`}>
       <svg style={iconStyles} viewBox='0 0 32 32' className={styles.AddMotion}>
         <title>add</title>
-        <path className={styles.AddPlus} d="M17,15V8h-2v7H8v2h7v7h2v-7h7v-2H17z" />
+        <path className={styles.AddVertical} d="M17,15V8h-2v7v2v7h2v-7V15z" />
+        <path className={styles.AddHorizontal} d="M17,15h-2H8v2h7h2h7v-2H17z" />
       </svg>
     </div>
   )
