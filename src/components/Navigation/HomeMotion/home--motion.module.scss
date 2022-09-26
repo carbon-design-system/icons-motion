@@ -1,11 +1,11 @@
 @keyframes home-door-top {
   0% {
-    transform: translateY(9px);
+    transform: translateY(0px);
   }
-  5% {
-    transform: translateY(9px);
+  10% {
+    transform: translateY(-3px);
   }
-  25% {
+  20% {
     transform: translateY(0px);
   }
   100% {
@@ -15,12 +15,12 @@
 
 @keyframes home-door-right {
   0% {
-    transform: scale(1, 0);
+    transform: scale(1, 1);
   }
-  5% {
-    transform: scale(1, 0);
+  10% {
+    transform: scale(1, 1.4);
   }
-  25% {
+  20% {
     transform: scale(1, 1);
   }
   100% {
@@ -30,12 +30,12 @@
 
 @keyframes home-door-left {
   0% {
-    transform: scale(1, 0);
+    transform: scale(1, 1);
   }
-  5% {
-    transform: scale(1, 0);
+  10% {
+    transform: scale(1, 1.4);
   }
-  25% {
+  20% {
     transform: scale(1, 1);
   }
   100% {
