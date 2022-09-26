@@ -1,9 +1,9 @@
-@keyframes add-filled-plus {
+@keyframes add-filled-vertical {
   0% {
     transform: scale(1, 1);
   }
   10% {
-    transform: scale(1.2, 1.2);
+    transform: scale(1, 1.2);
   }
   20% {
     transform: scale(1, 1);
@@ -13,13 +13,39 @@
   }
 }
 
-.AddFilledPlus{
+@keyframes add-filled-horizontal {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.2, 1);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.AddFilledHorizontal{
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.AddFilledVertical{
   transform-origin: 50% 50%;
   will-change: transform;
 }
 
 .isAnimating {
-  .AddFilledPlus {
-    animation: add-filled-plus 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  .AddFilledHorizontal {
+    animation: add-filled-horizontal 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .AddFilledVertical {
+    animation: add-filled-vertical 2s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }
