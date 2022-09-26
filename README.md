@@ -7,7 +7,7 @@ It enables developers to import an animated icon directly from this library, in 
 
 Check out what the animations look like in this [example app](https://pages.github.ibm.com/Krista-Starr/carbon-10-icon-animations/).
 
-We will be adding onto this library one category at a time - the first release includes the **Navigation** icons, and the next batch will be the **Operations** icons (currently in progress).  
+We will be adding onto this library one category at a time - the current release includes the **Navigation** icons, and the next batch will be the **Operations** icons (currently in progress).  
 
 If you want to request an icon/category to be animated, please open an issue using the **New icon animation** template.  Working together with the Carbon team, we will prioritize the categories that will be most frequently used. 
 
@@ -128,7 +128,7 @@ We'd especially love feedback in the following areas:
 <br />
 
 ## Contributors
-This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @John-Bister, @Liz-Tremblay, @Mike-Olasov
+This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @John-Bister, @Liz-Tremblay, @Mike-Olasov, @Silvio Hajdin
 
 <br />
 
