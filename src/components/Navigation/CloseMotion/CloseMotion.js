@@ -20,7 +20,8 @@ const CloseMotion = (props) => {
     <div ref={iconRef} className={`${shouldAnimate}`}>
       <svg style={iconStyles} viewBox='0 0 32 32' className={styles.CloseMotion}>
         <title>close</title>
-        <path className={styles.Close} d="M24,9.4L22.6,8L16,14.6L9.4,8L8,9.4l6.6,6.6L8,22.6L9.4,24l6.6-6.6l6.6,6.6l1.4-1.4L17.4,16L24,9.4z" />
+        <path className={styles.CloseVertical} d="M17,15V5.7h-2V15v2v9.3h2V17V15z" />
+        <path className={styles.CloseHorizontal} d="M26.3,17v-2H17h-2H5.7v2H15h2H26.3z" />
       </svg>
     </div>
   )
