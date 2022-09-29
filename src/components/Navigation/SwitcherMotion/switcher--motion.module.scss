@@ -1,65 +1,66 @@
 @keyframes switcher-box1 {
-  0% { transform: scale(1, 1); }
-  5% { transform: scale(1.2, 1.2); }
-  10% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  0% { transform: translateX(0px) ; }
+  6% { transform: translateX(3px) ; }
+  12% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box2 {
-  1% { transform: scale(1, 1); }
-  6% { transform: scale(1.2, 1.2); }
-  11% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  0% { transform: translateX(0px) ; }
+  6% { transform: translateX(3px) ; }
+  12% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box3 {
-  2% { transform: scale(1, 1); }
-  7% { transform: scale(1.2, 1.2); }
-  12% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  0% { transform: translateX(0px) ; }
+  6% { transform: translateX(3px) ; }
+  12% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box4 {
-  3% { transform: scale(1, 1); }
-  8% { transform: scale(1.2, 1.2); }
-  13% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  4% { transform: translateX(0px) ; }
+  10% { transform: translateX(3px) ; }
+  16% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box5 {
-  4% { transform: scale(1, 1); }
-  9% { transform: scale(1.2, 1.2); }
-  14% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  4% { transform: translateX(0px) ; }
+  10% { transform: translateX(3px) ; }
+  16% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box6 {
-  5% { transform: scale(1, 1); }
-  10% { transform: scale(1.2, 1.2); }
-  15% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  4% { transform: translateX(0px) ; }
+  10% { transform: translateX(3px) ; }
+  16% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box7 {
-  6% { transform: scale(1, 1); }
-  11% { transform: scale(1.2, 1.2); }
-  16% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  8% { transform: translateX(0px) ; }
+  14% { transform: translateX(3px) ; }
+  20% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box8 {
-  7% { transform: scale(1, 1); }
-  12% { transform: scale(1.2, 1.2); }
-  17% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  8% { transform: translateX(0px) ; }
+  14% { transform: translateX(3px) ; }
+  20% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
 
 @keyframes switcher-box9 {
-  8% { transform: scale(1, 1); }
-  13% { transform: scale(1.2, 1.2); }
-  18% { transform: scale(1, 1); }
-  100% { transform: scale(1, 1); }
+  8% { transform: translateX(0px) ; }
+  14% { transform: translateX(3px) ; }
+  20% { transform: translateX(0px) ; }
+  100% { transform: translateX(0px) ; }
 }
+
 
 
 .SwitcherBox1,
@@ -106,3 +107,4 @@
     animation: switcher-box9 2s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
 }
+
