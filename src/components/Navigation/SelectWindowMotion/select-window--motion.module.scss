@@ -1,25 +1,182 @@
-.SelectWindowCursor {
+.SelectWindowCursor{
   will-change: transform;
+  transform-origin: 16px 16px;
+  transform: scale(1);
 }
+
+.SelectWindow1 {
+  will-change: transform;
+  transform-origin: 16px 16px;
+  transform: scale(1);
+}
+
+.SelectWindow2,
+.SelectWindow3,
+.SelectWindow4,
+.SelectWindow5,
+.SelectWindow6,
+.SelectWindow7,
+.SelectWindow8,
+.SelectWindow9,
+.SelectWindow10,
+.SelectWindow11,
+.SelectWindow12 {
+  will-change: transform;
+  transform-origin: 2px 2px;
+  transform: scale(0);
+}
+
 
 .isAnimating {
   .SelectWindowCursor {
-    animation: select-window-cursor cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+    animation: select-window-cursor 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow1 {
+    animation: select-window1 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow2 {
+    animation: select-window2 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow3 {
+    animation: select-window3 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow4 {
+    animation: select-window4 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow5 {
+    animation: select-window5 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow6 {
+    animation: select-window6 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow7 {
+    animation: select-window7 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow8 {
+    animation: select-window8 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow9 {
+    animation: select-window9 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow10 {
+    animation: select-window10 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow11 {
+    animation: select-window11 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
+  }
+  .SelectWindow12 {
+    animation: select-window12 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
 }
 
+   
 @keyframes select-window-cursor {
-  0% {
-    transform: scale(1) translate(0px, 0px);
-  }
-  10% {
-    transform: scale(.80) translate(-3px, -3px);
-  }
-  20% {
-    transform: scale(1) translate(0px, 0px);
-  }
-  100% {
-    transform: scale(1) translate(0px, 0px);
-  }
+  0% { transform: translate(0, 0); }
+  14% { transform: translate(-3px, -3px); }
+  26% { transform: translate(0, 0); }
+  100% { transform: scale(1); }
 }
 
+@keyframes select-window1 {
+  0% { transform: scale(1); }
+  5.999% { transform: scale(1); }
+  6% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window2 {
+  0% { transform: scale(0); }
+  5.999% { transform: scale(0); }
+  6% { transform: scale(1); }
+  8% { transform: scale(1); }
+  8.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window3 {
+  0% { transform: scale(0); }
+  7.999% { transform: scale(0); }
+  8% { transform: scale(1); }
+  10% { transform: scale(1); }
+  10.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window4 {
+  0% { transform: scale(0); }
+  9.999% { transform: scale(0); }
+  10% { transform: scale(1); }
+  12% { transform: scale(1); }
+  12.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window5 {
+  0% { transform: scale(0); }
+  11.999% { transform: scale(0); }
+  12% { transform: scale(1); }
+  14% { transform: scale(1); }
+  14.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window6 {
+  0% { transform: scale(0); }
+  14% { transform: scale(0); }
+  14.0001% { transform: scale(1); }
+  16% { transform: scale(1); }
+  16.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window7 {
+  0% { transform: scale(0); }
+  15.999% { transform: scale(0); }
+  16% { transform: scale(1); }
+  18% { transform: scale(1); }
+  18.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window8 {
+  0% { transform: scale(0); }
+  17.999% { transform: scale(0); }
+  18% { transform: scale(1); }
+  20% { transform: scale(1); }
+  20.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window9 {
+  0% { transform: scale(0); }
+  19.999% { transform: scale(0); }
+  20% { transform: scale(1); }
+  22% { transform: scale(1); }
+  22.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window10 {
+  0% { transform: scale(0); }
+  21.999% { transform: scale(0); }
+  22% { transform: scale(1); }
+  24% { transform: scale(1); }
+  24.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window11 {
+  0% { transform: scale(0); }
+  23.999% { transform: scale(0); }
+  24% { transform: scale(1); }
+  26% { transform: scale(1); }
+  26.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes select-window12 {
+  0% { transform: scale(0); }
+  25.999% { transform: scale(0); }
+  26% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
