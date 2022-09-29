@@ -1,25 +1,37 @@
-@keyframes close-outline {
-  0% {
-    transform: scale(1, 1);
-  }
-  10% {
-    transform: scale(1.2, 1.2);
-  }
-  20% {
-    transform: scale(1, 1);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
+@keyframes close-outline-vertical {
+  0% { transform: rotate(45deg) scale(1, 1);}
+  10% { transform:  rotate(45deg) scale(1, .8);}
+  20% { transform: rotate(45deg)  scale(1, 1);}
+  100% {transform:  rotate(45deg) scale(1, 1);}
 }
 
-.CloseOutline{
+@keyframes close-outline-horizontal {
+  0% { transform: rotate(45deg) scale(1, 1);}
+  10% { transform: rotate(45deg) scale(.8, 1);}
+  20% { transform: rotate(45deg) scale(1, 1);}
+  100% {transform: rotate(45deg) scale(1, 1);}
+}
+
+.CloseOutlineVertical{
   transform-origin: 50% 50%;
   will-change: transform;
+  transform: rotate(45deg);
 }
 
 .isAnimating {
-  .CloseOutline {
-    animation: close-outline 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  .CloseOutlineVertical {
+    animation: close-outline-vertical 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.CloseOutlineHorizontal {
+  transform-origin: 50% 50%;
+  will-change: transform;
+  transform: rotate(45deg);
+}  
+
+.isAnimating {
+  .CloseOutlineHorizontal {
+    animation: close-outline-horizontal 2s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }
