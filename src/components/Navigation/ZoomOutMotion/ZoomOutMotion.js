@@ -20,8 +20,7 @@ const ZoomOutMotion = (props) => {
     <div ref={iconRef} className={`${shouldAnimate}`}>
       <svg style={iconStyles} viewBox='0 0 32 32' className={styles.ZoomOutMotion}>
         <title>Zoom out</title>
-        <path className={styles.ZoomOutGlass} d="M21.4,20c1.6-2,2.6-4.4,2.6-7c0-6.1-4.9-11-11-11S2,6.9,2,13s4.9,11,11,11c2.6,0,5-0.9,7-2.6l7.6,7.6l1.4-1.4L21.4,20z
-		 M13,22c-5,0-9-4-9-9s4-9,9-9s9,4,9,9C22,18,18,22,13,22z" />
+        <path vector-effect="non-scaling-stroke" className={styles.ZoomOutGlass}  fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M13,3C7.4,3,2.9,7.5,2.9,13S7.4,23,13,23s10.1-4.5,10.1-10S18.6,3,13,3z M28.3,28.3l-7.9-7.9"   />
         <path className={styles.ZoomOutMinus} d="M8,12h10v2H8V12z" />
       </svg>
     </div>
