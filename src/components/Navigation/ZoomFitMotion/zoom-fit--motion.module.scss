@@ -1,39 +1,56 @@
 @keyframes zoom-fit-glass {
-  0% {
-    transform: scale(1, 1);
-  }
-  10% {
-    transform: scale(.8, .8);
-  }
-  20% {
-    transform: scale(1, 1);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
+  0% { transform: scale(1, 1); }
+  10% { transform: scale(.85, .85); }
+  20% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
 }
 
-@keyframes zoom-fit-window {
-  0% {
-    transform: scale(1, 1);
-  }
-  10% {
-    transform: scale(1.2, 1.2);
-  }
-  20% {
-    transform: scale(1, 1);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
+@keyframes zoom-fit-window1 {
+  0% { transform: translate(0px, 0px); }
+  10% { transform: translate(-.85px, -.85px); }
+  20% { transform: translate(0px, 0px); }
+  100% { transform: translate(0px, 0px); }
 }
+
+@keyframes zoom-fit-window2 {
+  0% { transform: translate(0px, 0px); }
+  10% { transform: translate(.85px, -.85px); }
+  20% { transform: translate(0px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes zoom-fit-window3 {
+  0% { transform: translate(0px, 0px); }
+  10% { transform: translate(.85px, .85px); }
+  20% { transform: translate(0px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes zoom-fit-window4 {
+  0% { transform: translate(0px, 0px); }
+  10% { transform: translate(-.85px, .85px); }
+  20% { transform: translate(0px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes test-red {
+  0% { transform: scale(1, 1); }
+  20% { transform: scale(.5, .5); }
+  80% { transform: scale(.5, .5); }
+  100% { transform: scale(1, 1); }
+}
+
 
 .ZoomFitGlass{
   transform-origin: 13px 13px;
   will-change: transform;
 }
 
-.ZoomFitWindow{
+
+.ZoomFitWindow1,
+.ZoomFitWindow2,
+.ZoomFitWindow3,
+.ZoomFitWindow4 {
   transform-origin: 13px 13px;
   will-change: transform;
 }
@@ -45,7 +62,31 @@
 }
 
 .isAnimating {
-  .ZoomFitWindow {
-    animation: zoom-fit-window 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  .ZoomFitWindow1 {
+    animation: zoom-fit-window1 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .ZoomFitWindow2 {
+    animation: zoom-fit-window2 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .ZoomFitWindow3 {
+    animation: zoom-fit-window3 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .ZoomFitWindow4 {
+    animation: zoom-fit-window4 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .TestRed {
+    animation: test-red 2s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }
