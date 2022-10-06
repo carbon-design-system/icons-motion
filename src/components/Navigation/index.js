@@ -21,8 +21,6 @@ import CaretRightMotion from './CaretRightMotion';
 import CloseMotion from './CloseMotion';
 import CloseFilledMotion from './CloseFilledMotion';
 import CloseOutlineMotion from './CloseOutlineMotion';
-import SubtractMotion from './SubtractMotion';
-import SubtractAltMotion from './SubtractAltMotion';
 import DownToBottomMotion from './DownToBottomMotion';
 import DraggableMotion from './DraggableMotion';
 import HomeMotion from './HomeMotion';
@@ -31,7 +29,8 @@ import OverflowMenuHorizontalMotion from './OverflowMenuHorizontalMotion';
 import OverflowMenuVerticalMotion from './OverflowMenuVerticalMotion';
 import PageFirstMotion from './PageFirstMotion';
 import PageLastMotion from './PageLastMotion';
-import SwitcherMotion from './SwitcherMotion';
+import SubtractMotion from './SubtractMotion';
+import SubtractAltMotion from './SubtractAltMotion';import SwitcherMotion from './SwitcherMotion';
 import SelectWindowMotion from './SelectWindowMotion';
 import UpToTopMotion from './UpToTopMotion';
 import ZoomInAreaMotion from './ZoomInAreaMotion';
@@ -48,4 +47,4 @@ import SwitcherToCloseMotion from './SwitcherToCloseMotion';
 
 
 
-export { AddMotion, AddAltMotion, AddFilledMotion, AppsMotion, ArrowUpMotion, ArrowDownMotion, ArrowDownLeftMotion, ArrowDownRightMotion, ArrowLeftMotion, ArrowRightMotion, ArrowUpLeftMotion, ArrowUpRightMotion, ChevronDownMotion, ChevronUpMotion, ChevronLeftMotion, ChevronRightMotion, CaretDownMotion, CaretUpMotion, CaretLeftMotion, CaretRightMotion, CloseMotion, CloseOutlineMotion, CloseFilledMotion, SubtractMotion, SubtractAltMotion, SwitcherMotion, DownToBottomMotion, DraggableMotion, HomeMotion, MenuMotion, OverflowMenuHorizontalMotion, OverflowMenuVerticalMotion, SelectWindowMotion, PageFirstMotion, PageLastMotion, UpToTopMotion, ZoomInAreaMotion, ZoomAreaMotion, ZoomOutAreaMotion, ZoomFitMotion, ZoomInMotion, ZoomOutMotion, ZoomResetMotion, AddToSubtractMotion, MenuToCloseMotion, SwitcherToCloseMotion };
+export { AddMotion, AddAltMotion, AddFilledMotion, AppsMotion, ArrowUpMotion, ArrowDownMotion, ArrowDownLeftMotion, ArrowDownRightMotion, ArrowLeftMotion, ArrowRightMotion, ArrowUpLeftMotion, ArrowUpRightMotion, ChevronDownMotion, ChevronUpMotion, ChevronLeftMotion, ChevronRightMotion, CaretDownMotion, CaretUpMotion, CaretLeftMotion, CaretRightMotion, CloseMotion, CloseOutlineMotion, CloseFilledMotion, DownToBottomMotion, DraggableMotion, HomeMotion, MenuMotion, OverflowMenuHorizontalMotion, OverflowMenuVerticalMotion, PageFirstMotion, PageLastMotion,SubtractMotion, SubtractAltMotion, SelectWindowMotion, SwitcherMotion,  UpToTopMotion, ZoomInAreaMotion, ZoomAreaMotion, ZoomOutAreaMotion, ZoomFitMotion, ZoomInMotion, ZoomOutMotion, ZoomResetMotion, AddToSubtractMotion, MenuToCloseMotion, SwitcherToCloseMotion };
