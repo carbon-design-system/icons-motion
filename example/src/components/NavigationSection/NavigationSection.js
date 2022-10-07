@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import * as icons from 'carbon-10-icon-animations'
-import 'carbon-10-icon-animations/dist/index.css'
+import * as icons from 'carbon-motion'
+import 'carbon-motion/dist/index.css'
 
 const NavigationSection = () => {
   const [addAnimating, setAddAnimating] = useState(false)
