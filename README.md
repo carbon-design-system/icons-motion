@@ -1,11 +1,7 @@
-[![NPM](https://img.shields.io/npm/v/carbon-10-icon-animations.svg)](https://www.npmjs.com/package/carbon-10-icon-animations) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 # Carbon Icon Animations
 
 This is a package of animated icons which mirrors the icons in [Carbon Design System](https://carbondesignsystem.com/guidelines/icons/library/) icons.
 It enables developers to import an animated icon directly from this library, in place of importing the existing static icon from the Carbon Design System library. The animated icons are implemented as React components.  Since they do not make use of Carbon's icon components directly, they are not tied to a specific version of Carbon, and can be used in any React project.  
-
-Check out what the animations look like in this [example app](https://pages.github.ibm.com/Krista-Starr/carbon-10-icon-animations/).
 
 We will be adding onto this library one category at a time - the current release includes the **Navigation** icons, and the next batch will be the **Operations** icons (currently in progress).  
 
@@ -20,7 +16,7 @@ We will do our very best to keep these icons in sync with the Carbon icons but i
 To us the icons in your project, first install the package: 
 
 ```bash
-npm install carbon-10-icon-animations
+npm install carbon-motion
 ```
 
 ### Usage
@@ -28,8 +24,8 @@ npm install carbon-10-icon-animations
 Next, import and use the icon component and CSS file from the package. Example:
 
 ```jsx
-import HomeMotion from 'carbon-10-icon-animations'
-import 'carbon-10-icon-animations/dist/index.css'
+import HomeMotion from 'carbon-motion'
+import 'carbon-motion/dist/index.css'
 
 const myComponent = () => {
   <HomeMotion 
@@ -45,9 +41,58 @@ The component takes two props:
 <br />
 
 ## Contributing ##
+
+We welcome all contributions! Please make sure you adhere to our [Code of Conduct](https://github.com/carbon-design-system/carbon-motion/blob/main/.github/CODE_OF_CONDUCT)!!! 
+
+[All Contributors](https://github.com/all-contributors/all-contributors) table coming soon! 
+
 If you would like to contribute a new animated icon, please use the **New icon animation** template to open an issue for the icon you are working on, so we don't end up with multiple people working on the same icon. 
 
 The icons are SVGs made into React components, using CSS keyframes for the animations.  
+
+
+### Icon Motion Design Guidelines ###
+Introduction
+Ideally, added motion gives better clarity to the action of the icon. Or, at the very least, motion is a non-intrusive piece of feedback letting the user know they have interacted with an icon. We want to avoid adding motion just for the sake of adding motion. That means many icons may not actually need to be animated and that’s OK! For a comprehensive look at the motion principles at IBM, please visit Carbon motion guidelines.
+
+
+#### Stroke Width ####
+When scaling objects, avoid changing the stroke width. You might have to get clever with how you break apart the svg layers to accomplish this. For example, the “add” icon can be broken into two layers: the horizontal and vertical bar. By scaling the vertical bar on the y axis and the horizontal bar on the x axis, you can accomplish the “+” scaling up without scaling the actual stroke width. Or, you can implement vector-effect=“non-scaling-stroke” in your css. Both methods may require additional prep work in an image editor such as illustrator.
+
+![Examples of correct and incorrect stroke width](/images/StrokeWidth.gif)
+
+#### Bounding Box ####
+Most icons were constructed with enough padding to allow scaling, positioning, and rotating toward the view box edge without getting cut off. That being said, you may find the padding limiting to the original animation you intended. Make sure your objects stay in the bounding box even if you have to compromise your original intent with the animation.
+
+![Examples of correct and incorrect bounding box](/images/BoundingBox.gif)
+
+#### Opacity ####
+Animating opacity can be tricky and difficult to make consistent. If possible, avoid using opacity and employ other transforms on the icon to accomplish your animation.
+
+
+#### Motion Curves ####
+We’ve been using the productive and expressive motion curves outlined in the Carbon Motion Guidelines.
+
+
+Productive: cubic-bezier(0.2, 0, 0.38, 0.9) 
+Expressive: cubic-bezier(0.4, 0.14, 0.3, 1)
+
+
+While we consider most of the icon movements to fall under the ‘productive’ category, we’ve been going by feel for which curve to use. We suggest looking at similar icons to the one you’re working on and see what curves they use as a starting place. If neither curve works in your opinion, explore to find the right one. We do not suggest using cartoon-ish curves that bounce, wildly over-exaggerate movement, spring action, etc. We also do not suggest using a flat, linear curve. A little bit of easing can go a long way.
+
+
+#### Timing ####
+Most animations run somewhere in the range of 0.2s - 0.4s. If possible, avoid going over .5s unless there’s a unique situation that calls for it.
+
+
+#### Review ####
+Every icon will go through a design and code review so contributors can ask questions, rework motion, and have the resources they need to submit their animations.
+
+
+#### Conclusion ####
+We hope this helps steer you in the right direction and doesn't limit the animations you come up with. There are always exceptions and we hope you find them. Have fun and when in doubt, reach out!
+
+
 
 ### Methods of submitting work ###
 1. You can on your icon the repo directly and submit a PR when you are ready to contribute your icon. 
@@ -75,9 +120,8 @@ In the second tab:
 
 <br />
 
-## New to creating animations? ##
 
-If you are new to working with SVGs and creating SVG animations, I recommend this tutorial series from CSS Tricks: [Everything you need to know about SVG](https://css-tricks.com/lodge/svg/). While all the information is good, #1, #7, and #22 will be good ones to focus on for working on this particular project.  
+## New to creating animations? ##
 
 Here is the workflow for creating icon animations: 
 1. Download the SVG code for the icon from [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/)
@@ -96,7 +140,8 @@ When it comes to designing animations, there are a few options - do whatever wor
  
 <br />
 
-Make sure to adhere to existing [Carbon motion guidelines](https://carbondesignsystem.com/guidelines/motion/overview/).  Additional guidance specific to designing and using icon animations is in progress.   
+Make sure to adhere to existing [Carbon motion guidelines](https://carbondesignsystem.com/guidelines/motion/overview/).  Additional guidance specific to designing and using icon animations is in progress.  
+
 
 <br />
 
@@ -110,7 +155,7 @@ Use the issue labels to request designer help or developer help:
 
 If you can provide help in any of the above areas, feel free to assign yourself to an issue and begin collaboration! 
  
-You can also reach out directly on Slack to @Krista Starr or @john-bister if you have any questions
+You can reach out directly on Slack at #carbon-design-system with any questions you have. Please post any design questions with an in-context screen shot (i.e. screen shot of the whole UI you are designing) with background as to what you are trying to accomplish in this flow. We welcome in-progress work to get community design feedback as well.
 
 <br />
 
@@ -133,5 +178,4 @@ This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @John
 <br />
 
 ## License
-
-MIT © [Krista-Starr](https://github.com/Krista-Starr)
+Licensed under the [Apache 2.0 License](https://github.com/carbon-design-system/carbon-motion/blob/main/LICENSE).
