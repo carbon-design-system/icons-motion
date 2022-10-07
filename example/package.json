@@ -1,5 +1,5 @@
 {
-  "name": "carbon-10-icon-animations-example",
+  "name": "carbon-motion-example",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -12,7 +12,7 @@
   "dependencies": {
     "carbon-components": "^10.25.0",
     "carbon-components-react": "^7.54.2",
-    "carbon-10-icon-animations": "file:..",
+    "carbon-motion": "file:..",
     "carbon-icons": "^7.0.7",
     "node-sass": "^4.14.1",
     "react": "file:../node_modules/react",
