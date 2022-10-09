@@ -3,6 +3,8 @@
 This is a package of animated icons which mirrors the icons in [Carbon Design System](https://carbondesignsystem.com/guidelines/icons/library/) icons.
 It enables developers to import an animated icon directly from this library, in place of importing the existing static icon from the Carbon Design System library. The animated icons are implemented as React components.  Since they do not make use of Carbon's icon components directly, they are not tied to a specific version of Carbon, and can be used in any React project.  
 
+Check out what the animations look like in this [example app](https://pages.github.ibm.com/Krista-Starr/carbon-10-icon-animations/).
+
 We will be adding onto this library one category at a time - the current release includes the **Navigation** icons, and the next batch will be the **Operations** icons (currently in progress).  
 
 If you want to request an icon/category to be animated, please open an issue using the **New icon animation** template.  Working together with the Carbon team, we will prioritize the categories that will be most frequently used. 
