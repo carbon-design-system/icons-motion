@@ -4,7 +4,7 @@
   "description": "Animated icons based on Carbon icons",
   "author": "Krista-Starr",
   "license": "Apache-2.0",
-  "repository": "Krista-Starr/carbon-design-system/icons-motion",
+  "repository": "carbon-design-system/icons-motion",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
