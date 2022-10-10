@@ -175,7 +175,7 @@ We'd especially love feedback in the following areas:
 <br />
 
 ## Contributors
-This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @John-Bister, @Liz-Tremblay, @Mike-Olasov, @Silvio Hajdin
+This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @johnbister, @Liz-Tremblay, @Mike-Olasov, @Silvio Hajdin
 
 <br />
 
