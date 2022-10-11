@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "carbon-components": "^10.25.0",
-    "carbon-components-react": "^7.54.2",
+    "carbon-components-react": "8.14.0",
     "carbon-icons": "^7.0.7",
     "carbon-motion": "file:..",
     "react": "file:../node_modules/react",
