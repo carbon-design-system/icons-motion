@@ -1,5 +1,6 @@
 import React from 'react'
 import NavigationSection from '../../components/NavigationSection'
+import OperationsSection from '../../components/OperationsSection'
 import '../../app.scss'
 
 const CollectionPage = () => {
@@ -11,6 +12,7 @@ const CollectionPage = () => {
         </div>
       </div>
       <NavigationSection></NavigationSection>
+      <OperationsSection></OperationsSection>
     </div>
   )
 }
