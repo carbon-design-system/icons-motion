@@ -3,6 +3,8 @@
 This is a package of animated icons which mirrors the icons in [Carbon Design System](https://carbondesignsystem.com/guidelines/icons/library/) icons.
 It enables developers to import an animated icon directly from this library, in place of importing the existing static icon from the Carbon Design System library. The animated icons are implemented as React components.  Since they do not make use of Carbon's icon components directly, they are not tied to a specific version of Carbon, and can be used in any React project.  
 
+Check out what the animations look like in this [example app](https://carbon-design-system.github.io/icons-motion/).
+
 We will be adding onto this library one category at a time - the current release includes the **Navigation** icons, and the next batch will be the **Operations** icons (currently in progress).  
 
 If you want to request an icon/category to be animated, please open an issue using the **New icon animation** template.  Working together with the Carbon team, we will prioritize the categories that will be most frequently used. 
@@ -13,10 +15,10 @@ We will do our very best to keep these icons in sync with the Carbon icons but i
 ## Using the icons
 
 ### Installation
-To us the icons in your project, first install the package: 
+To use the icons in your project, first install the package: 
 
 ```bash
-npm install carbon-motion
+npm install icons-motion
 ```
 
 ### Usage
@@ -24,7 +26,7 @@ npm install carbon-motion
 Next, import and use the icon component and CSS file from the package. Example:
 
 ```jsx
-import HomeMotion from 'carbon-motion'
+import HomeMotion from 'icons-motion'
 import 'carbon-motion/dist/index.css'
 
 const myComponent = () => {
@@ -57,12 +59,12 @@ Ideally, added motion gives better clarity to the action of the icon. Or, at the
 
 
 #### Stroke Width ####
-When scaling objects, avoid changing the stroke width. You might have to get clever with how you break apart the svg layers to accomplish this. For example, the “add” icon can be broken into two layers: the horizontal and vertical bar. By scaling the vertical bar on the y axis and the horizontal bar on the x axis, you can accomplish the “+” scaling up without scaling the actual stroke width. Or, you can implement vector-effect=“non-scaling-stroke” in your css. Both methods may require additional prep work in an image editor such as illustrator.
+Avoid changing the stroke width when scaling objects. You might need to get clever with how you break apart the svg layers to accomplish this. For example, the “add” icon can be broken into two layers: the horizontal and vertical bar. By scaling the vertical bar on the y axis and the horizontal bar on the x axis, you can accomplish the “+” scaling up without scaling the actual stroke width. Or, you can implement vector-effect=“non-scaling-stroke” in your css. Both methods may require additional prep work in an image editor such as Illustrator.
 
 ![Examples of correct and incorrect stroke width](/images/StrokeWidth.gif)
 
 #### Bounding Box ####
-Most icons were constructed with enough padding to allow scaling, positioning, and rotating toward the view box edge without getting cut off. That being said, you may find the padding limiting to the original animation you intended. Make sure your objects stay in the bounding box even if you have to compromise your original intent with the animation.
+Most icons were constructed with enough padding to allow scaling, positioning, and rotating toward the view box edge without getting cut off. However, you may find the padding limiting to the original animation you intended to make. Your svg layers need to stay in the bounding box, even if that means you have to compromise your original intent with the animation.
 
 ![Examples of correct and incorrect bounding box](/images/BoundingBox.gif)
 
@@ -71,7 +73,7 @@ Animating opacity can be tricky and difficult to make consistent. If possible, a
 
 
 #### Motion Curves ####
-We’ve been using the productive and expressive motion curves outlined in the Carbon Motion Guidelines.
+We’ve been using the productive and expressive motion curves outlined in the [Carbon motion guidelines](https://carbondesignsystem.com/guidelines/motion/overview/#easing).
 
 
 Productive: cubic-bezier(0.2, 0, 0.38, 0.9) 
@@ -82,7 +84,7 @@ While we consider most of the icon movements to fall under the ‘productive’ 
 
 
 #### Timing ####
-Most animations run somewhere in the range of 0.2s - 0.4s. If possible, avoid going over .5s unless there’s a unique situation that calls for it.
+Most animations run somewhere in the range of 0.2s - 0.4s. Avoid going over .5s, unless there’s a unique situation that calls for it.
 
 
 #### Review ####
@@ -95,7 +97,7 @@ We hope this helps steer you in the right direction and doesn't limit the animat
 
 
 ### Methods of submitting work ###
-1. You can on your icon the repo directly and submit a PR when you are ready to contribute your icon. 
+1. You can work on the icon in the repo directly and submit a PR when you are ready to contribute your icon. 
 2. You can work on the icon in Codepen/Code Sandbox etc, put the link to it in your issue when you're ready to contribute it, and someone can get your code from there and add it to the repo for you. 
 
 
@@ -124,10 +126,10 @@ In the second tab:
 ## New to creating animations? ##
 
 Here is the workflow for creating icon animations: 
-1. Download the SVG code for the icon from [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/)
-2. Open the file in the text editor of your choice to see the svg code
+1. Download the SVG code for the icon from [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/).
+2. Open the file in the text editor of your choice to see the svg code.
 3. As you explore the SVG code, you will likely discover that you need to make some changes to it in Illustrator in order to execute the animations you have in mind. In many cases you may find that the icon consists of one single path or shape, when you need elements of the svg to be separated in order for them to be animated.  For example, if you wanted to animate the "Bee" icon to make it's wings flap, you would need to make sure the paths for the wings are separate from the paths for the bee body, so the wings can be animated in isolation. (CodePen examples coming soon!)
-4. When you're happy with the code that is exported from Illustrator, it is best practice to use a tool to optimize the code to reduce file size and simplify the code to make it easier to work with.  I typically use [SVG OMG](https://jakearchibald.github.io/svgomg/)
+4. When you're happy with the code that is exported from Illustrator, it is best practice to use a tool to optimize the code to reduce file size and simplify the code to make it easier to work with.  I typically use [SVG OMG](https://jakearchibald.github.io/svgomg/).
 5. Now you are ready to animate! Check out [this Codepen example](https://codepen.io/kristastarr/pen/KKaRrzL/9dfd98d9ce8e097f08b515f3aa4e0166) of animations created using CSS keyframes. 
 
 <br />
@@ -173,7 +175,7 @@ We'd especially love feedback in the following areas:
 <br />
 
 ## Contributors
-This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @John-Bister, @Liz-Tremblay, @Mike-Olasov, @Silvio Hajdin
+This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @johnbister, @Liz-Tremblay, @Mike-Olasov, @Silvio Hajdin
 
 <br />
 
