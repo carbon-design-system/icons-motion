@@ -1,8 +1,8 @@
 ---
 name: Update icon animation
 about: Discrepancies between Carbon icons and icons in this package
-title: 'Update icon animation:'
-labels: 'update icon'
+title: Update icon animation:
+labels: update icon
 assignees: ''
 
 ---
