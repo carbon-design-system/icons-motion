@@ -1,0 +1,14 @@
+@media (prefers-reduced-motion) {
+  svg,
+    g,
+  line,
+  polyline,
+  path,
+  rect,
+  polygon,
+  ellipse,
+  circle {
+    animation: none !important;
+    transition: none !important;
+  }
+}

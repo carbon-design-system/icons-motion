@@ -6,7 +6,7 @@ const NavigationSection = () => {
   const [addAnimating, setAddAnimating] = useState(false)
   const [addAltAnimating, setAddAltAnimating] = useState(false)
   const [addFilledAnimating, setAddFilledAnimating] = useState(false)
-  const [addToSubtractAnimating, setAddToSubtractAnimating] = useState(false)
+  const [appsAnimating, setAppsAnimating] = useState(false)
   const [arrowUpAnimating, setArrowUpAnimating] = useState(false)
   const [arrowDownAnimating, setArrowDownAnimating] = useState(false)
   const [arrowDownLeftAnimating, setArrowDownLeftAnimating] = useState(false)
@@ -31,7 +31,7 @@ const NavigationSection = () => {
   const [downToBottomAnimating, setDownToBottomAnimating] = useState(false)
   const [draggableAnimating, setDraggableAnimating] = useState(false)
   const [homeAnimating, setHomeAnimating] = useState(false)
-  const [menuToCloseAnimating, setMenuToCloseAnimating] = useState(false)
+  const [menuAnimating, setMenuAnimating] = useState(false)
   const [overflowMenuHorizontalAnimating, setOverflowMenuHorizontalAnimating] = useState(false)
   const [overflowMenuVerticalAnimating, setOverflowMenuVerticalAnimating] = useState(false)
   const [pageFirstAnimating, setPageFirstAnimating] = useState(false)
@@ -47,9 +47,9 @@ const NavigationSection = () => {
   const [zoomOutAnimating, setZoomOutAnimating] = useState(false)
   const [zoomResetAnimating, setZoomResetAnimating] = useState(false)
 
-  const [appsAnimating, setAppsAnimating] = useState(false)
-  const [menuAnimating, setMenuAnimating] = useState(false)
-  const [switcherToCloseAnimating, setSwitcherToCloseAnimating] = useState(false)
+  
+  
+
 
 	return (
 		<section className="icon-section">	
@@ -487,36 +487,6 @@ const NavigationSection = () => {
             <icons.ZoomResetMotion
               isAnimating={zoomResetAnimating}
               size={32} />
-          </li>
-          <li
-            className='icon-tile'
-            onMouseEnter={() => setAddToSubtractAnimating(true)}
-            onMouseLeave={() => setAddToSubtractAnimating(false)}
-          >
-            <h3>Add to subtract</h3>
-            <icons.AddToSubtractMotion
-              isAnimating={addToSubtractAnimating}
-              size={32} />
-          </li>
-          <li
-            className='icon-tile'
-            onMouseEnter={() => setMenuToCloseAnimating(true)}
-            onMouseLeave={() => setMenuToCloseAnimating(false)}
-          >
-            <h3>Menu to close</h3>
-            <icons.MenuToCloseMotion
-              isAnimating={menuToCloseAnimating}
-              size={32} />
-          </li>
-          <li
-            className='icon-tile'
-            onMouseEnter={() => setSwitcherToCloseAnimating(true)}
-            onMouseLeave={() => setSwitcherToCloseAnimating(false)}
-          >
-            <h3>Switcher to close</h3>
-            <icons.SwitcherToCloseMotion
-              isAnimating={switcherToCloseAnimating}
-                size={32} />
           </li>
   		  </ul>
 		  </div>
