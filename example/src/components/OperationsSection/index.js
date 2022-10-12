@@ -1,2 +1,2 @@
-import OperationsSection from './NavigationSection';
+import OperationsSection from './OperationsSection';
 export default OperationsSection;
