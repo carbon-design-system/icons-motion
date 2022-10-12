@@ -2,7 +2,7 @@
 name: New icon animation
 about: Open this issue for a specific icon that needs to be animated and added to
   the collection
-title: New icon animation
+title: New icon animation:
 labels: new icon
 assignees: ''
 
