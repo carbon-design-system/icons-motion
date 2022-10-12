@@ -22,6 +22,26 @@ const OperationsSection = () => {
             isAnimating={addAnimating} 
             size={32} />
           </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setBookmarkAnimating(true)}
+            onMouseLeave={() => setBookmarkAnimating(false)}
+          >
+          <h3>Add</h3>
+          <icons.BookmarkMotion 
+            isAnimating={bookmarkAnimating} 
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setExploreAnimating(true)}
+            onMouseLeave={() => setExploreAnimating(false)}
+          >
+          <h3>Add</h3>
+          <icons.ExploreMotion 
+            isAnimating={exploreAnimating} 
+            size={32} />
+          </li>
   		  </ul>
 		  </div>
 		</section>
