@@ -1,0 +1,23 @@
+@keyframes explore-compass {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(360deg);;
+  }
+  100% {
+    transform: rotate(360deg);;
+  }
+}
+
+.ExploreCompass{
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .ExploreCompass {
+    animation: explore-compass 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
