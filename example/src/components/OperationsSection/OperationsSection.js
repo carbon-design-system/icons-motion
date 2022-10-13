@@ -30,7 +30,7 @@ const OperationsSection = () => {
             onMouseEnter={() => setBookmarkFilledAnimating(true)}
             onMouseLeave={() => setBookmarkFilledAnimating(false)}
           >
-          <h3>Bookmark</h3>
+          <h3>Bookmark filled</h3>
           <icons.BookmarkFilledMotion 
             isAnimating={bookmarkFilledAnimating} 
             size={32} />
