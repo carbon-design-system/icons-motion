@@ -30,7 +30,7 @@ const BookmarkMotion = (props) => {
         />
         <path
           className={styles.BookmarkTop}
-          d="M24,0H8C6.9,0,6,0.9,6,2v13c1,0,1,0,2,0V2h16v13c1,0,1,0,2,0V2C26,0.9,25.1,0,24,0z"
+          d="M24,2H8C6.9,2,6,2.9,6,4v13c1,0,1,0,2,0V4h16v13c1,0,1,0,2,0V4C26,2.9,25.1,2,24,2z"
         />
       </svg>
     </div>
