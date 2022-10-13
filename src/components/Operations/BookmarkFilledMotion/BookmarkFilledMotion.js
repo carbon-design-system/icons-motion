@@ -26,11 +26,11 @@ const BookmarkFilledMotion = (props) => {
         <title>bookmark filled</title>
         <path
           className={styles.BookmarkFilledBottom}
-          d="M26,7V28L16,22.9,6,28V7Z"
+          d="M26,4v12H6V4c0-1.1,0.9-2,2-2h16C25.1,2,26,2.9,26,4z"
         />
         <path
           className={styles.BookmarkFilledTop}
-         d="M26,4V16H6V4A2,2,0,0,1,8,2H24A2,2,0,0,1,26,4Z"
+         d="M26,7v21l-10-5.1L6,28V7H26z"
         />
       </svg>
     </div>
