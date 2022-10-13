@@ -1,5 +1,5 @@
 import BookmarkMotion from './BookmarkMotion';
-import BookmarkFilledMotion from './BookmarkFilledMotion';
+import BookmarkAddMotion from './BookmarkAddMotion';
 import ExploreMotion from './ExploreMotion';
 
-export { BookmarkMotion, ExploreMotion };
+export { BookmarkMotion, BookmarkAddMotion, ExploreMotion };
