@@ -16,7 +16,7 @@
     "carbon-motion": "file:..",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
-    "react-router-dom": "^5.0.0",
+    "react-router-dom": "6.4.2",
     "react-scripts": "file:../node_modules/react-scripts",
     "style-loader": "^0.23.1"
   },
