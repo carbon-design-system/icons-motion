@@ -5,7 +5,9 @@ import 'carbon-motion/dist/index.css'
 const OperationsSection = () => {
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
+  const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
+  
  
 	return (
 		<section className="icon-section">	
@@ -14,6 +16,17 @@ const OperationsSection = () => {
           <h2>Operations</h2>
         </div>
   			<ul className='bx--row'>
+        <li
+            className='icon-tile'
+            onMouseEnter={() => setBookmarkAddAnimating(true)}
+            onMouseLeave={() => setBookmarkAddAnimating(false)}
+          >
+          <h3>Bookmark add</h3>
+          <icons.BookmarkAddMotion 
+            isAnimating={bookmarkAddAnimating} 
+            onMouseEnter={() => setBookmarkFilledAnimating(true)}
+            onMouseLeave={() => setBookmarkFilledAnimating(false)}
+          >
   				<li
             className='icon-tile'
             onMouseEnter={() => setBookmarkAnimating(true)}
@@ -24,14 +37,10 @@ const OperationsSection = () => {
             isAnimating={bookmarkAnimating} 
             size={32} />
           </li>
-          <li
-            className='icon-tile'
-            onMouseEnter={() => setBookmarkAddAnimating(true)}
-            onMouseLeave={() => setBookmarkAddAnimating(false)}
-          >
-          <h3>Bookmark add</h3>
-          <icons.BookmarkAddMotion 
-            isAnimating={bookmarkAddAnimating} 
+          
+          <h3>Bookmark filled</h3>
+          <icons.BookmarkFilledMotion 
+            isAnimating={bookmarkFilledAnimating} 
             size={32} />
           </li>
           <li
