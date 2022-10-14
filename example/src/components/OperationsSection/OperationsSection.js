@@ -27,6 +27,7 @@ const OperationsSection = () => {
             onMouseEnter={() => setBookmarkFilledAnimating(true)}
             onMouseLeave={() => setBookmarkFilledAnimating(false)}
           >
+          </li>
   				<li
             className='icon-tile'
             onMouseEnter={() => setBookmarkAnimating(true)}
