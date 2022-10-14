@@ -4,7 +4,9 @@ import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
+  const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
+  
  
 	return (
 		<section className="icon-section">	
@@ -21,6 +23,16 @@ const OperationsSection = () => {
           <h3>Bookmark</h3>
           <icons.BookmarkMotion 
             isAnimating={bookmarkAnimating} 
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setBookmarkFilledAnimating(true)}
+            onMouseLeave={() => setBookmarkFilledAnimating(false)}
+          >
+          <h3>Bookmark filled</h3>
+          <icons.BookmarkFilledMotion 
+            isAnimating={bookmarkFilledAnimating} 
             size={32} />
           </li>
           <li
