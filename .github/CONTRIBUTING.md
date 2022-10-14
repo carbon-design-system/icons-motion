@@ -1,6 +1,6 @@
 # Contribution Guidelines #
 
-We welcome all contributions! Please make sure you adhere to our [Code of Conduct](https://github.com/carbon-design-system/carbon-motion/blob/main/.github/CODE_OF_CONDUCT)!!! 
+We welcome everyone who would like to contribute! Please make sure you adhere to our [Code of Conduct](https://github.com/carbon-design-system/carbon-motion/blob/main/.github/CODE_OF_CONDUCT)!!! 
 
 [All Contributors](https://github.com/all-contributors/all-contributors) table coming soon! 
 

@@ -41,6 +41,10 @@ The component takes two props:
 - `size` is an integer which will set the width and height of the icon in px 
 <br />
 
+## Contributing
+We welcome everyone who would like to contribute! Check out our [Contribution guidelines](https://github.com/carbon-design-system/carbon-motion/blob/main/.github/CONTRIBUTING) to get started, and don't hesitate to reach out if you have any questions! 
+
+[All Contributors](https://github.com/all-contributors/all-contributors) table coming soon!
 
 ## Feedback
 This library is in constant evolution, and we welcome any feedback to help it improve! 
