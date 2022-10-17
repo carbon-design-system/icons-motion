@@ -56,6 +56,16 @@ const OperationsSection = () => {
               isAnimating={exploreAnimating} 
               size={32} />
           </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFlagAnimating(true)}
+            onMouseLeave={() => setFlagAnimating(false)}
+          >
+            <h3>Flag</h3>
+            <icons.FlagMotion 
+              isAnimating={flagAnimating} 
+              size={32} />
+          </li>
   		  </ul>
 		  </div>
 		</section>
