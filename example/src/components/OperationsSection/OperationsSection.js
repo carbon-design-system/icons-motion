@@ -7,6 +7,7 @@ const OperationsSection = () => {
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
+  const [flagAnimating, setFlagAnimating] = useState(false)
   
  
 	return (
