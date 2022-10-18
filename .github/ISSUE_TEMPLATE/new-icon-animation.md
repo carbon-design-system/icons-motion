@@ -23,4 +23,4 @@ assignees: ''
 * optional - is there a specific deadline
 
 **Additional context**
-Add any other context or screenshots about the feature request here.
+* optional - is there anything else we should know?
