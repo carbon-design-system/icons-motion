@@ -4,9 +4,9 @@
   transform: scale(1);
 }
 
-/* Commenting window animation out for now  */
 
-/* .SelectWindow1 {
+/*
+ .SelectWindow1 {
   will-change: transform;
   transform-origin: 16px 16px;
   transform: scale(1);
@@ -26,14 +26,17 @@
   will-change: transform;
   transform-origin: 2px 2px;
   transform: scale(0);
-} */
+} 
+*/
 
 
 .isAnimating {
   .SelectWindowCursor {
     animation: select-window-cursor 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
-  /*.SelectWindow1 {
+  
+/*
+  .SelectWindow1 {
     animation: select-window1 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
   .SelectWindow2 {
@@ -69,7 +72,8 @@
   .SelectWindow12 {
     animation: select-window12 1.5s cubic-bezier(0.2, 0, 0.38, 0.9) ;
   }
-}*/
+}
+*/
 
    
 @keyframes select-window-cursor {
@@ -79,7 +83,8 @@
   100% { transform: scale(1); }
 }
 
-/* @keyframes select-window1 {
+/* 
+  @keyframes select-window1 {
   0% { transform: scale(1); }
   5.9999999999% { transform: scale(1); }
   6% { transform: scale(0); }
@@ -181,4 +186,5 @@
   25.9999999999% { transform: scale(0); }
   26% { transform: scale(1); }
   100% { transform: scale(1); }
-}*/
+}
+*/
