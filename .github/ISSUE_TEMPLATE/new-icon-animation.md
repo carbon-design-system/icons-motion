@@ -1,9 +1,8 @@
 ---
 name: New icon animation
-about: Open this issue for a specific icon that needs to be animated and added to
-  the collection
-title: New icon animation:
-labels: new icon
+about: Add a new animated icon to the package
+title: 'New icon animation: (name of icon)'
+labels: ''
 assignees: ''
 
 ---
