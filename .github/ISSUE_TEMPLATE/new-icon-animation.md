@@ -1,14 +1,13 @@
 ---
 name: New icon animation
-about: Open this issue for a specific icon that needs to be animated and added to
-  the collection
-title: New icon animation:
-labels: new icon
+about: 'Add a new animated icon to the library '
+title: 'New icon animation: (name of icon)'
+labels: ''
 assignees: ''
 
 ---
 
-**Name of icon to be animated(as shown in [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/):**
+**Name of icon to be animated as shown in [Carbon Icon Library](https://carbondesignsystem.com/guidelines/icons/library/):**
 *ex - Overflow menu horizontal*
 
 **Category of icon:**
@@ -22,3 +21,6 @@ assignees: ''
 
 **When is this needed?**
 * optional - is there a specific deadline
+
+**Additional context**
+Add any other context or screenshots about the feature request here.
