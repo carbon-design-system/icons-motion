@@ -8,6 +8,7 @@ const OperationsSection = () => {
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
+  const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   
  
 	return (
@@ -65,6 +66,16 @@ const OperationsSection = () => {
             <h3>Flag</h3>
             <icons.FlagMotion 
               isAnimating={flagAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFlagFilledAnimating(true)}
+            onMouseLeave={() => setFlagFilledAnimating(false)}
+          >
+            <h3>Flag filled</h3>
+            <icons.FlagFilledMotion 
+              isAnimating={flagFilledAnimating} 
               size={32} />
           </li>
   		  </ul>
