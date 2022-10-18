@@ -1,0 +1,89 @@
+.Branch1 {
+  transform-origin: 0% 0%;
+  will-change: transform;
+}
+
+.Branch2,
+.Branch3,
+.Branch4,
+.Branch5 {
+  transform: scale(0);
+  transform-origin: 0% 0%;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .Branch1 {
+    animation: branch1 2s ;
+  }
+  .Branch2 {
+    animation: branch2 2s ;
+  }
+  .Branch3 {
+    animation: branch3 2s ;
+  }
+  .Branch4 {
+    animation: branch4 2s ;
+  }
+  .Branch5 {
+    animation: branch5 2s ;
+  }
+}
+
+@keyframes branch1 {
+  0% { transform: scale(1); }
+  2% { transform: scale(1)}
+  2.1% { transform: scale(0)}
+  22% { transform: scale(0); }
+  22.001% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes branch2 {
+  0% { transform: scale(0); }
+  2% { transform: scale(0); }
+  2.001% { transform: scale(1); }
+  4% { transform: scale(1); }
+  4.001% { transform: scale(0); }
+  20% { transform: scale(0); }
+  20.001% { transform: scale(1); }
+  22% { transform: scale(1); }
+  22.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes branch3 {
+  0% { transform: scale(0); }
+  4% { transform: scale(0); }
+  4.001% { transform: scale(1); }
+  6% { transform: scale(1); }
+  6.001% { transform: scale(0); }
+  18% { transform: scale(0); }
+  18.001% {transform: scale(1); }
+  20% { transform: scale(1); }
+  20.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes branch4 {
+  0% { transform: scale(0); }
+  6% { transform: scale(0); }
+  6.001% { transform: scale(1); }
+  8% { transform: scale(1); }
+  8.001% { transform: scale(0); }
+  16% { transform: scale(0); }
+  16.001% { transform: scale(1); }
+  18% { transform: scale(1); }
+  18.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
+
+@keyframes branch5 {
+  0% { transform: scale(0); }
+  8% { transform: scale(0); }
+  8.001% { transform: scale(1); }
+  16% { transform: scale(1); }
+  16.001% { transform: scale(0); }
+  100% { transform: scale(0); }
+}
