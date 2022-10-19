@@ -6,6 +6,7 @@ const OperationsSection = () => {
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
+  const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   
  
@@ -44,6 +45,16 @@ const OperationsSection = () => {
             <h3>Bookmark Filled</h3>
             <icons.BookmarkFilledMotion 
               isAnimating={bookmarkFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCollapseAllAnimating(true)}
+            onMouseLeave={() => setCollapseAllAnimating(false)}
+          >
+            <h3>Collapse all</h3>
+            <icons.CollapseAllMotion 
+              isAnimating={collapseAllAnimating} 
               size={32} />
           </li>
           <li
