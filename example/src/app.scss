@@ -1,13 +1,14 @@
 .header {
-	width: 100%;
+	width: 68%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 160px 0 32px 0;
+	padding: 80px 0 32px 0;
 	opacity: 0;
 	transform: scale(0.8);
 	will-change: opacity, transform;
 	animation: 0.5s fade-in-and-pop 0.25s forwards linear;
+	
 }
 
 .icon-tile {
