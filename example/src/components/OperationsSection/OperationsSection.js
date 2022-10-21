@@ -4,6 +4,8 @@ import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
   const [arrowShiftDownAnimating, setArrowShiftDownAnimating] = useState(false)
+  const [arrowsHorizontalAnimating, setArrowsHorizontalAnimating] = useState(false)
+  const [arrowsVerticalAnimating, setArrowsVerticalAnimating] = useState(false)
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
@@ -28,6 +30,26 @@ const OperationsSection = () => {
             <h3>Arrow shift down</h3>
             <icons.ArrowShiftDownMotion
               isAnimating={arrowShiftDownAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsHorizontalAnimating(true)}
+            onMouseLeave={() => setArrowsHorizontalAnimating(false)}
+          >
+            <h3>Arrows horizontal</h3>
+            <icons.ArrowsHorizontalMotion 
+              isAnimating={arrowsHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsVerticalAnimating(true)}
+            onMouseLeave={() => setArrowsVerticalAnimating(false)}
+          >
+            <h3>Arrows vertical</h3>
+            <icons.ArrowsVerticalMotion 
+              isAnimating={arrowsVerticalAnimating} 
               size={32} />
           </li>
           <li
