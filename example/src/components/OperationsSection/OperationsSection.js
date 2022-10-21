@@ -13,6 +13,8 @@ const OperationsSection = () => {
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
+  const [layersAnimating, setLayersAnimating] = useState(false)
   
  
 	return (
@@ -120,6 +122,26 @@ const OperationsSection = () => {
             <h3>Flag filled</h3>
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setImageSearchAnimating(true)}
+            onMouseLeave={() => setImageSearchAnimating(false)}
+          >
+            <h3>Image search</h3>
+            <icons.ImageSearchMotion 
+              isAnimating={imageSearchAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLayersAnimating(true)}
+            onMouseLeave={() => setLayersAnimating(false)}
+          >
+            <h3>Layers</h3>
+            <icons.LayersMotion 
+              isAnimating={layersAnimating} 
               size={32} />
           </li>
   		  </ul>
