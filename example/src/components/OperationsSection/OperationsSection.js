@@ -3,6 +3,8 @@ import * as icons from 'carbon-motion'
 import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
+  const [arrowsHorizontalAnimating, setArrowsHorizontalAnimating] = useState(false)
+  const [arrowsVerticalAnimating, setArrowsVerticalAnimating] = useState(false)
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
@@ -19,6 +21,26 @@ const OperationsSection = () => {
           <h2>Operations</h2>
         </div>
   			<ul className='bx--row'>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsHorizontalAnimating(true)}
+            onMouseLeave={() => setArrowsHorizontalAnimating(false)}
+          >
+            <h3>Arrows horizontal</h3>
+            <icons.ArrowsHorizontalMotion 
+              isAnimating={arrowsHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsVerticalAnimating(true)}
+            onMouseLeave={() => setArrowsVerticalAnimating(false)}
+          >
+            <h3>Arrows vertical</h3>
+            <icons.ArrowsVerticalMotion 
+              isAnimating={arrowsVerticalAnimating} 
+              size={32} />
+          </li>
           <li
             className='icon-tile'
             onMouseEnter={() => setBookmarkAnimating(true)}
