@@ -13,6 +13,7 @@ const OperationsSection = () => {
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [loginAnimating, setLoginAnimating] = useState(false)
   
  
 	return (
@@ -120,6 +121,16 @@ const OperationsSection = () => {
             <h3>Flag filled</h3>
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLoginAnimating(true)}
+            onMouseLeave={() => setLoginAnimating(false)}
+          >
+            <h3>Login</h3>
+            <icons.LoginMotion
+              isAnimating={loginAnimating} 
               size={32} />
           </li>
   		  </ul>

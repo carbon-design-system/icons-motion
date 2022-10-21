@@ -1,0 +1,62 @@
+@keyframes login-bottom {
+  0% {
+    transform: translatey(0px);
+  }
+  10% {
+    transform: translatey(-2px);
+  }
+  20% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes login-top {
+  0% {
+    transform: translatey(0px);
+  }
+  10% {
+    transform: translatey(2px);
+  }
+  20% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes login-head {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(3px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateyX(0px);
+  }
+}
+
+.LoginBottom,
+.LoginTop,
+.LoginHead {
+  will-change: transform;
+}
+
+.isAnimating {
+  .LoginBottom {
+    animation: login-bottom infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .LoginTop {
+    animation: login-top infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .LoginHead {
+    animation: login-head infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
