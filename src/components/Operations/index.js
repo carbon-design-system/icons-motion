@@ -6,8 +6,9 @@ import ExploreMotion from './ExploreMotion';
 import FlagMotion from './FlagMotion';
 import FlagFilledMotion from './FlagFilledMotion';
 import ImageSearchMotion from './ImageSearchMotion';
+import LayersMotion from './LayersMotion';
 
-export { BookmarkMotion, BookmarkAddMotion, BookmarkFilledMotion, CollapseAllMotion, ExploreMotion, FlagMotion, FlagFilledMotion, ImageSearchMotion };
+export { BookmarkMotion, BookmarkAddMotion, BookmarkFilledMotion, CollapseAllMotion, ExploreMotion, FlagMotion, FlagFilledMotion, ImageSearchMotion, LayersMotion };
 
 
 
