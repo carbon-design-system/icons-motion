@@ -34,11 +34,11 @@ const LoginMotion = (props) => {
         />
         <path
           className={styles.LoginShaft}
-          d="M18.2,17H4v-2h14.2V17z"
+          d="M17.2,17H3v-2h14.2V17z"
         />
          <path
           className={styles.LoginHead}
-          d="M14.6,20.6l3.6-3.6H4v-2h14.2l-3.6-3.6L16,10l6,6l-6,6L14.6,20.6z"
+          d="M13.6,20.6l3.6-3.6H3v-2h14.2l-3.6-3.6L15,10l6,6l-6,6L13.6,20.6z"
         />
       </svg>
     </div>
