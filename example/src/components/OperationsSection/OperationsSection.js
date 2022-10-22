@@ -15,6 +15,7 @@ const OperationsSection = () => {
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   const [loginAnimating, setLoginAnimating] = useState(false)
   const [logoutAnimating, setLogoutAnimating] = useState(false)
+  const [sendAnimating, setSendAnimating] = useState(false)
   
  
 	return (
@@ -142,6 +143,16 @@ const OperationsSection = () => {
             <h3>Logout</h3>
             <icons.LogoutMotion
               isAnimating={logoutAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendAnimating(true)}
+            onMouseLeave={() => setSendAnimating(false)}
+          >
+            <h3>Send</h3>
+            <icons.SendMotion
+              isAnimating={sendAnimating} 
               size={32} />
           </li>
   		  </ul>
