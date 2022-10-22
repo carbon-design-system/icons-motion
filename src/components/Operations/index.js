@@ -10,8 +10,9 @@ import FlagMotion from './FlagMotion';
 import FlagFilledMotion from './FlagFilledMotion';
 import LoginMotion from './LoginMotion';
 import LogoutMotion from './LogoutMotion';
+import SendMotion from './SendMotion';
 
-export { ArrowShiftDownMotion, ArrowsHorizontalMotion, ArrowsVerticalMotion, BookmarkMotion, BookmarkAddMotion, BookmarkFilledMotion, CollapseAllMotion, ExploreMotion, FlagMotion, FlagFilledMotion, LoginMotion, LogoutMotion };
+export { ArrowShiftDownMotion, ArrowsHorizontalMotion, ArrowsVerticalMotion, BookmarkMotion, BookmarkAddMotion, BookmarkFilledMotion, CollapseAllMotion, ExploreMotion, FlagMotion, FlagFilledMotion, LoginMotion, LogoutMotion, SendMotion };
 
 
 
