@@ -4,6 +4,7 @@ import ArrowsVerticalMotion from './ArrowsVerticalMotion';
 import BookmarkMotion from './BookmarkMotion';
 import BookmarkAddMotion from './BookmarkAddMotion';
 import BookmarkFilledMotion from './BookmarkFilledMotion';
+import ChatLaunchMotion from './ChatLaunchMotion';
 import CollapseAllMotion from './CollapseAllMotion';
 import ExploreMotion from './ExploreMotion';
 import FlagMotion from './FlagMotion';
@@ -12,7 +13,7 @@ import LoginMotion from './LoginMotion';
 import LogoutMotion from './LogoutMotion';
 import SendMotion from './SendMotion';
 
-export { ArrowShiftDownMotion, ArrowsHorizontalMotion, ArrowsVerticalMotion, BookmarkMotion, BookmarkAddMotion, BookmarkFilledMotion, CollapseAllMotion, ExploreMotion, FlagMotion, FlagFilledMotion, LoginMotion, LogoutMotion, SendMotion };
+export { ArrowShiftDownMotion, ArrowsHorizontalMotion, ArrowsVerticalMotion, BookmarkMotion, BookmarkAddMotion, BookmarkFilledMotion, ChatLaunchMotion, CollapseAllMotion, ExploreMotion, FlagMotion, FlagFilledMotion, LoginMotion, LogoutMotion, SendMotion };
 
 
 
