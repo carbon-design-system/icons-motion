@@ -7,6 +7,8 @@ const OperationsSection = () => {
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
+  const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
+  const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
   
  
 	return (
@@ -54,6 +56,26 @@ const OperationsSection = () => {
             <h3>Explore</h3>
             <icons.ExploreMotion 
               isAnimating={exploreAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragHorizontalAnimating(true)}
+            onMouseLeave={() => setDragHorizontalAnimating(false)}
+          >
+            <h3>Drag horizontal</h3>
+            <icons.DragHorizontal 
+              isAnimating={dragHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragVerticalAnimating(true)}
+            onMouseLeave={() => setDragVerticalAnimating(false)}
+          >
+            <h3>Drag vertical</h3>
+            <icons.DragVertical 
+              isAnimating={dragVerticalAnimating} 
               size={32} />
           </li>
   		  </ul>
