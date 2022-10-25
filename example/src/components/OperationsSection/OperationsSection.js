@@ -13,6 +13,7 @@ const OperationsSection = () => {
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   
  
 	return (
@@ -121,6 +122,17 @@ const OperationsSection = () => {
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
               size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setJumpLinkAnimating(true)}
+            onMouseLeave={() => setJumpLinkAnimating(false)}
+          >
+            <h3>Jump Link</h3>
+            <icons.JumpLinkMotion
+              isAnimating={jumpLinkAnimating}
+              size={32}
+            />
           </li>
   		  </ul>
 		  </div>
