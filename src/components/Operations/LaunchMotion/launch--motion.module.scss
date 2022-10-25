@@ -1,12 +1,12 @@
 @keyframes launch {
   0% {
-    transform: translate(-2px, 2px);
-  }
-  10% {
     transform: translate(2px, -2px);
   }
-  20% {
+  10% {
     transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(2px, -2px);
   }
   100% {
     transform: translate(0px, 0px);
