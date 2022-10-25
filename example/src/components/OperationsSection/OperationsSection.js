@@ -3,12 +3,18 @@ import * as icons from 'carbon-motion'
 import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
+  const [arrowShiftDownAnimating, setArrowShiftDownAnimating] = useState(false)
+  const [arrowsHorizontalAnimating, setArrowsHorizontalAnimating] = useState(false)
+  const [arrowsVerticalAnimating, setArrowsVerticalAnimating] = useState(false)
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
+  const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
+  const [flagAnimating, setFlagAnimating] = useState(false)
+  const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   
  
 	return (
@@ -18,6 +24,36 @@ const OperationsSection = () => {
           <h2>Operations</h2>
         </div>
   			<ul className='bx--row'>
+        <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowShiftDownAnimating(true)}
+            onMouseLeave={() => setArrowShiftDownAnimating(false)}
+          >
+            <h3>Arrow shift down</h3>
+            <icons.ArrowShiftDownMotion
+              isAnimating={arrowShiftDownAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsHorizontalAnimating(true)}
+            onMouseLeave={() => setArrowsHorizontalAnimating(false)}
+          >
+            <h3>Arrows horizontal</h3>
+            <icons.ArrowsHorizontalMotion 
+              isAnimating={arrowsHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsVerticalAnimating(true)}
+            onMouseLeave={() => setArrowsVerticalAnimating(false)}
+          >
+            <h3>Arrows vertical</h3>
+            <icons.ArrowsVerticalMotion 
+              isAnimating={arrowsVerticalAnimating} 
+              size={32} />
+          </li>
           <li
             className='icon-tile'
             onMouseEnter={() => setBookmarkAnimating(true)}
@@ -50,6 +86,16 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setCollapseAllAnimating(true)}
+            onMouseLeave={() => setCollapseAllAnimating(false)}
+          >
+            <h3>Collapse all</h3>
+            <icons.CollapseAllMotion 
+              isAnimating={collapseAllAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setExploreAnimating(true)}
             onMouseLeave={() => setExploreAnimating(false)}
           >
@@ -65,8 +111,8 @@ const OperationsSection = () => {
           >
             <h3>Drag horizontal</h3>
             <icons.DragHorizontal 
-              isAnimating={dragHorizontalAnimating} 
-              size={32} />
+              isAnimating={dragHorizontalAnimating}
+            size={32} />
           </li>
           <li
             className='icon-tile'
@@ -76,6 +122,26 @@ const OperationsSection = () => {
             <h3>Drag vertical</h3>
             <icons.DragVertical 
               isAnimating={dragVerticalAnimating} 
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFlagAnimating(true)}
+            onMouseLeave={() => setFlagAnimating(false)}
+          >
+            <h3>Flag</h3>
+            <icons.FlagMotion 
+              isAnimating={flagAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFlagFilledAnimating(true)}
+            onMouseLeave={() => setFlagFilledAnimating(false)}
+          >
+            <h3>Flag filled</h3>
+            <icons.FlagFilledMotion 
+              isAnimating={flagFilledAnimating} 
               size={32} />
           </li>
   		  </ul>

@@ -1,0 +1,25 @@
+@keyframes arrow-shift-down-head {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(4px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.ArrowShiftDownHead {
+  will-change: transform;
+}
+
+.isAnimating {
+  .ArrowShiftDownHead {
+    animation: arrow-shift-down-head infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}

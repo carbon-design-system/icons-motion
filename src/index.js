@@ -48,10 +48,16 @@ export {
 } from './components/Navigation'
 
 export {
+  ArrowShiftDownMotion, 
+  ArrowsHorizontalMotion, 
+  ArrowsVerticalMotion,
   BookmarkMotion,
   BookmarkAddMotion,
   BookmarkFilledMotion,
+  CollapseAllMotion,
   ExploreMotion,
   DragHorizontal,
-  DragVertical
+  DragVertical,
+  FlagMotion, 
+  FlagFilledMotion
 } from './components/Operations'
