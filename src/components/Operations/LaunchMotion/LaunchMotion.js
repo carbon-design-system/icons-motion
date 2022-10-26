@@ -20,8 +20,9 @@ useEffect(() => {
     <div ref={iconRef} className={`${shouldAnimate}`}>
       <svg style={iconStyles} viewBox='0 0 32 32' className={styles.LaunchMotion}>
         <title>Launch</title>
-        <path  d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"/>
-        <polygon className={styles.LaunchTip}  points="20 2 20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2"/>
+        <path  d="M24.6,6L16,14.6l1.4,1.4L26,7.4L24.6,6z M24,30H4c-1.1,0-2-0.9-2-2V8c0-1.1,0.9-2,2-2h10v2H4v20h20V18h2v10
+		C26,29.1,25.1,30,24,30z"/>
+      <path className={styles.LaunchTip} d="M18,4v2h6.6L16,14.6l1.4,1.4L26,7.4V14h2V4H18z" />
       </svg>
     </div>
   )
