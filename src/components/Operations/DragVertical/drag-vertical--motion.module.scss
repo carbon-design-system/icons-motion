@@ -2,11 +2,11 @@
   0% {
     transform: translateY(0px);
   }
-  25% {
-    transform: translateY(1px);
+ 10% {
+    transform: translateY(-2px);
   }
-  65% {
-    transform: translateY(-1px);
+ 20% {
+    transform: translateY(0px);
   }
   100% {
     transform: translateY(0px);
@@ -17,11 +17,11 @@
   0% {
     transform: translateY(0px);
   }
-  25% {
-    transform: translateY(-1px);
+  10% {
+    transform: translateY(2px);
   }
-  65% {
-    transform: translateY(1px);
+  20% {
+    transform: translateY(0px);
   }
   100% {
     transform: translateY(0px);
@@ -35,10 +35,10 @@
 
 .isAnimating {
   .DragVerticalTop {
-    animation: drag-horizontal-top 1.25s cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: drag-horizontal-top 2s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   .DragVerticalBottom {
-    animation: drag-horizontal-bottom 1.25s cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation: drag-horizontal-bottom 2s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }
