@@ -3,7 +3,11 @@ import * as icons from 'carbon-motion'
 import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
+
   const [addCommentAnimating, setAddCommentAnimating] = useState(false)
+  const [arrowShiftDownAnimating, setArrowShiftDownAnimating] = useState(false)
+  const [arrowsHorizontalAnimating, setArrowsHorizontalAnimating] = useState(false)
+  const [arrowsVerticalAnimating, setArrowsVerticalAnimating] = useState(false)
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
@@ -11,6 +15,8 @@ const OperationsSection = () => {
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
+  const [launchAnimating, setLaunchAnimating] = useState(false)
   
  
 	return (
@@ -28,6 +34,36 @@ const OperationsSection = () => {
             <h3>Add comment</h3>
             <icons.AddCommentMotion 
               isAnimating={addCommentAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowShiftDownAnimating(true)}
+            onMouseLeave={() => setArrowShiftDownAnimating(false)}
+          >
+            <h3>Arrow shift down</h3>
+            <icons.ArrowShiftDownMotion
+              isAnimating={arrowShiftDownAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsHorizontalAnimating(true)}
+            onMouseLeave={() => setArrowsHorizontalAnimating(false)}
+          >
+            <h3>Arrows horizontal</h3>
+            <icons.ArrowsHorizontalMotion 
+              isAnimating={arrowsHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setArrowsVerticalAnimating(true)}
+            onMouseLeave={() => setArrowsVerticalAnimating(false)}
+          >
+            <h3>Arrows vertical</h3>
+            <icons.ArrowsVerticalMotion 
+              isAnimating={arrowsVerticalAnimating} 
               size={32} />
           </li>
           <li
@@ -99,6 +135,28 @@ const OperationsSection = () => {
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
               size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setJumpLinkAnimating(true)}
+            onMouseLeave={() => setJumpLinkAnimating(false)}
+          >
+            <h3>Jump Link</h3>
+            <icons.JumpLinkMotion
+              isAnimating={jumpLinkAnimating}
+              size={32}
+            />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLaunchAnimating(true)}
+            onMouseLeave={() => setLaunchAnimating(false)}
+          >
+            <h3>Launch</h3>
+            <icons.LaunchMotion
+              isAnimating={launchAnimating}
+              size={32}
+            />
           </li>
   		  </ul>
 		  </div>
