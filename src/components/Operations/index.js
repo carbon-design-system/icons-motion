@@ -10,6 +10,8 @@ import CollapseAllMotion from './CollapseAllMotion'
 import ExploreMotion from './ExploreMotion'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
+import JumpLinkMotion from './JumpLinkMotion'
+import LaunchMotion from './LaunchMotion'
 
 export {
   ArrowShiftDownMotion,
@@ -23,5 +25,7 @@ export {
   CollapseAllMotion,
   ExploreMotion,
   FlagMotion,
-  FlagFilledMotion
+  FlagFilledMotion,
+  JumpLinkMotion,
+  LaunchMotion
 }

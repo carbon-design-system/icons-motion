@@ -59,5 +59,7 @@ export {
   CollapseAllMotion,
   ExploreMotion,
   FlagMotion,
-  FlagFilledMotion
+  FlagFilledMotion,
+  JumpLinkMotion,
+  LaunchMotion
 } from './components/Operations'
