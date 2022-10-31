@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import styles from './drag-vertical--motion.module.scss'
 
-const DragVertical = (props) => {
+const DragVerticalMotion = (props) => {
   const iconRef = useRef(null)
   const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
@@ -33,4 +33,4 @@ const DragVertical = (props) => {
   )
 }
 
-export default DragVertical
+export default DragVerticalMotion
