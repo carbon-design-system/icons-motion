@@ -122,7 +122,7 @@ const OperationsSection = () => {
             onMouseLeave={() => setDragHorizontalAnimating(false)}
           >
             <h3>Drag horizontal</h3>
-            <icons.DragHorizontal 
+            <icons.DragHorizontalMotion 
               isAnimating={dragHorizontalAnimating}
             size={32} />
           </li>
@@ -132,7 +132,7 @@ const OperationsSection = () => {
             onMouseLeave={() => setDragVerticalAnimating(false)}
           >
             <h3>Drag vertical</h3>
-            <icons.DragVertical 
+            <icons.DragVerticalMotion 
               isAnimating={dragVerticalAnimating} 
             size={32} />
           </li>
