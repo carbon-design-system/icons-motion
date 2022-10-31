@@ -9,6 +9,7 @@ const OperationsSection = () => {
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
+  const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
@@ -16,7 +17,6 @@ const OperationsSection = () => {
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
   
- 
 	return (
 		<section className="icon-section">	
 			<div className='bx--grid'>
@@ -82,6 +82,16 @@ const OperationsSection = () => {
             <h3>Bookmark Filled</h3>
             <icons.BookmarkFilledMotion 
               isAnimating={bookmarkFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortAnimating(true)}
+            onMouseLeave={() => setCaretSortAnimating(false)}
+          >
+            <h3>Caret sort</h3>
+            <icons.CaretSortMotion 
+              isAnimating={caretSortAnimating} 
               size={32} />
           </li>
           <li
