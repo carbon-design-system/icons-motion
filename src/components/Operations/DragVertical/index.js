@@ -1,2 +1,2 @@
-import DragVertical from './DragVerticalMotion'
+import DragVerticalMotion from './DragVerticalMotion'
 export default DragVerticalMotion
