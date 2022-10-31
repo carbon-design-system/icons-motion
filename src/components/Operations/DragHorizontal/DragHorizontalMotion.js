@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import styles from './drag-horizontal--motion.module.scss'
 
-const DragHorizontal = (props) => {
+const DragHorizontalMotion = (props) => {
   const iconRef = useRef(null)
   const [isAnimating, setIsAnimating] = useState(props.isAnimating)
 
@@ -33,4 +33,4 @@ const DragHorizontal = (props) => {
   )
 }
 
-export default DragHorizontal
+export default DragHorizontalMotion
