@@ -5,6 +5,8 @@ import BookmarkMotion from './BookmarkMotion'
 import BookmarkAddMotion from './BookmarkAddMotion'
 import BookmarkFilledMotion from './BookmarkFilledMotion'
 import CaretSortMotion from './CaretSortMotion'
+import CaretSortDownMotion from './CaretSortDownMotion'
+import CaretSortUpMotion from './CaretSortUpMotion'
 import CollapseAllMotion from './CollapseAllMotion'
 import ExploreMotion from './ExploreMotion'
 import FlagMotion from './FlagMotion'
@@ -20,6 +22,8 @@ export {
   BookmarkAddMotion,
   BookmarkFilledMotion,
   CaretSortMotion,
+  CaretSortDownMotion,
+  CaretSortUpMotion,
   CollapseAllMotion,
   ExploreMotion,
   FlagMotion,
