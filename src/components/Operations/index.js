@@ -4,6 +4,7 @@ import ArrowsVerticalMotion from './ArrowsVerticalMotion'
 import BookmarkMotion from './BookmarkMotion'
 import BookmarkAddMotion from './BookmarkAddMotion'
 import BookmarkFilledMotion from './BookmarkFilledMotion'
+import CaretSortMotion from './CaretSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
 import ExploreMotion from './ExploreMotion'
 import FlagMotion from './FlagMotion'
@@ -18,6 +19,7 @@ export {
   BookmarkMotion,
   BookmarkAddMotion,
   BookmarkFilledMotion,
+  CaretSortMotion,
   CollapseAllMotion,
   ExploreMotion,
   FlagMotion,
