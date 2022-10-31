@@ -24,6 +24,8 @@ export {
   CaretSortMotion,
   CollapseAllMotion,
   ExploreMotion,
+  DragHorizontalMotion,
+  DragVerticalMotion,
   FlagMotion,
   FlagFilledMotion,
   JumpLinkMotion,
