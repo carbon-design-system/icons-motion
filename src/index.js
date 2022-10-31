@@ -59,7 +59,7 @@ export {
   DragHorizontal,
   DragVertical,
   FlagMotion, 
-  FlagFilledMotion
+  FlagFilledMotion,
   CaretSortMotion,
   CollapseAllMotion,
   ExploreMotion,
