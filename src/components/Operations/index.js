@@ -1,27 +1,31 @@
+import ArrowShiftDownMotion from './ArrowShiftDownMotion'
+import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
+import ArrowsVerticalMotion from './ArrowsVerticalMotion'
 import BookmarkMotion from './BookmarkMotion'
 import BookmarkAddMotion from './BookmarkAddMotion'
 import BookmarkFilledMotion from './BookmarkFilledMotion'
+import CaretSortMotion from './CaretSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
 import ExploreMotion from './ExploreMotion'
 import DragHorizontal from './DragHorizontal'
 import DragVertical from './DragVertical'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
-import ArrowShiftDownMotion from './ArrowShiftDownMotion'
-import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
-import ArrowsVerticalMotion from './ArrowsVerticalMotion'
+import JumpLinkMotion from './JumpLinkMotion'
+import LaunchMotion from './LaunchMotion'
 
 export {
+  ArrowShiftDownMotion,
+  ArrowsHorizontalMotion,
+  ArrowsVerticalMotion,
   BookmarkMotion,
   BookmarkAddMotion,
   BookmarkFilledMotion,
-  ExploreMotion,
-  DragHorizontal,
-  DragVertical,
-  FlagMotion, 
-  FlagFilledMotion,
+  CaretSortMotion,
   CollapseAllMotion,
-  ArrowShiftDownMotion, 
-  ArrowsHorizontalMotion, 
-  ArrowsVerticalMotion
+  ExploreMotion,
+  FlagMotion,
+  FlagFilledMotion,
+  JumpLinkMotion,
+  LaunchMotion
 }

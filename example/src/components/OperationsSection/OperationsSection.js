@@ -9,14 +9,16 @@ const OperationsSection = () => {
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
+  const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
+  const [launchAnimating, setLaunchAnimating] = useState(false)
   
- 
 	return (
 		<section className="icon-section">	
 			<div className='bx--grid'>
@@ -86,6 +88,16 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setCaretSortAnimating(true)}
+            onMouseLeave={() => setCaretSortAnimating(false)}
+          >
+            <h3>Caret sort</h3>
+            <icons.CaretSortMotion 
+              isAnimating={caretSortAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setCollapseAllAnimating(true)}
             onMouseLeave={() => setCollapseAllAnimating(false)}
           >
@@ -143,6 +155,28 @@ const OperationsSection = () => {
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
               size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setJumpLinkAnimating(true)}
+            onMouseLeave={() => setJumpLinkAnimating(false)}
+          >
+            <h3>Jump Link</h3>
+            <icons.JumpLinkMotion
+              isAnimating={jumpLinkAnimating}
+              size={32}
+            />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLaunchAnimating(true)}
+            onMouseLeave={() => setLaunchAnimating(false)}
+          >
+            <h3>Launch</h3>
+            <icons.LaunchMotion
+              isAnimating={launchAnimating}
+              size={32}
+            />
           </li>
   		  </ul>
 		  </div>
