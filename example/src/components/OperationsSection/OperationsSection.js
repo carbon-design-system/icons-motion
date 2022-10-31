@@ -14,7 +14,8 @@ const OperationsSection = () => {
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
- 
+  const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
+  const [launchAnimating, setLaunchAnimating] = useState(false)
   
 	return (
 		<section className="icon-section">	
@@ -132,6 +133,28 @@ const OperationsSection = () => {
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
               size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setJumpLinkAnimating(true)}
+            onMouseLeave={() => setJumpLinkAnimating(false)}
+          >
+            <h3>Jump Link</h3>
+            <icons.JumpLinkMotion
+              isAnimating={jumpLinkAnimating}
+              size={32}
+            />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLaunchAnimating(true)}
+            onMouseLeave={() => setLaunchAnimating(false)}
+          >
+            <h3>Launch</h3>
+            <icons.LaunchMotion
+              isAnimating={launchAnimating}
+              size={32}
+            />
           </li>
   		  </ul>
 		  </div>
