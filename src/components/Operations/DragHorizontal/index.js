@@ -1,2 +1,2 @@
-import DragHorizontal from './DragHorizontal'
-export default DragHorizontal
+import DragHorizontalMotion from './DragHorizontalMotion'
+export default DragHorizontalMotion
