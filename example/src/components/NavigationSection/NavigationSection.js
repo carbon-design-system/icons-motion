@@ -2,54 +2,53 @@ import React, { useState } from 'react'
 import * as icons from 'carbon-motion'
 import 'carbon-motion/dist/index.css'
 
-const NavigationSection = () => {
-  const [addAnimating, setAddAnimating] = useState(false)
-  const [addAltAnimating, setAddAltAnimating] = useState(false)
-  const [addFilledAnimating, setAddFilledAnimating] = useState(false)
-  const [appsAnimating, setAppsAnimating] = useState(false)
-  const [arrowUpAnimating, setArrowUpAnimating] = useState(false)
-  const [arrowDownAnimating, setArrowDownAnimating] = useState(false)
-  const [arrowDownLeftAnimating, setArrowDownLeftAnimating] = useState(false)
-  const [arrowDownRightAnimating, setArrowDownRightAnimating] = useState(false)
-  const [arrowLeftAnimating, setArrowLeftAnimating] = useState(false)
-  const [arrowRightAnimating, setArrowRightAnimating] = useState(false)
-  const [arrowUpLeftAnimating, setArrowUpLeftAnimating] = useState(false)
-  const [arrowUpRightAnimating, setArrowUpRightAnimating] = useState(false)
-  const [chevronDownAnimating, setChevronDownAnimating] = useState(false)
-  const [chevronUpAnimating, setChevronUpAnimating] = useState(false)
-  const [chevronLeftAnimating, setChevronLeftAnimating] = useState(false)
-  const [chevronRightAnimating, setChevronRightAnimating] = useState(false)
-  const [caretDownAnimating, setCaretDownAnimating] = useState(false)
-  const [caretUpAnimating, setCaretUpAnimating] = useState(false)
-  const [caretLeftAnimating, setCaretLeftAnimating] = useState(false)
-  const [caretRightAnimating, setCaretRightAnimating] = useState(false)
-  const [closeAnimating, setCloseAnimating] = useState(false)
-  const [closeOutlineAnimating, setCloseOutlineAnimating] = useState(false)
-  const [closeFilledAnimating, setCloseFilledAnimating] = useState(false)
-  const [subtractAnimating, setSubtractAnimating] = useState(false)
-  const [subtractAltAnimating, setSubtractAltAnimating] = useState(false)
-  const [downToBottomAnimating, setDownToBottomAnimating] = useState(false)
-  const [draggableAnimating, setDraggableAnimating] = useState(false)
-  const [homeAnimating, setHomeAnimating] = useState(false)
-  const [menuAnimating, setMenuAnimating] = useState(false)
-  const [overflowMenuHorizontalAnimating, setOverflowMenuHorizontalAnimating] = useState(false)
-  const [overflowMenuVerticalAnimating, setOverflowMenuVerticalAnimating] = useState(false)
-  const [pageFirstAnimating, setPageFirstAnimating] = useState(false)
-  const [pageLastAnimating, setPageLastAnimating] = useState(false)
-  const [selectWindowAnimating, setSelectWindowAnimating] = useState(false)
-  const [switcherAnimating, setSwitcherAnimating] = useState(false)
-  const [upToTopAnimating, setUpToTopAnimating] = useState(false)
-  const [zoomInAreaAnimating, setZoomInAreaAnimating] = useState(false)
-  const [zoomAreaAnimating, setZoomAreaAnimating] = useState(false)
-  const [zoomOutAreaAnimating, setZoomOutAreaAnimating] = useState(false)
-  const [zoomFitAnimating, setZoomFitAnimating] = useState(false)
-  const [zoomInAnimating, setZoomInAnimating] = useState(false)
-  const [zoomOutAnimating, setZoomOutAnimating] = useState(false)
-  const [zoomResetAnimating, setZoomResetAnimating] = useState(false)
+const NavigationSection = (props) => {
+  // const [addAnimating, setAddAnimating] = useState(false)
+  // const [addAltAnimating, setAddAltAnimating] = useState(false)
+  // const [addFilledAnimating, setAddFilledAnimating] = useState(false)
+  // const [appsAnimating, setAppsAnimating] = useState(false)
+  // const [arrowUpAnimating, setArrowUpAnimating] = useState(false)
+  // const [arrowDownAnimating, setArrowDownAnimating] = useState(false)
+  // const [arrowDownLeftAnimating, setArrowDownLeftAnimating] = useState(false)
+  // const [arrowDownRightAnimating, setArrowDownRightAnimating] = useState(false)
+  // const [arrowLeftAnimating, setArrowLeftAnimating] = useState(false)
+  // const [arrowRightAnimating, setArrowRightAnimating] = useState(false)
+  // const [arrowUpLeftAnimating, setArrowUpLeftAnimating] = useState(false)
+  // const [arrowUpRightAnimating, setArrowUpRightAnimating] = useState(false)
+  // const [chevronDownAnimating, setChevronDownAnimating] = useState(false)
+  // const [chevronUpAnimating, setChevronUpAnimating] = useState(false)
+  // const [chevronLeftAnimating, setChevronLeftAnimating] = useState(false)
+  // const [chevronRightAnimating, setChevronRightAnimating] = useState(false)
+  // const [caretDownAnimating, setCaretDownAnimating] = useState(false)
+  // const [caretUpAnimating, setCaretUpAnimating] = useState(false)
+  // const [caretLeftAnimating, setCaretLeftAnimating] = useState(false)
+  // const [caretRightAnimating, setCaretRightAnimating] = useState(false)
+  // const [closeAnimating, setCloseAnimating] = useState(false)
+  // const [closeOutlineAnimating, setCloseOutlineAnimating] = useState(false)
+  // const [closeFilledAnimating, setCloseFilledAnimating] = useState(false)
+  // const [subtractAnimating, setSubtractAnimating] = useState(false)
+  // const [subtractAltAnimating, setSubtractAltAnimating] = useState(false)
+  // const [downToBottomAnimating, setDownToBottomAnimating] = useState(false)
+  // const [draggableAnimating, setDraggableAnimating] = useState(false)
+  // const [homeAnimating, setHomeAnimating] = useState(false)
+  // const [menuAnimating, setMenuAnimating] = useState(false)
+  // const [overflowMenuHorizontalAnimating, setOverflowMenuHorizontalAnimating] = useState(false)
+  // const [overflowMenuVerticalAnimating, setOverflowMenuVerticalAnimating] = useState(false)
+  // const [pageFirstAnimating, setPageFirstAnimating] = useState(false)
+  // const [pageLastAnimating, setPageLastAnimating] = useState(false)
+  // const [selectWindowAnimating, setSelectWindowAnimating] = useState(false)
+  // const [switcherAnimating, setSwitcherAnimating] = useState(false)
+  // const [upToTopAnimating, setUpToTopAnimating] = useState(false)
+  // const [zoomInAreaAnimating, setZoomInAreaAnimating] = useState(false)
+  // const [zoomAreaAnimating, setZoomAreaAnimating] = useState(false)
+  // const [zoomOutAreaAnimating, setZoomOutAreaAnimating] = useState(false)
+  // const [zoomFitAnimating, setZoomFitAnimating] = useState(false)
+  // const [zoomInAnimating, setZoomInAnimating] = useState(false)
+  // const [zoomOutAnimating, setZoomOutAnimating] = useState(false)
+  // const [zoomResetAnimating, setZoomResetAnimating] = useState(false)
 
-  
-  
-
+  const [addAltTestAnimating, setAddAltTestAnimating] = useState(false)
+  const [addAltTestTwoAnimating, setAddAltTestTwoAnimating] = useState(false)
 
 	return (
 		<section className="icon-section">	
@@ -58,7 +57,37 @@ const NavigationSection = () => {
           <h2>Navigation</h2>
         </div>
   			<ul className='bx--row'>
-  				<li
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setAddAltTestAnimating(true)}
+            onMouseLeave={() => setAddAltTestAnimating(false)}
+          >
+            <h3>Add alt test</h3>
+            <icons.AddAltTest 
+              isAnimating={addAltTestAnimating} 
+              size={32}/>
+          </li>
+           <li
+            className='icon-tile'
+            onMouseEnter={() => setAddAltTestTwoAnimating(true)}
+            onMouseLeave={() => setAddAltTestTwoAnimating(false)}
+          >
+            <h3>Add alt test</h3>
+            <icons.AddAltTest 
+              isAnimating={addAltTestTwoAnimating} 
+              size={32}/>
+          </li>
+  			{/*	<li
+            className='icon-tile'
+            onMouseEnter={() => setAddAnimating(true)}
+            onMouseLeave={() => setAddAnimating(false)}
+          >
+            <h3>Add</h3>
+            <icons.AddMotion 
+              isAnimating={addAnimating} 
+              size={32} />
+          </li>
+          <li
             className='icon-tile'
             onMouseEnter={() => setAddAnimating(true)}
             onMouseLeave={() => setAddAnimating(false)}
@@ -67,7 +96,7 @@ const NavigationSection = () => {
           <icons.AddMotion 
             isAnimating={addAnimating} 
             size={32} />
-          </li>
+          </li>          
           <li
             className='icon-tile'
             onMouseEnter={() => setAddAltAnimating(true)}
@@ -487,7 +516,7 @@ const NavigationSection = () => {
             <icons.ZoomResetMotion
               isAnimating={zoomResetAnimating}
               size={32} />
-          </li>
+          </li>*/}
   		  </ul>
 		  </div>
 		</section>

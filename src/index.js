@@ -44,7 +44,11 @@ export {
   ZoomFitMotion,
   ZoomInMotion,
   ZoomOutMotion,
-  ZoomResetMotion
+  ZoomResetMotion,
+
+
+  AddAltTest
+  
 } from './components/Navigation'
 
 export {

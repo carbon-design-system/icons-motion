@@ -41,5 +41,7 @@ import ZoomInMotion from './ZoomInMotion';
 import ZoomOutMotion from './ZoomOutMotion';
 import ZoomResetMotion from './ZoomResetMotion';
 
+import AddAltTest from './AddAltTest';
 
-export { AddMotion, AddAltMotion, AddFilledMotion, AppsMotion, ArrowUpMotion, ArrowDownMotion, ArrowDownLeftMotion, ArrowDownRightMotion, ArrowLeftMotion, ArrowRightMotion, ArrowUpLeftMotion, ArrowUpRightMotion, ChevronDownMotion, ChevronUpMotion, ChevronLeftMotion, ChevronRightMotion, CaretDownMotion, CaretUpMotion, CaretLeftMotion, CaretRightMotion, CloseMotion, CloseOutlineMotion, CloseFilledMotion, DownToBottomMotion, DraggableMotion, HomeMotion, MenuMotion, OverflowMenuHorizontalMotion, OverflowMenuVerticalMotion, PageFirstMotion, PageLastMotion,SubtractMotion, SubtractAltMotion, SelectWindowMotion, SwitcherMotion,  UpToTopMotion, ZoomInAreaMotion, ZoomAreaMotion, ZoomOutAreaMotion, ZoomFitMotion, ZoomInMotion, ZoomOutMotion, ZoomResetMotion };
+
+export { AddAltTest, AddMotion, AddAltMotion, AddFilledMotion, AppsMotion, ArrowUpMotion, ArrowDownMotion, ArrowDownLeftMotion, ArrowDownRightMotion, ArrowLeftMotion, ArrowRightMotion, ArrowUpLeftMotion, ArrowUpRightMotion, ChevronDownMotion, ChevronUpMotion, ChevronLeftMotion, ChevronRightMotion, CaretDownMotion, CaretUpMotion, CaretLeftMotion, CaretRightMotion, CloseMotion, CloseOutlineMotion, CloseFilledMotion, DownToBottomMotion, DraggableMotion, HomeMotion, MenuMotion, OverflowMenuHorizontalMotion, OverflowMenuVerticalMotion, PageFirstMotion, PageLastMotion,SubtractMotion, SubtractAltMotion, SelectWindowMotion, SwitcherMotion,  UpToTopMotion, ZoomInAreaMotion, ZoomAreaMotion, ZoomOutAreaMotion, ZoomFitMotion, ZoomInMotion, ZoomOutMotion, ZoomResetMotion };
