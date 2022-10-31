@@ -7,6 +7,8 @@ import BookmarkFilledMotion from './BookmarkFilledMotion'
 import CaretSortMotion from './CaretSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
 import ExploreMotion from './ExploreMotion'
+import DragHorizontalMotion from './DragHorizontal'
+import DragVerticalMotion from './DragVertical'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
 import JumpLinkMotion from './JumpLinkMotion'
@@ -22,6 +24,8 @@ export {
   CaretSortMotion,
   CollapseAllMotion,
   ExploreMotion,
+  DragHorizontalMotion,
+  DragVerticalMotion,
   FlagMotion,
   FlagFilledMotion,
   JumpLinkMotion,

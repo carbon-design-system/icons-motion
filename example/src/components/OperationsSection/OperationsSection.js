@@ -12,6 +12,8 @@ const OperationsSection = () => {
   const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
+  const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
+  const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
@@ -113,6 +115,26 @@ const OperationsSection = () => {
             <icons.ExploreMotion 
               isAnimating={exploreAnimating} 
               size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragHorizontalAnimating(true)}
+            onMouseLeave={() => setDragHorizontalAnimating(false)}
+          >
+            <h3>Drag horizontal</h3>
+            <icons.DragHorizontalMotion 
+              isAnimating={dragHorizontalAnimating}
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragVerticalAnimating(true)}
+            onMouseLeave={() => setDragVerticalAnimating(false)}
+          >
+            <h3>Drag vertical</h3>
+            <icons.DragVerticalMotion 
+              isAnimating={dragVerticalAnimating} 
+            size={32} />
           </li>
           <li
             className='icon-tile'

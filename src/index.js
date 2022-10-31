@@ -56,8 +56,10 @@ export {
   BookmarkFilledMotion,
   CaretSortMotion,
   CollapseAllMotion,
+  DragHorizontalMotion,
+  DragVerticalMotion,
   ExploreMotion,
-  FlagMotion,
+  FlagMotion, 
   FlagFilledMotion,
   JumpLinkMotion,
   LaunchMotion
