@@ -9,6 +9,8 @@ const OperationsSection = () => {
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
+  const [chevronMiniAnimating, setChevronMiniAnimating] = useState(false)
+  const [chevronSortAnimating, setChevronSortAnimating] = useState(false)
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
@@ -80,6 +82,26 @@ const OperationsSection = () => {
             <h3>Bookmark Filled</h3>
             <icons.BookmarkFilledMotion 
               isAnimating={bookmarkFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChevronMiniAnimating(true)}
+            onMouseLeave={() => setChevronMiniAnimating(false)}
+          >
+            <h3>Chevron mini</h3>
+            <icons.ChevronMiniMotion 
+              isAnimating={chevronMiniAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChevronSortAnimating(true)}
+            onMouseLeave={() => setChevronSortAnimating(false)}
+          >
+            <h3>Chevron sort</h3>
+            <icons.ChevronSortMotion 
+              isAnimating={chevronSortAnimating} 
               size={32} />
           </li>
           <li

@@ -1,0 +1,25 @@
+@keyframes chevron-mini {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  10% {
+    transform: translateX(-5px) translateY(-5px);
+  }
+ 20% {
+    transform: translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+.ChevronMini {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .ChevronMini {
+    animation: chevron-mini 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
