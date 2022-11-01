@@ -1,8 +1,8 @@
 ---
 name: Update icon animation
-about: Discrepancies between Carbon icons and icons in this package
-title: Update icon animation:
-labels: update icon
+about: Update an existing animate icon in the library
+title: 'Update icon animation: (icon name)'
+labels: ''
 assignees: ''
 
 ---
@@ -14,7 +14,3 @@ File this issue if you discover something in this icon package that differs from
 
 **Icon category:**
 *ex - Navigation*
-
-**What do you see that needs to be updated?**
-
-**Anything else we should know?**
