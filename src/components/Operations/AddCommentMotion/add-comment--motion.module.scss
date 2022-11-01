@@ -1,0 +1,47 @@
+.AddCommentHorizontal,
+.AddCommentVertical {
+  transform-origin: 1rem .875rem;
+  will-change: transform;
+}
+
+.isAnimating {
+  .AddCommentHorizontal {
+    animation: add-comment-horizontal 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .AddCommentVertical {
+    animation: add-comment-vertical 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+@keyframes add-comment-horizontal {
+  0% {
+    transform: scaleX(1);
+  }
+  10% {
+    transform: scaleX(1.2);
+  }
+  20% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes add-comment-vertical {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform: scaleY(1.2);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
