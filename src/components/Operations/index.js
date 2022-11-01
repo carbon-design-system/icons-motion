@@ -1,3 +1,4 @@
+
 import ArrowShiftDownMotion from './ArrowShiftDownMotion'
 import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
 import ArrowsVerticalMotion from './ArrowsVerticalMotion'
@@ -6,6 +7,7 @@ import BookmarkAddMotion from './BookmarkAddMotion'
 import BookmarkFilledMotion from './BookmarkFilledMotion'
 import CaretSortMotion from './CaretSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
+import ConnectMotion from './ConnectMotion';
 import ExploreMotion from './ExploreMotion'
 import DragHorizontalMotion from './DragHorizontal'
 import DragVerticalMotion from './DragVertical'
@@ -17,6 +19,7 @@ import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion';
 
 
+
 export {
   ArrowShiftDownMotion,
   ArrowsHorizontalMotion,
@@ -26,6 +29,7 @@ export {
   BookmarkFilledMotion,
   CaretSortMotion,
   CollapseAllMotion,
+  ConnectMotion,
   ExploreMotion,
   DragHorizontalMotion,
   DragVerticalMotion,

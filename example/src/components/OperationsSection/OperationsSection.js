@@ -11,6 +11,7 @@ const OperationsSection = () => {
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
+  const [connectAnimating, setConnectAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
@@ -106,6 +107,16 @@ const OperationsSection = () => {
             <h3>Collapse all</h3>
             <icons.CollapseAllMotion 
               isAnimating={collapseAllAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setConnectAnimating(true)}
+            onMouseLeave={() => setConnectAnimating(false)}
+          >
+            <h3>Connect</h3>
+            <icons.ConnectMotion 
+              isAnimating={connectAnimating} 
               size={32} />
           </li>
           <li
