@@ -123,8 +123,7 @@ const OperationsSection = () => {
             <h3>Chevron sort</h3>
             <icons.ChevronSortMotion 
               isAnimating={chevronSortAnimating} 
-              size={32}
-          >
+              size={32} />
           </li>
           <li
             className='icon-tile'
