@@ -45,7 +45,7 @@
 
 .isAnimating {
   .HomeDoorTop {
-    transform-origin: 14px 16px;
+    transform-origin: .875rem 1rem;
     will-change: transform;
   }
 
@@ -55,7 +55,7 @@
 
   .HomeDoorRight,
   .HomeDoorLeft {
-    transform-origin: 18px 26px;
+    transform-origin: 1.125rem 1.625rem;
     will-change: transform;
   }
 
