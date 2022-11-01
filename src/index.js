@@ -56,10 +56,18 @@ export {
   BookmarkMotion,
   BookmarkAddMotion,
   BookmarkFilledMotion,
+  CaretSortMotion,
+  CaretSortDownMotion,
+  CaretSortUpMotion,
   CollapseAllMotion,
+  ConnectMotion,
+  DragHorizontalMotion,
+  DragVerticalMotion,
   ExploreMotion,
-  FlagMotion,
+  FlagMotion, 
   FlagFilledMotion,
+  ImageSearchMotion,
   JumpLinkMotion,
-  LaunchMotion
+  LaunchMotion,
+  LayersMotion
 } from './components/Operations'

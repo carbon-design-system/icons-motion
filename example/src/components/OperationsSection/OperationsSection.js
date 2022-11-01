@@ -11,14 +11,21 @@ const OperationsSection = () => {
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
+  const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
+  const [caretSortDownAnimating, setCaretSortDownAnimating] = useState(false) 
+  const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false)  
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
+  const [connectAnimating, setConnectAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
+  const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
+  const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
+  const [layersAnimating, setLayersAnimating] = useState(false)
   
- 
 	return (
 		<section className="icon-section">	
 			<div className='bx--grid'>
@@ -98,12 +105,52 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setCaretSortAnimating(true)}
+            onMouseLeave={() => setCaretSortAnimating(false)}
+          >
+            <h3>Caret sort</h3>
+            <icons.CaretSortMotion 
+              isAnimating={caretSortAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortDownAnimating(true)}
+            onMouseLeave={() => setCaretSortDownAnimating(false)}
+          >
+            <h3>Caret sort down</h3>
+            <icons.CaretSortDownMotion 
+              isAnimating={caretSortDownAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortUpAnimating(true)}
+            onMouseLeave={() => setCaretSortUpAnimating(false)}
+          >
+            <h3>Caret sort up</h3>
+            <icons.CaretSortUpMotion 
+              isAnimating={caretSortUpAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setCollapseAllAnimating(true)}
             onMouseLeave={() => setCollapseAllAnimating(false)}
           >
             <h3>Collapse all</h3>
             <icons.CollapseAllMotion 
               isAnimating={collapseAllAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setConnectAnimating(true)}
+            onMouseLeave={() => setConnectAnimating(false)}
+          >
+            <h3>Connect</h3>
+            <icons.ConnectMotion 
+              isAnimating={connectAnimating} 
               size={32} />
           </li>
           <li
@@ -115,6 +162,26 @@ const OperationsSection = () => {
             <icons.ExploreMotion 
               isAnimating={exploreAnimating} 
               size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragHorizontalAnimating(true)}
+            onMouseLeave={() => setDragHorizontalAnimating(false)}
+          >
+            <h3>Drag horizontal</h3>
+            <icons.DragHorizontalMotion 
+              isAnimating={dragHorizontalAnimating}
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragVerticalAnimating(true)}
+            onMouseLeave={() => setDragVerticalAnimating(false)}
+          >
+            <h3>Drag vertical</h3>
+            <icons.DragVerticalMotion 
+              isAnimating={dragVerticalAnimating} 
+            size={32} />
           </li>
           <li
             className='icon-tile'
@@ -138,14 +205,23 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setImageSearchAnimating(true)}
+            onMouseLeave={() => setImageSearchAnimating(false)}
+          >
+            <h3>Image search</h3>
+            <icons.ImageSearchMotion 
+              isAnimating={imageSearchAnimating} 
+              size={32} />
+          </li>
+         <li
+            className='icon-tile'
             onMouseEnter={() => setJumpLinkAnimating(true)}
             onMouseLeave={() => setJumpLinkAnimating(false)}
           >
             <h3>Jump Link</h3>
             <icons.JumpLinkMotion
               isAnimating={jumpLinkAnimating}
-              size={32}
-            />
+              size={32}  />
           </li>
           <li
             className='icon-tile'
@@ -155,8 +231,17 @@ const OperationsSection = () => {
             <h3>Launch</h3>
             <icons.LaunchMotion
               isAnimating={launchAnimating}
-              size={32}
-            />
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLayersAnimating(true)}
+            onMouseLeave={() => setLayersAnimating(false)}
+          >
+            <h3>Layers</h3>
+            <icons.LayersMotion 
+              isAnimating={layersAnimating} 
+              size={32} />
           </li>
   		  </ul>
 		  </div>
