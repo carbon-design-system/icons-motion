@@ -3,6 +3,8 @@ import * as icons from 'carbon-motion'
 import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
+
+  const [addCommentAnimating, setAddCommentAnimating] = useState(false)
   const [arrowShiftDownAnimating, setArrowShiftDownAnimating] = useState(false)
   const [arrowsHorizontalAnimating, setArrowsHorizontalAnimating] = useState(false)
   const [arrowsVerticalAnimating, setArrowsVerticalAnimating] = useState(false)
@@ -31,7 +33,17 @@ const OperationsSection = () => {
           <h2>Operations</h2>
         </div>
   			<ul className='bx--row'>
-        <li
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setAddCommentAnimating(true)}
+            onMouseLeave={() => setAddCommentAnimating(false)}
+          >
+            <h3>Add comment</h3>
+            <icons.AddCommentMotion 
+              isAnimating={addCommentAnimating} 
+              size={32} />
+          </li>
+          <li
             className='icon-tile'
             onMouseEnter={() => setArrowShiftDownAnimating(true)}
             onMouseLeave={() => setArrowShiftDownAnimating(false)}

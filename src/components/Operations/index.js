@@ -1,4 +1,5 @@
 
+import AddCommentMotion from './AddCommentMotion';
 import ArrowShiftDownMotion from './ArrowShiftDownMotion'
 import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
 import ArrowsVerticalMotion from './ArrowsVerticalMotion'
@@ -22,7 +23,9 @@ import LayersMotion from './LayersMotion';
 
 
 
+
 export {
+  AddCommentMotion,
   ArrowShiftDownMotion,
   ArrowsHorizontalMotion,
   ArrowsVerticalMotion,

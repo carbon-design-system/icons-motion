@@ -49,6 +49,7 @@ export {
 
 
 export {
+  AddCommentMotion,
   ArrowShiftDownMotion,
   ArrowsHorizontalMotion,
   ArrowsVerticalMotion,
