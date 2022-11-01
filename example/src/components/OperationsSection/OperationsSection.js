@@ -3,6 +3,8 @@ import * as icons from 'carbon-motion'
 import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
+
+  const [addCommentAnimating, setAddCommentAnimating] = useState(false)
   const [arrowShiftDownAnimating, setArrowShiftDownAnimating] = useState(false)
   const [arrowsHorizontalAnimating, setArrowsHorizontalAnimating] = useState(false)
   const [arrowsVerticalAnimating, setArrowsVerticalAnimating] = useState(false)
@@ -10,7 +12,12 @@ const OperationsSection = () => {
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
+  const [caretSortDownAnimating, setCaretSortDownAnimating] = useState(false) 
+  const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false)  
+  const [chevronMiniAnimating, setChevronMiniAnimating] = useState(false)
+  const [chevronSortAnimating, setChevronSortAnimating] = useState(false)
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
+  const [connectAnimating, setConnectAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
@@ -28,7 +35,17 @@ const OperationsSection = () => {
           <h2>Operations</h2>
         </div>
   			<ul className='bx--row'>
-        <li
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setAddCommentAnimating(true)}
+            onMouseLeave={() => setAddCommentAnimating(false)}
+          >
+            <h3>Add comment</h3>
+            <icons.AddCommentMotion 
+              isAnimating={addCommentAnimating} 
+              size={32} />
+          </li>
+          <li
             className='icon-tile'
             onMouseEnter={() => setArrowShiftDownAnimating(true)}
             onMouseLeave={() => setArrowShiftDownAnimating(false)}
@@ -90,6 +107,26 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setChevronMiniAnimating(true)}
+            onMouseLeave={() => setChevronMiniAnimating(false)}
+          >
+            <h3>Chevron mini</h3>
+            <icons.ChevronMiniMotion 
+              isAnimating={chevronMiniAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChevronSortAnimating(true)}
+            onMouseLeave={() => setChevronSortAnimating(false)}
+          >
+            <h3>Chevron sort</h3>
+            <icons.ChevronSortMotion 
+              isAnimating={chevronSortAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setCaretSortAnimating(true)}
             onMouseLeave={() => setCaretSortAnimating(false)}
           >
@@ -100,12 +137,42 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setCaretSortDownAnimating(true)}
+            onMouseLeave={() => setCaretSortDownAnimating(false)}
+          >
+            <h3>Caret sort down</h3>
+            <icons.CaretSortDownMotion 
+              isAnimating={caretSortDownAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortUpAnimating(true)}
+            onMouseLeave={() => setCaretSortUpAnimating(false)}
+          >
+            <h3>Caret sort up</h3>
+            <icons.CaretSortUpMotion 
+              isAnimating={caretSortUpAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setCollapseAllAnimating(true)}
             onMouseLeave={() => setCollapseAllAnimating(false)}
           >
             <h3>Collapse all</h3>
             <icons.CollapseAllMotion 
               isAnimating={collapseAllAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setConnectAnimating(true)}
+            onMouseLeave={() => setConnectAnimating(false)}
+          >
+            <h3>Connect</h3>
+            <icons.ConnectMotion 
+              isAnimating={connectAnimating} 
               size={32} />
           </li>
           <li

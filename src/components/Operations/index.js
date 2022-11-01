@@ -1,3 +1,5 @@
+
+import AddCommentMotion from './AddCommentMotion';
 import ArrowShiftDownMotion from './ArrowShiftDownMotion'
 import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
 import ArrowsVerticalMotion from './ArrowsVerticalMotion'
@@ -5,7 +7,12 @@ import BookmarkMotion from './BookmarkMotion'
 import BookmarkAddMotion from './BookmarkAddMotion'
 import BookmarkFilledMotion from './BookmarkFilledMotion'
 import CaretSortMotion from './CaretSortMotion'
+import CaretSortDownMotion from './CaretSortDownMotion'
+import CaretSortUpMotion from './CaretSortUpMotion'
+import ChevronMiniMotion from './ChevronMiniMotion'
+import ChevronSortMotion from './ChevronSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
+import ConnectMotion from './ConnectMotion';
 import ExploreMotion from './ExploreMotion'
 import DragHorizontalMotion from './DragHorizontal'
 import DragVerticalMotion from './DragVertical'
@@ -17,7 +24,10 @@ import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion';
 
 
+
+
 export {
+  AddCommentMotion,
   ArrowShiftDownMotion,
   ArrowsHorizontalMotion,
   ArrowsVerticalMotion,
@@ -25,7 +35,12 @@ export {
   BookmarkAddMotion,
   BookmarkFilledMotion,
   CaretSortMotion,
+  CaretSortDownMotion,
+  CaretSortUpMotion,
+  ChevronMiniMotion,
+  ChevronSortMotion,
   CollapseAllMotion,
+  ConnectMotion,
   ExploreMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
