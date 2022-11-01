@@ -1,0 +1,26 @@
+@keyframes caret-sort-up {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-4px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.CaretSortUp {
+  will-change: transform;
+}
+
+.isAnimating {
+
+  .CaretSortUp {
+    animation: caret-sort-up infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}

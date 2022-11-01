@@ -49,6 +49,7 @@ export {
 
 
 export {
+  AddCommentMotion,
   ArrowShiftDownMotion,
   ArrowsHorizontalMotion,
   ArrowsVerticalMotion,
@@ -56,7 +57,10 @@ export {
   BookmarkAddMotion,
   BookmarkFilledMotion,
   CaretSortMotion,
+  CaretSortDownMotion,
+  CaretSortUpMotion,
   CollapseAllMotion,
+  ConnectMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
   ExploreMotion,
