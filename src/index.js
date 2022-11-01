@@ -47,6 +47,7 @@ export {
   ZoomResetMotion
 } from './components/Navigation'
 
+
 export {
   ArrowShiftDownMotion,
   ArrowsHorizontalMotion,
@@ -61,6 +62,8 @@ export {
   ExploreMotion,
   FlagMotion, 
   FlagFilledMotion,
+  ImageSearchMotion,
   JumpLinkMotion,
-  LaunchMotion
+  LaunchMotion,
+  LayersMotion
 } from './components/Operations'
