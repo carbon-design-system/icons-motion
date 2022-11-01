@@ -59,6 +59,7 @@ export {
   CaretSortDownMotion,
   CaretSortUpMotion,
   CollapseAllMotion,
+  ConnectMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
   ExploreMotion,
