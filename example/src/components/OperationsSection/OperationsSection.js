@@ -10,6 +10,8 @@ const OperationsSection = () => {
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
+  const [caretSortDownAnimating, setCaretSortDownAnimating] = useState(false) 
+  const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false)  
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [connectAnimating, setConnectAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
@@ -97,6 +99,26 @@ const OperationsSection = () => {
             <h3>Caret sort</h3>
             <icons.CaretSortMotion 
               isAnimating={caretSortAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortDownAnimating(true)}
+            onMouseLeave={() => setCaretSortDownAnimating(false)}
+          >
+            <h3>Caret sort down</h3>
+            <icons.CaretSortDownMotion 
+              isAnimating={caretSortDownAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortUpAnimating(true)}
+            onMouseLeave={() => setCaretSortUpAnimating(false)}
+          >
+            <h3>Caret sort up</h3>
+            <icons.CaretSortUpMotion 
+              isAnimating={caretSortUpAnimating} 
               size={32} />
           </li>
           <li

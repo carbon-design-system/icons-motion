@@ -56,6 +56,8 @@ export {
   BookmarkAddMotion,
   BookmarkFilledMotion,
   CaretSortMotion,
+  CaretSortDownMotion,
+  CaretSortUpMotion,
   CollapseAllMotion,
   ConnectMotion,
   DragHorizontalMotion,
