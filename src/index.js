@@ -59,6 +59,8 @@ export {
   CaretSortMotion,
   CaretSortDownMotion,
   CaretSortUpMotion,
+  ChevronMiniMotion,
+  ChevronSortMotion,
   CollapseAllMotion,
   ConnectMotion,
   DragHorizontalMotion,
