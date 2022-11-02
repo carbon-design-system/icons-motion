@@ -16,6 +16,7 @@ import ConnectMotion from './ConnectMotion';
 import ExploreMotion from './ExploreMotion'
 import DragHorizontalMotion from './DragHorizontal'
 import DragVerticalMotion from './DragVertical'
+import ExitMotion from './ExitMotion';
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
 import ImageSearchMotion from './ImageSearchMotion';
@@ -44,6 +45,7 @@ export {
   ExploreMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
+  ExitMotion,
   FlagMotion,
   FlagFilledMotion,
   ImageSearchMotion,

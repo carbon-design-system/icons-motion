@@ -21,6 +21,7 @@ const OperationsSection = () => {
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
+  const [exitAnimating, setExitAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
@@ -204,6 +205,16 @@ const OperationsSection = () => {
             <icons.DragVerticalMotion 
               isAnimating={dragVerticalAnimating} 
             size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setExitAnimating(true)}
+            onMouseLeave={() => setExitAnimating(false)}
+          >
+            <h3>Exit</h3>
+            <icons.ExitMotion 
+              isAnimating={exitAnimating} 
+              size={32} />
           </li>
           <li
             className='icon-tile'

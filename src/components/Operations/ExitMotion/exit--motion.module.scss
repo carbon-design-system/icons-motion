@@ -1,0 +1,44 @@
+@keyframes exit-arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-4px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes exit-bar {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform: scaleY(.8);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.ExitArrow,
+.ExitBar {
+  will-change: transform;
+  transform-origin: 1.6875rem 1rem;
+}
+
+.isAnimating {
+  .ExitArrow {
+    animation: exit-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .ExitBar {
+    animation: exit-bar infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
