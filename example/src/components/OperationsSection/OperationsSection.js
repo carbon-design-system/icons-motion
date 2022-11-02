@@ -27,6 +27,7 @@ const OperationsSection = () => {
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
   const [layersAnimating, setLayersAnimating] = useState(false)
+  const [loopAnimating, setLoopAnimating] = useState(false)
   
 	return (
 		<section className="icon-section">	
@@ -263,6 +264,16 @@ const OperationsSection = () => {
             <h3>Layers</h3>
             <icons.LayersMotion 
               isAnimating={layersAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLoopAnimating(true)}
+            onMouseLeave={() => setLoopAnimating(false)}
+          >
+            <h3>Loop</h3>
+            <icons.LoopMotion 
+              isAnimating={loopAnimating} 
               size={32} />
           </li>
   		  </ul>
