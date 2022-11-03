@@ -71,5 +71,6 @@ export {
   ImageSearchMotion,
   JumpLinkMotion,
   LaunchMotion,
-  LayersMotion
+  LayersMotion,
+  MaximizeMotion
 } from './components/Operations'
