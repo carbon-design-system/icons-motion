@@ -64,5 +64,6 @@ This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @john
 
 <br />
 
+
 ## License
 Licensed under the [Apache 2.0 License](https://github.com/carbon-design-system/carbon-motion/blob/main/LICENSE).
