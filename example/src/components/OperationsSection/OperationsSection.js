@@ -28,6 +28,9 @@ const OperationsSection = () => {
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
   const [layersAnimating, setLayersAnimating] = useState(false)
+  const [maximizeAnimating, setMaximizeAnimating] = useState(false)
+  const [minimizeAnimating, setMinimizeAnimating] = useState(false)
+  const [newTabAnimating, setNewTabAnimating] = useState(false)
   
 	return (
 		<section className="icon-section">	
@@ -274,6 +277,35 @@ const OperationsSection = () => {
             <h3>Layers</h3>
             <icons.LayersMotion 
               isAnimating={layersAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setMaximizeAnimating(true)}
+            onMouseLeave={() => setMaximizeAnimating(false)}
+          >
+            <h3>Maximize</h3>
+            <icons.MaximizeMotion 
+              isAnimating={maximizeAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setMinimizeAnimating(true)}
+            onMouseLeave={() => setMinimizeAnimating(false)}
+          >
+            <h3>Minimize</h3>
+            <icons.MinimizeMotion 
+              isAnimating={minimizeAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setNewTabAnimating(true)}
+            onMouseLeave={() => setNewTabAnimating(false)}
+          >
+            <h3>New tab</h3>
+            <icons.NewTabMotion 
+              isAnimating={newTabAnimating} 
               size={32} />
           </li>
   		  </ul>
