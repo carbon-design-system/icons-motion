@@ -27,6 +27,8 @@ const OperationsSection = () => {
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
   const [layersAnimating, setLayersAnimating] = useState(false)
+  const [maximizeAnimating, setMaximizeAnimating] = useState(false)
+  const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
   
 	return (
@@ -268,6 +270,25 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setMaximizeAnimating(true)}
+            onMouseLeave={() => setMaximizeAnimating(false)}
+          >
+            <h3>Maximize</h3>
+            <icons.MaximizeMotion 
+              isAnimating={maximizeAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setMinimizeAnimating(true)}
+            onMouseLeave={() => setMinimizeAnimating(false)}
+          >
+            <h3>Minimize</h3>
+            <icons.MinimizeMotion 
+              isAnimating={minimizeAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
             onMouseEnter={() => setNewTabAnimating(true)}
             onMouseLeave={() => setNewTabAnimating(false)}
           >

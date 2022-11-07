@@ -22,6 +22,8 @@ import ImageSearchMotion from './ImageSearchMotion'
 import JumpLinkMotion from './JumpLinkMotion'
 import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion'
+import MaximizeMotion from './MaximizeMotion'
+import MinimizeMotion from './MinimizeMotion'
 import NewTabMotion from './NewTabMotion'
 
 
@@ -51,5 +53,7 @@ export {
   JumpLinkMotion,
   LaunchMotion,
   LayersMotion,
+  MaximizeMotion,
+  MinimizeMotion,
   NewTabMotion
 }
