@@ -23,6 +23,7 @@ import JumpLinkMotion from './JumpLinkMotion'
 import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion'
 import MaximizeMotion from './MaximizeMotion'
+import MinimizeMotion from './MinimizeMotion'
 
 
 
@@ -51,5 +52,6 @@ export {
   JumpLinkMotion,
   LaunchMotion,
   LayersMotion,
-  MaximizeMotion
+  MaximizeMotion,
+  MinimizeMotion
 }
