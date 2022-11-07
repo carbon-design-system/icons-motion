@@ -14,8 +14,8 @@ import ChevronSortMotion from './ChevronSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
 import ConnectMotion from './ConnectMotion'
 import ExploreMotion from './ExploreMotion'
-import DragHorizontalMotion from './DragHorizontal'
-import DragVerticalMotion from './DragVertical'
+import DragHorizontalMotion from './DragHorizontalMotion'
+import DragVerticalMotion from './DragVerticalMotion'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
 import ImageSearchMotion from './ImageSearchMotion'
@@ -24,6 +24,7 @@ import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion'
 import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
+import NewTabMotion from './NewTabMotion'
 
 
 
@@ -53,5 +54,6 @@ export {
   LaunchMotion,
   LayersMotion,
   MaximizeMotion,
-  MinimizeMotion
+  MinimizeMotion,
+  NewTabMotion
 }
