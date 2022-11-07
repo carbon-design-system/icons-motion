@@ -13,9 +13,10 @@ import ChevronMiniMotion from './ChevronMiniMotion'
 import ChevronSortMotion from './ChevronSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
 import ConnectMotion from './ConnectMotion'
-import ExploreMotion from './ExploreMotion'
 import DragHorizontalMotion from './DragHorizontalMotion'
 import DragVerticalMotion from './DragVerticalMotion'
+import ExitMotion from './ExitMotion';
+import ExploreMotion from './ExploreMotion'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
 import ImageSearchMotion from './ImageSearchMotion'
@@ -44,9 +45,10 @@ export {
   ChevronSortMotion,
   CollapseAllMotion,
   ConnectMotion,
-  ExploreMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
+  ExitMotion,
+  ExploreMotion,
   FlagMotion,
   FlagFilledMotion,
   ImageSearchMotion,

@@ -65,6 +65,7 @@ export {
   ConnectMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
+  ExitMotion,
   ExploreMotion,
   FlagMotion, 
   FlagFilledMotion,
