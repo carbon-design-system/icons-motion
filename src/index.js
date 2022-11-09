@@ -75,5 +75,6 @@ export {
   LayersMotion,
   MaximizeMotion,
   MinimizeMotion,
-  NewTabMotion
+  NewTabMotion,
+  PinMotion
 } from './components/Operations'
