@@ -26,6 +26,7 @@ import LayersMotion from './LayersMotion'
 import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import NewTabMotion from './NewTabMotion'
+import RecommendMotion from './RecommendMotion'
 
 
 
@@ -57,5 +58,6 @@ export {
   LayersMotion,
   MaximizeMotion,
   MinimizeMotion,
-  NewTabMotion
+  NewTabMotion,
+  RecommendMotion
 }
