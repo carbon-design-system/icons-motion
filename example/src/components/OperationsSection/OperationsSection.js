@@ -13,8 +13,11 @@ const OperationsSection = () => {
   const [exploreAnimating, setExploreAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [sendAnimating, setSendAnimating] = useState(false)
+  const [sendAltAnimating, setSendAltAnimating] = useState(false)
+  const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
+  const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
   
- 
 	return (
 		<section className="icon-section">	
 			<div className='bx--grid'>
@@ -120,6 +123,46 @@ const OperationsSection = () => {
             <h3>Flag filled</h3>
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendAnimating(true)}
+            onMouseLeave={() => setSendAnimating(false)}
+          >
+            <h3>Send</h3>
+            <icons.SendMotion 
+              isAnimating={sendAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendAltAnimating(true)}
+            onMouseLeave={() => setSendAltAnimating(false)}
+          >
+            <h3>Send alt</h3>
+            <icons.SendAltMotion 
+              isAnimating={sendAltAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendAltFilledAnimating(true)}
+            onMouseLeave={() => setSendAltFilledAnimating(false)}
+          >
+            <h3>Send alt filled</h3>
+            <icons.SendAltFilledMotion 
+              isAnimating={sendAltFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendFilledAnimating(true)}
+            onMouseLeave={() => setSendFilledAnimating(false)}
+          >
+            <h3>Send filled</h3>
+            <icons.SendFilledMotion 
+              isAnimating={sendFilledAnimating} 
               size={32} />
           </li>
   		  </ul>
