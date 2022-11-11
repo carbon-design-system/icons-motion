@@ -13,7 +13,7 @@
 }
 
 .CloseFilledVertical{
-  transform-origin: 50% 50%;
+  transform-origin: 1rem 1rem;
   will-change: transform;
   transform: rotate(45deg);
 }
@@ -25,7 +25,7 @@
 }
 
 .CloseFilledHorizontal {
-  transform-origin: 50% 50%;
+  transform-origin: 1rem 1rem;
   will-change: transform;
   transform: rotate(45deg);
 }  

@@ -3,16 +3,34 @@ import * as icons from 'carbon-motion'
 import 'carbon-motion/dist/index.css'
 
 const OperationsSection = () => {
+
+  const [addCommentAnimating, setAddCommentAnimating] = useState(false)
   const [arrowShiftDownAnimating, setArrowShiftDownAnimating] = useState(false)
   const [arrowsHorizontalAnimating, setArrowsHorizontalAnimating] = useState(false)
   const [arrowsVerticalAnimating, setArrowsVerticalAnimating] = useState(false)
   const [bookmarkAnimating, setBookmarkAnimating] = useState(false)
   const [bookmarkAddAnimating, setBookmarkAddAnimating] = useState(false)
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
+  const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
+  const [caretSortDownAnimating, setCaretSortDownAnimating] = useState(false) 
+  const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false)  
+  const [chevronMiniAnimating, setChevronMiniAnimating] = useState(false)
+  const [chevronSortAnimating, setChevronSortAnimating] = useState(false)
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
+  const [connectAnimating, setConnectAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
+  const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
+  const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
+  const [exitAnimating, setExitAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
+  const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
+  const [launchAnimating, setLaunchAnimating] = useState(false)
+  const [layersAnimating, setLayersAnimating] = useState(false)
+  const [maximizeAnimating, setMaximizeAnimating] = useState(false)
+  const [minimizeAnimating, setMinimizeAnimating] = useState(false)
+  const [newTabAnimating, setNewTabAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -25,7 +43,17 @@ const OperationsSection = () => {
           <h2>Operations</h2>
         </div>
   			<ul className='bx--row'>
-        <li
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setAddCommentAnimating(true)}
+            onMouseLeave={() => setAddCommentAnimating(false)}
+          >
+            <h3>Add comment</h3>
+            <icons.AddCommentMotion 
+              isAnimating={addCommentAnimating} 
+              size={32} />
+          </li>
+          <li
             className='icon-tile'
             onMouseEnter={() => setArrowShiftDownAnimating(true)}
             onMouseLeave={() => setArrowShiftDownAnimating(false)}
@@ -87,6 +115,56 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setChevronMiniAnimating(true)}
+            onMouseLeave={() => setChevronMiniAnimating(false)}
+          >
+            <h3>Chevron mini</h3>
+            <icons.ChevronMiniMotion 
+              isAnimating={chevronMiniAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChevronSortAnimating(true)}
+            onMouseLeave={() => setChevronSortAnimating(false)}
+          >
+            <h3>Chevron sort</h3>
+            <icons.ChevronSortMotion 
+              isAnimating={chevronSortAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortAnimating(true)}
+            onMouseLeave={() => setCaretSortAnimating(false)}
+          >
+            <h3>Caret sort</h3>
+            <icons.CaretSortMotion 
+              isAnimating={caretSortAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortDownAnimating(true)}
+            onMouseLeave={() => setCaretSortDownAnimating(false)}
+          >
+            <h3>Caret sort down</h3>
+            <icons.CaretSortDownMotion 
+              isAnimating={caretSortDownAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCaretSortUpAnimating(true)}
+            onMouseLeave={() => setCaretSortUpAnimating(false)}
+          >
+            <h3>Caret sort up</h3>
+            <icons.CaretSortUpMotion 
+              isAnimating={caretSortUpAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setCollapseAllAnimating(true)}
             onMouseLeave={() => setCollapseAllAnimating(false)}
           >
@@ -97,12 +175,52 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setConnectAnimating(true)}
+            onMouseLeave={() => setConnectAnimating(false)}
+          >
+            <h3>Connect</h3>
+            <icons.ConnectMotion 
+              isAnimating={connectAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setExploreAnimating(true)}
             onMouseLeave={() => setExploreAnimating(false)}
           >
             <h3>Explore</h3>
             <icons.ExploreMotion 
               isAnimating={exploreAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragHorizontalAnimating(true)}
+            onMouseLeave={() => setDragHorizontalAnimating(false)}
+          >
+            <h3>Drag horizontal</h3>
+            <icons.DragHorizontalMotion 
+              isAnimating={dragHorizontalAnimating}
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setDragVerticalAnimating(true)}
+            onMouseLeave={() => setDragVerticalAnimating(false)}
+          >
+            <h3>Drag vertical</h3>
+            <icons.DragVerticalMotion 
+              isAnimating={dragVerticalAnimating} 
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setExitAnimating(true)}
+            onMouseLeave={() => setExitAnimating(false)}
+          >
+            <h3>Exit</h3>
+            <icons.ExitMotion 
+              isAnimating={exitAnimating} 
               size={32} />
           </li>
           <li
@@ -123,6 +241,75 @@ const OperationsSection = () => {
             <h3>Flag filled</h3>
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setImageSearchAnimating(true)}
+            onMouseLeave={() => setImageSearchAnimating(false)}
+          >
+            <h3>Image search</h3>
+            <icons.ImageSearchMotion 
+              isAnimating={imageSearchAnimating} 
+              size={32} />
+          </li>
+         <li
+            className='icon-tile'
+            onMouseEnter={() => setJumpLinkAnimating(true)}
+            onMouseLeave={() => setJumpLinkAnimating(false)}
+          >
+            <h3>Jump Link</h3>
+            <icons.JumpLinkMotion
+              isAnimating={jumpLinkAnimating}
+              size={32}  />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLaunchAnimating(true)}
+            onMouseLeave={() => setLaunchAnimating(false)}
+          >
+            <h3>Launch</h3>
+            <icons.LaunchMotion
+              isAnimating={launchAnimating}
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLayersAnimating(true)}
+            onMouseLeave={() => setLayersAnimating(false)}
+          >
+            <h3>Layers</h3>
+            <icons.LayersMotion 
+              isAnimating={layersAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setMaximizeAnimating(true)}
+            onMouseLeave={() => setMaximizeAnimating(false)}
+          >
+            <h3>Maximize</h3>
+            <icons.MaximizeMotion 
+              isAnimating={maximizeAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setMinimizeAnimating(true)}
+            onMouseLeave={() => setMinimizeAnimating(false)}
+          >
+            <h3>Minimize</h3>
+            <icons.MinimizeMotion 
+              isAnimating={minimizeAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setNewTabAnimating(true)}
+            onMouseLeave={() => setNewTabAnimating(false)}
+          >
+            <h3>New tab</h3>
+            <icons.NewTabMotion 
+              isAnimating={newTabAnimating} 
               size={32} />
           </li>
           <li
