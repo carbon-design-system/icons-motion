@@ -1,5 +1,5 @@
 
-import AddCommentMotion from './AddCommentMotion';
+import AddCommentMotion from './AddCommentMotion'
 import ArrowShiftDownMotion from './ArrowShiftDownMotion'
 import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
 import ArrowsVerticalMotion from './ArrowsVerticalMotion'
@@ -12,18 +12,22 @@ import CaretSortUpMotion from './CaretSortUpMotion'
 import ChevronMiniMotion from './ChevronMiniMotion'
 import ChevronSortMotion from './ChevronSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
-import ConnectMotion from './ConnectMotion';
+import ConnectMotion from './ConnectMotion'
+import DragHorizontalMotion from './DragHorizontalMotion'
+import DragVerticalMotion from './DragVerticalMotion'
+import ExitMotion from './ExitMotion';
 import ExploreMotion from './ExploreMotion'
-import DragHorizontalMotion from './DragHorizontal'
-import DragVerticalMotion from './DragVertical'
 import FilterMotion from './FilterMotion'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
-import ImageSearchMotion from './ImageSearchMotion';
+import ImageSearchMotion from './ImageSearchMotion'
 import JumpLinkMotion from './JumpLinkMotion'
 import LaunchMotion from './LaunchMotion'
-import LayersMotion from './LayersMotion';
-
+import LayersMotion from './LayersMotion'
+import MaximizeMotion from './MaximizeMotion'
+import MinimizeMotion from './MinimizeMotion'
+import NewTabMotion from './NewTabMotion'
+import RecommendMotion from './RecommendMotion'
 
 
 
@@ -42,14 +46,19 @@ export {
   ChevronSortMotion,
   CollapseAllMotion,
   ConnectMotion,
-  ExploreMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
+  ExitMotion,
+  ExploreMotion,
   FilterMotion,
   FlagMotion,
   FlagFilledMotion,
   ImageSearchMotion,
   JumpLinkMotion,
   LaunchMotion,
-  LayersMotion
+  LayersMotion,
+  MaximizeMotion,
+  MinimizeMotion,
+  NewTabMotion,
+  RecommendMotion
 }

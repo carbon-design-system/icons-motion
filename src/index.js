@@ -65,6 +65,7 @@ export {
   ConnectMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
+  ExitMotion,
   ExploreMotion,
   FilterMotion,
   FlagMotion, 
@@ -72,5 +73,9 @@ export {
   ImageSearchMotion,
   JumpLinkMotion,
   LaunchMotion,
-  LayersMotion
+  LayersMotion,
+  MaximizeMotion,
+  MinimizeMotion,
+  NewTabMotion,
+  RecommendMotion
 } from './components/Operations'
