@@ -28,7 +28,7 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import NewTabMotion from './NewTabMotion'
 import RecommendMotion from './RecommendMotion'
-
+import RedoMotion from './RedoMotion'
 
 
 export {
@@ -60,5 +60,6 @@ export {
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,
-  RecommendMotion
+  RecommendMotion,
+  RedoMotion
 }

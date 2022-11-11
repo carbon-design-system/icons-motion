@@ -32,6 +32,7 @@ const OperationsSection = () => {
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
+  const [redoAnimating, setRedoAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
   
 	return (
@@ -320,7 +321,7 @@ const OperationsSection = () => {
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
               size={32} />
-          </li>
+          </li>        
           <li
             className='icon-tile'
             onMouseEnter={() => setRecommendAnimating(true)}
@@ -329,6 +330,15 @@ const OperationsSection = () => {
             <h3>Recommend</h3>
             <icons.RecommendMotion 
               isAnimating={recommendAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRedoAnimating(true)}
+            onMouseLeave={() => setRedoAnimating(false)}
+          >
+            <h3>Redo</h3>
+            <icons.RedoMotion 
+              isAnimating={redoAnimating} 
               size={32} />
           </li>
   		  </ul>
