@@ -31,6 +31,7 @@ import TagEditMotion from './TagEditMotion'
 import TagExportMotion from './TagExportMotion'
 import TagImportMotion from './TagImportMotion'
 import TagGroupMotion from './TagGroupMotion'
+import TagNoneMotion from './TagNoneMotion'
 
 
 
@@ -68,4 +69,5 @@ export {
   TagExportMotion,
   TagImportMotion,
   TagGroupMotion,
+  TagNoneMotion
 }

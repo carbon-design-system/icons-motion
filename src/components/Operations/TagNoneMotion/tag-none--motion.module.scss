@@ -1,0 +1,28 @@
+@keyframes tag-none {
+  0% {
+    transform: translate(0px);
+  }
+  4% {
+    transform: translate(-2px);
+  }
+  12% {
+    transform: translate(2px);
+  }
+  16% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.TagNone{
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .TagNone {
+    animation: tag-none 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

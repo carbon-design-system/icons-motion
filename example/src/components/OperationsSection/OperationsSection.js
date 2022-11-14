@@ -36,6 +36,7 @@ const OperationsSection = () => {
   const [tagExportAnimating, setTagExportAnimating] = useState(false)
   const [tagImportAnimating, setTagImportAnimating] = useState(false)
   const [tagGroupAnimating, setTagGroupAnimating] = useState(false)
+  const [tagNoneAnimating, setTagNoneAnimating] = useState(false)
   
 	return (
 		<section className="icon-section">	
@@ -356,6 +357,15 @@ const OperationsSection = () => {
             <h3>Tag group</h3>
             <icons.TagGroupMotion 
               isAnimating={tagGroupAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTagNoneAnimating(true)}
+            onMouseLeave={() => setTagNoneAnimating(false)}
+          >
+            <h3>Tag none</h3>
+            <icons.TagNoneMotion 
+              isAnimating={tagNoneAnimating} 
               size={32} />
           </li>
   		  </ul>
