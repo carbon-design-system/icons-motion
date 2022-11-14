@@ -80,4 +80,5 @@ export {
   TagEditMotion,
   TagExportMotion,
   TagImportMotion,
+  TagGroupMotion,
 } from './components/Operations'
