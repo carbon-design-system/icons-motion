@@ -1,4 +1,4 @@
-@-webkit-keyframes pin-point {
+@-webkit-keyframes pin-filled-point {
   0% {
     -webkit-transform: translate(0px);
             transform: translate(0px);
@@ -17,10 +17,10 @@
   }
 }
 
-@keyframes pin-point {
+@keyframes pin-filled-point {
   0% {
-    -webkit-transform: translate(0px) scale;
-            transform: translate(0px) scale;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   10% {
     -webkit-transform: translate(-1px, 1px);
@@ -36,7 +36,7 @@
   }
 }
 
-@-webkit-keyframes pin-base {
+@-webkit-keyframes pin-filled-base {
   0% {
     -webkit-transform: translate(0px);
             transform: translate(0px);
@@ -55,7 +55,7 @@
   }
 }
 
-@keyframes pin-base {
+@keyframes pin-filled-base {
   0% {
     -webkit-transform: translate(0px);
             transform: translate(0px);
@@ -74,8 +74,8 @@
   }
 }
 
-.PinPoint,
-.PinBase {
+.PinFilledPoint,
+.PinFilledBase {
   will-change: transform;
   -webkit-transform-origin: 0.8125rem 1.1875rem;
       -ms-transform-origin: 0.8125rem 1.1875rem;
@@ -83,12 +83,12 @@
 }
 
 .isAnimating {
-  .PinPoint {
-    -webkit-animation: pin-point infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
-            animation: pin-point infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  .PinFilledPoint {
+    -webkit-animation: pin-filled-point infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+            animation: pin-filled-point infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
   }
-  .PinBase {
-    -webkit-animation: pin-base infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
-            animation: pin-base infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  .PinFilledBase {
+    -webkit-animation: pin-filled-base infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+            animation: pin-filled-base infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
   }
 }

@@ -27,6 +27,7 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import NewTabMotion from './NewTabMotion'
 import PinMotion from './PinMotion'
+import PinFilledMotion from './PinFilledMotion'
 
 
 
@@ -59,5 +60,6 @@ export {
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,
-  PinMotion
+  PinMotion,
+  PinFilledMotion
 }

@@ -32,6 +32,7 @@ const OperationsSection = () => {
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
+  const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   
 	return (
 		<section className="icon-section">	
@@ -316,6 +317,15 @@ const OperationsSection = () => {
             <h3>Pin</h3>
             <icons.PinMotion 
               isAnimating={pinAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPinFilledAnimating(true)}
+            onMouseLeave={() => setPinFilledAnimating(false)}
+          >
+            <h3>Pin filled</h3>
+            <icons.PinFilledMotion 
+              isAnimating={pinFilledAnimating} 
               size={32} />
           </li>
   		  </ul>
