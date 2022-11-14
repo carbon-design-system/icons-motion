@@ -17,6 +17,7 @@ import ExploreMotion from './ExploreMotion'
 import DragHorizontalMotion from './DragHorizontal'
 import DragVerticalMotion from './DragVertical'
 import FilterMotion from './FilterMotion'
+import FilterEditMotion from './FilterEditMotion';
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
 import ImageSearchMotion from './ImageSearchMotion';
@@ -46,6 +47,7 @@ export {
   DragHorizontalMotion,
   DragVerticalMotion,
   FilterMotion,
+  FilterEditMotion,
   FlagMotion,
   FlagFilledMotion,
   ImageSearchMotion,

@@ -67,6 +67,7 @@ export {
   DragVerticalMotion,
   ExploreMotion,
   FilterMotion,
+  FilterEditMotion,
   FlagMotion, 
   FlagFilledMotion,
   ImageSearchMotion,

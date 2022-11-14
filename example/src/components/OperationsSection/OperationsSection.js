@@ -22,6 +22,7 @@ const OperationsSection = () => {
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
   const [filterAnimating, setFilterAnimating] = useState(false)
+  const [filterEditAnimating, setFilterEditAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
@@ -214,6 +215,16 @@ const OperationsSection = () => {
             <h3>Filter</h3>
             <icons.FilterMotion 
               isAnimating={filterAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFilterEditAnimating(true)}
+            onMouseLeave={() => setFilterEditAnimating(false)}
+          >
+            <h3>Filter edit</h3>
+            <icons.FilterEditMotion 
+              isAnimating={filterEditAnimating} 
               size={32} />
           </li>
           <li
