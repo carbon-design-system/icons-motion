@@ -1,44 +1,94 @@
-@keyframes pin-point {
+@-webkit-keyframes pin-point {
   0% {
-    transform: translate(0px) scale;
+    -webkit-transform: translate(0px) scale;
+            transform: translate(0px) scale;
   }
   10% {
-    transform: translate(-1px, 1px);
+    -webkit-transform: translate(-1px, 1px);
+            transform: translate(-1px, 1px);
   }
   20% {
-    transform: translate(0px);
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   100% {
-    transform: translate(0px);
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes pin-point {
+  0% {
+    -webkit-transform: translate(0px) scale;
+            transform: translate(0px) scale;
+  }
+  10% {
+    -webkit-transform: translate(-1px, 1px);
+            transform: translate(-1px, 1px);
+  }
+  20% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@-webkit-keyframes pin-base {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  10% {
+    -webkit-transform: translate(-3.5px, 3.5px);
+            transform: translate(-3.5px, 3.5px);
+  }
+  20% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
 }
 
 @keyframes pin-base {
   0% {
-    transform: translate(0px);
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   10% {
-    transform: translate(-3.5px, 3.5px);
+    -webkit-transform: translate(-3.5px, 3.5px);
+            transform: translate(-3.5px, 3.5px);
   }
   20% {
-    transform: translate(0px);
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   100% {
-    transform: translate(0px);
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
 }
 
 .PinPoint,
 .PinBase {
   will-change: transform;
-  transform-origin: 0.8125rem 1.1875rem;
+  -webkit-transform-origin: 0.8125rem 1.1875rem;
+      -ms-transform-origin: 0.8125rem 1.1875rem;
+          transform-origin: 0.8125rem 1.1875rem;
 }
 
 .isAnimating {
   .PinPoint {
-    animation: pin-point infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+    -webkit-animation: pin-point infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+            animation: pin-point infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
   }
   .PinBase {
-    animation: pin-base infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+    -webkit-animation: pin-base infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+            animation: pin-base infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
   }
 }
