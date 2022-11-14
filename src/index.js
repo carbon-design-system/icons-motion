@@ -75,5 +75,6 @@ export {
   LayersMotion,
   MaximizeMotion,
   MinimizeMotion,
-  NewTabMotion
+  NewTabMotion,
+  TagMotion
 } from './components/Operations'
