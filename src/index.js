@@ -78,5 +78,6 @@ export {
   NewTabMotion,
   TagMotion,
   TagEditMotion,
+  TagExportMotion,
   TagImportMotion,
 } from './components/Operations'

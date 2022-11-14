@@ -33,6 +33,7 @@ const OperationsSection = () => {
   const [newTabAnimating, setNewTabAnimating] = useState(false)
   const [tagAnimating, setTagAnimating] = useState(false)
   const [tagEditAnimating, setTagEditAnimating] = useState(false)
+  const [tagExportAnimating, setTagExportAnimating] = useState(false)
   const [tagImportAnimating, setTagImportAnimating] = useState(false)
   
 	return (
@@ -327,6 +328,15 @@ const OperationsSection = () => {
             <h3>Tag edit</h3>
             <icons.TagEditMotion 
               isAnimating={tagEditAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTagExportAnimating(true)}
+            onMouseLeave={() => setTagExportAnimating(false)}
+          >
+            <h3>Tag export</h3>
+            <icons.TagExportMotion 
+              isAnimating={tagExportAnimating} 
               size={32} />
           </li>
           <li className='icon-tile'
