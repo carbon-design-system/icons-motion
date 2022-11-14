@@ -76,5 +76,6 @@ export {
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,
-  TagMotion
+  TagMotion,
+  TagEditMotion
 } from './components/Operations'

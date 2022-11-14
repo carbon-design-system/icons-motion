@@ -27,6 +27,7 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import NewTabMotion from './NewTabMotion'
 import TagMotion from './TagMotion'
+import TagEditMotion from './TagEditMotion'
 
 
 
@@ -59,5 +60,6 @@ export {
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,
-  TagMotion
+  TagMotion,
+  TagEditMotion
 }
