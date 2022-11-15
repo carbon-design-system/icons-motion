@@ -66,11 +66,20 @@ export {
   ConnectMotion,
   DragHorizontalMotion,
   DragVerticalMotion,
+  ExitMotion,
   ExploreMotion,
+  FilterMotion,
   FlagMotion, 
   FlagFilledMotion,
   ImageSearchMotion,
   JumpLinkMotion,
   LaunchMotion,
-  LayersMotion
+  LayersMotion,
+  MaximizeMotion,
+  MinimizeMotion,
+  NewTabMotion,
+  PinMotion,
+  PinFilledMotion,
+  RedoMotion,
+  RecommendMotion
 } from './components/Operations'
