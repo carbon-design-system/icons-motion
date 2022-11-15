@@ -32,6 +32,8 @@ const OperationsSection = () => {
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
+  const [pinAnimating, setPinAnimating] = useState(false)
+  const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [redoAnimating, setRedoAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
   
@@ -339,6 +341,24 @@ const OperationsSection = () => {
             <h3>Redo</h3>
             <icons.RedoMotion 
               isAnimating={redoAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPinAnimating(true)}
+            onMouseLeave={() => setPinAnimating(false)}
+          >
+            <h3>Pin</h3>
+            <icons.PinMotion 
+              isAnimating={pinAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPinFilledAnimating(true)}
+            onMouseLeave={() => setPinFilledAnimating(false)}
+          >
+            <h3>Pin filled</h3>
+            <icons.PinFilledMotion 
+              isAnimating={pinFilledAnimating} 
               size={32} />
           </li>
   		  </ul>

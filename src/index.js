@@ -77,6 +77,8 @@ export {
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,
-  RecommendMotion,
-  RedoMotion
+  PinMotion,
+  PinFilledMotion,
+  RedoMotion,
+  RecommendMotion
 } from './components/Operations'
