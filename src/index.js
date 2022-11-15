@@ -77,6 +77,7 @@ export {
   LayersMotion,
   MaximizeMotion,
   MinimizeMotion,
+  MoveMotion,
   NewTabMotion,
   PinMotion,
   PinFilledMotion,
