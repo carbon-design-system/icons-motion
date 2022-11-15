@@ -1,0 +1,27 @@
+@keyframes filter-dots {
+  0% {
+    stroke-dashoffset: 0px;
+    opacity: 100;
+  }
+  25% {
+    stroke-dashoffset: -14px;
+    opacity: 100;
+  }
+  100% {
+    stroke-dashoffset: -14px;
+    opacity: 100;
+  }
+}
+
+.FilterDots {
+  stroke-dashoffset: 0px;
+  opacity: 0;
+}
+
+
+
+.isAnimating {
+  .FilterDots {
+    animation: filter-dots 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

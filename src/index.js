@@ -67,6 +67,7 @@ export {
   DragVerticalMotion,
   ExitMotion,
   ExploreMotion,
+  FilterMotion,
   FlagMotion, 
   FlagFilledMotion,
   ImageSearchMotion,
@@ -77,5 +78,7 @@ export {
   MinimizeMotion,
   NewTabMotion,
   PinMotion,
-  PinFilledMotion
+  PinFilledMotion,
+  RedoMotion,
+  RecommendMotion
 } from './components/Operations'

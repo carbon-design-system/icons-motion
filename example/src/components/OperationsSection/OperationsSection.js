@@ -22,6 +22,7 @@ const OperationsSection = () => {
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
   const [exitAnimating, setExitAnimating] = useState(false)
+  const [filterAnimating, setFilterAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
@@ -33,6 +34,8 @@ const OperationsSection = () => {
   const [newTabAnimating, setNewTabAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
+  const [redoAnimating, setRedoAnimating] = useState(false)
+  const [recommendAnimating, setRecommendAnimating] = useState(false)
   
 	return (
 		<section className="icon-section">	
@@ -219,6 +222,17 @@ const OperationsSection = () => {
             <h3>Exit</h3>
             <icons.ExitMotion 
               isAnimating={exitAnimating} 
+
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFilterAnimating(true)}
+            onMouseLeave={() => setFilterAnimating(false)}
+          >
+            <h3>Filter</h3>
+            <icons.FilterMotion 
+              isAnimating={filterAnimating} 
               size={32} />
           </li>
           <li
@@ -308,6 +322,25 @@ const OperationsSection = () => {
             <h3>New tab</h3>
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
+              size={32} />
+          </li>        
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setRecommendAnimating(true)}
+            onMouseLeave={() => setRecommendAnimating(false)}
+          >
+            <h3>Recommend</h3>
+            <icons.RecommendMotion 
+              isAnimating={recommendAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRedoAnimating(true)}
+            onMouseLeave={() => setRedoAnimating(false)}
+          >
+            <h3>Redo</h3>
+            <icons.RedoMotion 
+              isAnimating={redoAnimating} 
               size={32} />
           </li>
           <li className='icon-tile'

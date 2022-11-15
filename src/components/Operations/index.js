@@ -17,6 +17,7 @@ import DragHorizontalMotion from './DragHorizontalMotion'
 import DragVerticalMotion from './DragVerticalMotion'
 import ExitMotion from './ExitMotion';
 import ExploreMotion from './ExploreMotion'
+import FilterMotion from './FilterMotion'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
 import ImageSearchMotion from './ImageSearchMotion'
@@ -28,8 +29,8 @@ import MinimizeMotion from './MinimizeMotion'
 import NewTabMotion from './NewTabMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
-
-
+import RecommendMotion from './RecommendMotion'
+import RedoMotion from './RedoMotion'
 
 
 export {
@@ -51,6 +52,7 @@ export {
   DragVerticalMotion,
   ExitMotion,
   ExploreMotion,
+  FilterMotion,
   FlagMotion,
   FlagFilledMotion,
   ImageSearchMotion,
@@ -61,5 +63,7 @@ export {
   MinimizeMotion,
   NewTabMotion,
   PinMotion,
-  PinFilledMotion
+  PinFilledMotion,
+  RecommendMotion,
+  RedoMotion
 }
