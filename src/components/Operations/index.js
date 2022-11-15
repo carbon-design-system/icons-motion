@@ -9,6 +9,7 @@ import BookmarkFilledMotion from './BookmarkFilledMotion'
 import CaretSortMotion from './CaretSortMotion'
 import CaretSortDownMotion from './CaretSortDownMotion'
 import CaretSortUpMotion from './CaretSortUpMotion'
+import ChatLaunchMotion from './ChatLaunchMotion';
 import ChevronMiniMotion from './ChevronMiniMotion'
 import ChevronSortMotion from './ChevronSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
@@ -44,6 +45,7 @@ export {
   CaretSortMotion,
   CaretSortDownMotion,
   CaretSortUpMotion,
+  ChatLaunchMotion,
   ChevronMiniMotion,
   ChevronSortMotion,
   CollapseAllMotion,

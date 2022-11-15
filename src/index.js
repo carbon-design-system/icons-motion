@@ -59,6 +59,7 @@ export {
   CaretSortMotion,
   CaretSortDownMotion,
   CaretSortUpMotion,
+  ChatLaunchMotion,
   ChevronMiniMotion,
   ChevronSortMotion,
   CollapseAllMotion,
