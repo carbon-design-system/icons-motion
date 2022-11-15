@@ -18,6 +18,7 @@ import DragHorizontalMotion from './DragHorizontal'
 import DragVerticalMotion from './DragVertical'
 import FilterMotion from './FilterMotion'
 import FilterEditMotion from './FilterEditMotion'
+import FilterRemoveMotion from './FilterRemoveMotion'
 import FilterResetMotion from './FilterResetMotion'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
@@ -49,6 +50,7 @@ export {
   DragVerticalMotion,
   FilterMotion,
   FilterEditMotion,
+  FilterRemoveMotion,
   FilterResetMotion,
   FlagMotion,
   FlagFilledMotion,

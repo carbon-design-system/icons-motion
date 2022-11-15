@@ -68,6 +68,7 @@ export {
   ExploreMotion,
   FilterMotion,
   FilterEditMotion,
+  FilterRemoveMotion,
   FilterResetMotion,
   FlagMotion, 
   FlagFilledMotion,
