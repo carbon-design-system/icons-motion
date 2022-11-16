@@ -13,7 +13,8 @@ const OperationsSection = () => {
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
   const [caretSortDownAnimating, setCaretSortDownAnimating] = useState(false) 
-  const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false)  
+  const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false) 
+  const [chatLaunchAnimating, setChatLaunchAnimating] = useState(false)   
   const [chevronMiniAnimating, setChevronMiniAnimating] = useState(false)
   const [chevronSortAnimating, setChevronSortAnimating] = useState(false)
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
@@ -22,6 +23,7 @@ const OperationsSection = () => {
   const [dragHorizontalAnimating, setDragHorizontalAnimating] = useState(false)
   const [dragVerticalAnimating, setDragVerticalAnimating] = useState(false)
   const [exitAnimating, setExitAnimating] = useState(false)
+  const [filterAnimating, setFilterAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
   const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
@@ -31,6 +33,10 @@ const OperationsSection = () => {
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
+  const [pinAnimating, setPinAnimating] = useState(false)
+  const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
+  const [redoAnimating, setRedoAnimating] = useState(false)
+  const [recommendAnimating, setRecommendAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -165,6 +171,16 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setChatLaunchAnimating(true)}
+            onMouseLeave={() => setChatLaunchAnimating(false)}
+          >
+            <h3>Chat launch</h3>
+            <icons.ChatLaunchMotion 
+              isAnimating={chatLaunchAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setCollapseAllAnimating(true)}
             onMouseLeave={() => setCollapseAllAnimating(false)}
           >
@@ -221,6 +237,17 @@ const OperationsSection = () => {
             <h3>Exit</h3>
             <icons.ExitMotion 
               isAnimating={exitAnimating} 
+
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFilterAnimating(true)}
+            onMouseLeave={() => setFilterAnimating(false)}
+          >
+            <h3>Filter</h3>
+            <icons.FilterMotion 
+              isAnimating={filterAnimating} 
               size={32} />
           </li>
           <li
@@ -310,6 +337,44 @@ const OperationsSection = () => {
             <h3>New tab</h3>
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
+              size={32} />
+          </li>        
+          
+          <li className='icon-tile'
+            onMouseEnter={() => setPinAnimating(true)}
+            onMouseLeave={() => setPinAnimating(false)}
+          >
+            <h3>Pin</h3>
+            <icons.PinMotion 
+              isAnimating={pinAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPinFilledAnimating(true)}
+            onMouseLeave={() => setPinFilledAnimating(false)}
+          >
+            <h3>Pin filled</h3>
+            <icons.PinFilledMotion 
+              isAnimating={pinFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setRecommendAnimating(true)}
+            onMouseLeave={() => setRecommendAnimating(false)}
+          >
+            <h3>Recommend</h3>
+            <icons.RecommendMotion 
+              isAnimating={recommendAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRedoAnimating(true)}
+            onMouseLeave={() => setRedoAnimating(false)}
+          >
+            <h3>Redo</h3>
+            <icons.RedoMotion 
+              isAnimating={redoAnimating} 
               size={32} />
           </li>
           <li
