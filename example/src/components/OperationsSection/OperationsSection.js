@@ -37,6 +37,10 @@ const OperationsSection = () => {
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [redoAnimating, setRedoAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
+  const [sendAnimating, setSendAnimating] = useState(false)
+  const [sendAltAnimating, setSendAltAnimating] = useState(false)
+  const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
+  const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
   
 	return (
 		<section className="icon-section">	
@@ -335,6 +339,25 @@ const OperationsSection = () => {
               isAnimating={newTabAnimating} 
               size={32} />
           </li>        
+          
+          <li className='icon-tile'
+            onMouseEnter={() => setPinAnimating(true)}
+            onMouseLeave={() => setPinAnimating(false)}
+          >
+            <h3>Pin</h3>
+            <icons.PinMotion 
+              isAnimating={pinAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPinFilledAnimating(true)}
+            onMouseLeave={() => setPinFilledAnimating(false)}
+          >
+            <h3>Pin filled</h3>
+            <icons.PinFilledMotion 
+              isAnimating={pinFilledAnimating} 
+              size={32} />
+          </li>
           <li
             className='icon-tile'
             onMouseEnter={() => setRecommendAnimating(true)}
@@ -354,22 +377,44 @@ const OperationsSection = () => {
               isAnimating={redoAnimating} 
               size={32} />
           </li>
-          <li className='icon-tile'
-            onMouseEnter={() => setPinAnimating(true)}
-            onMouseLeave={() => setPinAnimating(false)}
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendAnimating(true)}
+            onMouseLeave={() => setSendAnimating(false)}
           >
-            <h3>Pin</h3>
-            <icons.PinMotion 
-              isAnimating={pinAnimating} 
+            <h3>Send</h3>
+            <icons.SendMotion 
+              isAnimating={sendAnimating} 
               size={32} />
           </li>
-          <li className='icon-tile'
-            onMouseEnter={() => setPinFilledAnimating(true)}
-            onMouseLeave={() => setPinFilledAnimating(false)}
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendAltAnimating(true)}
+            onMouseLeave={() => setSendAltAnimating(false)}
           >
-            <h3>Pin filled</h3>
-            <icons.PinFilledMotion 
-              isAnimating={pinFilledAnimating} 
+            <h3>Send alt</h3>
+            <icons.SendAltMotion 
+              isAnimating={sendAltAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendAltFilledAnimating(true)}
+            onMouseLeave={() => setSendAltFilledAnimating(false)}
+          >
+            <h3>Send alt filled</h3>
+            <icons.SendAltFilledMotion 
+              isAnimating={sendAltFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSendFilledAnimating(true)}
+            onMouseLeave={() => setSendFilledAnimating(false)}
+          >
+            <h3>Send filled</h3>
+            <icons.SendFilledMotion 
+              isAnimating={sendFilledAnimating} 
               size={32} />
           </li>
   		  </ul>

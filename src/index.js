@@ -81,5 +81,9 @@ export {
   PinMotion,
   PinFilledMotion,
   RedoMotion,
-  RecommendMotion
+  RecommendMotion,
+  SendMotion,
+  SendAltMotion, 
+  SendAltFilledMotion, 
+  SendFilledMotion
 } from './components/Operations'
