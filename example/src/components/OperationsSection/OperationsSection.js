@@ -33,6 +33,8 @@ const OperationsSection = () => {
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
+  const [panHorizontalAnimating, setPanHorizontalAnimating] = useState(false)
+  const [panVerticalAnimating, setPanVerticalAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [redoAnimating, setRedoAnimating] = useState(false)
@@ -334,7 +336,25 @@ const OperationsSection = () => {
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
               size={32} />
-          </li>        
+          </li>   
+          <li className='icon-tile'
+            onMouseEnter={() => setPanHorizontalAnimating(true)}
+            onMouseLeave={() => setPanHorizontalAnimating(false)}
+          >
+            <h3>Pan Horizontal</h3>
+            <icons.PanHorizontalMotion 
+              isAnimating={panHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPanVerticalAnimating(true)}
+            onMouseLeave={() => setPanVerticalAnimating(false)}
+          >
+            <h3>Pan Vertical</h3>
+            <icons.PanVerticalMotion 
+              isAnimating={panVerticalAnimating} 
+              size={32} />
+          </li>      
           <li
             className='icon-tile'
             onMouseEnter={() => setRecommendAnimating(true)}

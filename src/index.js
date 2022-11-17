@@ -78,6 +78,8 @@ export {
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,
+  PanHorizontalMotion,
+  PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
   RedoMotion,
