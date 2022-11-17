@@ -17,7 +17,7 @@ We will do our very best to keep these icons in sync with the Carbon icons but i
 To use the icons in your project, first install the package: 
 
 ```bash
-npm install icons-motion
+npm install @carbon/icons-motion
 ```
 
 ### Usage
