@@ -1,0 +1,25 @@
+@keyframes sendAlt {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translateX(4px) translateY(-4px);
+  }
+  20% {
+    transform: translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(0, 0);
+  }
+}
+
+
+.SendAltTop {
+  will-change: transform;
+}
+
+.isAnimating {
+  .SendAltTop {
+    animation: sendAlt infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
