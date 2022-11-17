@@ -22,11 +22,14 @@ npm install icons-motion
 
 ### Usage
 
-Next, import and use the icon component and CSS file from the package. Example:
+Example:
+How to import and use the icon component and CSS file from the package.
 
+
+App.js
 ```jsx
-import HomeMotion from 'icons-motion'
-import 'carbon-motion/dist/index.css'
+import { HomeMotion } from '@carbon/icons-motion'
+import '@carbon/icons-motion/dist/index.css'
 
 const myComponent = () => {
   <HomeMotion 
@@ -39,6 +42,42 @@ const myComponent = () => {
 The component takes two props:
 - `isAnimating` is a boolean; to trigger the animation, change this prop to `true`
 - `size` is an integer which will set the width and height of the icon in px 
+
+**Important** Your app will need to update the `isAnimating` prop to `true` in order to make the icon animate. You can decide when/how this prop change should be triggered, depending on your specific use case. 
+
+Example:
+Here's how to make an icon animate on mouseEnter of the `div` with the className of `icon-tile`, similar to the examples shown in the demo app at `./example/src/components/NavigationSection folder`.
+
+
+App.js
+```jsx
+import React, { useState } from 'react'
+import { HomeMotion } from '@carbon/icons-motion'
+import '@carbon/icons-motion/dist/index.css'
+
+const [homeAnimating, setHomeAnimating] = useState(false)
+
+function App() {
+  return (
+    <div className="App">
+      <div
+        className='icon-tile'
+        onMouseEnter={() => setHomeAnimating(true)}
+        onMouseLeave={() => setHomeAnimating(false)}
+      >
+        <h3>Home</h3>
+        <icons.HomeMotion 
+          isAnimating={homeAnimating} 
+          size={32} />
+        </div>
+    </div>)
+  }
+
+export default App;
+```
+
+Additional examples coming soon!
+
 <br />
 
 ## Contributing
@@ -60,7 +99,7 @@ We'd especially love feedback in the following areas:
 <br />
 
 ## Contributors
-This effort is lead by the Animated Icon Workgroup members: @Krista-Starr, @johnbister, @Liz-Tremblay, @Mike-Olasov, @Silvio Hajdin
+This effort is lead by the Animated Icon Workgroup members: @kristastarr, @johnbister, @Motion-Mike, @silvio-hajdin
 
 <br />
 
