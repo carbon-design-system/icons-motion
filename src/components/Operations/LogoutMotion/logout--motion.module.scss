@@ -1,0 +1,71 @@
+@keyframes logout-bottom {
+  0% {
+    transform: translatey(0px);
+  }
+  8% {
+    transform: translatey(-1px);
+  }
+  12% {
+    transform: translatey(-1px);
+  }
+  20% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes logout-top {
+  0% {
+    transform: translatey(0px);
+  }
+  8% {
+    transform: translatey(1px);
+  }
+  12% {
+    transform: translatey(1px);
+  }
+  20% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes logout-head {
+  0% {
+    transform: translateX(0px);
+  }
+  8% {
+    transform: translateX(4px);
+  }
+  12% {
+    transform: translateX(4px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateyX(0px);
+  }
+}
+
+.LogoutBottom,
+.LogoutTop,
+.LogoutHead {
+  will-change: transform;
+}
+
+.isAnimating {
+  .LogoutBottom {
+    animation: logout-bottom infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .LogoutTop {
+    animation: logout-top infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .LogoutHead {
+    animation: logout-head infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}

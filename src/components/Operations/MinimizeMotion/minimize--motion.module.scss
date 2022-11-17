@@ -1,0 +1,48 @@
+@keyframes minimize-top-arrow {
+  0% {
+    transform: translate(0px, 0px );
+  }
+  10% {
+    transform: translate(-3px, 3px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes minimize-bottom-arrow {
+  0% {
+    transform: translate(0px, 0px );
+  }
+  10% {
+    transform: translate(3px, -3px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translateX(0px, 0px);
+  }
+}
+
+
+
+.MinimizeBottomArrow,
+.MinimizeTopArrow {
+  will-change: transform;
+}
+
+.isAnimating {
+  .MinimizeBottomArrow {
+    animation: minimize-bottom-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .MinimizeTopArrow {
+    animation: minimize-top-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
