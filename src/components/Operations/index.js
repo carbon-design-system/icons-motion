@@ -1,4 +1,3 @@
-
 import AddCommentMotion from './AddCommentMotion'
 import ArrowShiftDownMotion from './ArrowShiftDownMotion'
 import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
@@ -25,6 +24,8 @@ import ImageSearchMotion from './ImageSearchMotion'
 import JumpLinkMotion from './JumpLinkMotion'
 import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion'
+import LoginMotion from './LoginMotion';
+import LogoutMotion from './LogoutMotion';
 import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import NewTabMotion from './NewTabMotion'
@@ -65,6 +66,8 @@ export {
   JumpLinkMotion,
   LaunchMotion,
   LayersMotion,
+  LoginMotion,
+  LogoutMotion,
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,
@@ -76,5 +79,4 @@ export {
   SendAltMotion,
   SendAltFilledMotion,
   SendFilledMotion
-
 }

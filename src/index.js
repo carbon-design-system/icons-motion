@@ -75,6 +75,8 @@ export {
   JumpLinkMotion,
   LaunchMotion,
   LayersMotion,
+  LoginMotion,
+  LogoutMotion,
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,

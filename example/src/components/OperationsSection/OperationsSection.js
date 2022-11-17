@@ -30,6 +30,8 @@ const OperationsSection = () => {
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
   const [layersAnimating, setLayersAnimating] = useState(false)
+  const [loginAnimating, setLoginAnimating] = useState(false)
+  const [logoutAnimating, setLogoutAnimating] = useState(false)
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
@@ -41,7 +43,7 @@ const OperationsSection = () => {
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
   const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
-  
+
 	return (
 		<section className="icon-section">	
 			<div className='bx--grid'>
@@ -272,6 +274,16 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setLoginAnimating(true)}
+            onMouseLeave={() => setLoginAnimating(false)}
+          >
+            <h3>Login</h3>
+            <icons.LoginMotion
+              isAnimating={loginAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setImageSearchAnimating(true)}
             onMouseLeave={() => setImageSearchAnimating(false)}
           >
@@ -288,7 +300,7 @@ const OperationsSection = () => {
             <h3>Jump Link</h3>
             <icons.JumpLinkMotion
               isAnimating={jumpLinkAnimating}
-              size={32}  />
+              size={32} />
           </li>
           <li
             className='icon-tile'
@@ -298,6 +310,16 @@ const OperationsSection = () => {
             <h3>Launch</h3>
             <icons.LaunchMotion
               isAnimating={launchAnimating}
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLogoutAnimating(true)}
+            onMouseLeave={() => setLogoutAnimating(false)}
+          >
+            <h3>Logout</h3>
+            <icons.LogoutMotion
+              isAnimating={logoutAnimating}  
               size={32} />
           </li>
           <li
@@ -338,17 +360,16 @@ const OperationsSection = () => {
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
               size={32} />
-          </li>        
-          
+          </li>
           <li className='icon-tile'
             onMouseEnter={() => setPinAnimating(true)}
             onMouseLeave={() => setPinAnimating(false)}
           >
-            <h3>Pin</h3>
+            <h3>Pin filled</h3>
             <icons.PinMotion 
               isAnimating={pinAnimating} 
               size={32} />
-          </li>
+          </li>        
           <li className='icon-tile'
             onMouseEnter={() => setPinFilledAnimating(true)}
             onMouseLeave={() => setPinFilledAnimating(false)}
