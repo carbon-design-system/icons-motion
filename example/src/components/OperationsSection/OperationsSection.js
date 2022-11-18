@@ -45,6 +45,7 @@ const OperationsSection = () => {
   const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
   const [xAxisAnimating, setXAxisAnimating] = useState(false)
   const [yAxisAnimating, setYAxisAnimating] = useState(false)
+  const [zAxisAnimating, setZAxisAnimating] = useState(false)
 
 	return (
 		<section className="icon-section">	
@@ -458,6 +459,16 @@ const OperationsSection = () => {
             <h3>Y axis</h3>
             <icons.YAxisMotion 
               isAnimating={yAxisAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setZAxisAnimating(true)}
+            onMouseLeave={() => setZAxisAnimating(false)}
+          >
+            <h3>Z axis</h3>
+            <icons.ZAxisMotion 
+              isAnimating={zAxisAnimating} 
               size={32} />
           </li>
   		  </ul>

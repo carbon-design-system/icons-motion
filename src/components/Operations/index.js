@@ -39,6 +39,7 @@ import SendAltFilledMotion from './SendAltFilledMotion';
 import SendFilledMotion from './SendFilledMotion';
 import XAxisMotion from './XAxisMotion'
 import YAxisMotion from './YAxisMotion'
+import ZAxisMotion from './ZAxisMotion'
 
 
 export {
@@ -82,5 +83,6 @@ export {
   SendAltFilledMotion,
   SendFilledMotion,
   XAxisMotion,
-  YAxisMotion
+  YAxisMotion,
+  ZAxisMotion
 }
