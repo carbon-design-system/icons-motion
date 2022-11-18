@@ -43,6 +43,8 @@ const OperationsSection = () => {
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
   const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
+  const [xAxisAnimating, setXAxisAnimating] = useState(false)
+  const [yAxisAnimating, setYAxisAnimating] = useState(false)
 
 	return (
 		<section className="icon-section">	
@@ -436,6 +438,26 @@ const OperationsSection = () => {
             <h3>Send filled</h3>
             <icons.SendFilledMotion 
               isAnimating={sendFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setXAxisAnimating(true)}
+            onMouseLeave={() => setXAxisAnimating(false)}
+          >
+            <h3>X axis</h3>
+            <icons.XAxisMotion 
+              isAnimating={xAxisAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setYAxisAnimating(true)}
+            onMouseLeave={() => setYAxisAnimating(false)}
+          >
+            <h3>Y axis</h3>
+            <icons.YAxisMotion 
+              isAnimating={yAxisAnimating} 
               size={32} />
           </li>
   		  </ul>
