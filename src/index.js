@@ -84,6 +84,7 @@ export {
   PinFilledMotion,
   RedoMotion,
   RecommendMotion,
+  RepeatMotion,
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 
