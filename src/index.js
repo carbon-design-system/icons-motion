@@ -75,6 +75,8 @@ export {
   JumpLinkMotion,
   LaunchMotion,
   LayersMotion,
+  LoginMotion,
+  LogoutMotion,
   MaximizeMotion,
   MinimizeMotion,
   MoveMotion,
@@ -82,5 +84,9 @@ export {
   PinMotion,
   PinFilledMotion,
   RedoMotion,
-  RecommendMotion
+  RecommendMotion,
+  SendMotion,
+  SendAltMotion, 
+  SendAltFilledMotion, 
+  SendFilledMotion
 } from './components/Operations'

@@ -1,4 +1,3 @@
-
 import AddCommentMotion from './AddCommentMotion'
 import ArrowShiftDownMotion from './ArrowShiftDownMotion'
 import ArrowsHorizontalMotion from './ArrowsHorizontalMotion'
@@ -25,6 +24,8 @@ import ImageSearchMotion from './ImageSearchMotion'
 import JumpLinkMotion from './JumpLinkMotion'
 import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion'
+import LoginMotion from './LoginMotion';
+import LogoutMotion from './LogoutMotion';
 import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import MoveMotion from './MoveMotion'
@@ -33,6 +34,10 @@ import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
+import SendMotion from './SendMotion';
+import SendAltMotion from './SendAltMotion';
+import SendAltFilledMotion from './SendAltFilledMotion';
+import SendFilledMotion from './SendFilledMotion';
 
 
 export {
@@ -62,6 +67,8 @@ export {
   JumpLinkMotion,
   LaunchMotion,
   LayersMotion,
+  LoginMotion,
+  LogoutMotion,
   MaximizeMotion,
   MinimizeMotion,
   MoveMotion,
@@ -69,5 +76,9 @@ export {
   PinMotion,
   PinFilledMotion,
   RecommendMotion,
-  RedoMotion
+  RedoMotion,
+  SendMotion,
+  SendAltMotion,
+  SendAltFilledMotion,
+  SendFilledMotion
 }
