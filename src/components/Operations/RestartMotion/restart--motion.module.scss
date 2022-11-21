@@ -1,0 +1,51 @@
+@keyframes restart-arrow {
+  0% {
+    transform: translatex(0px);
+  }
+  10% {
+    transform: translatex(4px);
+  }
+  20% {
+    transform: translatex(0px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
+
+@keyframes restart-curve{
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(33deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.RestartArrow {
+  will-change: transform;
+}
+
+.RestartCurve {
+  will-change: transform;
+  transform-origin: 1rem 1.125rem ;
+}
+
+.isAnimating {
+  .RestartArrow {
+    animation: restart-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .RestartCurve {
+    animation: restart-curve infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
