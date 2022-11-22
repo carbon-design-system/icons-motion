@@ -24,6 +24,7 @@ import ImageSearchMotion from './ImageSearchMotion'
 import JumpLinkMotion from './JumpLinkMotion'
 import LaunchMotion from './LaunchMotion'
 import LayersMotion from './LayersMotion'
+import LoopMotion from './LoopMotion'
 import LoginMotion from './LoginMotion';
 import LogoutMotion from './LogoutMotion';
 import MaximizeMotion from './MaximizeMotion'
@@ -68,6 +69,7 @@ export {
   LayersMotion,
   LoginMotion,
   LogoutMotion,
+  LoopMotion,
   MaximizeMotion,
   MinimizeMotion,
   NewTabMotion,

@@ -30,6 +30,7 @@ const OperationsSection = () => {
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
   const [layersAnimating, setLayersAnimating] = useState(false)
+  const [loopAnimating, setLoopAnimating] = useState(false)
   const [loginAnimating, setLoginAnimating] = useState(false)
   const [logoutAnimating, setLogoutAnimating] = useState(false)
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
@@ -274,16 +275,6 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
-            onMouseEnter={() => setLoginAnimating(true)}
-            onMouseLeave={() => setLoginAnimating(false)}
-          >
-            <h3>Login</h3>
-            <icons.LoginMotion
-              isAnimating={loginAnimating} 
-              size={32} />
-          </li>
-          <li
-            className='icon-tile'
             onMouseEnter={() => setImageSearchAnimating(true)}
             onMouseLeave={() => setImageSearchAnimating(false)}
           >
@@ -314,6 +305,26 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setLayersAnimating(true)}
+            onMouseLeave={() => setLayersAnimating(false)}
+          >
+            <h3>Layers</h3>
+            <icons.LayersMotion 
+              isAnimating={layersAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setLoginAnimating(true)}
+            onMouseLeave={() => setLoginAnimating(false)}
+          >
+            <h3>Log in</h3>
+            <icons.LogoutMotion
+              isAnimating={loginAnimating}  
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setLogoutAnimating(true)}
             onMouseLeave={() => setLogoutAnimating(false)}
           >
@@ -324,13 +335,14 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
-            onMouseEnter={() => setLayersAnimating(true)}
-            onMouseLeave={() => setLayersAnimating(false)}
+            onMouseEnter={() => setLoopAnimating(true)}
+            onMouseLeave={() => setLoopAnimating(false)}
           >
-            <h3>Layers</h3>
-            <icons.LayersMotion 
-              isAnimating={layersAnimating} 
-              size={32} />
+            <h3>Loop</h3>
+            <icons.LoopMotion 
+              isAnimating={loopAnimating} 
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
