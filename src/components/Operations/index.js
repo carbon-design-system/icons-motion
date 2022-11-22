@@ -42,6 +42,13 @@ import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
 import SendFilledMotion from './SendFilledMotion';
+import TagMotion from './TagMotion'
+import TagEditMotion from './TagEditMotion'
+import TagExportMotion from './TagExportMotion'
+import TagImportMotion from './TagImportMotion'
+import TagGroupMotion from './TagGroupMotion'
+import TagNoneMotion from './TagNoneMotion'
+
 
 export {
   AddCommentMotion,
@@ -87,5 +94,11 @@ export {
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
-  SendFilledMotion
+  SendFilledMotion,
+  TagMotion,
+  TagEditMotion,
+  TagExportMotion,
+  TagImportMotion,
+  TagGroupMotion,
+  TagNoneMotion
 }

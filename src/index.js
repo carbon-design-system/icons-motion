@@ -92,5 +92,11 @@ export {
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 
-  SendFilledMotion
+  SendFilledMotion,
+  TagMotion,
+  TagEditMotion,
+  TagExportMotion,
+  TagImportMotion,
+  TagGroupMotion,
+  TagNoneMotion,
 } from './components/Operations'
