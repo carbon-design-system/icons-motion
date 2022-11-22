@@ -43,6 +43,7 @@ const OperationsSection = () => {
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
   const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
+  const [upgradeAnimating, setUpgradeAnimating] = useState(false)
 
 	return (
 		<section className="icon-section">	
@@ -436,6 +437,16 @@ const OperationsSection = () => {
             <h3>Send filled</h3>
             <icons.SendFilledMotion 
               isAnimating={sendFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setUpgradeAnimating(true)}
+            onMouseLeave={() => setUpgradeAnimating(false)}
+          >
+            <h3>Upgrade</h3>
+            <icons.UpgradeMotion 
+              isAnimating={upgradeAnimating} 
               size={32} />
           </li>
   		  </ul>

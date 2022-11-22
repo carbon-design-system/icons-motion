@@ -37,6 +37,7 @@ import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
 import SendFilledMotion from './SendFilledMotion';
+import UpgradeMotion from './UpgradeMotion'
 
 
 export {
@@ -78,5 +79,6 @@ export {
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
-  SendFilledMotion
+  SendFilledMotion,
+  UpgradeMotion
 }

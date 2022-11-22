@@ -87,5 +87,6 @@ export {
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 
-  SendFilledMotion
+  SendFilledMotion,
+  UpgradeMotion
 } from './components/Operations'
