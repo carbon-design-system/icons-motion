@@ -14,7 +14,9 @@ const OperationsSection = () => {
   const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
   const [caretSortDownAnimating, setCaretSortDownAnimating] = useState(false) 
   const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false) 
-  const [chatLaunchAnimating, setChatLaunchAnimating] = useState(false)   
+  const [chatAnimating, setChatAnimating] = useState(false)   
+  const [chatLaunchAnimating, setChatLaunchAnimating] = useState(false)
+  const [chatOffAnimating, setChatOffAnimating] = useState(false)    
   const [chevronMiniAnimating, setChevronMiniAnimating] = useState(false)
   const [chevronSortAnimating, setChevronSortAnimating] = useState(false)
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
@@ -177,12 +179,32 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setChatAnimating(true)}
+            onMouseLeave={() => setChatAnimating(false)}
+          >
+            <h3>Chat</h3>
+            <icons.ChatMotion 
+              isAnimating={chatAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setChatLaunchAnimating(true)}
             onMouseLeave={() => setChatLaunchAnimating(false)}
           >
             <h3>Chat launch</h3>
             <icons.ChatLaunchMotion 
               isAnimating={chatLaunchAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChatOffAnimating(true)}
+            onMouseLeave={() => setChatOffAnimating(false)}
+          >
+            <h3>Chat off</h3>
+            <icons.ChatOffMotion 
+              isAnimating={chatOffAnimating} 
               size={32} />
           </li>
           <li
