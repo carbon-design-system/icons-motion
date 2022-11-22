@@ -39,6 +39,7 @@ const OperationsSection = () => {
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [redoAnimating, setRedoAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
+  const [requestQuoteAnimating, setRequestQuoteAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -396,6 +397,15 @@ const OperationsSection = () => {
             <h3>Redo</h3>
             <icons.RedoMotion 
               isAnimating={redoAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRequestQuoteAnimating(true)}
+            onMouseLeave={() => setRequestQuoteAnimating(false)}
+          >
+            <h3>Request quote</h3>
+            <icons.RequestQuoteMotion 
+              isAnimating={requestQuoteAnimating} 
               size={32} />
           </li>
           <li
