@@ -33,6 +33,7 @@ import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
+import SearchLocateMotion from './SearchLocateMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -75,6 +76,7 @@ export {
   PinFilledMotion,
   RecommendMotion,
   RedoMotion,
+  SearchLocateMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
