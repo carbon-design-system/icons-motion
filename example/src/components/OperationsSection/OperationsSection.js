@@ -38,6 +38,7 @@ const OperationsSection = () => {
   const [logoutAnimating, setLogoutAnimating] = useState(false)
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
+  const [moveAnimating, setMoveAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
@@ -395,6 +396,16 @@ const OperationsSection = () => {
             <h3>Minimize</h3>
             <icons.MinimizeMotion 
               isAnimating={minimizeAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setMoveAnimating(true)}
+            onMouseLeave={() => setMoveAnimating(false)}
+          >
+            <h3>Move</h3>
+            <icons.MoveMotion 
+              isAnimating={moveAnimating} 
               size={32} />
           </li>
           <li className='icon-tile'

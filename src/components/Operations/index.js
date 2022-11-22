@@ -32,6 +32,7 @@ import LoginMotion from './LoginMotion';
 import LogoutMotion from './LogoutMotion';
 import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
+import MoveMotion from './MoveMotion'
 import NewTabMotion from './NewTabMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
@@ -77,6 +78,7 @@ export {
   LoopMotion,
   MaximizeMotion,
   MinimizeMotion,
+  MoveMotion,
   NewTabMotion,
   PinMotion,
   PinFilledMotion,

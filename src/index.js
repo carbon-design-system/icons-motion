@@ -83,6 +83,7 @@ export {
   LoopMotion,
   MaximizeMotion,
   MinimizeMotion,
+  MoveMotion,
   NewTabMotion,
   PinMotion,
   PinFilledMotion,
