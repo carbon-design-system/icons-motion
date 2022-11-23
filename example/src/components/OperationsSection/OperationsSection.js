@@ -361,7 +361,7 @@ const OperationsSection = () => {
             onMouseLeave={() => setLoginAnimating(false)}
           >
             <h3>Log in</h3>
-            <icons.LogoutMotion
+            <icons.LoginMotion
               isAnimating={loginAnimating}  
               size={32} />
           </li>
