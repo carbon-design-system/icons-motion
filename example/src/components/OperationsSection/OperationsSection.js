@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import * as icons from 'carbon-motion'
-import 'carbon-motion/dist/index.css'
+import * as icons from '@carbon/icons-motion'
+import '@carbon/icons-motion/dist/index.css'
 
 const OperationsSection = () => {
 
