@@ -1,0 +1,26 @@
+@keyframes tag-edit {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.TagEdit{
+  transform-origin: 0.625rem 0.625rem;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .TagEdit {
+    animation: tag-edit 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
