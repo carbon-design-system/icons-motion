@@ -48,6 +48,7 @@ import TagExportMotion from './TagExportMotion'
 import TagImportMotion from './TagImportMotion'
 import TagGroupMotion from './TagGroupMotion'
 import TagNoneMotion from './TagNoneMotion'
+import UndoMotion from './UndoMotion'
 
 
 export {
@@ -100,5 +101,6 @@ export {
   TagExportMotion,
   TagImportMotion,
   TagGroupMotion,
-  TagNoneMotion
+  TagNoneMotion,
+  UndoMotion
 }

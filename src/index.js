@@ -99,4 +99,5 @@ export {
   TagImportMotion,
   TagGroupMotion,
   TagNoneMotion,
+  UndoMotion
 } from './components/Operations'
