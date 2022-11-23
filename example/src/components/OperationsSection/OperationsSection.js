@@ -54,6 +54,8 @@ const OperationsSection = () => {
   const [tagImportAnimating, setTagImportAnimating] = useState(false)
   const [tagGroupAnimating, setTagGroupAnimating] = useState(false)
   const [tagNoneAnimating, setTagNoneAnimating] = useState(false)
+  const [undoAnimating, setUndoAnimating] = useState(false)
+
 
 	return (
 		<section className="icon-section">	
@@ -359,7 +361,7 @@ const OperationsSection = () => {
             onMouseLeave={() => setLoginAnimating(false)}
           >
             <h3>Log in</h3>
-            <icons.LogoutMotion
+            <icons.LoginMotion
               isAnimating={loginAnimating}  
               size={32} />
           </li>
@@ -499,7 +501,7 @@ const OperationsSection = () => {
             <icons.SendFilledMotion 
               isAnimating={sendFilledAnimating} 
               size={32} />
-          </li>
+          </li> 
           <li className='icon-tile'
             onMouseEnter={() => setTagAnimating(true)}
             onMouseLeave={() => setTagAnimating(false)}
@@ -552,6 +554,16 @@ const OperationsSection = () => {
             <h3>Tag none</h3>
             <icons.TagNoneMotion 
               isAnimating={tagNoneAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setUndoAnimating(true)}
+            onMouseLeave={() => setUndoAnimating(false)}
+          >
+            <h3>Undo</h3>
+            <icons.UndoMotion 
+              isAnimating={undoAnimating} 
               size={32} />
           </li>     
   		  </ul>
