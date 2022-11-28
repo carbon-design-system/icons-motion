@@ -38,6 +38,7 @@ import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
+import RenewMotion from './RenewMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -92,6 +93,7 @@ export {
   PinFilledMotion,
   RecommendMotion,
   RedoMotion,
+  RenewMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,

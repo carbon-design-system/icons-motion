@@ -1,0 +1,26 @@
+@keyframes renew-arrows {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.RenewArrows{
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .RenewArrows {
+    animation: renew-arrows 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
