@@ -1,0 +1,52 @@
+@keyframes tag-export {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes tag-export-arrow {
+  0% {
+    transform: rotate(0deg) translateX(0px);
+  }
+  10% {
+    transform: rotate(20deg) translateX(3px);
+  }
+  20% {
+    transform: rotate(0deg) translateX(0px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0px);
+  }
+}
+
+.TagExport{
+  transform-origin: 0.625rem 0.625rem;
+  will-change: transform;
+}
+
+.TagExportArrow{
+  transform-origin: 0.625rem 0.625rem;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .TagExport {
+    animation: tag-export 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .TagExportArrow {
+    animation: tag-export-arrow 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
