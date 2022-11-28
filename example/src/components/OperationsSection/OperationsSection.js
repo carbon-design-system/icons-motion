@@ -55,7 +55,9 @@ const OperationsSection = () => {
   const [tagGroupAnimating, setTagGroupAnimating] = useState(false)
   const [tagNoneAnimating, setTagNoneAnimating] = useState(false)
   const [undoAnimating, setUndoAnimating] = useState(false)
-
+  const [xAxisAnimating, setXAxisAnimating] = useState(false)
+  const [yAxisAnimating, setYAxisAnimating] = useState(false)
+  const [zAxisAnimating, setZAxisAnimating] = useState(false)
 
 	return (
 		<section className="icon-section">	
@@ -565,7 +567,37 @@ const OperationsSection = () => {
             <icons.UndoMotion 
               isAnimating={undoAnimating} 
               size={32} />
-          </li>     
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setXAxisAnimating(true)}
+            onMouseLeave={() => setXAxisAnimating(false)}
+          >
+            <h3>X axis</h3>
+            <icons.XAxisMotion 
+              isAnimating={xAxisAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setYAxisAnimating(true)}
+            onMouseLeave={() => setYAxisAnimating(false)}
+          >
+            <h3>Y axis</h3>
+            <icons.YAxisMotion 
+              isAnimating={yAxisAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setZAxisAnimating(true)}
+            onMouseLeave={() => setZAxisAnimating(false)}
+          >
+            <h3>Z axis</h3>
+            <icons.ZAxisMotion 
+              isAnimating={zAxisAnimating} 
+              size={32} />
+          </li>
   		  </ul>
 		  </div>
 		</section>
