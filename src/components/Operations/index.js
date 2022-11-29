@@ -36,10 +36,16 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import MoveMotion from './MoveMotion'
 import NewTabMotion from './NewTabMotion'
+import PanHorizontalMotion from './PanHorizontalMotion'
+import PanVerticalMotion from './PanVerticalMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
+import RepeatMotion from './RepeatMotion'
+import ResetMotion from './ResetMotion'
+import ResetAltMotion from './ResetAltMotion'
+import RestartMotion from './RestartMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -96,10 +102,16 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  PanHorizontalMotion,
+  PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
   RecommendMotion,
   RedoMotion,
+  RepeatMotion,
+  ResetMotion,
+  ResetAltMotion, 
+  RestartMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,

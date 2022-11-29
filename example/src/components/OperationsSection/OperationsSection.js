@@ -42,10 +42,16 @@ const OperationsSection = () => {
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [moveAnimating, setMoveAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
+  const [panHorizontalAnimating, setPanHorizontalAnimating] = useState(false)
+  const [panVerticalAnimating, setPanVerticalAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
-  const [redoAnimating, setRedoAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
+  const [repeatAnimating, setRepeatAnimating] = useState(false)
+  const [resetAnimating, setResetAnimating] = useState(false)
+  const [resetAltAnimating, setResetAltAnimating] = useState(false)
+  const [restartAnimating, setRestartAnimating] = useState(false)
+  const [redoAnimating, setRedoAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -449,6 +455,43 @@ const OperationsSection = () => {
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
               size={32} />
+          </li>   
+          <li className='icon-tile'
+            onMouseEnter={() => setPanHorizontalAnimating(true)}
+            onMouseLeave={() => setPanHorizontalAnimating(false)}
+          >
+            <h3>Pan Horizontal</h3>
+            <icons.PanHorizontalMotion 
+              isAnimating={panHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPanVerticalAnimating(true)}
+            onMouseLeave={() => setPanVerticalAnimating(false)}
+          >
+            <h3>Pan Vertical</h3>
+            <icons.PanVerticalMotion 
+              isAnimating={panVerticalAnimating} 
+              size={32} />
+          </li>      
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setRecommendAnimating(true)}
+            onMouseLeave={() => setRecommendAnimating(false)}
+          >
+            <h3>Recommend</h3>
+            <icons.RecommendMotion 
+              isAnimating={recommendAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRedoAnimating(true)}
+            onMouseLeave={() => setRedoAnimating(false)}
+          >
+            <h3>Redo</h3>
+            <icons.RedoMotion 
+              isAnimating={redoAnimating} 
+              size={32} />
           </li>
           <li className='icon-tile'
             onMouseEnter={() => setPinAnimating(true)}
@@ -485,6 +528,42 @@ const OperationsSection = () => {
             <h3>Redo</h3>
             <icons.RedoMotion 
               isAnimating={redoAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRepeatAnimating(true)}
+            onMouseLeave={() => setRepeatAnimating(false)}
+          >
+            <h3>Repeat</h3>
+            <icons.RepeatMotion 
+              isAnimating={repeatAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setResetAnimating(true)}
+            onMouseLeave={() => setResetAnimating(false)}
+          >
+            <h3>Reset</h3>
+            <icons.ResetMotion 
+              isAnimating={resetAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setResetAltAnimating(true)}
+            onMouseLeave={() => setResetAltAnimating(false)}
+          >
+            <h3>Reset alt</h3>
+            <icons.ResetAltMotion 
+              isAnimating={resetAltAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRestartAnimating(true)}
+            onMouseLeave={() => setRestartAnimating(false)}
+          >
+            <h3>Restart</h3>
+            <icons.RestartMotion 
+              isAnimating={restartAnimating} 
               size={32} />
           </li>
           <li
