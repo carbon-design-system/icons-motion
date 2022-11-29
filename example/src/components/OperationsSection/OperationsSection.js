@@ -49,6 +49,7 @@ const OperationsSection = () => {
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
   const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
   const [sortAscendingAnimating, setSortAscendingAnimating] = useState(false)
+  const [sortDescendingAnimating, setSortDescendingAnimating] = useState(false)
   const [tagAnimating, setTagAnimating] = useState(false)
   const [tagEditAnimating, setTagEditAnimating] = useState(false)
   const [tagExportAnimating, setTagExportAnimating] = useState(false)
@@ -514,6 +515,16 @@ const OperationsSection = () => {
             <h3>Sort ascending</h3>
             <icons.SortAscendingMotion 
               isAnimating={sortAscendingAnimating} 
+              size={32} />
+          </li> 
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSortDescendingAnimating(true)}
+            onMouseLeave={() => setSortDescendingAnimating(false)}
+          >
+            <h3>Sort descending</h3>
+            <icons.SortDescendingMotion 
+              isAnimating={sortDescendingAnimating} 
               size={32} />
           </li> 
           <li className='icon-tile'

@@ -94,6 +94,7 @@ export {
   SendAltFilledMotion, 
   SendFilledMotion,
   SortAscendingMotion,
+  SortDescendingMotion,
   TagMotion,
   TagEditMotion,
   TagExportMotion,
