@@ -100,5 +100,9 @@ export {
   TagImportMotion,
   TagGroupMotion,
   TagNoneMotion,
-  UndoMotion
+  TranslateMotion,
+  UndoMotion,
+  XAxisMotion,
+  YAxisMotion,
+  ZAxisMotion
 } from './components/Operations'
