@@ -1,0 +1,54 @@
+@keyframes filter-reset-dots {
+  0% {
+    stroke-dashoffset: 0px;
+    opacity: 100;
+  }
+  25% {
+    stroke-dashoffset: -14px;
+    opacity: 100;
+  }
+  100% {
+    stroke-dashoffset: -14px;
+    opacity: 100;
+  }
+}
+
+@keyframes filter-reset-arrow {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.FilterResetDots {
+  stroke-dashoffset: 0px;
+  opacity: 0;
+}
+
+.FilterResetArrow {
+  will-change: transform;
+  transform-origin: 1.40625rem 0.90625rem;
+}
+
+
+
+.isAnimating {
+  .FilterResetDots {
+    animation: filter-reset-dots 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .FilterResetArrow {
+    animation: filter-reset-arrow 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
