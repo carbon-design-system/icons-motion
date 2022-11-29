@@ -34,6 +34,8 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import MoveMotion from './MoveMotion'
 import NewTabMotion from './NewTabMotion'
+import PanHorizontalMotion from './PanHorizontalMotion'
+import PanVerticalMotion from './PanVerticalMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
@@ -96,6 +98,8 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  PanHorizontalMotion,
+  PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
   RecommendMotion,

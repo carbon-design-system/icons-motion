@@ -85,6 +85,8 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  PanHorizontalMotion,
+  PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
   RecommendMotion,

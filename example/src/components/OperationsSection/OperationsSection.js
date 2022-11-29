@@ -40,6 +40,8 @@ const OperationsSection = () => {
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [moveAnimating, setMoveAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
+  const [panHorizontalAnimating, setPanHorizontalAnimating] = useState(false)
+  const [panVerticalAnimating, setPanVerticalAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
@@ -430,6 +432,43 @@ const OperationsSection = () => {
             <h3>New tab</h3>
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
+              size={32} />
+          </li>   
+          <li className='icon-tile'
+            onMouseEnter={() => setPanHorizontalAnimating(true)}
+            onMouseLeave={() => setPanHorizontalAnimating(false)}
+          >
+            <h3>Pan Horizontal</h3>
+            <icons.PanHorizontalMotion 
+              isAnimating={panHorizontalAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setPanVerticalAnimating(true)}
+            onMouseLeave={() => setPanVerticalAnimating(false)}
+          >
+            <h3>Pan Vertical</h3>
+            <icons.PanVerticalMotion 
+              isAnimating={panVerticalAnimating} 
+              size={32} />
+          </li>      
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setRecommendAnimating(true)}
+            onMouseLeave={() => setRecommendAnimating(false)}
+          >
+            <h3>Recommend</h3>
+            <icons.RecommendMotion 
+              isAnimating={recommendAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRedoAnimating(true)}
+            onMouseLeave={() => setRedoAnimating(false)}
+          >
+            <h3>Redo</h3>
+            <icons.RedoMotion 
+              isAnimating={redoAnimating} 
               size={32} />
           </li>
           <li className='icon-tile'

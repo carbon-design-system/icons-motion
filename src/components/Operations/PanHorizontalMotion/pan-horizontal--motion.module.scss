@@ -1,0 +1,48 @@
+@keyframes pan-horizontal-right {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(3px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes pan-horizontal-left {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-3px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+
+.PanHorizontalRight,
+.PanHorizontalLeft {
+  will-change: transform;
+}
+
+.isAnimating {
+  .PanHorizontalRight {
+    animation: pan-horizontal-right infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .PanHorizontalLeft {
+    animation: pan-horizontal-left infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
