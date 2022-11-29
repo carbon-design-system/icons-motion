@@ -1,0 +1,25 @@
+@keyframes loop-arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(4px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.LoopArrow {
+  will-change: transform;
+}
+
+.isAnimating {
+  .LoopArrow {
+    animation: loop-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
