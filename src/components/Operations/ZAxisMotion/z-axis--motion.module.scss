@@ -1,0 +1,25 @@
+@keyframes z-axis-arrow {
+  0% {
+    transform: translatey(0px);
+  }
+  10% {
+    transform: translatey(-3px);
+  }
+  20% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+.ZAxisArrow {
+  will-change: transform;
+}
+
+.isAnimating {
+  .ZAxisArrow {
+    animation: z-axis-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
