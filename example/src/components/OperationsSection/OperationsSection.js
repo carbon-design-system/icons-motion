@@ -43,8 +43,10 @@ const OperationsSection = () => {
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
-  const [redoAnimating, setRedoAnimating] = useState(false)
+  const [resetAnimating, setResetAnimating] = useState(false)
+  const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
+  const [redoAnimating, setRedoAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -457,6 +459,9 @@ const OperationsSection = () => {
               isAnimating={recommendAnimating} 
               size={32} />
           </li>
+
+
+
           <li className='icon-tile'
             onMouseEnter={() => setRedoAnimating(true)}
             onMouseLeave={() => setRedoAnimating(false)}
@@ -466,6 +471,31 @@ const OperationsSection = () => {
               isAnimating={redoAnimating} 
               size={32} />
           </li>
+
+
+          <li className='icon-tile'
+            onMouseEnter={() => setResetAnimating(true)}
+            onMouseLeave={() => setResetAnimating(false)}
+          >
+            <h3>Reset</h3>
+            <icons.ResetMotion 
+              isAnimating={resetAnimating} 
+              size={32} />
+          </li>
+
+
+          <li className='icon-tile'
+            onMouseEnter={() => setResetAltAnimating(true)}
+            onMouseLeave={() => setResetAltAnimating(false)}
+          >
+            <h3>Reset alt</h3>
+            <icons.ResetAltMotion 
+              isAnimating={resetAltAnimating} 
+              size={32} />
+          </li>
+
+
+
           <li className='icon-tile'
             onMouseEnter={() => setRestartAnimating(true)}
             onMouseLeave={() => setRestartAnimating(false)}
@@ -475,6 +505,10 @@ const OperationsSection = () => {
               isAnimating={restartAnimating} 
               size={32} />
           </li>
+
+
+
+
           <li
             className='icon-tile'
             onMouseEnter={() => setSendAnimating(true)}
