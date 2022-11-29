@@ -40,6 +40,7 @@ import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
 import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
+import RestartMotion from './RestartMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -100,6 +101,7 @@ export {
   RedoMotion,
   ResetMotion,
   ResetAltMotion, 
+  RestartMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,

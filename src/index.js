@@ -91,6 +91,7 @@ export {
   RedoMotion,
   ResetMotion,
   ResetAltMotion,
+  RestartMotion,
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 
