@@ -85,6 +85,7 @@ export {
   LoopMotion,
   MaximizeMotion,
   MinimizeMotion,
+  MoveMotion,
   NewTabMotion,
   PinMotion,
   PinFilledMotion,
@@ -93,5 +94,16 @@ export {
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 
-  SendFilledMotion
+  SendFilledMotion,
+  TagMotion,
+  TagEditMotion,
+  TagExportMotion,
+  TagImportMotion,
+  TagGroupMotion,
+  TagNoneMotion,
+  TranslateMotion,
+  UndoMotion,
+  XAxisMotion,
+  YAxisMotion,
+  ZAxisMotion
 } from './components/Operations'

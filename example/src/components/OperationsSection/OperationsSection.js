@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import * as icons from 'carbon-motion'
-import 'carbon-motion/dist/index.css'
+import * as icons from '@carbon/icons-motion'
+import '@carbon/icons-motion/dist/index.css'
 
 const OperationsSection = () => {
 
@@ -40,6 +40,7 @@ const OperationsSection = () => {
   const [logoutAnimating, setLogoutAnimating] = useState(false)
   const [maximizeAnimating, setMaximizeAnimating] = useState(false)
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
+  const [moveAnimating, setMoveAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
@@ -49,6 +50,17 @@ const OperationsSection = () => {
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
   const [sendFilledAnimating, setSendFilledAnimating] = useState(false)
+  const [tagAnimating, setTagAnimating] = useState(false)
+  const [tagEditAnimating, setTagEditAnimating] = useState(false)
+  const [tagExportAnimating, setTagExportAnimating] = useState(false)
+  const [tagImportAnimating, setTagImportAnimating] = useState(false)
+  const [tagGroupAnimating, setTagGroupAnimating] = useState(false)
+  const [tagNoneAnimating, setTagNoneAnimating] = useState(false)
+  const [translateAnimating, setTranslateAnimating] = useState(false)
+  const [undoAnimating, setUndoAnimating] = useState(false)
+  const [xAxisAnimating, setXAxisAnimating] = useState(false)
+  const [yAxisAnimating, setYAxisAnimating] = useState(false)
+  const [zAxisAnimating, setZAxisAnimating] = useState(false)
 
 	return (
 		<section className="icon-section">	
@@ -374,7 +386,7 @@ const OperationsSection = () => {
             onMouseLeave={() => setLoginAnimating(false)}
           >
             <h3>Log in</h3>
-            <icons.LogoutMotion
+            <icons.LoginMotion
               isAnimating={loginAnimating}  
               size={32} />
           </li>
@@ -419,6 +431,16 @@ const OperationsSection = () => {
               isAnimating={minimizeAnimating} 
               size={32} />
           </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setMoveAnimating(true)}
+            onMouseLeave={() => setMoveAnimating(false)}
+          >
+            <h3>Move</h3>
+            <icons.MoveMotion 
+              isAnimating={moveAnimating} 
+              size={32} />
+          </li>
           <li className='icon-tile'
             onMouseEnter={() => setNewTabAnimating(true)}
             onMouseLeave={() => setNewTabAnimating(false)}
@@ -432,11 +454,11 @@ const OperationsSection = () => {
             onMouseEnter={() => setPinAnimating(true)}
             onMouseLeave={() => setPinAnimating(false)}
           >
-            <h3>Pin filled</h3>
+            <h3>Pin</h3>
             <icons.PinMotion 
               isAnimating={pinAnimating} 
               size={32} />
-          </li>        
+          </li>
           <li className='icon-tile'
             onMouseEnter={() => setPinFilledAnimating(true)}
             onMouseLeave={() => setPinFilledAnimating(false)}
@@ -503,6 +525,109 @@ const OperationsSection = () => {
             <h3>Send filled</h3>
             <icons.SendFilledMotion 
               isAnimating={sendFilledAnimating} 
+              size={32} />
+          </li> 
+          <li className='icon-tile'
+            onMouseEnter={() => setTagAnimating(true)}
+            onMouseLeave={() => setTagAnimating(false)}
+          >
+            <h3>Tag</h3>
+            <icons.TagMotion 
+              isAnimating={tagAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTagEditAnimating(true)}
+            onMouseLeave={() => setTagEditAnimating(false)}
+          >
+            <h3>Tag edit</h3>
+            <icons.TagEditMotion 
+              isAnimating={tagEditAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTagExportAnimating(true)}
+            onMouseLeave={() => setTagExportAnimating(false)}
+          >
+            <h3>Tag export</h3>
+            <icons.TagExportMotion 
+              isAnimating={tagExportAnimating} 
+              size={32} />
+          </li> 
+          <li className='icon-tile'
+            onMouseEnter={() => setTagGroupAnimating(true)}
+            onMouseLeave={() => setTagGroupAnimating(false)}
+          >
+            <h3>Tag group</h3>
+            <icons.TagGroupMotion 
+              isAnimating={tagGroupAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTagImportAnimating(true)}
+            onMouseLeave={() => setTagImportAnimating(false)}
+          >
+            <h3>Tag import</h3>
+            <icons.TagImportMotion 
+              isAnimating={tagImportAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTagNoneAnimating(true)}
+            onMouseLeave={() => setTagNoneAnimating(false)}
+          >
+            <h3>Tag none</h3>
+            <icons.TagNoneMotion 
+              isAnimating={tagNoneAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTranslateAnimating(true)}
+            onMouseLeave={() => setTranslateAnimating(false)}
+          >
+            <h3>Translate</h3>
+            <icons.TranslateMotion 
+              isAnimating={translateAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setUndoAnimating(true)}
+            onMouseLeave={() => setUndoAnimating(false)}
+          >
+            <h3>Undo</h3>
+            <icons.UndoMotion 
+              isAnimating={undoAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setXAxisAnimating(true)}
+            onMouseLeave={() => setXAxisAnimating(false)}
+          >
+            <h3>X axis</h3>
+            <icons.XAxisMotion 
+              isAnimating={xAxisAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setYAxisAnimating(true)}
+            onMouseLeave={() => setYAxisAnimating(false)}
+          >
+            <h3>Y axis</h3>
+            <icons.YAxisMotion 
+              isAnimating={yAxisAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setZAxisAnimating(true)}
+            onMouseLeave={() => setZAxisAnimating(false)}
+          >
+            <h3>Z axis</h3>
+            <icons.ZAxisMotion 
+              isAnimating={zAxisAnimating} 
               size={32} />
           </li>
   		  </ul>

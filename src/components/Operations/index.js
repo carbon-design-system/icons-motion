@@ -34,6 +34,7 @@ import LoginMotion from './LoginMotion';
 import LogoutMotion from './LogoutMotion';
 import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
+import MoveMotion from './MoveMotion'
 import NewTabMotion from './NewTabMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
@@ -43,6 +44,18 @@ import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
 import SendFilledMotion from './SendFilledMotion';
+import TagMotion from './TagMotion'
+import TagEditMotion from './TagEditMotion'
+import TagExportMotion from './TagExportMotion'
+import TagImportMotion from './TagImportMotion'
+import TagGroupMotion from './TagGroupMotion'
+import TagNoneMotion from './TagNoneMotion'
+import TranslateMotion from './TranslateMotion'
+import UndoMotion from './UndoMotion'
+import XAxisMotion from './XAxisMotion'
+import YAxisMotion from './YAxisMotion'
+import ZAxisMotion from './ZAxisMotion'
+
 
 export {
   AddCommentMotion,
@@ -81,6 +94,7 @@ export {
   LoopMotion,
   MaximizeMotion,
   MinimizeMotion,
+  MoveMotion,
   NewTabMotion,
   PinMotion,
   PinFilledMotion,
@@ -89,5 +103,16 @@ export {
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
-  SendFilledMotion
+  SendFilledMotion,
+  TagMotion,
+  TagEditMotion,
+  TagExportMotion,
+  TagImportMotion,
+  TagGroupMotion,
+  TagNoneMotion,
+  UndoMotion,
+  XAxisMotion,
+  YAxisMotion,
+  ZAxisMotion,
+  TranslateMotion,
 }
