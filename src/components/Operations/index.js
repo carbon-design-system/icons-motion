@@ -44,6 +44,7 @@ import SendAltFilledMotion from './SendAltFilledMotion';
 import SendFilledMotion from './SendFilledMotion';
 import SortAscendingMotion from './SortAscendingMotion'
 import SortDescendingMotion from './SortDescendingMotion'
+import SortRemoveMotion from './SortRemoveMotion'
 import TagMotion from './TagMotion'
 import TagEditMotion from './TagEditMotion'
 import TagExportMotion from './TagExportMotion'
@@ -104,6 +105,7 @@ export {
   SendFilledMotion,
   SortAscendingMotion,
   SortDescendingMotion,
+  SortRemoveMotion,
   TagMotion,
   TagEditMotion,
   TagExportMotion,
