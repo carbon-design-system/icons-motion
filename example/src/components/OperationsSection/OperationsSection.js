@@ -54,6 +54,7 @@ const OperationsSection = () => {
   const [tagImportAnimating, setTagImportAnimating] = useState(false)
   const [tagGroupAnimating, setTagGroupAnimating] = useState(false)
   const [tagNoneAnimating, setTagNoneAnimating] = useState(false)
+  const [translateAnimating, setTranslateAnimating] = useState(false)
   const [undoAnimating, setUndoAnimating] = useState(false)
   const [xAxisAnimating, setXAxisAnimating] = useState(false)
   const [yAxisAnimating, setYAxisAnimating] = useState(false)
@@ -556,6 +557,15 @@ const OperationsSection = () => {
             <h3>Tag none</h3>
             <icons.TagNoneMotion 
               isAnimating={tagNoneAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setTranslateAnimating(true)}
+            onMouseLeave={() => setTranslateAnimating(false)}
+          >
+            <h3>Translate</h3>
+            <icons.TranslateMotion 
+              isAnimating={translateAnimating} 
               size={32} />
           </li>
           <li

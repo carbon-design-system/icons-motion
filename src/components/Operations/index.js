@@ -48,11 +48,11 @@ import TagExportMotion from './TagExportMotion'
 import TagImportMotion from './TagImportMotion'
 import TagGroupMotion from './TagGroupMotion'
 import TagNoneMotion from './TagNoneMotion'
+import TranslateMotion from './TranslateMotion'
 import UndoMotion from './UndoMotion'
 import XAxisMotion from './XAxisMotion'
 import YAxisMotion from './YAxisMotion'
 import ZAxisMotion from './ZAxisMotion'
-
 
 
 export {
@@ -109,5 +109,6 @@ export {
   UndoMotion,
   XAxisMotion,
   YAxisMotion,
-  ZAxisMotion
+  ZAxisMotion,
+  TranslateMotion,
 }

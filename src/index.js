@@ -99,6 +99,7 @@ export {
   TagImportMotion,
   TagGroupMotion,
   TagNoneMotion,
+  TranslateMotion,
   UndoMotion,
   XAxisMotion,
   YAxisMotion,
