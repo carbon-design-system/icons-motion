@@ -542,8 +542,6 @@ const OperationsSection = () => {
               isAnimating={renewAnimating} 
               size={32} />
           </li>
-
-
           <li className='icon-tile'
             onMouseEnter={() => setRepeatAnimating(true)}
             onMouseLeave={() => setRepeatAnimating(false)}
@@ -553,8 +551,6 @@ const OperationsSection = () => {
               isAnimating={repeatAnimating} 
               size={32} />
           </li>
-
-
           <li className='icon-tile'
             onMouseEnter={() => setResetAnimating(true)}
             onMouseLeave={() => setResetAnimating(false)}
@@ -564,9 +560,6 @@ const OperationsSection = () => {
               isAnimating={resetAnimating} 
               size={32} />
           </li>
-
-
-
           <li className='icon-tile'
             onMouseEnter={() => setResetAltAnimating(true)}
             onMouseLeave={() => setResetAltAnimating(false)}
