@@ -93,6 +93,7 @@ export {
   PinFilledMotion,
   RecommendMotion,
   RedoMotion,
+  RenewMotion,
   RepeatMotion,
   ResetMotion, 
   ResetAltMotion,

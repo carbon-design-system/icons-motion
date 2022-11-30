@@ -47,11 +47,12 @@ const OperationsSection = () => {
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
+  const [redoAnimating, setRedoAnimating] = useState(false)
+  const [renewAnimating, setRenewAnimating] = useState(false)
   const [repeatAnimating, setRepeatAnimating] = useState(false)
   const [resetAnimating, setResetAnimating] = useState(false)
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
-  const [redoAnimating, setRedoAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -521,13 +522,24 @@ const OperationsSection = () => {
               isAnimating={recommendAnimating} 
               size={32} />
           </li>
-          <li className='icon-tile'
+          <li 
+            className='icon-tile'
             onMouseEnter={() => setRedoAnimating(true)}
             onMouseLeave={() => setRedoAnimating(false)}
           >
             <h3>Redo</h3>
             <icons.RedoMotion 
               isAnimating={redoAnimating} 
+              size={32} />
+          </li>
+          <li 
+            className='icon-tile'
+            onMouseEnter={() => setRenewAnimating(true)}
+            onMouseLeave={() => setRenewAnimating(false)}
+          >
+            <h3>Renew</h3>
+            <icons.RenewMotion 
+              isAnimating={renewAnimating} 
               size={32} />
           </li>
           <li className='icon-tile'

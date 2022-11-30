@@ -42,6 +42,7 @@ import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
+import RenewMotion from './RenewMotion'
 import RepeatMotion from './RepeatMotion'
 import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
@@ -108,6 +109,7 @@ export {
   PinFilledMotion,
   RecommendMotion,
   RedoMotion,
+  RenewMotion,
   RepeatMotion,
   ResetMotion,
   ResetAltMotion, 
