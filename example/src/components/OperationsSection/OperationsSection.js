@@ -13,6 +13,7 @@ const OperationsSection = () => {
   const [bookmarkFilledAnimating, setBookmarkFilledAnimating] = useState(false)
   const [caretSortAnimating, setCaretSortAnimating] = useState(false)  
   const [caretSortDownAnimating, setCaretSortDownAnimating] = useState(false) 
+  const [centerCircleAnimating, setCenterCircleAnimating] = useState(false) 
   const [caretSortUpAnimating, setCaretSortUpAnimating] = useState(false) 
   const [chatAnimating, setChatAnimating] = useState(false)   
   const [chatLaunchAnimating, setChatLaunchAnimating] = useState(false)
@@ -148,26 +149,6 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
-            onMouseEnter={() => setChevronMiniAnimating(true)}
-            onMouseLeave={() => setChevronMiniAnimating(false)}
-          >
-            <h3>Chevron mini</h3>
-            <icons.ChevronMiniMotion 
-              isAnimating={chevronMiniAnimating} 
-              size={32} />
-          </li>
-          <li
-            className='icon-tile'
-            onMouseEnter={() => setChevronSortAnimating(true)}
-            onMouseLeave={() => setChevronSortAnimating(false)}
-          >
-            <h3>Chevron sort</h3>
-            <icons.ChevronSortMotion 
-              isAnimating={chevronSortAnimating} 
-              size={32} />
-          </li>
-          <li
-            className='icon-tile'
             onMouseEnter={() => setCaretSortAnimating(true)}
             onMouseLeave={() => setCaretSortAnimating(false)}
           >
@@ -198,6 +179,16 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
+            onMouseEnter={() => setCenterCircleAnimating(true)}
+            onMouseLeave={() => setCenterCircleAnimating(false)}
+          >
+            <h3>Chat circle</h3>
+            <icons.CenterCircleMotion 
+              isAnimating={centerCircleAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
             onMouseEnter={() => setChatAnimating(true)}
             onMouseLeave={() => setChatAnimating(false)}
           >
@@ -224,6 +215,26 @@ const OperationsSection = () => {
             <h3>Chat off</h3>
             <icons.ChatOffMotion 
               isAnimating={chatOffAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChevronMiniAnimating(true)}
+            onMouseLeave={() => setChevronMiniAnimating(false)}
+          >
+            <h3>Chevron mini</h3>
+            <icons.ChevronMiniMotion 
+              isAnimating={chevronMiniAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChevronSortAnimating(true)}
+            onMouseLeave={() => setChevronSortAnimating(false)}
+          >
+            <h3>Chevron sort</h3>
+            <icons.ChevronSortMotion 
+              isAnimating={chevronSortAnimating} 
               size={32} />
           </li>
           <li
