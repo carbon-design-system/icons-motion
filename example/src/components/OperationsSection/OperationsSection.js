@@ -53,6 +53,7 @@ const OperationsSection = () => {
   const [resetAnimating, setResetAnimating] = useState(false)
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
+  const [rotateAnimating, setRotateAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -576,6 +577,15 @@ const OperationsSection = () => {
             <h3>Restart</h3>
             <icons.RestartMotion 
               isAnimating={restartAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setRotateAnimating(true)}
+            onMouseLeave={() => setRotateAnimating(false)}
+          >
+            <h3>Rotate</h3>
+            <icons.RotateMotion 
+              isAnimating={rotateAnimating} 
               size={32} />
           </li>
           <li
