@@ -8,7 +8,9 @@ import BookmarkFilledMotion from './BookmarkFilledMotion'
 import CaretSortMotion from './CaretSortMotion'
 import CaretSortDownMotion from './CaretSortDownMotion'
 import CaretSortUpMotion from './CaretSortUpMotion'
+import ChatMotion from './ChatMotion'
 import ChatLaunchMotion from './ChatLaunchMotion';
+import ChatOffMotion from './ChatOffMotion';
 import ChevronMiniMotion from './ChevronMiniMotion'
 import ChevronSortMotion from './ChevronSortMotion'
 import CollapseAllMotion from './CollapseAllMotion'
@@ -34,10 +36,17 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import MoveMotion from './MoveMotion'
 import NewTabMotion from './NewTabMotion'
+import PanHorizontalMotion from './PanHorizontalMotion'
+import PanVerticalMotion from './PanVerticalMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
+import RenewMotion from './RenewMotion'
+import RepeatMotion from './RepeatMotion'
+import ResetMotion from './ResetMotion'
+import ResetAltMotion from './ResetAltMotion'
+import RestartMotion from './RestartMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -69,7 +78,9 @@ export {
   CaretSortMotion,
   CaretSortDownMotion,
   CaretSortUpMotion,
+  ChatMotion,
   ChatLaunchMotion,
+  ChatOffMotion,
   ChevronMiniMotion,
   ChevronSortMotion,
   CollapseAllMotion,
@@ -95,10 +106,17 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  PanHorizontalMotion,
+  PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
   RecommendMotion,
   RedoMotion,
+  RenewMotion,
+  RepeatMotion,
+  ResetMotion,
+  ResetAltMotion, 
+  RestartMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
