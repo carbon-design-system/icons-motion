@@ -25,7 +25,7 @@ const SortRemoveMotion = (props) => {
       >
         <title>Sort remove</title>
         <g className={styles.SortRemoveShaft}>
-          <path d="M10,18h6v2h-6V18z M6,12h10v2H6V12z M2,6h14v2H2V6z" />
+          <path d="M10,18h6v2h-6V18z M6,12h10v2H6V12z M9,6h7v2H9V6z" />
         </g>
         <g className={styles.SortRemoveVertical}>
           <path d="M26,22l0-5.1l-2,0l0,5.1v2v5.1h2V24L26,22z" />
@@ -34,7 +34,7 @@ const SortRemoveMotion = (props) => {
           <path d="M31.1,24l0-2L26,22l-2,0h-5.1v2H24h2L31.1,24z" />
         </g>
         <g className={styles.SortRemoveLine1}>
-          <path d="M2,6h14v2H2V6z" />
+          <path d="M2,6h7.6v2H2V6z" />
         </g>
         <g className={styles.SortRemoveLine2}>
           <path d="M6,12h10v2H6V12z" />
