@@ -19,6 +19,7 @@ const OperationsSection = () => {
   const [chatOffAnimating, setChatOffAnimating] = useState(false)    
   const [chevronMiniAnimating, setChevronMiniAnimating] = useState(false)
   const [chevronSortAnimating, setChevronSortAnimating] = useState(false)
+  const [chooseItemAnimating, setChooseItemAnimating] = useState(false)
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [connectAnimating, setConnectAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
@@ -224,6 +225,16 @@ const OperationsSection = () => {
             <h3>Chat off</h3>
             <icons.ChatOffMotion 
               isAnimating={chatOffAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setChooseItemAnimating(true)}
+            onMouseLeave={() => setChooseItemAnimating(false)}
+          >
+            <h3>Choose item</h3>
+            <icons.ChooseItemMotion 
+              isAnimating={chooseItemAnimating} 
               size={32} />
           </li>
           <li
