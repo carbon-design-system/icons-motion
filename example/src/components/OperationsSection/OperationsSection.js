@@ -40,6 +40,8 @@ const OperationsSection = () => {
   const [minimizeAnimating, setMinimizeAnimating] = useState(false)
   const [moveAnimating, setMoveAnimating] = useState(false)
   const [newTabAnimating, setNewTabAnimating] = useState(false)
+  const [notSentAnimating, setNotSentAnimating] = useState(false)
+  const [notSentFilledAnimating, setNotSentFilledAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
   const [redoAnimating, setRedoAnimating] = useState(false)
@@ -426,6 +428,24 @@ const OperationsSection = () => {
             <h3>New tab</h3>
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setNotSentAnimating(true)}
+            onMouseLeave={() => setNotSentAnimating(false)}
+          >
+            <h3>Not sent</h3>
+            <icons.NotSentMotion 
+              isAnimating={notSentAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setNotSentFilledAnimating(true)}
+            onMouseLeave={() => setNotSentFilledAnimating(false)}
+          >
+            <h3>Not sent filled</h3>
+            <icons.NotSentFilledMotion 
+              isAnimating={notSentFilledAnimating} 
               size={32} />
           </li>
           <li className='icon-tile'

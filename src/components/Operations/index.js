@@ -34,6 +34,8 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import MoveMotion from './MoveMotion'
 import NewTabMotion from './NewTabMotion'
+import NotSentMotion from './NotSentMotion'
+import NotSentFilledMotion from './NotSentFilledMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
 import RecommendMotion from './RecommendMotion'
@@ -92,6 +94,8 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  NotSentMotion,
+  NotSentFilledMotion,
   PinMotion,
   PinFilledMotion,
   RecommendMotion,

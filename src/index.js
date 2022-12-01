@@ -85,6 +85,8 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  NotSentMotion,
+  NotSentFilledMotion,
   PinMotion,
   PinFilledMotion,
   RedoMotion,
