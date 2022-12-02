@@ -31,6 +31,13 @@ const IdeaMotion = (props) => {
 		c0-0.9,0.5-1.5,1.5-2.4C24,20.3,26,18.4,26,14C26,8.5,21.5,4,16,4z"
         />
         <line className={styles.IdeaFilament} stroke="#000000" strokeWidth="2" fill="none" x1="16" y1="24" x2="16" y2="18"/>
+        <line className={styles.IdeaTop} stroke="#000000" strokeWidth="2" fill="none" x1="16" y1="0" x2="16" y2="2"/>      
+        <line className={styles.IdeaRight} stroke="#000000" strokeWidth="2" fill="none" x1="30" y1="14" x2="28" y2="14"/>
+        <line className={styles.IdeaLeft} stroke="#000000" strokeWidth="2" fill="none" x1="4" y1="14" x2="2" y2="14"/>
+        <line className={styles.IdeaTopRight} stroke="#000000" strokeWidth="2" fill="none" x1="28.1" y1="2" x2="24.6" y2="5.5"/>
+        <line className={styles.IdeaTopLeft} stroke="#000000" strokeWidth="2" fill="none" x1="7.4" y1="5.4" x2="4" y2="2"/>
+        <line className={styles.IdeaBottomRight} stroke="#000000" strokeWidth="2" fill="none" x1="3.9" x1="28" y1="26.3" x2="24.5" y2="22.8"/>
+        <line className={styles.IdeaBottomLeft} stroke="#000000" strokeWidth="2" fill="none" x1="3.9" y1="26.2" x2="7.4" y2="22.7"/>
       </svg>
     </div>
   )
