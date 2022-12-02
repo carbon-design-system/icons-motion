@@ -182,7 +182,7 @@ const OperationsSection = () => {
             onMouseEnter={() => setCenterCircleAnimating(true)}
             onMouseLeave={() => setCenterCircleAnimating(false)}
           >
-            <h3>Chat circle</h3>
+            <h3>Center circle</h3>
             <icons.CenterCircleMotion 
               isAnimating={centerCircleAnimating} 
               size={32} />
