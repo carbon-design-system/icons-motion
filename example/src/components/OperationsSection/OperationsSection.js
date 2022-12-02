@@ -31,6 +31,7 @@ const OperationsSection = () => {
   const [filterResetAnimating, setFilterResetAnimating] = useState(false)
   const [flagAnimating, setFlagAnimating] = useState(false)
   const [flagFilledAnimating, setFlagFilledAnimating] = useState(false)
+  const [ideaAnimating, setIdeaAnimating] = useState(false)
   const [imageSearchAnimating, setImageSearchAnimating] = useState(false)
   const [jumpLinkAnimating, setJumpLinkAnimating] = useState(false)
   const [launchAnimating, setLaunchAnimating] = useState(false)
@@ -345,6 +346,16 @@ const OperationsSection = () => {
             <h3>Flag filled</h3>
             <icons.FlagFilledMotion 
               isAnimating={flagFilledAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setIdeaAnimating(true)}
+            onMouseLeave={() => setIdeaAnimating(false)}
+          >
+            <h3>Idea</h3>
+            <icons.IdeaMotion 
+              isAnimating={ideaAnimating} 
               size={32} />
           </li>
           <li

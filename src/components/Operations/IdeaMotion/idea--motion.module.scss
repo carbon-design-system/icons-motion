@@ -1,0 +1,19 @@
+@keyframes idea-filament {
+  0% { stroke-dashoffset: 6px}
+  6% { stroke-dashoffset: 0px}
+  14% { stroke-dashoffset: 0px}
+  20% { stroke-dashoffset: 6px}
+  100% { stroke-dashoffset: 6px}
+}
+
+
+.IdeaFilament {
+  stroke-dasharray: 6px;
+  stroke-dashoffset: 6px;
+}
+
+.isAnimating {
+  .IdeaFilament {
+    animation: idea-filament infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
