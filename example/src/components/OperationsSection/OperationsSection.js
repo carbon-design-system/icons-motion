@@ -54,6 +54,7 @@ const OperationsSection = () => {
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
   const [scanAnimating, setScanAnimating] = useState(false)
+  const [scanAltAnimating, setScanAltAnimating] = useState(false)
   const [scanDisabledAnimating, setScanDisabledAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
@@ -588,6 +589,16 @@ const OperationsSection = () => {
             <h3>Scan</h3>
             <icons.ScanMotion 
               isAnimating={scanAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setScanAltAnimating(true)}
+            onMouseLeave={() => setScanAltAnimating(false)}
+          >
+            <h3>Scan alt</h3>
+            <icons.ScanAltMotion 
+              isAnimating={scanAltAnimating} 
               size={32} />
           </li>
           <li
