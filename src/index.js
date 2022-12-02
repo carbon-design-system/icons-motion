@@ -99,6 +99,7 @@ export {
   ResetAltMotion,
   RestartMotion,
   ScanMotion,
+  ScanDisabledMotion,
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 

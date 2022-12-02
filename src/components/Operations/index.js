@@ -48,6 +48,7 @@ import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
 import RestartMotion from './RestartMotion'
 import ScanMotion from './ScanMotion'
+import ScanDisabledMotion from './ScanDisabledMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -116,6 +117,7 @@ export {
   ResetAltMotion, 
   RestartMotion,
   ScanMotion,
+  ScanDisabledMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
