@@ -350,16 +350,6 @@ const OperationsSection = () => {
           </li>
           <li
             className='icon-tile'
-            onMouseEnter={() => setIdeaAnimating(true)}
-            onMouseLeave={() => setIdeaAnimating(false)}
-          >
-            <h3>Idea</h3>
-            <icons.IdeaMotion 
-              isAnimating={ideaAnimating} 
-              size={32} />
-          </li>
-          <li
-            className='icon-tile'
             onMouseEnter={() => setImageSearchAnimating(true)}
             onMouseLeave={() => setImageSearchAnimating(false)}
           >
@@ -730,6 +720,16 @@ const OperationsSection = () => {
             <h3>Z axis</h3>
             <icons.ZAxisMotion 
               isAnimating={zAxisAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setIdeaAnimating(true)}
+            onMouseLeave={() => setIdeaAnimating(false)}
+          >
+            <h3>Idea</h3>
+            <icons.IdeaMotion 
+              isAnimating={ideaAnimating} 
               size={32} />
           </li>
   		  </ul>
