@@ -50,6 +50,7 @@ const OperationsSection = () => {
   const [redoAnimating, setRedoAnimating] = useState(false)
   const [renewAnimating, setRenewAnimating] = useState(false)
   const [repeatAnimating, setRepeatAnimating] = useState(false)
+  const [replyAnimating, setReplyAnimating] = useState(false)
   const [resetAnimating, setResetAnimating] = useState(false)
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
@@ -549,6 +550,15 @@ const OperationsSection = () => {
             <h3>Repeat</h3>
             <icons.RepeatMotion 
               isAnimating={repeatAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setReplyAnimating(true)}
+            onMouseLeave={() => setReplyAnimating(false)}
+          >
+            <h3>Reply</h3>
+            <icons.ReplyMotion 
+              isAnimating={replyAnimating} 
               size={32} />
           </li>
           <li className='icon-tile'
