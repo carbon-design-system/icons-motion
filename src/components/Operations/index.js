@@ -47,6 +47,7 @@ import RepeatMotion from './RepeatMotion'
 import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
 import RestartMotion from './RestartMotion'
+import ReviewMotion from './ReviewMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -114,6 +115,7 @@ export {
   ResetMotion,
   ResetAltMotion, 
   RestartMotion,
+  ReviewMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
