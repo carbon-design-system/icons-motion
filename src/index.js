@@ -96,6 +96,7 @@ export {
   RenewMotion,
   RepeatMotion,
   ReplyMotion,
+  ReplyAllMotion,
   ResetMotion, 
   ResetAltMotion,
   RestartMotion,

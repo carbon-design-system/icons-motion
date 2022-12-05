@@ -51,6 +51,7 @@ const OperationsSection = () => {
   const [renewAnimating, setRenewAnimating] = useState(false)
   const [repeatAnimating, setRepeatAnimating] = useState(false)
   const [replyAnimating, setReplyAnimating] = useState(false)
+  const [replyAllAnimating, setReplyAllAnimating] = useState(false)
   const [resetAnimating, setResetAnimating] = useState(false)
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
@@ -476,25 +477,6 @@ const OperationsSection = () => {
               isAnimating={panVerticalAnimating} 
               size={32} />
           </li>      
-          <li
-            className='icon-tile'
-            onMouseEnter={() => setRecommendAnimating(true)}
-            onMouseLeave={() => setRecommendAnimating(false)}
-          >
-            <h3>Recommend</h3>
-            <icons.RecommendMotion 
-              isAnimating={recommendAnimating} 
-              size={32} />
-          </li>
-          <li className='icon-tile'
-            onMouseEnter={() => setRedoAnimating(true)}
-            onMouseLeave={() => setRedoAnimating(false)}
-          >
-            <h3>Redo</h3>
-            <icons.RedoMotion 
-              isAnimating={redoAnimating} 
-              size={32} />
-          </li>
           <li className='icon-tile'
             onMouseEnter={() => setPinAnimating(true)}
             onMouseLeave={() => setPinAnimating(false)}
