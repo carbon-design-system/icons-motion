@@ -544,6 +544,15 @@ const OperationsSection = () => {
               size={32} />
           </li>
           <li className='icon-tile'
+            onMouseEnter={() => setReplyAllAnimating(true)}
+            onMouseLeave={() => setReplyAllAnimating(false)}
+          >
+            <h3>Reply all</h3>
+            <icons.ReplyAllMotion 
+              isAnimating={replyAllAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
             onMouseEnter={() => setResetAnimating(true)}
             onMouseLeave={() => setResetAnimating(false)}
           >
