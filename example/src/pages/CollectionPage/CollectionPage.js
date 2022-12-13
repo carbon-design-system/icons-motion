@@ -1,6 +1,7 @@
 import React from 'react'
 import NavigationSection from '../../components/NavigationSection'
 import OperationsSection from '../../components/OperationsSection'
+import ToggleSection from '../../components/ToggleSection'
 import '../../app.scss'
 
 const CollectionPage = () => {
@@ -13,6 +14,7 @@ const CollectionPage = () => {
       </div>
       <NavigationSection></NavigationSection>
       <OperationsSection></OperationsSection>
+      <ToggleSection></ToggleSection>
     </div>
   )
 }
