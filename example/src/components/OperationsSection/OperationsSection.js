@@ -46,6 +46,7 @@ const OperationsSection = () => {
   const [panVerticalAnimating, setPanVerticalAnimating] = useState(false)
   const [pinAnimating, setPinAnimating] = useState(false)
   const [pinFilledAnimating, setPinFilledAnimating] = useState(false)
+  const [recentlyViewedAnimating, setRecentlyViewedAnimating] = useState(false)
   const [recommendAnimating, setRecommendAnimating] = useState(false)
   const [redoAnimating, setRedoAnimating] = useState(false)
   const [renewAnimating, setRenewAnimating] = useState(false)
@@ -513,6 +514,16 @@ const OperationsSection = () => {
             <h3>Pin filled</h3>
             <icons.PinFilledMotion 
               isAnimating={pinFilledAnimating} 
+              size={32} />
+          </li>
+          <li 
+            className='icon-tile'
+            onMouseEnter={() => setRecentlyViewedAnimating(true)}
+            onMouseLeave={() => setRecentlyViewedAnimating(false)}
+          >
+            <h3>Recently viewed</h3>
+            <icons.RecentlyViewedMotion 
+              isAnimating={recentlyViewedAnimating} 
               size={32} />
           </li>
           <li

@@ -91,6 +91,7 @@ export {
   PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
+  RecentlyViewedMotion,
   RecommendMotion,
   RedoMotion,
   RenewMotion,

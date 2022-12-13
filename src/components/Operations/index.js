@@ -40,6 +40,7 @@ import PanHorizontalMotion from './PanHorizontalMotion'
 import PanVerticalMotion from './PanVerticalMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
+import RecentlyViewedMotion from './RecentlyViewedMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
 import RenewMotion from './RenewMotion'
@@ -110,6 +111,7 @@ export {
   PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
+  RecentlyViewedMotion,
   RecommendMotion,
   RedoMotion,
   RenewMotion,
