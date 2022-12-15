@@ -40,6 +40,7 @@ import PanHorizontalMotion from './PanHorizontalMotion'
 import PanVerticalMotion from './PanVerticalMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
+import RecentlyViewedMotion from './RecentlyViewedMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
 import RenewMotion from './RenewMotion'
@@ -49,6 +50,9 @@ import ReplyAllMotion from './ReplyAllMotion'
 import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
 import RestartMotion from './RestartMotion'
+import ScanMotion from './ScanMotion'
+import ScanAltMotion from './ScanAltMotion'
+import ScanDisabledMotion from './ScanDisabledMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -109,6 +113,7 @@ export {
   PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
+  RecentlyViewedMotion,
   RecommendMotion,
   RedoMotion,
   RenewMotion,
@@ -118,6 +123,9 @@ export {
   ResetMotion,
   ResetAltMotion, 
   RestartMotion,
+  ScanMotion,
+  ScanAltMotion,
+  ScanDisabledMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
