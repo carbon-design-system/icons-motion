@@ -51,6 +51,7 @@ const OperationsSection = () => {
   const [redoAnimating, setRedoAnimating] = useState(false)
   const [renewAnimating, setRenewAnimating] = useState(false)
   const [repeatAnimating, setRepeatAnimating] = useState(false)
+  const [requestQuoteAnimating, setRequestQuoteAnimating] = useState(false)
   const [resetAnimating, setResetAnimating] = useState(false)
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
@@ -499,6 +500,15 @@ const OperationsSection = () => {
               size={32} />
           </li>
           <li className='icon-tile'
+            onMouseEnter={() => setRequestQuoteAnimating(true)}
+            onMouseLeave={() => setRequestQuoteAnimating(false)}
+          >
+            <h3>Request quote</h3>
+            <icons.RequestQuoteMotion 
+              isAnimating={requestQuoteAnimating} 
+              size={32} />
+          </li>
+          <li className="icon-tile"
             onMouseEnter={() => setPinAnimating(true)}
             onMouseLeave={() => setPinAnimating(false)}
           >

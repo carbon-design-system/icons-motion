@@ -1,4 +1,4 @@
-// Navigation
+// Operations
 import './index.scss'
 
 export {
@@ -96,6 +96,7 @@ export {
   RedoMotion,
   RenewMotion,
   RepeatMotion,
+  RequestQuoteMotion,
   ResetMotion, 
   ResetAltMotion,
   RestartMotion,
