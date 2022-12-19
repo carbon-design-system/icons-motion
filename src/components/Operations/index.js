@@ -64,10 +64,10 @@ import TagGroupMotion from './TagGroupMotion'
 import TagNoneMotion from './TagNoneMotion'
 import TranslateMotion from './TranslateMotion'
 import UndoMotion from './UndoMotion'
+import UpgradeMotion from './UpgradeMotion'
 import XAxisMotion from './XAxisMotion'
 import YAxisMotion from './YAxisMotion'
 import ZAxisMotion from './ZAxisMotion'
-
 
 export {
   AddCommentMotion,
@@ -135,6 +135,7 @@ export {
   TagGroupMotion,
   TagNoneMotion,
   UndoMotion,
+  UpgradeMotion,
   XAxisMotion,
   YAxisMotion,
   ZAxisMotion,

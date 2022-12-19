@@ -115,6 +115,7 @@ export {
   TagNoneMotion,
   TranslateMotion,
   UndoMotion,
+  UpgradeMotion,
   XAxisMotion,
   YAxisMotion,
   ZAxisMotion

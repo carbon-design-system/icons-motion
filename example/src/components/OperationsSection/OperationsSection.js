@@ -70,6 +70,7 @@ const OperationsSection = () => {
   const [tagNoneAnimating, setTagNoneAnimating] = useState(false)
   const [translateAnimating, setTranslateAnimating] = useState(false)
   const [undoAnimating, setUndoAnimating] = useState(false)
+  const [upgradeAnimating, setUpgradeAnimating] = useState(false)
   const [xAxisAnimating, setXAxisAnimating] = useState(false)
   const [yAxisAnimating, setYAxisAnimating] = useState(false)
   const [zAxisAnimating, setZAxisAnimating] = useState(false)
@@ -743,6 +744,16 @@ const OperationsSection = () => {
             <h3>Undo</h3>
             <icons.UndoMotion 
               isAnimating={undoAnimating} 
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setUpgradeAnimating(true)}
+            onMouseLeave={() => setUpgradeAnimating(false)}
+          >
+            <h3>Upgrade</h3>
+            <icons.UpgradeMotion 
+              isAnimating={upgradeAnimating} 
               size={32} />
           </li>
           <li
