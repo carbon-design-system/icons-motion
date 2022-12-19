@@ -1,4 +1,4 @@
-// Navigation
+// Operations
 import './index.scss'
 
 export {
@@ -91,13 +91,18 @@ export {
   PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
+  RecentlyViewedMotion,
   RecommendMotion,
   RedoMotion,
   RenewMotion,
   RepeatMotion,
+  RequestQuoteMotion,
   ResetMotion, 
   ResetAltMotion,
   RestartMotion,
+  ScanMotion,
+  ScanAltMotion,
+  ScanDisabledMotion,
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 
