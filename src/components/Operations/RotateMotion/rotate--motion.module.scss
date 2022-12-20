@@ -1,0 +1,26 @@
+@keyframes rotate-arrow {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-25deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.RotateArrow{
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .RotateArrow {
+    animation: rotate-arrow 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

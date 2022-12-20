@@ -1,4 +1,4 @@
-// Navigation
+// Operations
 import './index.scss'
 
 export {
@@ -59,12 +59,14 @@ export {
   CaretSortMotion,
   CaretSortDownMotion,
   CaretSortUpMotion,
+  CenterCircleMotion,
   ChatMotion,
   ChatLaunchMotion,
   ChatOffMotion,
   ChevronMiniMotion,
   ChevronSortMotion,
   ChooseItemMotion,
+  CleanMotion,
   CollapseAllMotion,
   ConnectMotion,
   DragHorizontalMotion,
@@ -92,13 +94,20 @@ export {
   PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
+  RecentlyViewedMotion,
   RecommendMotion,
   RedoMotion,
   RenewMotion,
   RepeatMotion,
+  RequestQuoteMotion,
   ResetMotion, 
   ResetAltMotion,
   RestartMotion,
+  RotateMotion,
+  ScanMotion,
+  ScanAltMotion,
+  ScanDisabledMotion,
+  SearchMotion,
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 
@@ -111,6 +120,7 @@ export {
   TagNoneMotion,
   TranslateMotion,
   UndoMotion,
+  UpgradeMotion,
   XAxisMotion,
   YAxisMotion,
   ZAxisMotion
