@@ -65,6 +65,7 @@ export {
   ChatOffMotion,
   ChevronMiniMotion,
   ChevronSortMotion,
+  ChooseItemMotion,
   CleanMotion,
   CollapseAllMotion,
   ConnectMotion,
