@@ -1,0 +1,25 @@
+@keyframes reply-all-arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-3px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.ReplyAllArrow {
+  will-change: transform;
+}
+
+.isAnimating {
+  .ReplyAllArrow {
+    animation: reply-all-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
