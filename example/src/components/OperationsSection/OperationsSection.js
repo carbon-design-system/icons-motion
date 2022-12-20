@@ -20,6 +20,7 @@ const OperationsSection = () => {
   const [chatOffAnimating, setChatOffAnimating] = useState(false)    
   const [chevronMiniAnimating, setChevronMiniAnimating] = useState(false)
   const [chevronSortAnimating, setChevronSortAnimating] = useState(false)
+  const [cleanAnimating, setCleanAnimating] = useState(false)
   const [collapseAllAnimating, setCollapseAllAnimating] = useState(false)
   const [connectAnimating, setConnectAnimating] = useState(false)
   const [exploreAnimating, setExploreAnimating] = useState(false)
@@ -225,7 +226,17 @@ const OperationsSection = () => {
               isAnimating={chatOffAnimating} 
               size={32} />
           </li>
-          <li
+          <li 
+            className='icon-tile'
+            onMouseEnter={() => setCleanAnimating(true)}
+            onMouseLeave={() => setCleanAnimating(false)}
+          >
+            <h3>Clean</h3>
+            <icons.CleanMotion 
+              isAnimating={cleanAnimating} 
+              size={32} />
+          </li>
+          <li 
             className='icon-tile'
             onMouseEnter={() => setChevronMiniAnimating(true)}
             onMouseLeave={() => setChevronMiniAnimating(false)}

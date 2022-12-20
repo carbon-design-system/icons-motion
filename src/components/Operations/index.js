@@ -14,6 +14,7 @@ import ChatLaunchMotion from './ChatLaunchMotion';
 import ChatOffMotion from './ChatOffMotion';
 import ChevronMiniMotion from './ChevronMiniMotion'
 import ChevronSortMotion from './ChevronSortMotion'
+import CleanMotion from './CleanMotion'
 import CollapseAllMotion from './CollapseAllMotion'
 import ConnectMotion from './ConnectMotion'
 import DragHorizontalMotion from './DragHorizontalMotion'
@@ -89,6 +90,7 @@ export {
   ChatOffMotion,
   ChevronMiniMotion,
   ChevronSortMotion,
+  CleanMotion,
   CollapseAllMotion,
   ConnectMotion,
   DragHorizontalMotion,
