@@ -101,6 +101,8 @@ export {
   RedoMotion,
   RenewMotion,
   RepeatMotion,
+  ReplyMotion,
+  ReplyAllMotion,
   RequestQuoteMotion,
   ResetMotion, 
   ResetAltMotion,

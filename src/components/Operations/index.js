@@ -50,6 +50,8 @@ import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
 import RenewMotion from './RenewMotion'
 import RepeatMotion from './RepeatMotion'
+import ReplyMotion from './ReplyMotion'
+import ReplyAllMotion from './ReplyAllMotion'
 import RequestQuoteMotion from './RequestQuoteMotion'
 import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
@@ -130,6 +132,8 @@ export {
   RedoMotion,
   RenewMotion,
   RepeatMotion,
+  ReplyMotion,
+  ReplyAllMotion,
   RequestQuoteMotion,
   ResetMotion,
   ResetAltMotion, 

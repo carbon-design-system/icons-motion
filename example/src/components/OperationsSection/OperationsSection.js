@@ -56,6 +56,8 @@ const OperationsSection = () => {
   const [redoAnimating, setRedoAnimating] = useState(false)
   const [renewAnimating, setRenewAnimating] = useState(false)
   const [repeatAnimating, setRepeatAnimating] = useState(false)
+  const [replyAnimating, setReplyAnimating] = useState(false)
+  const [replyAllAnimating, setReplyAllAnimating] = useState(false)
   const [requestQuoteAnimating, setRequestQuoteAnimating] = useState(false)
   const [resetAnimating, setResetAnimating] = useState(false)
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
@@ -536,7 +538,7 @@ const OperationsSection = () => {
             <icons.PanVerticalMotion 
               isAnimating={panVerticalAnimating} 
               size={32} />
-          </li>
+          </li>   
           <li className="icon-tile"
             onMouseEnter={() => setPinAnimating(true)}
             onMouseLeave={() => setPinAnimating(false)}
@@ -604,18 +606,36 @@ const OperationsSection = () => {
               size={32} />
           </li>
           <li className='icon-tile'
+            onMouseEnter={() => setReplyAnimating(true)}
+            onMouseLeave={() => setReplyAnimating(false)}
+          >
+            <h3>Reply</h3>
+            <icons.ReplyMotion 
+              isAnimating={replyAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
+            onMouseEnter={() => setReplyAllAnimating(true)}
+            onMouseLeave={() => setReplyAllAnimating(false)}
+          >
+            <h3>Reply all</h3>
+            <icons.ReplyAllMotion 
+              isAnimating={replyAllAnimating} 
+              size={32} />
+          </li>
+          <li className='icon-tile'
             onMouseEnter={() => setRequestQuoteAnimating(true)}
             onMouseLeave={() => setRequestQuoteAnimating(false)}
             >
             <h3>Request quote</h3>
             <icons.RequestQuoteMotion 
-              isAnimating={requestQuoteAnimating} 
-              size={32} />
+              isAnimating={requestQuoteAnimating}
+              size={32} /> 
           </li>
           <li className='icon-tile'
-            onMouseEnter={() => setResetAnimating(true)}
-            onMouseLeave={() => setResetAnimating(false)}
-          >
+              onMouseEnter={() => setResetAnimating(true)}
+              onMouseLeave={() => setResetAnimating(false)}
+            >
             <h3>Reset</h3>
             <icons.ResetMotion 
               isAnimating={resetAnimating} 
