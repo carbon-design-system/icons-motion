@@ -79,7 +79,7 @@
 .SortRemoveVertical,
 .SortRemoveHorizontal {
   will-change: transform;
-  rotate: 45deg;
+  transform: rotate(45deg);
   transform-origin: 1.5625rem 1.4375rem;
 }
 
