@@ -1,0 +1,128 @@
+@keyframes scan-alt-top-right {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  4% {
+    transform: translate(-1px, 1px);
+  }
+  16% {
+    transform: translate(-1px, 1px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes scan-alt-top-left {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  4% {
+    transform: translate(1px, 1px);
+  }
+  16% {
+    transform: translate(1px, 1px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes scan-alt-bottom-left {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  4% {
+    transform: translate(1px, -1px);
+  }
+  16% {
+    transform: translate(1px, -1px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes scan-alt-bottom-right {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  4% {
+    transform: translate(-1px, -1px);
+  }
+  16% {
+    transform: translate(-1px, -1px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes scan-alt-bar {
+  0% {
+    transform: translateY(0px);
+  }
+  4% {
+    transform: translateY(-4px);
+  }
+  16% {
+    transform: translateY(4px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.ScanAltTopRight,
+.ScanAltTopLeft,
+.ScanAltBottomRight,
+.ScanAltBottomLeft,
+.ScanAltBar {
+  will-change: transform;
+}
+
+.isAnimating {
+  .ScanAltBar {
+    animation: scan-alt-bar infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .ScanAltTopRight {
+    animation: scan-alt-top-right infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .ScanAltTopLeft {
+    animation: scan-alt-top-left infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .ScanAltBottomRight {
+    animation: scan-alt-bottom-right infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .ScanAltBottomLeft {
+    animation: scan-alt-bottom-left infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
