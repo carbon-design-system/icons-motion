@@ -121,4 +121,6 @@ export {
 
 export {
   NotificationMotion,
+  ThumbsDownMotion,
+  ThumbsDownFilledMotion,
 } from './components/Toggle'
