@@ -49,6 +49,7 @@ import RequestQuoteMotion from './RequestQuoteMotion'
 import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
 import RestartMotion from './RestartMotion'
+import RotateMotion from './RotateMotion'
 import ScanMotion from './ScanMotion'
 import ScanAltMotion from './ScanAltMotion'
 import ScanDisabledMotion from './ScanDisabledMotion'
@@ -122,6 +123,7 @@ export {
   ResetMotion,
   ResetAltMotion, 
   RestartMotion,
+  RotateMotion,
   ScanMotion,
   ScanAltMotion,
   ScanDisabledMotion,

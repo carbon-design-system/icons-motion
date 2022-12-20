@@ -100,6 +100,7 @@ export {
   ResetMotion, 
   ResetAltMotion,
   RestartMotion,
+  RotateMotion,
   ScanMotion,
   ScanAltMotion,
   ScanDisabledMotion,
