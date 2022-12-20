@@ -1,0 +1,45 @@
+@keyframes chat-line1 {
+  0% {
+    transform: scalex(1);
+  }
+  10% {
+    transform: scalex(.5);
+  }
+  20% {
+    transform: scalex(1);
+  }
+  100% {
+    transform: scalex(1);
+  }
+}
+
+@keyframes chat-line2 {
+  0% {
+    transform: scalex(1);
+  }
+  10% {
+    transform: scalex(1.5);
+  }
+  20% {
+    transform: scalex(1);
+  }
+  100% {
+    transform: scalex(1);
+  }
+}
+
+
+.ChatLine1,
+.ChatLine2 {
+  will-change: transform;
+  transform-origin: .5rem 0.6875rem;
+}
+
+.isAnimating {
+  .ChatLine1 {
+    animation: chat-line1 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .ChatLine2 {
+    animation: chat-line2 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
