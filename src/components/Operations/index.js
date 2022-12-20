@@ -8,6 +8,7 @@ import BookmarkFilledMotion from './BookmarkFilledMotion'
 import CaretSortMotion from './CaretSortMotion'
 import CaretSortDownMotion from './CaretSortDownMotion'
 import CaretSortUpMotion from './CaretSortUpMotion'
+import CenterCircleMotion from './CenterCircleMotion'
 import ChatMotion from './ChatMotion'
 import ChatLaunchMotion from './ChatLaunchMotion';
 import ChatOffMotion from './ChatOffMotion';
@@ -82,6 +83,7 @@ export {
   CaretSortMotion,
   CaretSortDownMotion,
   CaretSortUpMotion,
+  CenterCircleMotion,
   ChatMotion,
   ChatLaunchMotion,
   ChatOffMotion,

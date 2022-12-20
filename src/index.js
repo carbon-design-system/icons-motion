@@ -59,6 +59,7 @@ export {
   CaretSortMotion,
   CaretSortDownMotion,
   CaretSortUpMotion,
+  CenterCircleMotion,
   ChatMotion,
   ChatLaunchMotion,
   ChatOffMotion,
