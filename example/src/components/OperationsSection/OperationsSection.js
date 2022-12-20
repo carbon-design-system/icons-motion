@@ -62,6 +62,7 @@ const OperationsSection = () => {
   const [resetAnimating, setResetAnimating] = useState(false)
   const [resetAltAnimating, setResetAltAnimating] = useState(false)
   const [restartAnimating, setRestartAnimating] = useState(false)
+  const [reviewAnimating, setReviewAnimating] = useState(false)
   const [rotateAnimating, setRotateAnimating] = useState(false)
   const [scanAnimating, setScanAnimating] = useState(false)
   const [scanAltAnimating, setScanAltAnimating] = useState(false)
@@ -660,6 +661,17 @@ const OperationsSection = () => {
               size={32} />
           </li>
           <li className='icon-tile'
+            onMouseEnter={() => setReviewAnimating(true)}
+            onMouseLeave={() => setReviewAnimating(false)}
+          >
+            <h3>Review</h3>
+            <icons.ReviewMotion 
+              isAnimating={reviewAnimating}
+              size={32} />
+          </li>
+          <li 
+            className='icon-tile'
+            isAnimating={rotateAnimating} 
             onMouseEnter={() => setRotateAnimating(true)}
             onMouseLeave={() => setRotateAnimating(false)}
           >
