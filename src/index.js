@@ -110,6 +110,7 @@ export {
   ScanAltMotion,
   ScanDisabledMotion,
   SearchMotion,
+  SearchLocateMotion,
   SendMotion,
   SendAltMotion, 
   SendAltFilledMotion, 

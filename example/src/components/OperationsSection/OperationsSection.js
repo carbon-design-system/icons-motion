@@ -65,6 +65,7 @@ const OperationsSection = () => {
   const [scanAltAnimating, setScanAltAnimating] = useState(false)
   const [scanDisabledAnimating, setScanDisabledAnimating] = useState(false)
   const [searchAnimating, setSearchAnimating] = useState(false)
+  const [searchLocateAnimating, setSearchLocateAnimating] = useState(false)
   const [sendAnimating, setSendAnimating] = useState(false)
   const [sendAltAnimating, setSendAltAnimating] = useState(false)
   const [sendAltFilledAnimating, setSendAltFilledAnimating] = useState(false)
@@ -499,8 +500,7 @@ const OperationsSection = () => {
             <icons.NewTabMotion 
               isAnimating={newTabAnimating} 
               size={32} />
-          </li>   
-          
+          </li>            
           <li className='icon-tile'
             onMouseEnter={() => setNotSentAnimating(true)}
             onMouseLeave={() => setNotSentAnimating(false)}
@@ -685,6 +685,16 @@ const OperationsSection = () => {
             <h3>Search</h3>
             <icons.SearchMotion 
               isAnimating={searchAnimating}
+              size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSearchLocateAnimating(true)}
+            onMouseLeave={() => setSearchLocateAnimating(false)}
+          >
+            <h3>Search locate</h3>
+            <icons.SearchLocateMotion 
+              isAnimating={searchLocateAnimating} 
               size={32} />
           </li>
           <li

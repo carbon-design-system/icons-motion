@@ -59,6 +59,7 @@ import ScanMotion from './ScanMotion'
 import ScanAltMotion from './ScanAltMotion'
 import ScanDisabledMotion from './ScanDisabledMotion'
 import SearchMotion from './SearchMotion'
+import SearchLocateMotion from './SearchLocateMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -138,6 +139,7 @@ export {
   ScanAltMotion,
   ScanDisabledMotion,
   SearchMotion,
+  SearchLocateMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
