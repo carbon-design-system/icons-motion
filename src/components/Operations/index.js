@@ -40,14 +40,20 @@ import PanHorizontalMotion from './PanHorizontalMotion'
 import PanVerticalMotion from './PanVerticalMotion'
 import PinMotion from './PinMotion'
 import PinFilledMotion from './PinFilledMotion'
+import RecentlyViewedMotion from './RecentlyViewedMotion'
 import RecommendMotion from './RecommendMotion'
 import RedoMotion from './RedoMotion'
 import RenewMotion from './RenewMotion'
 import RepeatMotion from './RepeatMotion'
+import RequestQuoteMotion from './RequestQuoteMotion'
 import ResetMotion from './ResetMotion'
 import ResetAltMotion from './ResetAltMotion'
 import RestartMotion from './RestartMotion'
 import RotateMotion from './RotateMotion'
+import ScanMotion from './ScanMotion'
+import ScanAltMotion from './ScanAltMotion'
+import ScanDisabledMotion from './ScanDisabledMotion'
+import SearchMotion from './SearchMotion'
 import SendMotion from './SendMotion';
 import SendAltMotion from './SendAltMotion';
 import SendAltFilledMotion from './SendAltFilledMotion';
@@ -60,10 +66,10 @@ import TagGroupMotion from './TagGroupMotion'
 import TagNoneMotion from './TagNoneMotion'
 import TranslateMotion from './TranslateMotion'
 import UndoMotion from './UndoMotion'
+import UpgradeMotion from './UpgradeMotion'
 import XAxisMotion from './XAxisMotion'
 import YAxisMotion from './YAxisMotion'
 import ZAxisMotion from './ZAxisMotion'
-
 
 export {
   AddCommentMotion,
@@ -108,14 +114,20 @@ export {
   PanVerticalMotion,
   PinMotion,
   PinFilledMotion,
+  RecentlyViewedMotion,
   RecommendMotion,
   RedoMotion,
   RenewMotion,
   RepeatMotion,
+  RequestQuoteMotion,
   ResetMotion,
   ResetAltMotion, 
   RestartMotion,
   RotateMotion,
+  ScanMotion,
+  ScanAltMotion,
+  ScanDisabledMotion,
+  SearchMotion,
   SendMotion,
   SendAltMotion,
   SendAltFilledMotion,
@@ -127,6 +139,7 @@ export {
   TagGroupMotion,
   TagNoneMotion,
   UndoMotion,
+  UpgradeMotion,
   XAxisMotion,
   YAxisMotion,
   ZAxisMotion,
