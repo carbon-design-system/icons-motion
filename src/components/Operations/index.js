@@ -39,6 +39,8 @@ import MaximizeMotion from './MaximizeMotion'
 import MinimizeMotion from './MinimizeMotion'
 import MoveMotion from './MoveMotion'
 import NewTabMotion from './NewTabMotion'
+import NotSentMotion from './NotSentMotion'
+import NotSentFilledMotion from './NotSentFilledMotion'
 import PanHorizontalMotion from './PanHorizontalMotion'
 import PanVerticalMotion from './PanVerticalMotion'
 import PinMotion from './PinMotion'
@@ -116,6 +118,8 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  NotSentMotion,
+  NotSentFilledMotion,
   PanHorizontalMotion,
   PanVerticalMotion,
   PinMotion,

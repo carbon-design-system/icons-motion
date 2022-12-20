@@ -90,6 +90,8 @@ export {
   MinimizeMotion,
   MoveMotion,
   NewTabMotion,
+  NotSentMotion,
+  NotSentFilledMotion,
   PanHorizontalMotion,
   PanVerticalMotion,
   PinMotion,
