@@ -92,7 +92,7 @@ const OperationsSection = () => {
         <div className='bx--row'>
           <h2>Operations</h2>
         </div>
-  			<ul className='bx--row'>
+  			<ul className='bx--row icon-tiles-grid'>
           <li
             className='icon-tile'
             onMouseEnter={() => setAddCommentAnimating(true)}

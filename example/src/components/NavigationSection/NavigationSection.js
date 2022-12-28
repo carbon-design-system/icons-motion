@@ -57,7 +57,7 @@ const NavigationSection = () => {
         <div className='bx--row'>
           <h2>Navigation</h2>
         </div>
-  			<ul className='bx--row'>
+  			<ul className='bx--row icon-tiles-grid'>
   				<li
             className='icon-tile'
             onMouseEnter={() => setAddAnimating(true)}
