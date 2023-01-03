@@ -135,4 +135,5 @@ export {
 
 export {
   NotificationMotion,
+  NotificationFilledMotion,
 } from './components/Toggle'
