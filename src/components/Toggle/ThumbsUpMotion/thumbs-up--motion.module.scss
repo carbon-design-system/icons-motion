@@ -1,0 +1,18 @@
+@keyframes thumbs-up {
+  0% { transform: translateY(0px) }
+  10% { transform: translateY(-4px) }
+  20% { transform: translateY(0px) }
+  100% { transform: translateY(0px) }
+}
+
+.ThumbsUp {
+  will-change: transform;
+}
+
+
+
+.isAnimating {
+  .ThumbsUp {
+    animation: thumbs-up 2s infinite cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
