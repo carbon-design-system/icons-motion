@@ -2,7 +2,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	text-align: center;
 	padding: 160px 0 32px 0;
 	opacity: 0;
 	transform: scale(0.8);
@@ -11,9 +11,10 @@
 }
 
 .icon-tile {
-	margin: 8px;
+	margin: 0px;
 	padding: 12px;
 	background-color: #f4f4f4;
+	border: 1px solid #e0e0e0;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -70,5 +71,28 @@ h2 {
 @keyframes fade-in {
 	100% {
 		opacity: 1;
+	}
+}
+
+@media (min-width: 42rem) {
+	.icon-tiles-grid {
+		display: grid;
+		padding-left: 12px;
+		grid-template-columns: repeat(4,1fr);
+	}
+
+	.icon-tile svg{
+		margin: 38px 50px;
+	}
+}
+
+@media (min-width: 66rem) {
+	.icon-tiles-grid {
+		display: grid;
+		grid-template-columns: repeat(6,1fr);
+	}
+
+	.icon-tile svg{
+		margin: 48px 60px;
 	}
 }
