@@ -79,6 +79,7 @@ export {
   FilterResetMotion,
   FlagMotion, 
   FlagFilledMotion,
+  IdeaMotion,
   ImageSearchMotion,
   JumpLinkMotion,
   LaunchMotion,
