@@ -131,3 +131,9 @@ export {
   YAxisMotion,
   ZAxisMotion
 } from './components/Operations'
+
+
+export {
+  NotificationMotion,
+  NotificationFilledMotion,
+} from './components/Toggle'
