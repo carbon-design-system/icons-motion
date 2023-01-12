@@ -1,0 +1,85 @@
+@keyframes clean-line1 {
+  0% {
+    transform: translate(0px);
+  }
+  8% {
+    transform: translate(-4px);
+  }
+  16% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes clean-line2 {
+  2% {
+    transform: translate(0px);
+  }
+  10% {
+    transform: translate(-4px);
+  }
+  18% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes clean-line3 {
+  4% {
+    transform: translate(0px);
+  }
+  12% {
+    transform: translate(-4px);
+  }
+  20% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes clean-broom {
+  0% {
+    transform: translate(0px) ;
+  }
+  10% {
+    transform: translate(-4px) ;
+  }
+  20% {
+    transform: translate(0px) ;
+  }
+  100% {
+    transform: translate(0px) ;
+  }
+}
+
+
+.CleanLine1,
+.CleanLine2,
+.CleanLine3,
+.CleanBroom {
+  will-change: transform;
+}
+
+.isAnimating {
+  .CleanLine1 {
+    animation: clean-line1 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .CleanLine2 {
+    animation: clean-line2 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+  .CleanLine3 {
+    animation: clean-line3 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .CleanBroom {
+    animation: clean-broom infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}

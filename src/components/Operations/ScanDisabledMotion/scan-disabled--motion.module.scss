@@ -1,0 +1,28 @@
+@keyframes scan-disabled {
+  0% {
+    transform: translate(0px);
+  }
+  4% {
+    transform: translate(-2px);
+  }
+  12% {
+    transform: translate(2px);
+  }
+  16% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.ScanDisabled{
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .ScanDisabled {
+    animation: scan-disabled 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

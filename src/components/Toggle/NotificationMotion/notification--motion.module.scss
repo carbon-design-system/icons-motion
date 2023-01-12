@@ -1,0 +1,38 @@
+@keyframes notification-bell {
+  0% { transform: rotate(0deg)}
+  8.3% { transform: rotate(7deg)}
+  16.6% { transform: rotate(-4deg)}
+  25% { transform: rotate(2deg)}
+  30% { transform: rotate(0deg)}
+  100% { transform: rotate(0)}
+}
+
+
+@keyframes notification-clapper {
+  0% { transform: rotate(0deg)}
+  3.3% { transform: rotate(0deg) } 
+  13.3% { transform: rotate(4deg)}
+  21.6% { transform: rotate(-1deg)}
+  30% { transform: rotate(0)}
+}
+
+
+.NotificationBell,
+.NotificationClapper {
+  transform-origin: 1rem .25rem;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .NotificationBell {
+    animation: notification-bell 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
+
+
+.isAnimating {
+  .NotificationClapper {
+    animation: notification-clapper 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
