@@ -28,6 +28,7 @@ import FilterRemoveMotion from './FilterRemoveMotion'
 import FilterResetMotion from './FilterResetMotion'
 import FlagMotion from './FlagMotion'
 import FlagFilledMotion from './FlagFilledMotion'
+import IdeaMotion from './IdeaMotion'
 import ImageSearchMotion from './ImageSearchMotion'
 import JumpLinkMotion from './JumpLinkMotion'
 import LaunchMotion from './LaunchMotion'
@@ -111,6 +112,7 @@ export {
   FilterResetMotion,
   FlagMotion,
   FlagFilledMotion,
+  IdeaMotion,
   ImageSearchMotion,
   JumpLinkMotion,
   LaunchMotion,
