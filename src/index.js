@@ -135,6 +135,7 @@ export {
 
 
 export {
+  FavoriteMotion,
   NotificationMotion,
   NotificationFilledMotion,
 } from './components/Toggle'

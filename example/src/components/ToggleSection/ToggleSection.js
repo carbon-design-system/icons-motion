@@ -3,6 +3,7 @@ import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
 
 const ToggleSection = () => {
+  const [favoriteAnimating, setFavoriteAnimating] = useState(false)
   const [notificationAnimating, setNotificationAnimating] = useState(false)
   const [notificationFilledAnimating, setNotificationFilledAnimating] = useState(false)
 
@@ -13,6 +14,16 @@ const ToggleSection = () => {
           <h2>Toggle</h2>
         </div>
   			<ul className='bx--row'>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFavoriteAnimating(true)}
+            onMouseLeave={() => setFavoriteAnimating(false)}
+          >
+          <h3>Favorite</h3>
+          <icons.FavoriteMotion 
+            isAnimating={favoriteAnimating} 
+            size={32} />
+          </li>
   				<li
             className='icon-tile'
             onMouseEnter={() => setNotificationAnimating(true)}
