@@ -4,6 +4,7 @@ import '@carbon/icons-motion/dist/index.css'
 
 const ToggleSection = () => {
   const [favoriteAnimating, setFavoriteAnimating] = useState(false)
+  const [favoriteHalfAnimating, setFavoriteHalfAnimating] = useState(false)
   const [notificationAnimating, setNotificationAnimating] = useState(false)
   const [notificationFilledAnimating, setNotificationFilledAnimating] = useState(false)
 
@@ -22,6 +23,16 @@ const ToggleSection = () => {
           <h3>Favorite</h3>
           <icons.FavoriteMotion 
             isAnimating={favoriteAnimating} 
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFavoriteHalfAnimating(true)}
+            onMouseLeave={() => setFavoriteHalfAnimating(false)}
+          >
+          <h3>Favorite half</h3>
+          <icons.FavoriteHalfMotion 
+            isAnimating={favoriteHalfAnimating} 
             size={32} />
           </li>
   				<li
