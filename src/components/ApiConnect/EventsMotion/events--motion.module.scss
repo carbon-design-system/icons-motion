@@ -1,0 +1,33 @@
+@keyframes arise {
+  0% {
+    opacity: 0;
+    transform: translateY(1px);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.EventsMotion {
+  width: 32px;
+  height: 32px;
+  will-change: opacity, transform;
+}
+
+.isAnimating {
+  .EventsPerson1 {
+  animation: arise 1s ease-in 0.2s;
+  }
+  
+  .EventsPerson2 {
+  animation: arise 1s ease-in 0.4s;
+  }
+
+  .EventsPerson3 {
+    animation: arise 1s ease-in 0s;
+  }
+}

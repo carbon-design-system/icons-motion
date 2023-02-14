@@ -1,0 +1,26 @@
+@keyframes animate-pencil {
+	10% {
+		transform: translateX(6px);
+	}
+	20% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+.EditMotion {
+	width: 32px;
+	height: 32px;
+}
+
+.EditPencil {
+	will-change: transform;
+}
+
+.isAnimating { 
+	.EditPencil {
+		animation: animate-pencil 2.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+	}
+}

@@ -138,3 +138,16 @@ export {
   NotificationMotion,
   NotificationFilledMotion,
 } from './components/Toggle'
+
+export {
+  ArchiveMotion,
+  BinocularsMotion,
+  ConnectionSignalMotion,
+  DownloadMotion,
+  EditMotion,
+  EventsMotion,
+  GlobeMotion,
+  GridMotion, 
+  SettingsMotion
+} from './components/ApiConnect'
+

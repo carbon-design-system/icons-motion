@@ -1,0 +1,88 @@
+@keyframes box-one {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-two {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-three {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-four {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.GridMotion {
+  width: 32px;
+  height: 32px;
+}
+
+.GridBoxOne,
+.GridBoxTwo,
+.GridBoxThree,
+.GridBoxFour {
+  will-change: opacity;
+}
+
+.isAnimating  {
+  .GridBoxOne {
+    animation: box-one 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .GridBoxTwo {
+    animation: box-two 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .GridBoxThree {
+    animation: box-three 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+    }
+  .GridBoxFour {
+    animation: box-four 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

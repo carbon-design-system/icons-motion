@@ -1,0 +1,27 @@
+@keyframes arrow {
+  8% {
+    transform: translateY(-6px);
+  }
+  16% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.DownloadMotion {
+  width: 32px;
+  height: 32px;
+}
+
+.DownloadArrow {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .DownloadArrow {
+    animation: arrow 3s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

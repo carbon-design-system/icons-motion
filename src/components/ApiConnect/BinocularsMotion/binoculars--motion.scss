@@ -1,0 +1,25 @@
+@keyframes animate-binoculars {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  9% {
+    transform: rotate(-35deg) scale(1.06);
+  }
+  18% {
+    transform: rotate(0) scale(1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.BinocularsMotion {
+  will-change: transform;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg) scale(1);}
+
+.isAnimating {
+  .Binoculars {
+    animation: animate-binoculars 3s;
+  }
+}

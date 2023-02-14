@@ -1,0 +1,34 @@
+@keyframes animate-file-cabinet-handle {
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  30% {
+    transform: translateX(2px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ArchiveMotion {
+  width: 32px;
+  height: 32px;
+}
+
+.ArchiveHandle {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .ArchiveHandle {
+    animation: animate-file-cabinet-handle 2s infinite
+    cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

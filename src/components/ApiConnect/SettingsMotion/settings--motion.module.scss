@@ -1,0 +1,21 @@
+@keyframes animate-outer-gear {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.SettingsMotion {
+  width: 32px;
+  height: 32px;
+}
+
+.SettingsOuterGear {
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .SettingsOuterGear {
+    animation: animate-outer-gear 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

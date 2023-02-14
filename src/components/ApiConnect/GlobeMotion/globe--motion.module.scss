@@ -1,0 +1,23 @@
+@keyframes flip-ball {
+	0% {
+		tranform: scaleX(0);
+	}
+	60% {
+		transform: translateX(28px) scaleX(-1);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+.GlobeMotion {
+	width: 32px;
+	height: 32px;
+	will-change: transform;
+}
+
+.isAnimating {
+	.GlobeBall1 {
+		animation: flip-ball 1s cubic-bezier(0.52, 0.16, 0.54, 0.89);
+	}
+}
