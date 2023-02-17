@@ -14,7 +14,7 @@ const ApicSection = () => {
   const [settingsAnimating, setSettingsAnimating] = useState(false)
 
 	return (
-		<section className="icon-section">  
+		<section className="icon-section">
       <div className='bx--grid'>
         <div className='bx--row'>
           <h2>API Connect</h2>
@@ -29,7 +29,7 @@ const ApicSection = () => {
           <icons.ArchiveMotion 
             isAnimating={archiveAnimating} 
             size={32} />
-          </li>         
+          </li>                 
           <li
             className='icon-tile'
             onMouseEnter={() => setBinocularsAnimating(true)}

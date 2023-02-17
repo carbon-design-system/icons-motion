@@ -1,25 +1,14 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import styles from "./connection-signal--motion.scss";
 
 const ConnectionSignalMotion = (props) => {
  const iconRef = useRef(null);
-  const [isAnimating, setIsAnimating] = useState(props.isAnimating)
-
-  let iconStyles = {
-    width: props.size,
-    height: props.size
-  }
-
-  React.useEffect(() => {
-    setIsAnimating(props.isAnimating)
-  }, [props.isAnimating])
-
-  const shouldAnimate = isAnimating ? styles.isAnimating : ''
 
   return (
-    <div ref={iconRef} className={`${shouldAnimate}`}>
+    <div ref={iconRef} className={props.isAnimating ? styles.isAnimating : null}>
       <svg
-        style={iconStyles}
+        width={props.size}
+        height={props.size}
         viewBox="0 0 32 32"
       >
         <title>connection signal</title>

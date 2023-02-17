@@ -1,26 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import styles from "./download--motion.scss";
 
 const DownloadMotion = (props) => {
   const iconRef = useRef(null);
-  const [isAnimating, setIsAnimating] = useState(props.isAnimating)
-  let iconStyles = {
-    width: props.size,
-    height: props.size
-  }
-
-  React.useEffect(() => {
-    setIsAnimating(props.isAnimating)
-  }, [props.isAnimating])
-
-  const shouldAnimate = isAnimating ? styles.isAnimating : ''
-
-
+ 
   return (
-    <div ref={iconRef} className={`${shouldAnimate}`}>
+    <div ref={iconRef} className={props.isAnimating ? styles.isAnimating : null}>
       <svg
-        viewBox="0 -3 32 33"
+        // TODO: fix viewbox 
+        // viewBox="0 -3 32 33"
         className={styles.DownloadMotion}
+        width={props.size}
+        height={props.size}
       >
       <title>download</title>
       <path

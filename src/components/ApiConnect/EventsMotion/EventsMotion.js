@@ -1,27 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import styles from "./events--motion.module.scss";
 
 const EventsMotion = (props) => {
  
   const iconRef = useRef(null);
-  const [isAnimating, setIsAnimating] = useState(props.isAnimating)
-
-  let iconStyles = {
-    width: props.size,
-    height: props.size
-  }
-
-  React.useEffect(() => {
-    setIsAnimating(props.isAnimating)
-  }, [props.isAnimating])
-
-  const shouldAnimate = isAnimating ? styles.isAnimating : ''
-
+ 
   return (
-    <div ref={iconRef} className={`${shouldAnimate}`}>
+    <div ref={iconRef} className={props.isAnimating ? styles.isAnimating : null}>
       <svg
         viewBox="0 0 32 32"
         className={styles.EventsMotion}
+        width={props.size}
+        height={props.size}
       >
         <title>events</title>
         <g className={styles.EventsPerson}>

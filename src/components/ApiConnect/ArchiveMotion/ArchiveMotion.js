@@ -1,26 +1,14 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import styles from "./archive--motion.module.scss";
 
 const ArchiveMotion = (props) => {
   const iconRef = useRef(null);
-  const [isAnimating, setIsAnimating] = useState(props.isAnimating)
-
-  let iconStyles = {
-    width: props.size,
-    height: props.size
-  }
-
-  React.useEffect(() => {
-    setIsAnimating(props.isAnimating)
-  }, [props.isAnimating])
-
-  const shouldAnimate = isAnimating ? styles.isAnimating : ''
 
   return (
-    <div ref={iconRef} className={`${shouldAnimate}`}>
+    <div ref={iconRef} className={props.isAnimating ? styles.isAnimating : null} >
       <svg
-        style={iconStyles}
-        viewBox="0 0 32 32"
+        height={props.size}
+        width={props.size}
       >
         <title>archive</title>
         <rect className={styles.ArchiveHandle} x="14" y="19" width="4" height="2" />
