@@ -1,27 +1,43 @@
-@keyframes arrow {
+@-webkit-keyframes arrow {
   8% {
-    transform: translateY(-6px);
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
   }
   16% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
-.DownloadMotion {
-  width: 32px;
-  height: 32px;
+@keyframes arrow {
+  8% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  16% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .DownloadArrow {
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   will-change: transform;
 }
 
 .isAnimating {
   .DownloadArrow {
-    animation: arrow 3s cubic-bezier(0.4, 0.14, 0.3, 1);
+    -webkit-animation: arrow 3s cubic-bezier(0.4, 0.14, 0.3, 1);
+            animation: arrow 3s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }

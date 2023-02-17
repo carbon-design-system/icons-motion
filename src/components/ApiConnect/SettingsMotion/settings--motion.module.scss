@@ -1,6 +1,14 @@
+@-webkit-keyframes animate-outer-gear {
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
 @keyframes animate-outer-gear {
   to {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
@@ -10,12 +18,15 @@
 }
 
 .SettingsOuterGear {
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   will-change: transform;
 }
 
 .isAnimating {
   .SettingsOuterGear {
-    animation: animate-outer-gear 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+    -webkit-animation: animate-outer-gear 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+            animation: animate-outer-gear 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }

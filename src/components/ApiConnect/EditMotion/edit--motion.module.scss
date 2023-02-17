@@ -1,12 +1,30 @@
-@keyframes animate-pencil {
+@-webkit-keyframes animate-pencil {
 	10% {
-		transform: translateX(6px);
+		-webkit-transform: translateX(6px);
+		        transform: translateX(6px);
 	}
 	20% {
-		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
 	}
 	100% {
-		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+	}
+}
+
+@keyframes animate-pencil {
+	10% {
+		-webkit-transform: translateX(6px);
+		        transform: translateX(6px);
+	}
+	20% {
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
 	}
 }
 
@@ -21,6 +39,7 @@
 
 .isAnimating { 
 	.EditPencil {
-		animation: animate-pencil 2.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+		-webkit-animation: animate-pencil 2.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+		        animation: animate-pencil 2.5s cubic-bezier(0.4, 0.14, 0.3, 1);
 	}
 }

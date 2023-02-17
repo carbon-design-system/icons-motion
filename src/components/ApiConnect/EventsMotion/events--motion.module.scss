@@ -1,33 +1,52 @@
-@keyframes arise {
+@-webkit-keyframes arise {
   0% {
     opacity: 0;
-    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
   }
-  75% {
+  45% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes arise {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 .EventsMotion {
-  width: 32px;
-  height: 32px;
   will-change: opacity, transform;
 }
 
 .isAnimating {
-  .EventsPerson1 {
-  animation: arise 1s ease-in 0.2s;
+  .EventsPerson {
+  -webkit-animation: arise 1s ease-in 0.2s;
+          animation: arise 1s ease-in 0.2s;
   }
   
   .EventsPerson2 {
-  animation: arise 1s ease-in 0.4s;
+  -webkit-animation: arise 1s ease-in 0.4s;
+          animation: arise 1s ease-in 0.4s;
   }
 
   .EventsPerson3 {
-    animation: arise 1s ease-in 0s;
+    -webkit-animation: arise 1s ease-in 0s;
+            animation: arise 1s ease-in 0s;
   }
 }

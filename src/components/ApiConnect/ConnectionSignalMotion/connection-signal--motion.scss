@@ -1,3 +1,18 @@
+@-webkit-keyframes inner-signal {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  28% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes inner-signal {
   0% {
     opacity: 0;
@@ -6,6 +21,21 @@
     opacity: 0;
   }
   28% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes outer-signal {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  38% {
     opacity: 1;
   }
   100% {
@@ -35,16 +65,20 @@
 
 .ConnectionInner,
 .ConnectionOuter {
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   will-change: transform;
 }
 
 .isAnimating{
  .ConnectionInner {
-  animation: inner-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+  -webkit-animation: inner-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+          animation: inner-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 
   .ConnectionOuter {
-    animation: outer-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+    -webkit-animation: outer-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+            animation: outer-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }
