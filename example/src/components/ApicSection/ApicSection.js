@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import * as icons from '@carbon/icons-motion'
+import React from 'react'
+import * as icons  from '@carbon/icons-motion'
 import DemoTile from '../DemoTile'
 import '@carbon/icons-motion/dist/index.css'
 
@@ -52,7 +52,7 @@ const ApicSection = () => {
       </div>
     </section>
 	 )
-  
+
 }
 
 export default ApicSection

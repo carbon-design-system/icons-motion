@@ -9,4 +9,4 @@ import GridMotion from './GridMotion';
 import SettingsMotion from './SettingsMotion';
 
 
-export { ArchiveMotion, BinocularsMotion, ConnectionSignalMotion, DownloadMotion, EditMotion, EventsMotion, GlobeMotion, GridMotion, SettingsMotion }
+export { ArchiveMotion, BinocularsMotion, ConnectionSignalMotion, DownloadMotion, EditMotion, EventsMotion, GlobeMotion, GridMotion, SettingsMotion } 
