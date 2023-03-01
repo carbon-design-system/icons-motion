@@ -3,7 +3,7 @@ import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
 
 const FormattingSection = () => {
-  const [cutAnimating, setCutAnimating] = useState(false)
+  const [cropAnimating, setCropAnimating] = useState(false)
 
   return (
     <section className='icon-section'>
@@ -14,11 +14,11 @@ const FormattingSection = () => {
         <ul className='bx--row icon-tiles-grid'>
           <li
             className='icon-tile'
-            onMouseEnter={() => setCutAnimating(true)}
-            onMouseLeave={() => setCutAnimating(false)}
+            onMouseEnter={() => setCropAnimating(true)}
+            onMouseLeave={() => setCropAnimating(false)}
           >
-            <h3>Cut</h3>
-            <icons.CutMotion isAnimating={cutAnimating} size={32} />
+            <h3>Crop</h3>
+            <icons.CropMotion isAnimating={cropAnimating} size={32} />
           </li>
         </ul>
       </div>

@@ -2,7 +2,7 @@ import './index.scss'
 
 // Formatting
 export {
-  CutMotion
+  CropMotion
 } from './components/Formatting'
 
 // Navigation
