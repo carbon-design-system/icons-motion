@@ -1,5 +1,5 @@
-import CropMotion from "./CropMotion/CropMotion"
+import CopyMotion from "./CopyMotion/CopyMotion"
 
 export {
-  CropMotion
+  CopyMotion
 }
