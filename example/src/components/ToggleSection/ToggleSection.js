@@ -5,6 +5,7 @@ import '@carbon/icons-motion/dist/index.css'
 const ToggleSection = () => {
   const [notificationAnimating, setNotificationAnimating] = useState(false)
   const [notificationFilledAnimating, setNotificationFilledAnimating] = useState(false)
+  const [viewAnimating, setViewAnimating] = useState(false)
 
 	return (
 		<section className="icon-section">	
@@ -31,6 +32,16 @@ const ToggleSection = () => {
           <h3>Notification filled</h3>
           <icons.NotificationFilledMotion 
             isAnimating={notificationFilledAnimating} 
+            size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setViewAnimating(true)}
+            onMouseLeave={() => setViewAnimating(false)}
+          >
+          <h3>View</h3>
+          <icons.ViewMotion 
+            isAnimating={viewAnimating} 
             size={32} />
           </li>
   		  </ul>

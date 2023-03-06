@@ -1,0 +1,117 @@
+@keyframes view-eye {
+  0% { transform: scaleY(1)}
+  10% { transform: scaleY(.75)}
+  20% { transform: scaleY(1)}
+  100% { transform: scaleY(1)}
+}
+
+
+.ViewIris {
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+}
+
+.ViewEye {
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+}
+
+
+.isAnimating {
+  .ViewEye {
+    animation: view-eye 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
+
+.isAnimating {
+  .ViewIris {
+    animation: view-iris 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
+
+
+
+/////////////////FILLED//////////////
+
+
+
+@keyframes view-filled-eye {
+  0% {
+    transform: scale(1,1);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(1,.75);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1,1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1,1);
+    opacity: 1;
+  }
+}
+
+
+
+.ViewFilledEye {
+  transform-origin: 1rem 1rem;
+  scale: 1;
+  opacity: 0;
+}
+
+
+.isAnimating {
+  .ViewFilledEye {
+    animation: view-filled-eye 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
+
+
+////////
+
+@keyframes view-filled-pupil {
+  0% { opacity: 0}
+  10% { opacity: 1}
+  20% { opacity: 1}
+  100% { opacity: 1}
+}
+
+
+.ViewFilledPupil {
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+  opacity: 0;
+}
+
+
+.isAnimating {
+  .ViewFilledPupil {
+    animation: view-filled-pupil 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
+
+//////////
+
+
+@keyframes view-filled-iris {
+  0% { opacity: 0}
+  10% { opacity: 1}
+  20% { opacity: 1}
+  100% { opacity: 1}
+}
+
+.ViewFilledIris {
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+  opacity: 0;
+}
+
+
+.isAnimating {
+  .ViewFilledIris {
+    animation: view-filled-iris 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
