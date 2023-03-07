@@ -25,6 +25,8 @@ npm install @carbon/icons-motion
 Example:
 How to import and use the icon component and CSS file from the package.
 
+This example shows how to import one specific icon `HomeMotion` and use it a component in an app. 
+
 
 App.js
 ```jsx
@@ -48,11 +50,12 @@ The component takes two props:
 Example:
 Here's how to make an icon animate on mouseEnter of the `div` with the className of `icon-tile`, similar to the examples shown in the demo app at `./example/src/components/NavigationSection folder`.
 
+Note in this example, all icons are imported as `*` so to use the specific icon, use `<icons.IconName>`
 
 App.js
 ```jsx
 import React, { useState } from 'react'
-import { HomeMotion } from '@carbon/icons-motion'
+import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
 
 const [homeAnimating, setHomeAnimating] = useState(false)
