@@ -1,6 +1,6 @@
 @-webkit-keyframes flip-ball {
 	0% {
-		tranform: scaleX(0);
+		transform: scaleX(0);
 	}
 	60% {
 		-webkit-transform: translateX(28px) scaleX(-1);
@@ -14,7 +14,7 @@
 
 @keyframes flip-ball {
 	0% {
-		tranform: scaleX(0);
+		transform: scaleX(0);
 	}
 	60% {
 		-webkit-transform: translateX(28px) scaleX(-1);
