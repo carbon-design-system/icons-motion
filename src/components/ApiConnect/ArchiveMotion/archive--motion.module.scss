@@ -1,0 +1,66 @@
+@-webkit-keyframes animate-file-cabinet-handle {
+  10% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  30% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  40% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animate-file-cabinet-handle {
+  10% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  30% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  40% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.ArchiveMotion {
+  width: 32px;
+  height: 32px;
+}
+
+.ArchiveHandle {
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+ .ArchiveHandle {
+  -webkit-animation: animate-file-cabinet-handle 2s infinite
+    cubic-bezier(0.4, 0.14, 0.3, 1);
+          animation: animate-file-cabinet-handle 2s infinite
+    cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

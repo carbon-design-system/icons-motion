@@ -143,3 +143,17 @@ export {
   NotificationMotion,
   NotificationFilledMotion,
 } from './components/Toggle'
+
+
+// API Connect icons
+export {
+  ArchiveMotion,
+  BinocularsMotion,
+  ConnectionSignalMotion,
+  DownloadMotion,
+  EditMotion,
+  EventsMotion,
+  GlobeMotion,
+  GridMotion, 
+  SettingsMotion
+} from './components/ApiConnect'

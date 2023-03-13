@@ -1,0 +1,52 @@
+@-webkit-keyframes arise {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes arise {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.EventsMotion {
+  will-change: opacity, transform;
+}
+
+.isAnimating {
+  .EventsPerson {
+  -webkit-animation: arise 1s ease-in 0.2s;
+          animation: arise 1s ease-in 0.2s;
+  }
+  
+  .EventsPerson2 {
+  -webkit-animation: arise 1s ease-in 0.4s;
+          animation: arise 1s ease-in 0.4s;
+  }
+
+  .EventsPerson3 {
+    -webkit-animation: arise 1s ease-in 0s;
+            animation: arise 1s ease-in 0s;
+  }
+}
