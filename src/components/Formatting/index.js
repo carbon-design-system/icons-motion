@@ -1,5 +1,5 @@
-import CopyMotion from "./CopyMotion/CopyMotion"
+import PasteMotion from "./PasteMotion/PasteMotion"
 
 export {
-  CopyMotion
+  PasteMotion
 }

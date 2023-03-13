@@ -3,7 +3,7 @@ import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
 
 const FormattingSection = () => {
-  const [copyAnimating, setCopyAnimating] = useState(false)
+  const [pasteAnimating, setPasteAnimating] = useState(false)
 
   return (
     <section className='icon-section'>
@@ -14,11 +14,11 @@ const FormattingSection = () => {
         <ul className='bx--row icon-tiles-grid'>
           <li
             className='icon-tile'
-            onMouseEnter={() => setCopyAnimating(true)}
-            onMouseLeave={() => setCopyAnimating(false)}
+            onMouseEnter={() => setPasteAnimating(true)}
+            onMouseLeave={() => setPasteAnimating(false)}
           >
-            <h3>Copy</h3>
-            <icons.CopyMotion isAnimating={copyAnimating} size={32} />
+            <h3>Paste</h3>
+            <icons.PasteMotion isAnimating={pasteAnimating} size={32} />
           </li>
         </ul>
       </div>

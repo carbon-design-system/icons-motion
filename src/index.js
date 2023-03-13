@@ -2,7 +2,7 @@ import './index.scss'
 
 // Formatting
 export {
-  CopyMotion
+  PasteMotion
 } from './components/Formatting'
 
 // Navigation
