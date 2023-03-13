@@ -1,0 +1,135 @@
+
+
+@keyframes sort-remove-line1 {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(6px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes sort-remove-line2 {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-6px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes sort-remove-line3 {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-2px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+@keyframes sort-remove-vertical {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform:  scaleY(.7);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes sort-remove-horizontal {
+  0% {
+    transform: scaleX(1);
+  }
+  10% {
+    transform:  scaleX(.7);
+  }
+  20% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.SortRemoveVertical,
+.SortRemoveHorizontal {
+  will-change: transform;
+  transform: rotate(45deg);
+  transform-origin: 1.5625rem 1.4375rem;
+}
+
+.isAnimating {
+  .SortRemoveVertical {
+    animation: sort-remove-vertical infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .SortRemoveHorizontal {
+    animation: sort-remove-horizontal infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+
+
+.SortRemoveArrow {
+  will-change: transform;
+}
+
+.isAnimating {
+  .SortRemoveArrow {
+    animation: sort-remove-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.SortRemoveLine1,
+.SortRemoveLine2,
+.SortRemvoeLine3 {
+  will-change: transform;
+  transform-origin: 1rem 0rem;
+}
+
+.isAnimating {
+  .SortRemoveLine1 {
+    animation: sort-remove-line1 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .SortRemoveLine2 {
+    animation: sort-remove-line2 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .SortRemoveLine3 {
+    animation: sort-remove-line3 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+

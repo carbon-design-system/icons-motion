@@ -1,0 +1,97 @@
+@keyframes sort-descending-arrow {
+  0% {
+    transform: translatey(0px);
+  }
+  10% {
+    transform: translatey(4px);
+  }
+  20% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes sort-descending-line1 {
+  0% {
+    transform: translateX(0px);
+  }
+  6% {
+    transform: translateX(-2px);
+  }
+  12% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes sort-descending-line2 {
+  4% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-2px);
+  }
+  16% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes sort-descending-line3 {
+  8% {
+    transform: translateX(0px);
+  }
+  14% {
+    transform: translateX(-2px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.SortDescendingArrow {
+  will-change: transform;
+}
+
+.isAnimating {
+  .SortDescendingArrow {
+    animation: sort-descending-arrow infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.SortDescendingLine1,
+.SortDescendingLine2,
+.SortDescendingLine3 {
+  will-change: transform;
+  transform-origin: 1rem 0rem;
+}
+
+.isAnimating {
+  .SortDescendingLine1 {
+    animation: sort-descending-line1 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .SortDescendingLine2 {
+    animation: sort-descending-line2 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+.isAnimating {
+  .SortDescendingLine3 {
+    animation: sort-descending-line3 infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+
