@@ -2,6 +2,7 @@ import './index.scss'
 
 // Formatting
 export {
+  CropMotion,
   CutMotion
 } from './components/Formatting'
 
@@ -141,7 +142,7 @@ export {
 // Toggle
 export {
   NotificationMotion,
-  NotificationFilledMotion,
+  NotificationFilledMotion
 } from './components/Toggle'
 
 
