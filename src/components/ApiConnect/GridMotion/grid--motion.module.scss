@@ -1,0 +1,152 @@
+@-webkit-keyframes box-one {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-one {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes box-two {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-two {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes box-three {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-three {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes box-four {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-four {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.GridMotion {
+  width: 32px;
+  height: 32px;
+}
+
+.GridBoxOne,
+.GridBoxTwo,
+.GridBoxThree,
+.GridBoxFour {
+  will-change: opacity;
+}
+
+.isAnimating  {
+  .GridBoxOne {
+    -webkit-animation: box-one 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+            animation: box-one 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .GridBoxTwo {
+    -webkit-animation: box-two 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+            animation: box-two 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+
+  .GridBoxThree {
+    -webkit-animation: box-three 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+            animation: box-three 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+    }
+  .GridBoxFour {
+    -webkit-animation: box-four 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+            animation: box-four 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

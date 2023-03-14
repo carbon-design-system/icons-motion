@@ -2,7 +2,8 @@ import './index.scss'
 
 // Formatting
 export {
-  CropMotion
+  CropMotion,
+  CutMotion
 } from './components/Formatting'
 
 // Navigation
@@ -141,5 +142,19 @@ export {
 // Toggle
 export {
   NotificationMotion,
-  NotificationFilledMotion,
+  NotificationFilledMotion
 } from './components/Toggle'
+
+
+// API Connect icons
+export {
+  ArchiveMotion,
+  BinocularsMotion,
+  ConnectionSignalMotion,
+  DownloadMotion,
+  EditMotion,
+  EventsMotion,
+  GlobeMotion,
+  GridMotion, 
+  SettingsMotion
+} from './components/ApiConnect'

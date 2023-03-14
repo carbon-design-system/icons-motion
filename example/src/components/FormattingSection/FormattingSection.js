@@ -4,6 +4,7 @@ import '@carbon/icons-motion/dist/index.css'
 
 const FormattingSection = () => {
   const [cropAnimating, setCropAnimating] = useState(false)
+  const [cutAnimating, setCutAnimating] = useState(false)
 
   return (
     <section className='icon-section'>
@@ -19,6 +20,14 @@ const FormattingSection = () => {
           >
             <h3>Crop</h3>
             <icons.CropMotion isAnimating={cropAnimating} size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setCutAnimating(true)}
+            onMouseLeave={() => setCutAnimating(false)}
+          >
+            <h3>Cut</h3>
+            <icons.CutMotion isAnimating={cutAnimating} size={32} />
           </li>
         </ul>
       </div>

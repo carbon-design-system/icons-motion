@@ -5,7 +5,7 @@ It enables developers to import an animated icon directly from this library, in 
 
 Check out what the animations look like in this [example app](https://carbon-design-system.github.io/icons-motion/).
 
-We will be adding onto this library one category at a time - the current release includes the **Navigation** icons, and the next batch will be the **Operations** icons (currently in progress).  
+We will be adding onto this library one category at a time - the current release includes the **Navigation** icons and **Operations** icons. The **Formatting** icons are currently in progress, and toggle icons are being worked on as well.  
 If you want to request an icon/category to be animated, please open an issue using the **New icon animation** template.  Working together with the Carbon team, we will prioritize the categories that will be most frequently used. 
 
 We will do our very best to keep these icons in sync with the Carbon icons but if there is a change to the Carbon icon, it may not yet be reflected in our library- if you encounter this, please open a **Update icon animation** issue to alert us.  
@@ -24,6 +24,8 @@ npm install @carbon/icons-motion
 
 Example:
 How to import and use the icon component and CSS file from the package.
+
+This example shows how to import one specific icon `HomeMotion` and use it a component in an app. 
 
 
 App.js
@@ -48,11 +50,12 @@ The component takes two props:
 Example:
 Here's how to make an icon animate on mouseEnter of the `div` with the className of `icon-tile`, similar to the examples shown in the demo app at `./example/src/components/NavigationSection folder`.
 
+Note in this example, all icons are imported as `*` so to use the specific icon, use `<icons.IconName>`
 
 App.js
 ```jsx
 import React, { useState } from 'react'
-import { HomeMotion } from '@carbon/icons-motion'
+import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
 
 const [homeAnimating, setHomeAnimating] = useState(false)
