@@ -1,4 +1,5 @@
 import React from 'react'
+import FormattingSection from '../../components/FormattingSection'
 import NavigationSection from '../../components/NavigationSection'
 import OperationsSection from '../../components/OperationsSection'
 import ToggleSection from '../../components/ToggleSection'
@@ -12,6 +13,7 @@ const CollectionPage = () => {
           <h1>Carbon Animated Icons Collection</h1>
         </div>
       </div>
+      <FormattingSection></FormattingSection>
       <NavigationSection></NavigationSection>
       <OperationsSection></OperationsSection>
       <ToggleSection></ToggleSection>

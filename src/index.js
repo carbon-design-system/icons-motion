@@ -1,6 +1,14 @@
-// Operations
 import './index.scss'
 
+// Formatting
+export {
+  CopyMotion,
+  CropMotion,
+  CutMotion,
+  PasteMotion
+} from './components/Formatting'
+
+// Navigation
 export {
   AddMotion,
   AddAltMotion,
@@ -47,7 +55,7 @@ export {
   ZoomResetMotion
 } from './components/Navigation'
 
-
+// Operations
 export {
   AddCommentMotion,
   ArrowShiftDownMotion,
@@ -77,13 +85,13 @@ export {
   FilterEditMotion,
   FilterRemoveMotion,
   FilterResetMotion,
-  FlagMotion, 
+  FlagMotion,
   FlagFilledMotion,
   IdeaMotion,
   ImageSearchMotion,
   JumpLinkMotion,
   LaunchMotion,
-  LayersMotion, 
+  LayersMotion,
   LoginMotion,
   LogoutMotion,
   LoopMotion,
@@ -105,7 +113,7 @@ export {
   ReplyMotion,
   ReplyAllMotion,
   RequestQuoteMotion,
-  ResetMotion, 
+  ResetMotion,
   ResetAltMotion,
   RestartMotion,
   ReviewMotion,
@@ -116,8 +124,8 @@ export {
   SearchMotion,
   SearchLocateMotion,
   SendMotion,
-  SendAltMotion, 
-  SendAltFilledMotion, 
+  SendAltMotion,
+  SendAltFilledMotion,
   SendFilledMotion,
   TagMotion,
   TagEditMotion,
@@ -133,12 +141,13 @@ export {
   ZAxisMotion
 } from './components/Operations'
 
-
+// Toggle
 export {
   NotificationMotion,
   NotificationFilledMotion,
 } from './components/Toggle'
 
+// API Connect icons
 export {
   ArchiveMotion,
   BinocularsMotion,
@@ -150,4 +159,3 @@ export {
   GridMotion, 
   SettingsMotion
 } from './components/ApiConnect'
-
