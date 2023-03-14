@@ -2,7 +2,9 @@ import './index.scss'
 
 // Formatting
 export {
-  CopyMotion
+  CopyMotion,
+  CropMotion,
+  CutMotion
 } from './components/Formatting'
 
 // Navigation
@@ -141,7 +143,7 @@ export {
 // Toggle
 export {
   NotificationMotion,
-  NotificationFilledMotion,
+  NotificationFilledMotion
 } from './components/Toggle'
 
 
