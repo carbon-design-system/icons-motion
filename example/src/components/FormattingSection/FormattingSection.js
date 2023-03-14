@@ -6,6 +6,7 @@ const FormattingSection = () => {
   const [copyAnimating, setCopyAnimating] = useState(false)
   const [cropAnimating, setCropAnimating] = useState(false)
   const [cutAnimating, setCutAnimating] = useState(false)
+  const [pasteAnimating, setPasteAnimating] = useState(false)
 
   return (
     <section className='icon-section'>
@@ -37,6 +38,14 @@ const FormattingSection = () => {
           >
             <h3>Cut</h3>
             <icons.CutMotion isAnimating={cutAnimating} size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setPasteAnimating(true)}
+            onMouseLeave={() => setPasteAnimating(false)}
+          >
+            <h3>Paste</h3>
+            <icons.PasteMotion isAnimating={pasteAnimating} size={32} />
           </li>
         </ul>
       </div>

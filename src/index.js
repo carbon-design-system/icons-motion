@@ -4,7 +4,8 @@ import './index.scss'
 export {
   CopyMotion,
   CropMotion,
-  CutMotion
+  CutMotion,
+  PasteMotion
 } from './components/Formatting'
 
 // Navigation
@@ -143,9 +144,8 @@ export {
 // Toggle
 export {
   NotificationMotion,
-  NotificationFilledMotion
+  NotificationFilledMotion,
 } from './components/Toggle'
-
 
 // API Connect icons
 export {
