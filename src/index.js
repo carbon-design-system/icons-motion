@@ -2,6 +2,9 @@ import './index.scss'
 
 // Formatting
 export {
+  CopyMotion,
+  CropMotion,
+  CutMotion,
   PasteMotion
 } from './components/Formatting'
 
@@ -143,3 +146,16 @@ export {
   NotificationMotion,
   NotificationFilledMotion,
 } from './components/Toggle'
+
+// API Connect icons
+export {
+  ArchiveMotion,
+  BinocularsMotion,
+  ConnectionSignalMotion,
+  DownloadMotion,
+  EditMotion,
+  EventsMotion,
+  GlobeMotion,
+  GridMotion, 
+  SettingsMotion
+} from './components/ApiConnect'
