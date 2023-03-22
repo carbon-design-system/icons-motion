@@ -139,7 +139,7 @@ export {
   ReplyAllMotion,
   RequestQuoteMotion,
   ResetMotion,
-  ResetAltMotion, 
+  ResetAltMotion,
   RestartMotion,
   ReviewMotion,
   RotateMotion,

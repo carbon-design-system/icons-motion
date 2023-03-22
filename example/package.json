@@ -10,10 +10,10 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@carbon/icons-motion": "file:..",
     "carbon-components": "^10.25.0",
     "carbon-components-react": "^7.54.2",
     "carbon-icons": "^7.0.7",
-    "@carbon/icons-motion": "file:..",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-router-dom": "^5.0.0",
