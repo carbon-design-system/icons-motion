@@ -139,10 +139,12 @@ export {
   NotificationFilledMotion,
 } from './components/Toggle'
 
+
 export {
   ArchiveMotion,
   BinocularsMotion,
   ConnectionSignalMotion,
+  DashboardMotion,
   DownloadMotion,
   EditMotion,
   EventsMotion,

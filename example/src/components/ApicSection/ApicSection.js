@@ -8,9 +8,6 @@ const ApicSection = () => {
 	return (
 		<section className="icon-section">
       <div className='bx--grid'>
-        <div className='bx--row'>
-          <h2>API Connect</h2>
-        </div>
         <ul className='bx--row icon-tiles-grid'>
           <DemoTile
             tileTitle="Archive" 
@@ -23,6 +20,10 @@ const ApicSection = () => {
           <DemoTile
             tileTitle="Connection signal" 
             icon={<icons.ConnectionSignalMotion size={32}/>}
+          /> 
+          <DemoTile
+            tileTitle="Dashboard" 
+            icon={<icons.DashboardMotion size={32}/>}
           /> 
           <DemoTile
             tileTitle="Download" 
