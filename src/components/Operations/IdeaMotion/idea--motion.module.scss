@@ -1,0 +1,181 @@
+@keyframes idea-filament {
+  0% { stroke-dashoffset: 6px}
+  10% { stroke-dashoffset: 0px}
+  50% { stroke-dashoffset: 0px}
+  60% { stroke-dashoffset: 6px}
+  100% { stroke-dashoffset: 6px}
+}
+
+.IdeaFilament {
+  stroke-dasharray: 6px;
+  stroke-dashoffset: 6px;
+}
+
+.isAnimating {
+  .IdeaFilament {
+    animation: idea-filament infinite cubic-bezier(0.4, 0.14, 0.3, 1) 2s;
+  }
+}
+
+
+
+
+
+
+
+@keyframes idea-left {
+  0% { stroke-dashoffset: 4px}
+  20% { stroke-dashoffset: 0px}
+  40% { stroke-dashoffset: -4px}
+  100% { stroke-dashoffset: -4px}
+}
+
+.IdeaLeft {
+  stroke-dasharray: 4px;
+  stroke-dashoffset: 4px;
+}
+
+.isAnimating {
+  .IdeaLeft {
+    animation: idea-left infinite cubic-bezier(.23,.59,.79,.54) 2s;
+  }
+}
+
+
+
+
+
+
+
+
+@keyframes idea-right {
+  0% { stroke-dashoffset: 4px}
+  20% { stroke-dashoffset: 0px}
+  40% { stroke-dashoffset: -4px}
+  100% { stroke-dashoffset: -4px}
+}
+
+.IdeaRight {
+  stroke-dasharray: 4px;
+  stroke-dashoffset: 4px;
+}
+
+.isAnimating {
+  .IdeaRight {
+    animation: idea-right infinite cubic-bezier(.23,.59,.79,.54) 2s;
+  }
+}
+
+
+
+
+@keyframes idea-top {
+  0% { stroke-dashoffset: 4px}
+  20% { stroke-dashoffset: 0px}
+  40% { stroke-dashoffset: -4px}
+  100% { stroke-dashoffset: -4px}
+}
+
+.IdeaTop {
+  stroke-dasharray: 4px;
+  stroke-dashoffset: 4px;
+}
+
+.isAnimating {
+  .IdeaTop {
+    animation: idea-top infinite cubic-bezier(.23,.59,.79,.54) 2s;
+  }
+}
+
+
+
+
+@keyframes idea-top-right {
+  15% { stroke-dashoffset: 6px}
+  40% { stroke-dashoffset: 0px}
+  60% { stroke-dashoffset: -6.1px}
+  100% { stroke-dashoffset: -6.1px}
+}
+
+.IdeaTopRight {
+  stroke-dasharray: 6 6.1;
+  stroke-dashoffset: 6px;
+}
+
+.isAnimating {
+  .IdeaTopRight {
+    animation: idea-top-right infinite cubic-bezier(.23,.59,.79,.54) 2s;
+  }
+}
+
+
+
+
+
+@keyframes idea-top-left {
+  15% { stroke-dashoffset: 6px}
+  40% { stroke-dashoffset: 0px}
+  60% { stroke-dashoffset: -6.1px}
+  100% { stroke-dashoffset: -6.1px}
+}
+
+.IdeaTopLeft {
+  stroke-dasharray: 6 6.1;
+  stroke-dashoffset: 6px;
+}
+
+.isAnimating {
+  .IdeaTopLeft {
+    animation: idea-top-left infinite cubic-bezier(.23,.59,.79,.54) 2s;
+  }
+}
+
+
+
+@keyframes idea-bottom-left {
+  0% { stroke-dashoffset: -6.1px}
+  15% { stroke-dashoffset: -6.1px}
+  40% { stroke-dashoffset: 0px}
+  60% { stroke-dashoffset: 6.1px}
+  100% { stroke-dashoffset: 6.1px}
+}
+
+.IdeaBottomLeft {
+  stroke-dasharray: 6 6.2;
+  stroke-dashoffset: 6px;
+}
+
+.isAnimating {
+  .IdeaBottomLeft {
+    animation: idea-bottom-left infinite cubic-bezier(.23,.59,.79,.54) 2s;
+  }
+}
+
+
+
+
+
+@keyframes idea-bottom-right {
+  0% { stroke-dashoffset: -6.1px}
+  15% { stroke-dashoffset: -6.1px}
+  40% { stroke-dashoffset: 0px}
+  60% { stroke-dashoffset: 6.1px}
+  100% { stroke-dashoffset: 6.1px}
+}
+
+.IdeaBottomRight{
+  stroke-dasharray: 6 6.2;
+  stroke-dashoffset: 6px;
+}
+
+.isAnimating {
+  .IdeaBottomRight {
+    animation: idea-bottom-right infinite cubic-bezier(.23,.59,.79,.54) 2s;
+  }
+}
+
+
+
+
+
+

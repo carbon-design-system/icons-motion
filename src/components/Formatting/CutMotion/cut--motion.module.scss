@@ -1,0 +1,63 @@
+@keyframes cut--rotate-up {
+  0% {
+    transform: rotate(0deg) ;
+  }
+  10% {
+    transform: rotate(27deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(27deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes cut--rotate-down {
+  0% {
+    transform: rotate(0deg) ;
+  }
+  10% {
+    transform: rotate(-27deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(-27deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.CutRotateUp{
+  transform-origin: 56.9375% 50%;
+  will-change: transform;
+}
+
+.CutRotateDown{
+  transform-origin: 56.9375% 50%;
+  will-change: transform;
+}
+
+.isAnimating {
+  .CutRotateUp {
+    animation: cut--rotate-up 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .CutRotateDown {
+    animation: cut--rotate-down 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
