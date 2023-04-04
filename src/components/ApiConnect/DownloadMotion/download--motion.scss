@@ -1,7 +1,7 @@
 @-webkit-keyframes arrow {
   8% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
   }
   16% {
     -webkit-transform: translateY(0px);
@@ -15,8 +15,8 @@
 
 @keyframes arrow {
   8% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
   }
   16% {
     -webkit-transform: translateY(0px);
@@ -26,6 +26,11 @@
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
+}
+
+.DownloadMotion {
+  transform: translateY(-2px);
+  /* border: 1px solid red; */
 }
 
 .DownloadArrow {
