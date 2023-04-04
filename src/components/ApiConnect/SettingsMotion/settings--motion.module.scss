@@ -1,15 +1,12 @@
 @-webkit-keyframes animate-outer-gear {
-  to {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg)}
+  50% { -webkit-transform: rotate(-60deg); transform: rotate(-60deg)}
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg)}
 }
-
 @keyframes animate-outer-gear {
-  to {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg)}
+  50% { -webkit-transform: rotate(-60deg); transform: rotate(-60deg)}
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg)}
 }
 
 .SettingsMotion {
@@ -19,14 +16,15 @@
 
 .SettingsOuterGear {
   -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;         
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
   will-change: transform;
 }
 
 .isAnimating {
   .SettingsOuterGear {
-    -webkit-animation: animate-outer-gear 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
-            animation: animate-outer-gear 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
+    -webkit-animation: animate-outer-gear .7s cubic-bezier(0.2, 0, 0.38, 0.9);
+    animation: animate-outer-gear .7s cubic-bezier(0.2, 0, 0.38, 0.9);
   }
 }
