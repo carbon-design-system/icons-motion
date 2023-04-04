@@ -6,12 +6,12 @@ const DownloadMotion = (props) => {
  
   return (
     <div ref={iconRef} className={ props.isAnimating ? styles.isAnimating : null}
+      >
+      <svg className={styles.DownloadMotion}   
         width={props.size}
         height={props.size}
-        viewBox="0 0 32 32"
+        viewBox='0 -5 32 35'
       >
-      <svg className={styles.DownloadMotion}  width={props.size}
-        height={props.size}>
         <title>download</title>
         <path
           className={styles.DownloadArrow}
@@ -24,6 +24,3 @@ const DownloadMotion = (props) => {
 };
 
 export default DownloadMotion;
-
-
-// viewBox='0 -10 36 44'
