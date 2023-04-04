@@ -10,6 +10,10 @@ const ApicSection = () => {
       <div className='bx--grid'>
         <ul className='bx--row icon-tiles-grid'>
           <DemoTile
+            tileTitle="Apps" 
+            icon={<icons.AppsMotion size={32}/>}
+          />
+          <DemoTile
             tileTitle="Archive" 
             icon={<icons.ArchiveMotion size={32}/>}
           />
@@ -40,10 +44,6 @@ const ApicSection = () => {
           <DemoTile
             tileTitle="Globe" 
             icon={<icons.GlobeMotion size={32}/>}
-          /> 
-          <DemoTile
-            tileTitle="Grid" 
-            icon={<icons.GridMotion size={32}/>}
           /> 
           <DemoTile
             tileTitle="Settings" 
