@@ -20,7 +20,7 @@ const DashboardMotion = (props) => {
 		<path id="_Transparent_Rectangle_" fill="none" d="M0 0h32v32H0z"/>
       </svg>
     </div>
-  );
+  )
 };
 
 export default DashboardMotion;
