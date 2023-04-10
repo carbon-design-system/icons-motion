@@ -145,6 +145,7 @@ export {
 export {
   NotificationMotion,
   NotificationFilledMotion,
+  StarMotion,
 } from './components/Toggle'
 
 // API Connect icons
