@@ -1,3 +1,4 @@
+
 import React, { useRef } from "react";
 import styles from "./binoculars--motion.scss";
 
