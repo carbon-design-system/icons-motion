@@ -1,83 +1,45 @@
-.Line,
-.TopDrawer {
-  fill:none;
-  stroke:#231f20;
-  stroke-width:2;
-  stroke-linecap:round;
-  stroke-miterlimit:10
-}
-
-.MiddleDrawer {
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
-
-.BottomDrawer {
-  fill: #231f20;
-  -webkit-transform-origin: 50% 80%;
-      -ms-transform-origin: 50% 80%;
-          transform-origin: 50% 80%;
-  will-change: transform;
-}
-
-.Line {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-  will-change: transform;
-}
-
+.DrawerBottomLeft,
+.DrawerBottomRight,
+.DrawerTopLeft,
+.DrawerTopRight, 
 .Handle {
-  -webkit-transform-origin: 50% 55%;
-      -ms-transform-origin: 50% 55%;
-          transform-origin: 50% 55%;
-}
-
-@-webkit-keyframes lines {
-  50% { -webkit-transform: translateY(-1px); transform: translateY(-1px)}
-  100% { -webkit-transform: translateY(0); transform: translateY(0)}
-}
-
-@keyframes lines {
-  50% { -webkit-transform: translateY(-1px); transform: translateY(-1px)}
-  100% { -webkit-transform: translateY(0); transform: translateY(0)}
-}
-
-@-webkit-keyframes drawer {
-  50% { -webkit-transform: translateY(1.8px) scale(1.09); transform: translateY(1.8px) scale(1.09)}
-  100% {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1)}
-}
-
-@keyframes drawer {
-  50% { -webkit-transform: translateY(1.8px) scale(1.09); transform: translateY(1.8px) scale(1.09)}
-  100% {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1)}
+  stroke-width: 2px;
+  -webkit-transform-origin: 50% 62.5%;
+      -ms-transform-origin: 50% 62.5%;
+          transform-origin: 50% 62.5%;
+  will-change: transform;
+  vector-effect: non-scaling-stroke;
 }
 
 .isAnimating {
-  .BottomDrawer {
-    -webkit-animation:  drawer .75s ease-out;
-            animation:  drawer .75s ease-out;
-  }
-  .Line {
-    -webkit-animation: lines .75s ease-out;
-            animation: lines .75s ease-out; 
-  }
-  .Handle {
-    -webkit-animation: drawer .75s ease-out;
-            animation: drawer .75s ease-out;
-  }
-}.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
+  .DrawerBottomLeft { -webkit-animation: drawer-bottom-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-bottom-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .DrawerBottomRight { -webkit-animation: drawer-bottom-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-bottom-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .DrawerTopLeft { -webkit-animation: drawer-top-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-top-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .DrawerTopRight { -webkit-animation: drawer-top-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-top-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .Handle { -webkit-animation: handle .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: handle .5s cubic-bezier(0.40, 0.12, 0.30, 1.00)  }
+}
+
+@keyframes drawer-bottom-left {
+  50% { transform: translate(-2px, 2px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes drawer-bottom-right {
+  50% { transform: translate(2px, 2px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes drawer-top-left {
+  50% { transform: translate(-2px, 0px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes drawer-top-right {
+  50% { transform: translate(2px, 0px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes handle {
+  50% { transform: scaleX(1.25) }
+  100% { transform: scaleX(1) }
 }

@@ -1,34 +1,27 @@
-@-webkit-keyframes flip-ball {
-	60% {
-		-webkit-transform: translateX(28px) scaleX(-1);
-		        transform: translateX(28px) scaleX(-1);
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);
-	}
+.GlobeLine { 
+	-webkit-transform: scale(-100%, 100%); 
+	    -ms-transform: scale(-100%, 100%); 
+	        transform: scale(-100%, 100%); 
+	-webkit-transform-origin: 43.75% 35.37%; 
+	    -ms-transform-origin: 43.75% 35.37%; 
+	        transform-origin: 43.75% 35.37%; 
+	fill: none;
+	stroke: #000;
+	stroke-width: 2px;
+	stroke-miterlimit: 10;
 }
 
-@keyframes flip-ball {
-	60% {
-		-webkit-transform: translateX(28px) scaleX(-1);
-		        transform: translateX(28px) scaleX(-1);
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);
-	}
+@-webkit-keyframes globe-line {
+	100% { -webkit-transform: scale(100%, 100%); transform: scale(100%, 100%)}
 }
 
-.GlobeMotion {
-	width: 32px;
-	height: 32px;
-	will-change: transform;
+@keyframes globe-line {
+	100% { -webkit-transform: scale(100%, 100%); transform: scale(100%, 100%)}
 }
 
 .isAnimating {
-	.GlobeBall1 {
-		-webkit-animation: flip-ball 1s cubic-bezier(0.52, 0.16, 0.54, 0.89);
-		        animation: flip-ball 1s cubic-bezier(0.52, 0.16, 0.54, 0.89);
+	.GlobeLine {
+		-webkit-animation: globe-line .5s cubic-bezier(0.40, 0.12, 0.30, 1.00);
+		        animation: globe-line .5s cubic-bezier(0.40, 0.12, 0.30, 1.00);
 	}
 }

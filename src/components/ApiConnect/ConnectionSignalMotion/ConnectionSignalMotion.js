@@ -6,29 +6,13 @@ const ConnectionSignalMotion = (props) => {
 
   return (
     <div ref={iconRef} className={props.isAnimating ? styles.isAnimating : null}>
-      <svg
-        width={props.size}
-        height={props.size}
-        viewBox="0 0 32 32"
-      >
+      <svg viewBox="0 0 32 32" width={props.size} height={props.size}>
         <title>connection signal</title>
-        <rect x="15" y="12" width="2" height="18" />
-        <path
-          className={styles.ConnectionOuter}
-          d="M11.33,18.22a7,7,0,0,1,0-10.44l1.34,1.49a5,5,0,0,0,0,7.46Z"
-        />
-        <path
-          className={styles.ConnectionOuter}
-          d="M20.67,18.22l-1.34-1.49a5,5,0,0,0,0-7.46l1.34-1.49a7,7,0,0,1,0,10.44Z"
-        />
-        <path
-          className={styles.ConnectionInner}
-          d="M8.4,21.8a11,11,0,0,1,0-17.6L9.6,5.8a9,9,0,0,0,0,14.4Z"
-        />
-        <path
-          className={styles.ConnectionInner}
-          d="M23.6,21.8l-1.2-1.6a9,9,0,0,0,0-14.4l1.2-1.6a11,11,0,0,1,0,17.6Z"
-        />
+        <rect className={styles.Tower} width="2" height="18" x="15" y="12"/>
+        <path className={styles.SignalInner} d="M12,17.5c-1.2-1.1-2-2.7-2-4.5c0-1.8,0.8-3.4,2-4.5" />
+        <path className={styles.SignalInner} d="M20,8.5c1.2,1.1,2,2.7,2,4.5c0,1.8-0.8,3.4-2,4.5" />
+        <path className={styles.SignalOuter} d="M9,21.4c-2.4-2-4-5.1-4-8.4c0-3.4,1.5-6.4,4-8.4"/>
+        <path className={styles.SignalOuter} d="M23,4.6c2.4,2,4,5.1,4,8.4s-1.5,6.4-4,8.4" />
       </svg>
     </div>
   );

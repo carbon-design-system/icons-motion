@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import styles from "./edit--motion.module.scss";
 
 const EditMotion = (props) => {
-
   const iconRef = useRef(null);
   
   return (

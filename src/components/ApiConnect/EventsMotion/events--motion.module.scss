@@ -1,8 +1,4 @@
 @-webkit-keyframes arise {
-  0% {
-    -webkit-transform: translateY(0px) scale(1);
-            transform: translateY(0px) scale(1);
-  }
   45% {
     -webkit-transform: translateY(-2px) scale(1.01);
             transform: translateY(-2px) scale(1.01);
@@ -14,10 +10,6 @@
 }
 
 @keyframes arise {
-  0% {
-    -webkit-transform: translateY(0px) scale(1);
-            transform: translateY(0px) scale(1);
-  }
   45% {
     -webkit-transform: translateY(-2px) scale(1.01);
             transform: translateY(-2px) scale(1.01);
@@ -28,14 +20,11 @@
   }
 }
 
-.EventsMotion {
-  will-change: opacity, transform;
-}
-
-.EventsPerson {
-  -webkit-transform: translateY(0) scale(1);
-      -ms-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
+.EventsPerson,
+.EventsPerson2,
+.EventsPerson3 {
+    will-change: opacity, transform;
+    vector-effect: non-scaling-stroke;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
