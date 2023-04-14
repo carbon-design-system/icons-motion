@@ -16,7 +16,7 @@
 	        transform-origin:  43.75% 34.375%; 
 	fill: none; 
 	stroke: black; 
-	stroke-width: 2px; 
+	stroke-width: 1.15px; 
 	stroke-miterlimit: 10; 
 	-webkit-transform: rotate(45deg) scale(100%, 100%); 
 	    -ms-transform: rotate(45deg) scale(100%, 100%); 
@@ -26,14 +26,15 @@
 }
 
 @-webkit-keyframes globe-line {
-	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 2px }
+	50% { stroke-width: 2px;}
+	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 1.4px }
 }
 
 @keyframes globe-line {
-	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 2px }
+	50% { stroke-width: 2px;}
+	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 1.15px }
 }
 
 .isAnimating {
-	.CircleHalf { -webkit-animation: globe-line .5s forwards; animation: globe-line .5s forwards; }
+	.CircleHalf { -webkit-animation: globe-line .5s forwards; animation: globe-line .5s cubic-bezier(0, 0, 0.38, 0.9) forwards; }
 }
-
