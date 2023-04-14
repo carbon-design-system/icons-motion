@@ -16,7 +16,7 @@ const IdeaMotion = (props) => {
         viewBox='0 0 32 32'
         className={styles.IdeaMotion}
       >
-      { props.needsTitle ? <title>{getSvgTitle(props, "idea")}</title> : null }
+      { ((props.title == true ) || (typeof props.title === 'string')) ? <title>{getSvgTitle(props.title, "idea")}</title> : null}
         <path
           className={styles.IdeaBulb}
           d="M19,32h-6v-2h6V32z M21,27H11v2h10V27z M16,5C10.5,5,6,9.5,6,15c0,4.4,2,6.3,3.5,7.6c1,0.9,1.5,1.5,1.5,2.4h2
@@ -40,19 +40,21 @@ const IdeaMotion = (props) => {
 
 
 IdeaMotion.propTypes = {
+
 //  set this to true when you want the animation to play
 isAnimating: PropTypes.bool,
 
-// specify the size in px 
+// specify the icon size in px 
 size: PropTypes.number,
 
-// for accessibility reasons, if you aren't going to specify a title for the icon anywhere else, you should set needsTitle to true so one will be provided
-needsTitle: PropTypes.bool,
 
-// if you indicated that needsTitle is true, you can specify your own title if you want.  If you don't specify, the title will be the name of the icon as indicated in Carbon 
-customTitle: PropTypes.string,
+// By default, an SVG title is provided, which is the name of the icon.  If you want to set a custom title, pass it as a string value. If you'd like to omit the title because you plan on specifying one by other means, pass false as a boolean. 
 
-// the color for fill/strokes, use MUST be a 6-digit hex code WITHOUT the #
+title: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+
+
+
+// the color for fill/strokes, use MUST be a string which is a 6-digit hex code WITHOUT the #
 // Note: this prop is called fillColor to be consistent with Carbon's naming scheme - in this implementation, fillColor may be applied to stroke and/or fill
 fillColor: PropTypes.string
 
@@ -61,8 +63,7 @@ fillColor: PropTypes.string
  IdeaMotion.defaultProps = {
     isAnimating: false,
     size: 32,
-    needsTitle: false,
-    customTitle: null,
+    title: true,
     fillColor: "161616",
   }
 
