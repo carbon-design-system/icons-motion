@@ -1,42 +1,20 @@
-@-webkit-keyframes arrow {
-  8% {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
-  }
-  16% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes arrow {
-  8% {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
-  }
-  16% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-.DownloadMotion {
-  transform: translateY(-2px);
-}
-
 .DownloadArrow {
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   will-change: transform;
+}
+
+@-webkit-keyframes arrow {
+  8% { -webkit-transform: translateY(4px); transform: translateY(4px) }
+  16% { -webkit-transform: translateY(0px); transform: translateY(0px) }
+  100% { -webkit-transform: translateY(0px); transform: translateY(0px) }
+}
+
+@keyframes arrow {
+  8% { -webkit-transform: translateY(4px); transform: translateY(4px) }
+  16% { -webkit-transform: translateY(0px); transform: translateY(0px) }
+  100% { -webkit-transform: translateY(0px); transform: translateY(0px) }
 }
 
 .isAnimating {

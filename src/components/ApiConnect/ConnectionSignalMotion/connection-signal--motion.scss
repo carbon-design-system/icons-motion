@@ -27,16 +27,16 @@
 } 
 
  @keyframes signal-outer {
-  26.64% { transform: scale(1) }    
-  59.94% { transform: scale(1.32) }
-  100% { transform: scale(1) }
+  26.64% { transform: scale(1); stroke-width: 2px;}    
+  59.94% { transform: scale(1.32); stroke-width: 2px; }
+  100% { transform: scale(1); stroke-width: 2px;}
 }
 
 @keyframes signal-inner {
-  13.3% { transform: scale(1) }
-  46.62% { transform: scale(1.66) }
-  86.58% { transform: scale(1) } 
-  100% { transform: scale(1); }
+  13.3% { transform: scale(1); stroke-width: 2px;}
+  46.62% { transform: scale(1.66); stroke-width: 2px;}
+  86.58% { transform: scale(1); stroke-width: 2px;} 
+  100% { transform: scale(1);; stroke-width: 2px;}
 }
 
 @keyframes tower {

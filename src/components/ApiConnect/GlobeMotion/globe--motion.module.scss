@@ -1,27 +1,39 @@
-.GlobeLine { 
-	-webkit-transform: scale(-100%, 100%); 
-	    -ms-transform: scale(-100%, 100%); 
-	        transform: scale(-100%, 100%); 
-	-webkit-transform-origin: 43.75% 35.37%; 
-	    -ms-transform-origin: 43.75% 35.37%; 
-	        transform-origin: 43.75% 35.37%; 
-	fill: none;
-	stroke: #000;
-	stroke-width: 2px;
-	stroke-miterlimit: 10;
+.GlobeBase {
+	stroke: none;
+	fill: black;
+}
+
+.Globe {
+	fill:none;
+	stroke:black;
+	stroke-width:2px;
+	stroke-miterlimit:10;
+}
+
+.CircleHalf {
+	-webkit-transform-origin:  43.75% 34.375%;
+	    -ms-transform-origin:  43.75% 34.375%;
+	        transform-origin:  43.75% 34.375%; 
+	fill: none; 
+	stroke: black; 
+	stroke-width: 2px; 
+	stroke-miterlimit: 10; 
+	-webkit-transform: rotate(45deg) scale(100%, 100%); 
+	    -ms-transform: rotate(45deg) scale(100%, 100%); 
+	        transform: rotate(45deg) scale(100%, 100%);
+	will-change: transform, stroke-width;
+	vector-effect: non-scaling-stroke; 
 }
 
 @-webkit-keyframes globe-line {
-	100% { -webkit-transform: scale(100%, 100%); transform: scale(100%, 100%)}
+	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 2px }
 }
 
 @keyframes globe-line {
-	100% { -webkit-transform: scale(100%, 100%); transform: scale(100%, 100%)}
+	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 2px }
 }
 
 .isAnimating {
-	.GlobeLine {
-		-webkit-animation: globe-line .5s cubic-bezier(0.40, 0.12, 0.30, 1.00);
-		        animation: globe-line .5s cubic-bezier(0.40, 0.12, 0.30, 1.00);
-	}
+	.CircleHalf { -webkit-animation: globe-line .5s forwards; animation: globe-line .5s forwards; }
 }
+
