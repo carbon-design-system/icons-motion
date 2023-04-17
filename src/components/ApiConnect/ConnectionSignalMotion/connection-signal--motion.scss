@@ -1,17 +1,19 @@
 .SignalOuter,
-.SignalInner {
+.SignalInner,
+.SignalOuterGroup,
+.SignalInnergroup {
    will-change: transform;
    transform-origin: 50% 40.625%;
    vector-effect: non-scaling-stroke; 
    fill: none;
-   stroke: #000;
-   stroke-width:2px;
-   stroke-miterlimit:10;      
+   stroke: #000; 
+   stroke-miterlimit:10;  
+   stroke-width: 2px;    
 }
 
 .Tower {
    will-change: transform;
-   transform-origin: 50% 75%;
+   transform-origin: 50% 100%;
    vector-effect: non-scaling-stroke; 
    fill:#000;
    stroke:none;
@@ -27,19 +29,19 @@
 } 
 
  @keyframes signal-outer {
-  26.64% { transform: scale(1); stroke-width: 2px;}    
-  59.94% { transform: scale(1.32); stroke-width: 2px; }
-  100% { transform: scale(1); stroke-width: 2px;}
+  26.64% { transform: scale(1) }    
+  59.94% { transform: scale(1.32) }
+  100% { transform: scale(1) }
 }
 
 @keyframes signal-inner {
-  13.3% { transform: scale(1); stroke-width: 2px;}
-  46.62% { transform: scale(1.66); stroke-width: 2px;}
-  86.58% { transform: scale(1); stroke-width: 2px;} 
-  100% { transform: scale(1);; stroke-width: 2px;}
+  13.3% { transform: scale(1) }
+  46.62% { transform: scale(1.66) }
+  86.58% { transform: scale(1) } 
+  100% { transform: scale(1) }
 }
 
 @keyframes tower {
-  50% { transform: scale(1.1) }
-  100% { transform: scale(1) }
+  50% { transform: scaleY(1.1) }
+  100% { transform: scaleY(1) }
 }
