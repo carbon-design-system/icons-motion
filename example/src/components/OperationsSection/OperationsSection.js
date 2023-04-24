@@ -839,7 +839,7 @@ const OperationsSection = () => {
             onMouseLeave={() => setIdeaAnimating(false)}
           >
             <h3>Idea</h3>
-            <icons.IdeaMotion isAnimating={ideaAnimating} size={32} />
+            <icons.IdeaMotion isAnimating={ideaAnimating} title={false} size={32} />
           </li>
         </ul>
       </div>
