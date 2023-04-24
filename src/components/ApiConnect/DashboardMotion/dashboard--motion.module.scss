@@ -1,0 +1,176 @@
+.GraphCircle {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 25.5px;
+  stroke-dashoffset: 6.375px;
+  -webkit-transform-origin: 11px 21px;
+      -ms-transform-origin: 11px 21px;
+          transform-origin: 11px 21px;
+  -webkit-transform: scale(1) translate(0, 0) rotate(0);
+      -ms-transform: scale(1) translate(0, 0) rotate(0);
+          transform: scale(1) translate(0, 0) rotate(0); 
+  will-change: transform, stroke-dashoffet; 
+}
+
+.RectangleHorizontal {
+  fill: black;
+  stroke: transparent;
+  height: 2px;
+  -webkit-transform: rotate(180deg) translate(-1px, -10.5px);
+      -ms-transform: rotate(180deg) translate(-1px, -10.5px);
+          transform: rotate(180deg) translate(-1px, -10.5px);
+  -webkit-transform-origin: 50% 10%;
+      -ms-transform-origin: 50% 10%;
+          transform-origin: 50% 10%;
+  will-change: transform, height;
+}
+
+.RectangleVertical {
+  fill: black;
+  stroke: transparent;
+  height: 9px;
+  -webkit-transform: rotate(180deg) translate(-1px, -10.5px);
+      -ms-transform: rotate(180deg) translate(-1px, -10.5px);
+          transform: rotate(180deg) translate(-1px, -10.5px);
+  -webkit-transform-origin: 50% 10%;
+      -ms-transform-origin: 50% 10%;
+          transform-origin: 50% 10%;
+  will-change: transform, height;
+}
+
+.GraphBarLeft {
+  stroke-width: 2px;
+  stroke-miterlimit: 10px;
+  stroke: black;
+  stroke-dasharray: 10px;
+  will-change: transform, stroke-dashoffet;
+}
+
+.GraphBarRight {
+  stroke-width: 2px;
+  stroke-miterlimit: 10px;
+  stroke: black;
+  stroke-dasharray: 10px;
+  stroke-dashoffset: 15px;
+  will-change: transform, stroke-dashoffet;
+}
+
+@-webkit-keyframes circle-rotate {
+  0% {   
+    stroke-dashoffset: 6.375px; 
+    -webkit-transform: rotate(0); 
+            transform: rotate(0);
+  }
+  50% {
+    stroke-dashoffset: 4px;  
+    -webkit-transform: rotate(-92deg);  
+            transform: rotate(-92deg);   
+  }
+  100% { 
+   stroke-dashoffset: 6.375px; 
+   -webkit-transform: rotate(0) ; 
+           transform: rotate(0) ;
+  }
+}
+
+@keyframes circle-rotate {
+  0% {   
+    stroke-dashoffset: 6.375px; 
+    -webkit-transform: rotate(0); 
+            transform: rotate(0);
+  }
+  50% {
+    stroke-dashoffset: 4px;  
+    -webkit-transform: rotate(-92deg);  
+            transform: rotate(-92deg);   
+  }
+  100% { 
+   stroke-dashoffset: 6.375px; 
+   -webkit-transform: rotate(0) ; 
+           transform: rotate(0) ;
+  }
+}
+
+@-webkit-keyframes rectangle-horizontal {
+  50% { 
+    height: 8px;
+    -webkit-transform: rotate(180deg) translate(-1px, -8px);
+            transform: rotate(180deg) translate(-1px, -8px);
+  };
+  100% {
+    height: 2px;
+    -webkit-transform: rotate(180deg) translate(-1px, -10.5px);
+            transform: rotate(180deg) translate(-1px, -10.5px);
+  };
+}
+
+@keyframes rectangle-horizontal {
+  50% { 
+    height: 8px;
+    -webkit-transform: rotate(180deg) translate(-1px, -8px);
+            transform: rotate(180deg) translate(-1px, -8px);
+  };
+  100% {
+    height: 2px;
+    -webkit-transform: rotate(180deg) translate(-1px, -10.5px);
+            transform: rotate(180deg) translate(-1px, -10.5px);
+  };
+}
+
+@-webkit-keyframes rectangle-vertical {
+  50% { 
+    height: 7px;
+    -webkit-transform: rotate(180deg) translate(-1px, -8px);
+            transform: rotate(180deg) translate(-1px, -8px);
+  }
+  100% {
+    height: 9px;
+    -webkit-transform: rotate(180deg) translate(-1px, -10.5px);
+            transform: rotate(180deg) translate(-1px, -10.5px);
+  }
+}
+
+@keyframes rectangle-vertical {
+  50% { 
+    height: 7px;
+    -webkit-transform: rotate(180deg) translate(-1px, -8px);
+            transform: rotate(180deg) translate(-1px, -8px);
+  }
+  100% {
+    height: 9px;
+    -webkit-transform: rotate(180deg) translate(-1px, -10.5px);
+            transform: rotate(180deg) translate(-1px, -10.5px);
+  }
+}
+
+@-webkit-keyframes line-left {
+  0% { stroke-dashoffset: 0;  }
+  50% { stroke-dashoffset: -5px;  }
+  100% { stroke-dashoffset: 0px;  }
+}
+
+@keyframes line-left {
+  0% { stroke-dashoffset: 0;  }
+  50% { stroke-dashoffset: -5px;  }
+  100% { stroke-dashoffset: 0px;  }
+} 
+
+@-webkit-keyframes line-right {
+  0% { stroke-dashoffset: 15px;  }
+  50% { stroke-dashoffset: 20px;  }
+  100% { stroke-dashoffset: 15px;  }
+} 
+
+@keyframes line-right {
+  0% { stroke-dashoffset: 15px;  }
+  50% { stroke-dashoffset: 20px;  }
+  100% { stroke-dashoffset: 15px;  }
+}
+
+.isAnimating {
+  .GraphCircle {  -webkit-animation: circle-rotate .65s cubic-bezier(0.4, 0.14, 0.3, 1);  animation: circle-rotate .65s cubic-bezier(0.4, 0.14, 0.3, 1) }
+  .GraphBarLeft { -webkit-animation: line-left .65s cubic-bezier(0.4, 0.14, 0.3, 1); animation: line-left .65s cubic-bezier(0.4, 0.14, 0.3, 1) }
+  .GraphBarRight { -webkit-animation: line-right .65s cubic-bezier(0.4, 0.14, 0.3, 1); animation: line-right .65s cubic-bezier(0.4, 0.14, 0.3, 1) }
+}

@@ -1,84 +1,76 @@
-@-webkit-keyframes inner-signal {
-  0% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 0;
-  }
-  28% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+.SignalOuter,
+.SignalInner,
+.SignalOuterGroup,
+.SignalInnergroup {
+  fill: none;
+  stroke: #000; 
+  stroke-miterlimit:10;  
+  stroke-width: 2px;    
 }
 
-@keyframes inner-signal {
-  0% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 0;
-  }
-  28% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes outer-signal {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  38% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes outer-signal {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  38% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.ConnectionSignalMotion {
-  width: 32px;
-  height: 32px;
-}
-
-.ConnectionInner,
-.ConnectionOuter {
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+.SignalOuter,
+.SignalInner {
   will-change: transform;
+  -webkit-transform-origin: 50% 40.625%;
+      -ms-transform-origin: 50% 40.625%;
+          transform-origin: 50% 40.625%;
+  vector-effect: non-scaling-stroke; 
 }
 
-.isAnimating{
- .ConnectionInner {
-  -webkit-animation: inner-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
-          animation: inner-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
-  }
+.Tower, 
+.TowerTwo {
+  fill:#000;
+  stroke:none;
+  stroke-width:2px;
+  stroke-miterlimit:10;   
+}
 
-  .ConnectionOuter {
-    -webkit-animation: outer-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
-            animation: outer-signal 1.5s cubic-bezier(0.4, 0.14, 0.3, 1);
-  }
+.TowerTwo {
+  will-change: transform;
+  -webkit-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  vector-effect: non-scaling-stroke; 
+}
+
+.isAnimating {
+  .SignalOuter { -webkit-animation: signal-outer .5s cubic-bezier(0.20, 0.00, 0.38, 0.90); animation: signal-outer .5s cubic-bezier(0.20, 0.00, 0.38, 0.90) } 
+  .SignalInner { -webkit-animation: signal-inner .5s cubic-bezier(0.20, 0.00, 0.38, 0.90); animation: signal-inner .5s cubic-bezier(0.20, 0.00, 0.38, 0.90) }
+  .TowerTwo { -webkit-animation: tower-two .5s cubic-bezier(0.20, 0.00, 0.38, 0.90); animation: tower-two .5s cubic-bezier(0.20, 0.00, 0.38, 0.90) }
+} 
+
+@-webkit-keyframes tower-two {
+  50% { -webkit-transform: translateY(-2px); transform: translateY(-2px)}
+  100% { -webkit-transform: translateY(0); transform: translateY(0)}
+} 
+
+@keyframes tower-two {
+  50% { -webkit-transform: translateY(-2px); transform: translateY(-2px)}
+  100% { -webkit-transform: translateY(0); transform: translateY(0)}
+}
+
+@-webkit-keyframes signal-outer {
+  26.64% { -webkit-transform: scale(1); transform: scale(1) }    
+  59.94% { -webkit-transform: scale(1.32); transform: scale(1.32) }
+  100% { -webkit-transform: scale(1); transform: scale(1) }
+}
+
+@keyframes signal-outer {
+  26.64% { -webkit-transform: scale(1); transform: scale(1) }    
+  59.94% { -webkit-transform: scale(1.32); transform: scale(1.32) }
+  100% { -webkit-transform: scale(1); transform: scale(1) }
+}
+
+@-webkit-keyframes signal-inner {
+  13.3% { -webkit-transform: scale(1); transform: scale(1) }
+  46.62% { -webkit-transform: scale(1.66); transform: scale(1.66) }
+  86.58% { -webkit-transform: scale(1); transform: scale(1) } 
+  100% { -webkit-transform: scale(1); transform: scale(1) }
+}
+
+@keyframes signal-inner {
+  13.3% { -webkit-transform: scale(1); transform: scale(1) }
+  46.62% { -webkit-transform: scale(1.66); transform: scale(1.66) }
+  86.58% { -webkit-transform: scale(1); transform: scale(1) } 
+  100% { -webkit-transform: scale(1); transform: scale(1) }
 }
