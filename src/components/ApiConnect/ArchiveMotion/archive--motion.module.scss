@@ -1,66 +1,45 @@
-@-webkit-keyframes animate-file-cabinet-handle {
-  10% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  20% {
-    -webkit-transform: translateX(-2px);
-            transform: translateX(-2px);
-  }
-  30% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px);
-  }
-  40% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes animate-file-cabinet-handle {
-  10% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  20% {
-    -webkit-transform: translateX(-2px);
-            transform: translateX(-2px);
-  }
-  30% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px);
-  }
-  40% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-.ArchiveMotion {
-  width: 32px;
-  height: 32px;
-}
-
-.ArchiveHandle {
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+.DrawerBottomLeft,
+.DrawerBottomRight,
+.DrawerTopLeft,
+.DrawerTopRight, 
+.Handle {
+  stroke-width: 2px;
+  -webkit-transform-origin: 50% 62.5%;
+      -ms-transform-origin: 50% 62.5%;
+          transform-origin: 50% 62.5%;
   will-change: transform;
+  vector-effect: non-scaling-stroke;
 }
 
 .isAnimating {
- .ArchiveHandle {
-  -webkit-animation: animate-file-cabinet-handle 2s infinite
-    cubic-bezier(0.4, 0.14, 0.3, 1);
-          animation: animate-file-cabinet-handle 2s infinite
-    cubic-bezier(0.4, 0.14, 0.3, 1);
-  }
+  .DrawerBottomLeft { -webkit-animation: drawer-bottom-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-bottom-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .DrawerBottomRight { -webkit-animation: drawer-bottom-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-bottom-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .DrawerTopLeft { -webkit-animation: drawer-top-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-top-left .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .DrawerTopRight { -webkit-animation: drawer-top-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: drawer-top-right .5s cubic-bezier(0.40, 0.12, 0.30, 1.00) }
+  .Handle { -webkit-animation: handle .5s cubic-bezier(0.40, 0.12, 0.30, 1.00); animation: handle .5s cubic-bezier(0.40, 0.12, 0.30, 1.00)  }
+}
+
+@keyframes drawer-bottom-left {
+  50% { transform: translate(-2px, 2px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes drawer-bottom-right {
+  50% { transform: translate(2px, 2px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes drawer-top-left {
+  50% { transform: translate(-2px, 0px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes drawer-top-right {
+  50% { transform: translate(2px, 0px) }
+  100% { transform: translate(0) }
+}
+
+@keyframes handle {
+  50% { transform: scaleX(1.25) }
+  100% { transform: scaleX(1) }
 }

@@ -1,52 +1,21 @@
-@-webkit-keyframes animate-binoculars {
-  0% {
-    -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
-  }
-  9% {
-    -webkit-transform: rotate(-35deg) scale(1.06);
-            transform: rotate(-35deg) scale(1.06);
-  }
-  18% {
-    -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
-  }
-  100% {
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
-  }
-}
-
-@keyframes animate-binoculars {
-  0% {
-    -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
-  }
-  9% {
-    -webkit-transform: rotate(-35deg) scale(1.06);
-            transform: rotate(-35deg) scale(1.06);
-  }
-  18% {
-    -webkit-transform: rotate(0) scale(1);
-            transform: rotate(0) scale(1);
-  }
-  100% {
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
-  }
-}
-
 .BinocularsMotion {
   will-change: transform;
+  vector-effect: non-scaling-stroke;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
 }
 
-.isAnimating
-{
-.BinocularsMotion {
+.isAnimating {
+  .BinocularsMotion {
     -webkit-animation: animate-binoculars 3s;
             animation: animate-binoculars 3s;
   }
 }
+
+@keyframes animate-binoculars {
+  9% { transform: rotate(-22deg) }
+  18% { transform:rotate(0) }
+  100% { transform: rotate(0) }
+}
+

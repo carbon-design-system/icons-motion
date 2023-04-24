@@ -1,40 +1,40 @@
-@-webkit-keyframes flip-ball {
-	0% {
-		tranform: scaleX(0);
-	}
-	60% {
-		-webkit-transform: translateX(28px) scaleX(-1);
-		        transform: translateX(28px) scaleX(-1);
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);
-	}
+.GlobeBase {
+	stroke: none;
+	fill: black;
 }
 
-@keyframes flip-ball {
-	0% {
-		tranform: scaleX(0);
-	}
-	60% {
-		-webkit-transform: translateX(28px) scaleX(-1);
-		        transform: translateX(28px) scaleX(-1);
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-		        transform: translateX(0px);
-	}
+.Globe {
+	fill:none;
+	stroke:black;
+	stroke-width:2px;
+	stroke-miterlimit:10;
 }
 
-.GlobeMotion {
-	width: 32px;
-	height: 32px;
-	will-change: transform;
+.CircleHalf {
+	-webkit-transform-origin:  43.75% 34.375%;
+	    -ms-transform-origin:  43.75% 34.375%;
+	        transform-origin:  43.75% 34.375%; 
+	fill: none; 
+	stroke: black; 
+	stroke-width: 1.15px; 
+	stroke-miterlimit: 10; 
+	-webkit-transform: rotate(45deg) scale(100%, 100%); 
+	    -ms-transform: rotate(45deg) scale(100%, 100%); 
+	        transform: rotate(45deg) scale(100%, 100%);
+	will-change: transform, stroke-width;
+	vector-effect: non-scaling-stroke; 
+}
+
+@-webkit-keyframes globe-line {
+	50% { stroke-width: 2px;}
+	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 1.15px }
+}
+
+@keyframes globe-line {
+	50% { stroke-width: 2px;}
+	100% { -webkit-transform: rotate(45deg) scale(-100%, 100%); transform: rotate(45deg) scale(-100%, 100%); stroke-width: 1.15px }
 }
 
 .isAnimating {
-	.GlobeBall1 {
-		-webkit-animation: flip-ball 1s cubic-bezier(0.52, 0.16, 0.54, 0.89);
-		        animation: flip-ball 1s cubic-bezier(0.52, 0.16, 0.54, 0.89);
-	}
+	.CircleHalf { -webkit-animation: globe-line .5s forwards; animation: globe-line .5s cubic-bezier(0, 0, 0.38, 0.9) forwards; }
 }
