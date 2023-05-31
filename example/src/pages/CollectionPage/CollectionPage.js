@@ -3,6 +3,8 @@ import FormattingSection from '../../components/FormattingSection'
 import NavigationSection from '../../components/NavigationSection'
 import OperationsSection from '../../components/OperationsSection'
 import ToggleSection from '../../components/ToggleSection'
+import StatusSection from '../../components/StatusSection'
+
 import '../../app.scss'
 
 const CollectionPage = () => {
@@ -17,6 +19,7 @@ const CollectionPage = () => {
       <NavigationSection></NavigationSection>
       <OperationsSection></OperationsSection>
       <ToggleSection></ToggleSection>
+      <StatusSection></StatusSection>
     </div>
   )
 }

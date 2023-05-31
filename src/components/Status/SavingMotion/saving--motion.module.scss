@@ -1,0 +1,50 @@
+.SaveCircle { 
+  stroke-miterlimit: 10px;
+  stroke-width: 2px;
+  stroke-dasharray: 24px; 
+  transform-origin: 23px 23px;
+  animation: rotate linear infinite 1.25s;
+}
+
+.SaveCheckmark {
+  stroke-linecap: square;
+  stroke-miterlimit: 10px;
+  stroke-width: 2px;
+  stroke-dasharray: 13px;
+  stroke-dashoffset: -13px;
+  animation: success cubic-bezier(0, 0, 0.38, 0.9) .3s forwards;
+}
+
+.ErrorSymbol {
+  stroke-width:2;
+  stroke-miterlimit:10;
+   /* transform-origin: 23px 23px; */
+  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 2s forwards;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0) }
+  100% { transform: rotate(360deg) }
+}
+
+@keyframes failed {
+  0% {
+    transform: translate(0px);
+  }
+  4% {
+    transform: translate(-2px);
+  }
+  12% {
+    transform: translate(2px);
+  }
+  16% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes success { 
+  to { stroke-dashoffset: 0 }
+}
