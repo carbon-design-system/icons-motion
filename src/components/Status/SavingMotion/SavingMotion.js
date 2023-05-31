@@ -99,7 +99,7 @@ SavingMotion.propTypes = {
 	title: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 
 
-	// the color for fill/strokes, use MUST be a string which is a 6-digit hex code WITHOUT the #
+	// the color for fill/strokes, MUST be a string which is a 6-digit hex code WITHOUT the #
 	// Note: this prop is called fillColor to be consistent with Carbon's naming scheme - in this implementation, fillColor may be applied to stroke and/or fill
 	fillColor: PropTypes.string
 
