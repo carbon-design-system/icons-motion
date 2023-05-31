@@ -89,7 +89,7 @@ const SavingMotion = (props) => {
 SavingMotion.propTypes = {
 
 	//  saving status
-	status: PropTypes.oneOf(['inProgress', 'error', 'success'])
+	status: PropTypes.oneOf(['inProgress', 'error', 'success']),
 
 	// specify the icon size in px 
 	size: PropTypes.number,
