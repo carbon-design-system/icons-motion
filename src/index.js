@@ -161,3 +161,10 @@ export {
   GridMotion, 
   SettingsMotion
 } from './components/ApiConnect'
+
+
+// Status
+export {
+  SavingMotion
+} from './components/Status'
+
