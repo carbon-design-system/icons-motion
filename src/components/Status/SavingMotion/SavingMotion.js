@@ -55,10 +55,10 @@ const SavingMotion = (props) => {
  			>
  				{ ((props.title == true ) || (typeof props.title === 'string')) ? <title>{getSvgTitle(props.title, "Save error")}</title> : null}
 			  	<path fill={ fillColor } d="M16,26h-4v-8h4v-2h-4c-1.1,0-2,0.9-2,2v8H6V6h4v4c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2V6.4l4,4V16	h2v-6c0-0.3-0.1-0.5-0.3-0.7l-5-5C22.5,4.1,22.3,4,22,4H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h10V26z M12,6h8v4h-8V6z"/>
-				 <g className={styles.ErrorSymbol} stroke={fillColor} fill="none">
-					<path d="M26.5,26.5C25.6,27.4,24.4,28,23,28s-2.6-0.6-3.5-1.5S18,24.4,18,23s0.6-2.6,1.5-3.5S21.6,18,23,18	s2.6,0.6,3.5,1.5S28,21.6,28,23S27.4,25.6,26.5,26.5" />
-					<line x1="19.5" x2="26.5" y1="19.5" y2="26.5" />
-				 </g>
+			  	 <g className={ styles.ErrorX } stroke={fillColor} fill="none">
+			  	  	<line fill="none" stroke={ fillColor } id="x_x5F_line_x5F_02" x1="18.7" x2="27.3" y1="18.7" y2="27.3" class="st1"/>
+  					<line fill="none" stroke={ fillColor } id="x_x5F_line_x5F_01" x1="27.3" x2="18.7" y1="18.7" y2="27.3" class="st1"/>
+  				</g>
 			</svg> 
 		)
  	}
