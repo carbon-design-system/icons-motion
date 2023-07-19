@@ -10,7 +10,6 @@ const CopyMotion = (props) => {
   }, [props.isAnimating])
 
   const shouldAnimate = isAnimating ? styles.isAnimating : ''
-  console.log('shouldAnimate', shouldAnimate)
 
   return (
     <svg
