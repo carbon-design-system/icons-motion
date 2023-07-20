@@ -19,6 +19,7 @@ const CopyMotion = (props) => {
       aria-label='Copy'
       width={props.size}
       height={props.size}
+      fill='currentColor'
     >
       <path className={styles.CopyTop} d='M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z' />
       <path
