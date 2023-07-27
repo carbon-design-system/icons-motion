@@ -16,11 +16,11 @@ const CopyMotion = (props) => {
       ref={iconRef}
       viewBox='0 0 32 32'
       className={`${shouldAnimate}`}
-      aria-label='Copy'
       width={props.size}
       height={props.size}
       fill='currentColor'
     >
+      <title>Copy</title>
       <path className={styles.CopyTop} d='M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z' />
       <path
         className={styles.CopyBottom}
