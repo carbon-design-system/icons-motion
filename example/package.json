@@ -11,18 +11,19 @@
   },
   "dependencies": {
     "@carbon/icons-motion": "file:..",
-    "carbon-components": "^10.25.0",
-    "carbon-components-react": "^7.54.2",
-    "carbon-icons": "^7.0.7",
+    "@carbon/react": "^1.32.0",
+    "carbon-components": "file:../node_modules/carbon-components",
+    "carbon-components-react": "file:../node_modules/carbon-components-react",
+    "carbon-icons": "file:../node_modules/carbon-icons",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-router-dom": "^5.0.0",
     "react-scripts": "file:../node_modules/react-scripts",
-    "style-loader": "^0.23.1"
+    "style-loader": "file:../node_modules/style-loader"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "sass": "^1.55.0"
+    "sass": "^1.51.0"
   },
   "eslintConfig": {
     "extends": "react-app"
