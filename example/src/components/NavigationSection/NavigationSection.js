@@ -5,6 +5,7 @@ import '@carbon/icons-motion/dist/index.css'
 const NavigationSection = () => {
   const [addAnimating, setAddAnimating] = useState(false)
   const [addAltAnimating, setAddAltAnimating] = useState(false)
+  const [addLargeAnimating, setAddLargeAnimating] = useState(false)
   const [addFilledAnimating, setAddFilledAnimating] = useState(false)
   const [appsAnimating, setAppsAnimating] = useState(false)
   const [arrowUpAnimating, setArrowUpAnimating] = useState(false)
@@ -28,12 +29,16 @@ const NavigationSection = () => {
   const [closeFilledAnimating, setCloseFilledAnimating] = useState(false)
   const [subtractAnimating, setSubtractAnimating] = useState(false)
   const [subtractAltAnimating, setSubtractAltAnimating] = useState(false)
+  const [subtractLargeAnimating, setSubtractLargeAnimating] = useState(false)
   const [downToBottomAnimating, setDownToBottomAnimating] = useState(false)
   const [draggableAnimating, setDraggableAnimating] = useState(false)
+  const [fitToScreenAnimating, setFitToScreenAnimating] = useState(false)
   const [homeAnimating, setHomeAnimating] = useState(false)
   const [menuAnimating, setMenuAnimating] = useState(false)
-  const [overflowMenuHorizontalAnimating, setOverflowMenuHorizontalAnimating] = useState(false)
-  const [overflowMenuVerticalAnimating, setOverflowMenuVerticalAnimating] = useState(false)
+  const [overflowMenuHorizontalAnimating, setOverflowMenuHorizontalAnimating] =
+    useState(false)
+  const [overflowMenuVerticalAnimating, setOverflowMenuVerticalAnimating] =
+    useState(false)
   const [pageFirstAnimating, setPageFirstAnimating] = useState(false)
   const [pageLastAnimating, setPageLastAnimating] = useState(false)
   const [selectWindowAnimating, setSelectWindowAnimating] = useState(false)
@@ -47,26 +52,20 @@ const NavigationSection = () => {
   const [zoomOutAnimating, setZoomOutAnimating] = useState(false)
   const [zoomResetAnimating, setZoomResetAnimating] = useState(false)
 
-  
-  
-
-
-	return (
-		<section className="icon-section">	
-			<div className='bx--grid'>
+  return (
+    <section className='icon-section'>
+      <div className='bx--grid'>
         <div className='bx--row'>
           <h2>Navigation</h2>
         </div>
-  			<ul className='bx--row icon-tiles-grid'>
-  				<li
+        <ul className='bx--row icon-tiles-grid'>
+          <li
             className='icon-tile'
             onMouseEnter={() => setAddAnimating(true)}
             onMouseLeave={() => setAddAnimating(false)}
           >
-          <h3>Add</h3>
-          <icons.AddMotion 
-            isAnimating={addAnimating} 
-            size={32} />
+            <h3>Add</h3>
+            <icons.AddMotion isAnimating={addAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -74,9 +73,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setAddAltAnimating(false)}
           >
             <h3>Add alt</h3>
-            <icons.AddAltMotion 
-              isAnimating={addAltAnimating} 
-              size={32} />
+            <icons.AddAltMotion isAnimating={addAltAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -84,9 +81,15 @@ const NavigationSection = () => {
             onMouseLeave={() => setAddFilledAnimating(false)}
           >
             <h3>Add filled</h3>
-            <icons.AddFilledMotion 
-              isAnimating={addFilledAnimating} 
-              size={32} />
+            <icons.AddFilledMotion isAnimating={addFilledAnimating} size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setAddLargeAnimating(true)}
+            onMouseLeave={() => setAddLargeAnimating(false)}
+          >
+            <h3>Add large</h3>
+            <icons.AddLargeMotion isAnimating={addLargeAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -94,9 +97,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setAppsAnimating(false)}
           >
             <h3>Apps</h3>
-            <icons.AppsMotion
-              isAnimating={appsAnimating}
-              size={32} />
+            <icons.AppsMotion isAnimating={appsAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -104,9 +105,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowDownAnimating(false)}
           >
             <h3>Arrow down</h3>
-            <icons.ArrowDownMotion 
-              isAnimating={arrowDownAnimating} 
-              size={32} />
+            <icons.ArrowDownMotion isAnimating={arrowDownAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -114,9 +113,10 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowDownLeftAnimating(false)}
           >
             <h3>Arrow down left</h3>
-            <icons.ArrowDownLeftMotion 
-              isAnimating={arrowDownLeftAnimating} 
-              size={32} />
+            <icons.ArrowDownLeftMotion
+              isAnimating={arrowDownLeftAnimating}
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -124,9 +124,10 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowDownRightAnimating(false)}
           >
             <h3>Arrow down right</h3>
-            <icons.ArrowDownRightMotion 
-              isAnimating={arrowDownRightAnimating} 
-              size={32} />
+            <icons.ArrowDownRightMotion
+              isAnimating={arrowDownRightAnimating}
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -134,9 +135,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowLeftAnimating(false)}
           >
             <h3>Arrow left</h3>
-            <icons.ArrowLeftMotion 
-              isAnimating={arrowLeftAnimating} 
-              size={32} />
+            <icons.ArrowLeftMotion isAnimating={arrowLeftAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -144,9 +143,10 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowRightAnimating(false)}
           >
             <h3>Arrow right</h3>
-            <icons.ArrowRightMotion 
-              isAnimating={arrowRightAnimating} 
-              size={32} />
+            <icons.ArrowRightMotion
+              isAnimating={arrowRightAnimating}
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -154,9 +154,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowUpAnimating(false)}
           >
             <h3>Arrow up</h3>
-            <icons.ArrowUpMotion 
-              isAnimating={arrowUpAnimating} 
-              size={32} />
+            <icons.ArrowUpMotion isAnimating={arrowUpAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -164,9 +162,10 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowUpLeftAnimating(false)}
           >
             <h3>Arrow up left</h3>
-            <icons.ArrowUpLeftMotion 
-              isAnimating={arrowUpLeftAnimating} 
-              size={32} />
+            <icons.ArrowUpLeftMotion
+              isAnimating={arrowUpLeftAnimating}
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -174,9 +173,10 @@ const NavigationSection = () => {
             onMouseLeave={() => setArrowUpRightAnimating(false)}
           >
             <h3>Arrow up right</h3>
-            <icons.ArrowUpRightMotion 
-              isAnimating={arrowUpRightAnimating} 
-              size={32} />
+            <icons.ArrowUpRightMotion
+              isAnimating={arrowUpRightAnimating}
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -186,7 +186,8 @@ const NavigationSection = () => {
             <h3>Chevron down</h3>
             <icons.ChevronDownMotion
               isAnimating={chevronDownAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -194,9 +195,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setChevronUpAnimating(false)}
           >
             <h3>Chevron up</h3>
-            <icons.ChevronUpMotion
-              isAnimating={chevronUpAnimating}
-              size={32} />
+            <icons.ChevronUpMotion isAnimating={chevronUpAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -206,7 +205,8 @@ const NavigationSection = () => {
             <h3>Chevron left</h3>
             <icons.ChevronLeftMotion
               isAnimating={chevronLeftAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -216,7 +216,8 @@ const NavigationSection = () => {
             <h3>Chevron right</h3>
             <icons.ChevronRightMotion
               isAnimating={chevronRightAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -224,9 +225,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setCaretDownAnimating(false)}
           >
             <h3>Caret down</h3>
-            <icons.CaretDownMotion
-              isAnimating={caretDownAnimating}
-              size={32} />
+            <icons.CaretDownMotion isAnimating={caretDownAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -234,9 +233,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setCaretUpAnimating(false)}
           >
             <h3>Caret up</h3>
-            <icons.CaretUpMotion
-              isAnimating={caretUpAnimating}
-              size={32} />
+            <icons.CaretUpMotion isAnimating={caretUpAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -244,9 +241,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setCaretLeftAnimating(false)}
           >
             <h3>Caret left</h3>
-            <icons.CaretLeftMotion
-              isAnimating={caretLeftAnimating}
-              size={32} />
+            <icons.CaretLeftMotion isAnimating={caretLeftAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -256,7 +251,8 @@ const NavigationSection = () => {
             <h3>Caret right</h3>
             <icons.CaretRightMotion
               isAnimating={caretRightAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -264,9 +260,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setCloseAnimating(false)}
           >
             <h3>Close</h3>
-            <icons.CloseMotion
-              isAnimating={closeAnimating}
-              size={32} />
+            <icons.CloseMotion isAnimating={closeAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -276,7 +270,8 @@ const NavigationSection = () => {
             <h3>Close outline</h3>
             <icons.CloseOutlineMotion
               isAnimating={closeOutlineAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -286,7 +281,8 @@ const NavigationSection = () => {
             <h3>Close filled</h3>
             <icons.CloseFilledMotion
               isAnimating={closeFilledAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -296,7 +292,8 @@ const NavigationSection = () => {
             <h3>Down to bottom</h3>
             <icons.DownToBottomMotion
               isAnimating={downToBottomAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -304,9 +301,15 @@ const NavigationSection = () => {
             onMouseLeave={() => setDraggableAnimating(false)}
           >
             <h3>Draggable</h3>
-            <icons.DraggableMotion
-              isAnimating={draggableAnimating}
-              size={32} />
+            <icons.DraggableMotion isAnimating={draggableAnimating} size={32} />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setFitToScreenAnimating(true)}
+            onMouseLeave={() => setFitToScreenAnimating(false)}
+          >
+            <h3>Fit to screen</h3>
+            <icons.FitToScreenMotion isAnimating={fitToScreenAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -314,9 +317,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setHomeAnimating(false)}
           >
             <h3>Home</h3>
-            <icons.HomeMotion 
-              isAnimating={homeAnimating} 
-              size={32} />
+            <icons.HomeMotion isAnimating={homeAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -324,9 +325,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setMenuAnimating(false)}
           >
             <h3>Menu</h3>
-            <icons.MenuMotion
-              isAnimating={menuAnimating}
-              size={32} />
+            <icons.MenuMotion isAnimating={menuAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -336,7 +335,8 @@ const NavigationSection = () => {
             <h3>Overflow menu horizontal</h3>
             <icons.OverflowMenuHorizontalMotion
               isAnimating={overflowMenuHorizontalAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -346,7 +346,8 @@ const NavigationSection = () => {
             <h3>Overflow menu vertical</h3>
             <icons.OverflowMenuVerticalMotion
               isAnimating={overflowMenuVerticalAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -354,9 +355,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setPageFirstAnimating(false)}
           >
             <h3>Page first</h3>
-            <icons.PageFirstMotion
-              isAnimating={pageFirstAnimating}
-              size={32} />
+            <icons.PageFirstMotion isAnimating={pageFirstAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -364,9 +363,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setPageLastAnimating(false)}
           >
             <h3>Page last</h3>
-            <icons.PageLastMotion
-              isAnimating={pageLastAnimating}
-              size={32} />
+            <icons.PageLastMotion isAnimating={pageLastAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -374,9 +371,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setSubtractAnimating(false)}
           >
             <h3>Subtract</h3>
-            <icons.SubtractMotion
-              isAnimating={subtractAnimating}
-              size={32} />
+            <icons.SubtractMotion isAnimating={subtractAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -386,8 +381,17 @@ const NavigationSection = () => {
             <h3>Subtract alt</h3>
             <icons.SubtractAltMotion
               isAnimating={subtractAltAnimating}
-              size={32} />
-          </li>      
+              size={32}
+            />
+          </li>
+          <li
+            className='icon-tile'
+            onMouseEnter={() => setSubtractLargeAnimating(true)}
+            onMouseLeave={() => setSubtractLargeAnimating(false)}
+          >
+            <h3>Subtract large</h3>
+            <icons.SubtractLargeMotion isAnimating={subtractLargeAnimating} size={32} />
+          </li>
           <li
             className='icon-tile'
             onMouseEnter={() => setSelectWindowAnimating(true)}
@@ -396,7 +400,8 @@ const NavigationSection = () => {
             <h3>Select window</h3>
             <icons.SelectWindowMotion
               isAnimating={selectWindowAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -404,9 +409,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setSwitcherAnimating(false)}
           >
             <h3>Switcher</h3>
-            <icons.SwitcherMotion
-              isAnimating={switcherAnimating}
-              size={32} />
+            <icons.SwitcherMotion isAnimating={switcherAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -414,9 +417,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setUpToTopAnimating(false)}
           >
             <h3>Up to top</h3>
-            <icons.UpToTopMotion 
-              isAnimating={upToTopAnimating} 
-              size={32} />
+            <icons.UpToTopMotion isAnimating={upToTopAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -426,7 +427,8 @@ const NavigationSection = () => {
             <h3>Zoom in area</h3>
             <icons.ZoomInAreaMotion
               isAnimating={zoomInAreaAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -434,9 +436,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setZoomAreaAnimating(false)}
           >
             <h3>Zoom area</h3>
-            <icons.ZoomAreaMotion
-              isAnimating={zoomAreaAnimating}
-              size={32} />
+            <icons.ZoomAreaMotion isAnimating={zoomAreaAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -446,7 +446,8 @@ const NavigationSection = () => {
             <h3>Zoom out area</h3>
             <icons.ZoomOutAreaMotion
               isAnimating={zoomOutAreaAnimating}
-              size={32} />
+              size={32}
+            />
           </li>
           <li
             className='icon-tile'
@@ -454,9 +455,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setZoomFitAnimating(false)}
           >
             <h3>Zoom fit</h3>
-            <icons.ZoomFitMotion
-              isAnimating={zoomFitAnimating}
-              size={32} />
+            <icons.ZoomFitMotion isAnimating={zoomFitAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -464,9 +463,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setZoomInAnimating(false)}
           >
             <h3>Zoom in</h3>
-            <icons.ZoomInMotion
-              isAnimating={zoomInAnimating}
-              size={32} />
+            <icons.ZoomInMotion isAnimating={zoomInAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -474,9 +471,7 @@ const NavigationSection = () => {
             onMouseLeave={() => setZoomOutAnimating(false)}
           >
             <h3>Zoom out</h3>
-            <icons.ZoomOutMotion
-              isAnimating={zoomOutAnimating}
-              size={32} />
+            <icons.ZoomOutMotion isAnimating={zoomOutAnimating} size={32} />
           </li>
           <li
             className='icon-tile'
@@ -484,14 +479,12 @@ const NavigationSection = () => {
             onMouseLeave={() => setZoomResetAnimating(false)}
           >
             <h3>Zoom reset</h3>
-            <icons.ZoomResetMotion
-              isAnimating={zoomResetAnimating}
-              size={32} />
+            <icons.ZoomResetMotion isAnimating={zoomResetAnimating} size={32} />
           </li>
-  		  </ul>
-		  </div>
-		</section>
-	)
+        </ul>
+      </div>
+    </section>
+  )
 }
 
 export default NavigationSection
