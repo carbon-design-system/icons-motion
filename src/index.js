@@ -146,6 +146,8 @@ export {
 
 // Toggle
 export {
+  FavoriteMotion,
+  FavoriteHalfMotion,
   NotificationMotion,
   NotificationFilledMotion,
   StarMotion,

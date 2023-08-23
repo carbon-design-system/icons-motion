@@ -1,0 +1,57 @@
+@keyframes favorite {
+  0% { transform: scale(1)}
+  6% { transform: scale(.75)}
+  8% { transform: scale(.75)}
+  14% { transform: scale(1)}
+  100% { transform: scale(1)}
+}
+
+
+@keyframes favorite-filled {
+  0% {
+    scale: 1;
+    opacity: 0;
+  }
+  6% {
+    scale: .75;
+    opacity: 1;
+  }
+  8% {
+    scale: .75;
+    opacity: 1;
+  }
+  14% {
+    scale: 1;
+    opacity: 100;
+  }
+  100% {
+    scale: 1;
+    opacity: 100;
+  }
+}
+
+
+.Favorite {
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+}
+
+.FavoriteFilled {
+  transform-origin: 1rem 1rem;
+  opacity: 0;
+}
+
+
+
+.isAnimating {
+  .Favorite {
+    animation: favorite 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
+
+
+.isAnimating {
+  .FavoriteFilled {
+    animation: favorite-filled 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+  }
+}
