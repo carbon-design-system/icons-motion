@@ -5,6 +5,7 @@
 	border: 2px solid #0f62fe;
 	color: #0f62fe;
 	transition: .2s all;
+	width: 120px;
 }
 
 .StatusButton:hover {
@@ -18,4 +19,11 @@
 	justify-content: center;
 }
 
+.RowContainer {
+	display: flex;
+	padding-left: 12px;
+}
 
+h2 {
+	margin-left: 12px;
+}

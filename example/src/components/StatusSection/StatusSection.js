@@ -13,6 +13,7 @@ const [saveStatus, setSaveStatus] = useState(null);
           <h2>Status update</h2>
         </div>
   			<ul className='bx--row'>
+        <div className={styles.RowContainer}>
   				<li className='icon-tile'>
             <h3>Saving</h3>
             <icons.SavingMotion 
@@ -25,7 +26,8 @@ const [saveStatus, setSaveStatus] = useState(null);
               <button className={styles.StatusButton} onClick={() => setSaveStatus("inProgress")}>In progress</button>
               <button className={styles.StatusButton} onClick={() => setSaveStatus("error")}>Error</button>
               <button className={styles.StatusButton} onClick={() => setSaveStatus("success")}>Success</button>
-          </div>                   
+          </div> 
+          </div>                  
   		  </ul>
 		  </div>
 		</section>
