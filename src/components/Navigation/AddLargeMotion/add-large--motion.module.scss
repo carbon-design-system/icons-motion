@@ -1,0 +1,51 @@
+@keyframes add-large-vertical {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1, 1.2);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes add-large-horizontal {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.2, 1);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.AddLargeHorizontal{
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+}
+
+.AddLargeVertical{
+  transform-origin: 1rem 1rem;
+  will-change: transform;
+}
+
+.isAnimating {
+  .AddLargeHorizontal {
+    animation: add-large-horizontal 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}
+
+.isAnimating {
+  .AddLargeVertical {
+    animation: add-large-vertical 2s cubic-bezier(0.4, 0.14, 0.3, 1);
+  }
+}

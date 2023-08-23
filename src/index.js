@@ -12,6 +12,7 @@ export {
 export {
   AddMotion,
   AddAltMotion,
+  AddLargeMotion,
   AddFilledMotion,
   AppsMotion,
   ArrowUpMotion,
@@ -35,6 +36,7 @@ export {
   CloseFilledMotion,
   DownToBottomMotion,
   DraggableMotion,
+  FitToScreenMotion,
   HomeMotion,
   MenuMotion,
   OverflowMenuHorizontalMotion,
@@ -44,6 +46,7 @@ export {
   SelectWindowMotion,
   SubtractMotion,
   SubtractAltMotion,
+  SubtractLargeMotion,
   SwitcherMotion,
   UpToTopMotion,
   ZoomInAreaMotion,
@@ -158,7 +161,7 @@ export {
   EditMotion,
   EventsMotion,
   GlobeMotion,
-  GridMotion, 
+  GridMotion,
   SettingsMotion
 } from './components/ApiConnect'
 
