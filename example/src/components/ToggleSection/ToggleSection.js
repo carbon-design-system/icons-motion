@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
+import styles from "./toggle-section.module.scss";
 
 const ToggleSection = () => {
   const [notificationAnimating, setNotificationAnimating] = useState(false)
@@ -14,6 +15,7 @@ const ToggleSection = () => {
           <h2>Toggle</h2>
         </div>
   			<ul className='bx--row'>
+        <div className={styles.RowContainer}>
   				<li
             className='icon-tile'
             onMouseEnter={() => setNotificationAnimating(true)}
@@ -44,6 +46,7 @@ const ToggleSection = () => {
             isAnimating={starAnimating} 
             size={32} />
           </li>
+          </div>
   		  </ul>
 		  </div>
 		</section>
