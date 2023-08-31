@@ -58,72 +58,12 @@
   }
 }
 
-@keyframes FitToScreenTopLineMotion {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translateX(0px) translateY(-2px);
-  }
-  20% {
-    transform: translateX(0px) translateY(0px);
-  }
-  100% {
-    transform: translateX(0, 0);
-  }
-}
-
-@keyframes FitToScreenRightLineMotion {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translateX(2px) translateY(0px);
-  }
-  20% {
-    transform: translateX(0px) translateY(0px);
-  }
-  100% {
-    transform: translateX(0, 0);
-  }
-}
-
-@keyframes FitToScreenBottomLineMotion {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translateX(0px) translateY(2px);
-  }
-  20% {
-    transform: translateX(0px) translateY(0px);
-  }
-  100% {
-    transform: translateX(0, 0);
-  }
-}
-
-@keyframes FitToScreenLeftLineMotion {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translateX(-2px) translateY(0px);
-  }
-  20% {
-    transform: translateX(0px) translateY(0px);
-  }
-  100% {
-    transform: translateX(0, 0);
-  }
-}
-
 @keyframes FitToScreenInsideTopMotion {
   0% {
     transform: translate(0, 0);
   }
   10% {
-    transform: translateX(4px) translateY(-4px);
+    transform: translateX(2px) translateY(-2px);
   }
   20% {
     transform: translateX(0px) translateY(0px);
@@ -138,7 +78,7 @@
     transform: translate(0, 0);
   }
   10% {
-    transform: translateX(-4px) translateY(4px);
+    transform: translateX(-2px) translateY(2px);
   }
   20% {
     transform: translateX(0px) translateY(0px);
@@ -161,22 +101,6 @@
 }
 
 .FitToScreenTopLeft{
-  will-change: transform;
-}
-
-.FitToScreenTopLine{
-  will-change: transform;
-}
-
-.FitToScreenRightLine{
-  will-change: transform;
-}
-
-.FitToScreenBottomLine{
-  will-change: transform;
-}
-
-.FitToScreenLeftLine{
   will-change: transform;
 }
 
@@ -209,30 +133,6 @@
 .isAnimating {
   .FitToScreenTopLeft {
     animation: FitToScreenTopLeftMotion 2s cubic-bezier(0.4, 0.14, 0.3, 1);
-  }
-}
-
-.isAnimating {
-  .FitToScreenTopLine {
-    animation: FitToScreenTopLineMotion 2s cubic-bezier(0.4, 0.14, 0.3, 1);
-  }
-}
-
-.isAnimating {
-  .FitToScreenRightLine {
-    animation: FitToScreenRightLineMotion 2s cubic-bezier(0.4, 0.14, 0.3, 1);
-  }
-}
-
-.isAnimating {
-  .FitToScreenBottomLine {
-    animation: FitToScreenBottomLineMotion 2s cubic-bezier(0.4, 0.14, 0.3, 1);
-  }
-}
-
-.isAnimating {
-  .FitToScreenLeftLine {
-    animation: FitToScreenLeftLineMotion 2s cubic-bezier(0.4, 0.14, 0.3, 1);
   }
 }
 
