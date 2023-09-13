@@ -1,0 +1,32 @@
+.BadgeContainer {
+  width: 32px;
+  height: 32px;
+}
+
+.BadgeSvg > div > svg {
+  transform: translateY(8px);  
+}
+
+.Badge {
+  width: 20px;
+  height: 20px;
+  transform: scale(.5);
+  background-color: #da1e28;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -26px;
+  margin-left: 15px;
+  animation-delay: 1s;
+  animation: badge-pop 1s forwards;
+}
+
+
+@keyframes badge-pop {
+   90% { transform: scale(1.05) }
+  100% { transform: scale(1) }
+}

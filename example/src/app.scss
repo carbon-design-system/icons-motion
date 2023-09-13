@@ -10,7 +10,8 @@
 	animation: 0.5s fade-in-and-pop 0.25s forwards linear;
 }
 
-.icon-tile {
+.icon-tile,
+.toggle-icon-tile {
 	margin: 0px;
 	padding: 12px;
 	background-color: #f4f4f4;
@@ -22,10 +23,11 @@
 	cursor: pointer;
 	opacity: 0;
 	animation: 0.2s fade-in 0.38s forwards ease-in;
+}
 
-	svg {
-		margin: 48px 60px;
-	}
+.icon-tile  svg {
+	margin-left: 60px;
+	margin-bottom: 58px;
 }
 
 h3 {
@@ -37,6 +39,9 @@ h3 {
 
 }
 
+.icon-section {
+	padding: 0 32px;
+}
 .icon-section > .bx--grid {
 	max-width: 1184px !important;
 }
@@ -51,7 +56,7 @@ h3 {
 
 h2 {
 	font-size: 28px;
-	margin: 16px 0 16px 8px;
+	margin: 16px 0 16px 16px;
 	opacity: 0;
 	will-change: opacity, transform;
 	animation: 0.2s fade-in 0.38s forwards linear;
@@ -68,7 +73,7 @@ h2 {
 	}
 }
 
-@keyframes fade-in {
+@keyframes fade-in { 
 	100% {
 		opacity: 1;
 	}
@@ -81,7 +86,7 @@ h2 {
 		grid-template-columns: repeat(4,1fr);
 	}
 
-	.icon-tile svg{
+	.icon-tile svg {
 		margin: 38px 50px;
 	}
 }
