@@ -6,7 +6,6 @@ import styles from "./status-section.module.scss";
 
 const StatusSection = () => {
   const [saveStatus, setSaveStatus] = useState(null);
-  const [saveStatusTwo, setSaveStatusTwo] = useState(null);
   const [saveStatusThree, setSaveStatusThree] = useState(null);
   const [statusFour, setStatusFour] = useState("success");
   const [statusFive, setStatusFive] = useState("notRun");
