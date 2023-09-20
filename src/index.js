@@ -172,6 +172,10 @@ export {
 } from './components/Status'
 
 // Badge 
-export { BadgeContainer, BadgeContainerTwo, DocumentTasksMotion, DocumentTasksMotionTwo, RuleMotion } from './components/Badge'
+export { 
+  BadgeContainer, 
+  DocumentTasksMotion, 
+  RuleMotion 
+} from './components/Badge'
 
 
