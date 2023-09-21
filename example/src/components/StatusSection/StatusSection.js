@@ -9,7 +9,7 @@ const StatusSection = () => {
   const [saveStatusTwo, setSaveStatusTwo] = useState("success");
   const [saveStatusThree, setSaveStatusThree] = useState("notRun");
 
-  const documentTasksTwoIcon = <icons.DocumentTasksMotion />
+  const documentTasksIcon = <icons.DocumentTasksMotion />
   const ruleIcon = <icons.RuleMotion />
 
   // TODO Button containers should be inside <li>
@@ -43,7 +43,7 @@ const StatusSection = () => {
             <div className={styles.DemoBadgeContainer}>
               <icons.BadgeContainer 
                 numErrors={1}
-                svg={documentTasksTwoIcon}
+                svg={documentTasksIcon}
                 status={saveStatusTwo} 
                 fillColor="000000"
             />
