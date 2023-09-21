@@ -1,6 +1,4 @@
 import React, { useRef, useState, useEffect } from "react";
-import styles from "./rule--motion.module.scss";
-// import PropTypes from 'prop-types';
 import getSvgTitle from '../../../helpers/getSvgTitle';
 
 
