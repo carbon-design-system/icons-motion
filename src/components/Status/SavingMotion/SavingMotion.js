@@ -38,17 +38,10 @@ const SavingMotion = (props) => {
 	 		> 	
 	 			{ ((props.title == true ) || (typeof props.title === 'string')) ? <title>{getSvgTitle(props.title, "Save successful")}</title> : null}
 				 <path fill={fillColor} d="M16,26h-4v-8h4v-2h-4c-1.1,0-2,0.9-2,2v8H6V6h4v4c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2V6.4l4,4V16	h2v-6c0-0.3-0.1-0.5-0.3-0.7l-5-5C22.5,4.1,22.3,4,22,4H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h10V26z M12,6h8v4h-8V6z"/>
-				 
-
-				   {/*<polyline stroke={ fillColor} fill="none" className={styles.SaveCheckmark} points="13.71 19.35 17 22.65 24.3 15.35"/>*/}
- <polyline className={styles.SaveCheckmark} stroke={ fillColor} fill="none" stroke-miterlimit="10" stroke-width="2" points="17.7,23.4 21,26.6 28.3,19.4"/>
-
-{/*<polyline stroke={ fillColor} fill="none" className={styles.SaveCheckmark} points="28.4,20.1 21.9,26.6 19.4,24.1"/>*/}
-				</svg>
-			)
+ 				<polyline className={styles.SaveCheckmark} stroke={ fillColor} fill="none" points="17.7,23.4 21,26.6 28.3,19.4"/>
+			</svg>
+		)
  	}
-
-
 
 
  	const SaveError = () => {
@@ -61,8 +54,8 @@ const SavingMotion = (props) => {
  				{ ((props.title == true ) || (typeof props.title === 'string')) ? <title>{getSvgTitle(props.title, "Save error")}</title> : null}
 			  	<path fill={ fillColor } d="M16,26h-4v-8h4v-2h-4c-1.1,0-2,0.9-2,2v8H6V6h4v4c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2V6.4l4,4V16	h2v-6c0-0.3-0.1-0.5-0.3-0.7l-5-5C22.5,4.1,22.3,4,22,4H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h10V26z M12,6h8v4h-8V6z"/>
 			  	 <g className={ styles.ErrorX } stroke={fillColor} fill="none">
-			  	  	<line fill="none" stroke={ fillColor } id="x_x5F_line_x5F_02" x1="18.7" x2="27.3" y1="18.7" y2="27.3" class="st1"/>
-  					<line fill="none" stroke={ fillColor } id="x_x5F_line_x5F_01" x1="27.3" x2="18.7" y1="18.7" y2="27.3" class="st1"/>
+			  	  	<line fill="none" stroke={ fillColor } id="x_x5F_line_x5F_02" x1="18.7" x2="27.3" y1="18.7" y2="27.3" />
+  					<line fill="none" stroke={ fillColor } id="x_x5F_line_x5F_01" x1="27.3" x2="18.7" y1="18.7" y2="27.3" />
   				</g>
 			</svg> 
 		)

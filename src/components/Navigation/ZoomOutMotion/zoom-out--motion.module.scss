@@ -31,6 +31,8 @@
 .ZoomOutGlass{
   transform-origin: .8125rem .8125rem;
   will-change: transform;
+  stroke-width: 2px;
+  stroke-miterlimit: 10px;
 }
 
 .ZoomOutMinus{

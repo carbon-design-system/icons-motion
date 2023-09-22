@@ -17,6 +17,9 @@
 .CenterCircle {
   transform-origin: 1rem 1rem;
   will-change: transform;
+  vector-effect: non-scaling-stroke;
+  stroke-width: 2px;
+  stroke-miterlimit: 10px;
 }
 
 .isAnimating {

@@ -20,7 +20,7 @@ const CenterCircleMotion = (props) => {
     <div ref={iconRef} className={`${shouldAnimate}`}>
       <svg style={iconStyles} viewBox='0 0 32 32' className={styles.CenterCircleMotion}>
         <title>Center circle</title>
-        <path vector-effect="non-scaling-stroke" className={styles.CenterCircle}  fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M27,16c0,6.1-4.9,11-11,11S5,22.1,5,16S9.9,5,16,5S27,9.9,27,16z"   />
+        <path className={styles.CenterCircle}  fill="none" stroke="#000000" d="M27,16c0,6.1-4.9,11-11,11S5,22.1,5,16S9.9,5,16,5S27,9.9,27,16z"   />
         <path className={styles.CenterCircleTop}  d="M17,2h-2v8h2V2z" />
         <path className={styles.CenterCircleRight} d="M10.1,17v-2h-8v2H10.1z" />
         <path className={styles.CenterCircleBottom} d="M15,29.9h2v-8h-2V29.9z" />

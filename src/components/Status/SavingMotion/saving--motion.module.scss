@@ -12,6 +12,8 @@
   stroke-width: 2px;
   stroke-dasharray: 16px;
   stroke-dashoffset: 16px;
+  stroke-miterlimit: 10px;
+  stroke-width: 2px;
   animation: success cubic-bezier(0.4, 0.14, 1, 1) .2s forwards;
 }
 
