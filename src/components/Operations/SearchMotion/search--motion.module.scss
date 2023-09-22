@@ -16,6 +16,9 @@
 .Search{
   transform-origin: 0.8125rem 0.8125rem;
   will-change: transform;
+  vector-effect: non-scaling-stroke;
+  stroke-width: 2px;
+  stroke-miterlimit: 10px;
 }
 
 
