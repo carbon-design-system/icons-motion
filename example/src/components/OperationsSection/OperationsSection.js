@@ -645,8 +645,7 @@ const OperationsSection = () => {
             <icons.ReviewMotion isAnimating={reviewAnimating} size={32} />
           </li>
           <li
-            className='icon-tile'
-            isAnimating={rotateAnimating}
+            className='icon-tile'            
             onMouseEnter={() => setRotateAnimating(true)}
             onMouseLeave={() => setRotateAnimating(false)}
           >
