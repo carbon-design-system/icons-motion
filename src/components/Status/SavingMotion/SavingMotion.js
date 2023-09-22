@@ -14,7 +14,7 @@ const SavingMotion = (props) => {
 
 	let fillColor = "#" + props.fillColor
 
-	 	const SaveInProgress = () => {
+	 const SaveInProgress = () => {
 	 	return (
 	 		<svg 
 	 			width={props.size}
@@ -28,7 +28,6 @@ const SavingMotion = (props) => {
 		)
  	}
  	
-
 	const SaveSuccess = () => {
  		return (
 	 		<svg 
@@ -36,13 +35,12 @@ const SavingMotion = (props) => {
 		 		height={props.size}  
 		 		viewBox="0 0 32 32"
 	 		> 	
-	 			{ ((props.title == true ) || (typeof props.title === 'string')) ? <title>{getSvgTitle(props.title, "Save successful")}</title> : null}
+	 			{((props.title == true ) || (typeof props.title === 'string')) ? <title>{getSvgTitle(props.title, "Save successful")}</title> : null}
 				 <path fill={fillColor} d="M16,26h-4v-8h4v-2h-4c-1.1,0-2,0.9-2,2v8H6V6h4v4c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2V6.4l4,4V16	h2v-6c0-0.3-0.1-0.5-0.3-0.7l-5-5C22.5,4.1,22.3,4,22,4H6C4.9,4,4,4.9,4,6v20c0,1.1,0.9,2,2,2h10V26z M12,6h8v4h-8V6z"/>
  				<polyline className={styles.SaveCheckmark} stroke={ fillColor} fill="none" points="17.7,23.4 21,26.6 28.3,19.4"/>
 			</svg>
 		)
  	}
-
 
  	const SaveError = () => {
  		return (
@@ -83,6 +81,7 @@ const SavingMotion = (props) => {
 		</div>
 	);
 };
+
 
 SavingMotion.propTypes = {
 

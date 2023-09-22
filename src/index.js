@@ -171,3 +171,11 @@ export {
   SavingMotion
 } from './components/Status'
 
+// Badge 
+export { 
+  BadgeContainer, 
+  DocumentTasksMotion, 
+  RuleMotion 
+} from './components/Badge'
+
+

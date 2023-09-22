@@ -1,0 +1,94 @@
+.BadgeContainer {
+  width: 32px;
+  height: 32px;
+}
+
+.BadgeSvg > div > svg {
+  transform: translateY(8px);
+}
+
+.BadgeNotRun {
+  width: 20px;
+  height: 20px;
+  border: 1px dashed gray;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -31px;
+  margin-left: 15px;
+}
+
+.BadgeError {
+  width: 20px;
+  height: 20px;
+  background-color: #da1e28;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -31px;
+  margin-left: 15px;
+  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s forwards;
+}
+
+.BadgeSuccess {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -31px;
+  margin-left: 15px;
+  background-color: green;
+}
+
+.BadgeSuccessSvg {
+  fill: none;
+  stroke: red;
+  z-index: 100;
+  height: 10px;
+  width: 12px;
+  stroke-width: 2px;
+  stroke: #fff;
+  fill: none;
+  transform: scale(0.9);
+  transform-origin: 50%, 50%;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  animation: success cubic-bezier(0.4, 0.14, 1, 1) 0.2s forwards;
+}
+
+@keyframes success {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes failed {
+  0% {
+    transform: translate(0px);
+  }
+  4% {
+    transform: translate(-2px);
+  }
+  12% {
+    transform: translate(2px);
+  }
+  16% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}

@@ -1,6 +1,6 @@
 .StatusButton {
 	padding: 8px;
-	margin: 8px;
+	margin: 0 8px 8px 8px;
 	background-color: #fff;
 	border: 2px solid #0f62fe;
 	color: #0f62fe;
@@ -16,12 +16,17 @@
 .ButtonContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
+	margin-right: 48px;
 }
 
 .RowContainer {
 	display: flex;
 	padding-left: 12px;
+}
+
+.DemoBadgeContainer {
+	margin: 0 58px 50px 58px;
 }
 
 h2 {
