@@ -172,8 +172,9 @@ export {
 } from './components/Status'
 
 // Badge 
-export { 
-  BadgeContainer, 
+export {
+  ApicBadge, 
+  BadgeIconContainer,
   DocumentTasksMotion, 
   RuleMotion 
 } from './components/Badge'

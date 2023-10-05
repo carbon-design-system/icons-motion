@@ -1,9 +1,7 @@
 import React, { useRef, useState, useEffect, cloneElement } from "react";
-import styles from "./badge-container.module.scss";
+import styles from "./apic-badge.module.scss";
 
-const BadgeContainer = (props) => {
-	// should the states be more generic like statusOne, statusTwo, etc to allow for broader use cases ie different statuses? Should the badge itself be a prop so devs can create their own badges?
-	// should you be able to pass in whatever badge you want as props?
+const ApicBadge = (props) => {
 	 	
 	const iconRef = useRef(null)
 	const [status, setStatus] = useState(props.status);
@@ -22,6 +20,18 @@ const BadgeContainer = (props) => {
 		)
  	}
 
+
+ 	const warning = () => {
+ 		return (
+ 			<div className={styles.BadgeWarning}>
+ 				<svg viewBox="0 0 32 32" className={styles.BadgeWarningSvg}>
+    				  <path d="M16 8 16 19" />
+  					<circle cx="15.9" cy="23.5" r=".6" />
+				</svg>
+			</div>
+		)
+ 	}
+
  	const badgeToDisplay = () => {
  		switch(status) {
 		  case "notRun":
@@ -33,19 +43,18 @@ const BadgeContainer = (props) => {
 		   case "success":
 		    return success();
 		   break;
+		  case "warning":
+		  	return warning();
 		  default:
 		   return success();
 		}
  	}
 
-	const clonedSvg = React.cloneElement(  props.svg, { size: 20, ... props}, null )
-
 	return (
-		<div className={styles.BadgeContainer}>
-			<div className={styles.BadgeSvg}> { clonedSvg }</div>
-			{ badgeToDisplay() }
-		</div>
+		 <div>
+			 { badgeToDisplay() }
+		 </div>
 	)
 }
 
-export default BadgeContainer;
+export default ApicBadge;

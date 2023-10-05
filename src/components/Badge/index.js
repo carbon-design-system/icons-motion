@@ -1,5 +1,6 @@
-import BadgeContainer from './BadgeContainer';
+import ApicBadge from './ApicBadge';
+import BadgeIconContainer from './BadgeIconContainer';
 import DocumentTasksMotion from './DocumentTasksMotion';
 import RuleMotion from './RuleMotion';
 
-export { BadgeContainer, DocumentTasksMotion, RuleMotion } 
+export { ApicBadge, BadgeIconContainer, DocumentTasksMotion, RuleMotion } 
