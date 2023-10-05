@@ -7,8 +7,8 @@ const StatusSection = () => {
   const [saveStatus, setSaveStatus] = useState(null);
   const [saveStatusTwo, setSaveStatusTwo] = useState("success");
   const [saveStatusThree, setSaveStatusThree] = useState("notRun");
-  const [saveStatusFour, setSaveStatusFour] = useState("notRun");
-  const [saveStatusFive, setSaveStatusFive] = useState("notRun");
+  // const [saveStatusFour, setSaveStatusFour] = useState("notRun");
+  // const [saveStatusFive, setSaveStatusFive] = useState("notRun");
     const [saveStatusSix, setSaveStatusSix] = useState("warning");
 
   const documentTasksIcon = <icons.DocumentTasksMotion />
