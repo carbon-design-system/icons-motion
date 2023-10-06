@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect, cloneElement } from "react";
-import styles from "./apic-badge.module.scss";
+import styles from "./badge-icon.module.scss";
 
-const ApicBadge = (props) => {
+const BadgeIcon = (props) => {
 	 	
 	const iconRef = useRef(null)
 	const [status, setStatus] = useState(props.status);
@@ -57,4 +57,4 @@ const ApicBadge = (props) => {
 	)
 }
 
-export default ApicBadge;
+export default BadgeIcon;

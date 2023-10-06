@@ -7,21 +7,7 @@ const StatusSection = () => {
   const [saveStatus, setSaveStatus] = useState(null);
   const [saveStatusTwo, setSaveStatusTwo] = useState("success");
   const [saveStatusThree, setSaveStatusThree] = useState("notRun");
-  // const [saveStatusFour, setSaveStatusFour] = useState("notRun");
-  // const [saveStatusFive, setSaveStatusFive] = useState("notRun");
-    const [saveStatusSix, setSaveStatusSix] = useState("warning");
-
-  const documentTasksIcon = <icons.DocumentTasksMotion />
-  const ruleIcon = <icons.RuleMotion />
-  const apicBadge = () => {
-   return ( <icons.ApicBadge numErrors={8} status={saveStatusThree} /> )
- }
-
-  const apicBadgeTwo = () => {
-   return ( <icons.ApicBadge numErrors={8} status={saveStatusTwo} /> )
- }
-
-
+  const [saveStatusFour, setSaveStatusFour] = useState("warning");
 
   // TODO Button containers should be inside <li>
 	return (
@@ -31,97 +17,69 @@ const StatusSection = () => {
           <h2>Status update</h2>
         </div>
   			<ul className='bx--row'>
+          <div className={styles.RowContainer}>
 
-        <div className={styles.RowContainer}>
-  				
-          <li className='icon-tile'>
-            <h3>Saving</h3>
-            <icons.SavingMotion 
-              status={saveStatus} 
-              size={32}
-              fillColor="000000"
-            />
-          </li> 
-
-          <div className={styles.ButtonContainer}>
-              <button className={styles.StatusButton} onClick={() => setSaveStatus("inProgress")}>In progress</button>
-              <button className={styles.StatusButton} onClick={() => setSaveStatus("error")}>Error</button>
-              <button className={styles.StatusButton} onClick={() => setSaveStatus("success")}>Success</button>
-          </div>
-
-      
-          <li className='toggle-icon-tile'>
-            <h3>Document tasks + badge</h3>
-            <div className={styles.DemoBadgeContainer}>
-              <icons.BadgeIconContainer 
-                numErrors={1}
-                svg={documentTasksIcon}
-                status={saveStatusTwo} 
-                // fillColor="000000"
-                badge={apicBadgeTwo()}
-            />
-            </div>
-          </li> 
-          <div className={styles.ButtonContainer}>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusTwo("error")}>Ran - has errors</button>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusTwo("success")}>Ran - success</button>
-          </div>
-
-          <li className='toggle-icon-tile'>
-            <h3>Rule + badge</h3>
-            <div className={styles.DemoBadgeContainer}>
-              <icons.BadgeIconContainer
-                numErrors={8}
-                svg={ruleIcon}
-                status={saveStatusThree} 
-                // fillColor="000000"
-                badge={apicBadge()}
-              />
-            </div>
-          </li>       
-          <div className={styles.ButtonContainer}>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusThree("notRun")}>Hasn't run yet</button>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusThree("error")}>Ran - has errors</button>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusThree("success")}>Ran - success</button>       
-          </div> 
-
-
-
-
-
- {/*    <li className='toggle-icon-tile'>
-            <h3>Rule + badge</h3>
-            <div className={styles.DemoBadgeContainer}>
-              <icons.BadgeIconContainer
-                numErrors={8}
-                svg={ruleIcon}
-                status={saveStatusThree} 
+            <li className='icon-tile'>
+              <h3>Saving</h3>
+              <icons.SavingMotion 
+                status={saveStatus} 
+                size={32}
                 fillColor="000000"
-                badge={apicBadge()}
               />
+            </li> 
+            <div className={styles.ButtonContainer}>
+                <button className={styles.StatusButton} onClick={() => setSaveStatus("inProgress")}>In progress</button>
+                <button className={styles.StatusButton} onClick={() => setSaveStatus("error")}>Error</button>
+                <button className={styles.StatusButton} onClick={() => setSaveStatus("success")}>Success</button>
             </div>
-          </li>       
-          <div className={styles.ButtonContainer}>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusThree("notRun")}>Hasn't run yet</button>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusThree("error")}>Ran - has errors</button>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusThree("success")}>Ran - success</button>       
-          </div>*/}
 
-
-           <li className='toggle-icon-tile'>
-            <h3>Badge only</h3>
-            <div className={styles.DemoBadgeOnlyContainer}>
-              <icons.ApicBadge status={saveStatusSix} numErrors={2} />
+            <li className='toggle-icon-tile'>
+              <h3>Document tasks + badge</h3>
+              <div className={styles.DemoBadgeContainer}>
+                <icons.BadgeIconContainer 
+                  numErrors={1}
+                  svg={<icons.DocumentTasksMotion />}
+                  status={ saveStatusTwo } 
+                  badge={ <icons.BadgeIcon numErrors={8} status={saveStatusTwo} /> }
+              />
+              </div>
+            </li> 
+            <div className={styles.ButtonContainer}>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusTwo("error")}>Ran - has errors</button>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusTwo("success")}>Ran - success</button>
             </div>
-          </li>       
-          <div className={styles.ButtonContainer}>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusSix("error")}>Error</button>
-            <button className={styles.StatusButton} onClick={() => setSaveStatusSix("success")}>Success</button>       
-            <button className={styles.StatusButton} onClick={() => setSaveStatusSix("warning")}>Warning</button>
-         </div>
 
+            <li className='toggle-icon-tile'>
+              <h3>Rule + badge</h3>
+              <div className={styles.DemoBadgeContainer}>
+                <icons.BadgeIconContainer
+                  numErrors={8}
+                  svg={ <icons.RuleMotion /> }
+                  status={saveStatusThree} 
+                  // fillColor="000000"
+                  badge={ <icons.BadgeIcon numErrors={8} status={saveStatusThree} /> }
+                />
+              </div>
+            </li>       
+            <div className={styles.ButtonContainer}>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusThree("notRun")}>Hasn't run yet</button>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusThree("error")}>Ran - has errors</button>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusThree("success")}>Ran - success</button>       
+            </div> 
 
-        </div> 
+             <li className='toggle-icon-tile'>
+              <h3>Badge only</h3>
+              <div className={styles.DemoBadgeOnlyContainer}>
+                <icons.BadgeIcon status={saveStatusFour} numErrors={2} />
+              </div>
+            </li>       
+            <div className={styles.ButtonContainer}>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusFour("error")}>Error</button>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusFour("success")}>Success</button>       
+              <button className={styles.StatusButton} onClick={() => setSaveStatusFour("warning")}>Warning</button>
+           </div>
+           
+          </div> 
   		  </ul>
 		  </div>
 		</section>

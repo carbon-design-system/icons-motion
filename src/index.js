@@ -173,7 +173,7 @@ export {
 
 // Badge 
 export {
-  ApicBadge, 
+  BadgeIcon, 
   BadgeIconContainer,
   DocumentTasksMotion, 
   RuleMotion 
