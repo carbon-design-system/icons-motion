@@ -6,6 +6,7 @@ const FormattingSection = () => {
   const [copyAnimating, setCopyAnimating] = useState(false)
   const [cropAnimating, setCropAnimating] = useState(false)
   const [cutAnimating, setCutAnimating] = useState(false)
+  const [magicWandAnimating, setMagicWandAnimating] = useState(false)
   const [pasteAnimating, setPasteAnimating] = useState(false)
 
   return (
@@ -38,6 +39,14 @@ const FormattingSection = () => {
           >
             <h3>Cut</h3>
             <icons.CutMotion isAnimating={cutAnimating} size={32} />
+          </li>
+        <li
+            className='icon-tile'
+            onMouseEnter={() => setMagicWandAnimating(true)}
+            onMouseLeave={() => setMagicWandAnimating(false)}
+          >
+            <h3>Magic wand</h3>
+            <icons.MagicWandMotion isAnimating={magicWandAnimating} size={32} />
           </li>
           <li
             className='icon-tile'

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, cloneElement } from "react";
+import React, { useRef, useState, useEffect} from "react";
 import styles from "./badge-icon-container.module.scss";
 
 const BadgeIconContainer = (props) => {

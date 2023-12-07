@@ -5,6 +5,7 @@ export {
   CopyMotion,
   CropMotion,
   CutMotion,
+  MagicWandMotion,
   PasteMotion
 } from './components/Formatting'
 

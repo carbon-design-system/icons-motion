@@ -18,21 +18,21 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	margin-right: 48px;
+	max-height: 180px;
+	flex-wrap: wrap;
+	margin-bottom: 32px !important;
 }
 
 .RowContainer {
 	display: flex;
 	padding-left: 12px;
+	flex-wrap: wrap;
 }
 
 .DemoBadgeContainer {
 	margin: 0 58px 50px 58px;
+	max-height: 180px;
 }
-
-.DemoBadgeOnlyContainer {
-	margin: 0 64px 50px 54px;
-}
-
 
 h2 {
 	margin-left: 12px;
