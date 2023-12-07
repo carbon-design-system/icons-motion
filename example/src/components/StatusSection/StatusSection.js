@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
 import styles from "./status-section.module.scss";
-import DemoTile from '../DemoTile'
+// import DemoTile from '../DemoTile'
 
 const StatusSection = () => {
   const [saveStatus, setSaveStatus] = useState(null);
