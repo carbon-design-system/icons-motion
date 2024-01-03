@@ -4,14 +4,14 @@ import styles from "./badge-icon.module.scss";
 
 // Add fill color props for white spaces! 
 const BadgeIcon = (props) => {
-	 	
-	const [status, setStatus] = useState(props.status);
+	// const [status, setStatus] = useState(props.status);
 
-	useEffect(() => {
-	   	setStatus(props.status)
-	}, [props.status])
+	// useEffect(() => {
+	//    	setStatus(props.status)
+	// }, [props.status])
 
 	const success = () => {
+		console.log("success")
  		return (
  			<div className={styles.BadgeSuccess}>
  				<svg className={styles.BadgeSuccessSvg} viewBox="0 0 12.11 8.38">
@@ -22,6 +22,7 @@ const BadgeIcon = (props) => {
  	}
 
  	const warning = () => {
+ 		console.log("warning")
  		return (
  			<div className={styles.BadgeWarning}>
  				<svg viewBox="0 0 32 32" className={styles.BadgeWarningSvg}>
@@ -33,9 +34,10 @@ const BadgeIcon = (props) => {
  	}
 
 	const warningAltFilled = () => {
+		console.log( "warning alt filled")
 		return (
 		 	<div className={styles.BadgeWarningAlt}>
-				 <svg viewBox="0 0 32 32">
+				<svg viewBox="0 0 32 32">
 		  			<path className={styles.BadgeWarningAltSvgOne }  d="M16,6.2L16,6.2L4.6,28l0,0h22.7l0,0L16,6.2z M14.9,12h2.2v9h-2.2V12z M16,26c-0.8,0-1.5-0.7-1.5-1.5S15.2,23,16,23	c0.8,0,1.5,0.7,1.5,1.5S16.8,26,16,26z"/>
 		  			<path className={styles.BadgeWarningAltSvgTwo } d="M29,30H3c-0.6,0-1-0.4-1-1c0-0.2,0-0.3,0.1-0.5l13-25C15.4,3,16,2.9,16.5,3.1c0.2,0.1,0.3,0.2,0.4,0.4l13,25	c0.3,0.5,0.1,1.1-0.4,1.3C29.3,30,29.2,30,29,30z M4.7,28h22.7l0,0L16,6.2h0L4.7,28L4.7,28z"/>
 		  			 <path className={styles.BadgeWarningAltSvgThree } strokeMiterlimit="10" strokeWidth="3" d="M16 12 16 21"/>
@@ -45,8 +47,8 @@ const BadgeIcon = (props) => {
 		)          
 	}
 
-
 	const undefinedFilled = () => {
+		console.log( "undefined filled")
 		return (
 			<div className={styles.UndefinedFilled}>
 				<svg viewBox="0 0 32 32">
@@ -57,8 +59,8 @@ const BadgeIcon = (props) => {
 		)
 	}
 
-
 	const errorFilled = () => {
+		console.log( "error filled")
 		return (
 			<div className={styles.ErrorFilledSvg}>
 				<svg viewBox="0 0 32 32">
@@ -69,39 +71,55 @@ const BadgeIcon = (props) => {
 		)
 	}
 
+	const notRun = () => {
+		console.log( "not run")
+		return (
+			<div className={styles.BadgeNotRun}></div>
+		)
+	}
+
+	const error = () => {
+		console.log( "error")
+		return (
+			<div className={styles.BadgeError}>{props.numErrors}</div>
+		)
+	}
+
  	const badgeToDisplay = () => {
- 		switch(status) {
+ 		switch(props.status) {
 		  case "notRun":
-		    return <div className={styles.BadgeNotRun}></div>
-		  break;
+		  	return notRun();
+		    // return { notRun() };
+		 	// return <div className={styles.BadgeNotRun}></div>
+
 		  case "error":
-		    return <div className={styles.BadgeError}>{props.numErrors}</div>;
-		  	break;
+		    return error();
+
 		  case "success":
-		     return success();	
-		  	break;
+		    return success();	
+
 		  case "warning":		
 		  	return warning();
-		  	break;
+
 		  case "warningAltFilled":
 		  	return warningAltFilled();
-		  	break;		  
+
 		  case "undefinedFilled":
 		  	// this is too small - remove space ffom artboard
 		  	return undefinedFilled();
-		 	break;
+
 		  case "errorFilled":
-		  	 return errorFilled();
-		  	 break;
+		  	return errorFilled();
+
 	  	  default:
 		   return warning();
 		}
  	}
 
 	return (
-		 <div>
-			 { badgeToDisplay() }
-		 </div>
+		<div>
+			{ badgeToDisplay() }
+		</div>
 	)
 }
 

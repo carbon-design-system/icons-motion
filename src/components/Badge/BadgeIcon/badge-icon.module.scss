@@ -1,28 +1,32 @@
-.BadgeNotRun {
-  width: 19px;
-  height: 19px;
-  margin-right: 1px;
-  border: 1px dashed gray;
-  border-radius: 50%;
-  margin-top: -31px;
-  margin-left: 15px;
-}
 
-.BadgeError {
+.BadgeSuccess {
   width: 20px;
   height: 20px;
-  padding-bottom: 1px;
-  background-color: #da1e28;
   border-radius: 50%;
   font-size: 12px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   margin-top: -31px;
   margin-left: 15px;
-  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
+  background-color: green;
+  padding-top: 1px;
+}
+
+.BadgeSuccessSvg {
+  fill: none;
+  z-index: 100;
+  height: 10px;
+  width: 12px;
+  stroke-width: 2px;
+  stroke: #fff;
+  fill: none;
+  transform: scale(0.9);
+  transform-origin: 50%, 50%;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  animation: success cubic-bezier(0.4, 0.14, 1, 1) 0.15s forwards;
 }
 
 .BadgeWarning {
@@ -33,7 +37,8 @@
   position: relative;
   margin-top: -31px;
   margin-left: 15px;
-  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s ;
+  transform: translate(0px);
+  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
 }
 
 .BadgeWarningSvg {
@@ -41,7 +46,7 @@
   height: 20px;
   stroke: #ffffff;
   stroke-width: 2.25px;
-  stroke-miterlimit:10;
+  stroke-miterlimit: 10;
 }
 
 .BadgeWarningAlt {
@@ -84,55 +89,23 @@
   animation: undefined-pop cubic-bezier(0.4, 0.14, 1, 1) 0.15s;
 }
 
-.UndefinedFilledBackground {
-  stroke: white;
-  fill: white;
-}
-
 .UndefinedFilledInner {
   stroke: #8a3ffc;
   fill: #8a3ffc;
 }
 
-
-.BadgeSuccess {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  font-size: 12px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -31px;
-  margin-left: 15px;
-  background-color: green;
-  padding-top: 1px;
+.UndefinedFilledBackground {
+  stroke: white;
+  fill: white;
 }
-
-
-.BadgeSuccessSvg {
-  fill: none;
-  z-index: 100;
-  height: 10px;
-  width: 12px;
-  stroke-width: 2px;
-  stroke: #fff;
-  fill: none;
-  transform: scale(0.9);
-  transform-origin: 50%, 50%;
-  stroke-dasharray: 16px;
-  stroke-dashoffset: 16px;
-  animation: success cubic-bezier(0.4, 0.14, 1, 1) 0.15s forwards;
-}
-
 
 .ErrorFilledSvg {
   width: 20px;
   height: 20px;
   margin-top: -31px;
   margin-left: 15px;
-  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s ;
+  transform: translate(0px);
+  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
 }
 
 .ErrorFilledBackground {
@@ -146,6 +119,34 @@
   fill: white;
   stroke-width: 3px;
 } 
+
+.BadgeNotRun {
+  width: 19px;
+  height: 19px;
+  margin-right: 1px;
+  border: 1px dashed gray;
+  border-radius: 50%;
+  margin-top: -31px;
+  margin-left: 15px;
+}
+
+.BadgeError {
+  width: 20px;
+  height: 20px;
+  padding-bottom: 1px;
+  background-color: #da1e28;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -31px;
+  margin-left: 15px;
+  transform: translate(0px);
+  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
+}
 
 @keyframes success {
   to {

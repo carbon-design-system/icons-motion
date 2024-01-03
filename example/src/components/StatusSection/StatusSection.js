@@ -5,9 +5,9 @@ import styles from "./status-section.module.scss";
 // import DemoTile from '../DemoTile'
 
 const StatusSection = () => {
-  const [saveStatus, setSaveStatus] = useState(null);
-  const [saveStatusTwo, setSaveStatusTwo] = useState("success");
-  const [saveStatusThree, setSaveStatusThree] = useState("notRun");
+  // const [saveStatus, setSaveStatus] = useState(null);
+  // const [saveStatusTwo, setSaveStatusTwo] = useState("success");
+  // const [saveStatusThree, setSaveStatusThree] = useState("notRun");
   const [saveStatusFour, setSaveStatusFour] = useState("warning");
 
   // TODO Button containers should be inside <li>
@@ -19,8 +19,7 @@ const StatusSection = () => {
         </div>
   			<ul className='bx--row'>
           <div className={styles.RowContainer}>
-
-            <li className='toggle-icon-tile--one'>
+            {/*<li className='toggle-icon-tile--one'>
               <h3>Saving</h3>
               <icons.SavingMotion 
                 status={saveStatus} 
@@ -32,9 +31,9 @@ const StatusSection = () => {
                 <button className={styles.StatusButton} onClick={() => setSaveStatus("inProgress")}>In progress</button>
                 <button className={styles.StatusButton} onClick={() => setSaveStatus("error")}>Error</button>
                 <button className={styles.StatusButton} onClick={() => setSaveStatus("success")}>Success</button>
-            </div>
+            </div>*/}
 
-            <li className='toggle-icon-tile'>
+   {/*         <li className='toggle-icon-tile'>
               <h3>Document tasks + badge</h3>
               <div className={styles.DemoBadgeContainer}>
                 <icons.BadgeIconContainer 
@@ -48,9 +47,9 @@ const StatusSection = () => {
             <div className={styles.ButtonContainer}>
               <button className={styles.StatusButton} onClick={() => setSaveStatusTwo("error")}>Ran - has errors</button>
               <button className={styles.StatusButton} onClick={() => setSaveStatusTwo("success")}>Ran - success</button>
-            </div>
+            </div> */}
 
-            <li className='toggle-icon-tile'>
+          {/*  <li className='toggle-icon-tile'>
               <h3>Rule + badge</h3>
               <div className={styles.DemoBadgeContainer}>
                 <icons.BadgeIconContainer
@@ -62,28 +61,27 @@ const StatusSection = () => {
                 />
               </div>
             </li>   
-
             <div className={styles.ButtonContainer}>
               <button className={styles.StatusButton} onClick={() => setSaveStatusThree("notRun")}>Hasn't run yet</button>
               <button className={styles.StatusButton} onClick={() => setSaveStatusThree("error")}>Ran - has errors</button>
               <button className={styles.StatusButton} onClick={() => setSaveStatusThree("success")}>Ran - success</button> 
-            </div> 
+            </div> */} 
+
+
             <li className='toggle-icon-tile'>
               <h3>Badge only</h3>
               <div className={styles.DemoBadgeContainer}>
                 <icons.BadgeIcon status={saveStatusFour} numErrors={2} />
               </div>
-           </li>   
+            </li>  
             <div className={styles.ButtonContainer}>
               <button className={styles.StatusButton} onClick={() => setSaveStatusFour("error")}>Error</button>
               <button className={styles.StatusButton} onClick={() => setSaveStatusFour("success")}>Success</button>       
               <button className={styles.StatusButton} onClick={() => setSaveStatusFour("warning")}>Warning</button>     
               <button className={styles.StatusButton} onClick={() => setSaveStatusFour("errorFilled")}>Error filled</button>
               <button className={styles.StatusButton} onClick={() => setSaveStatusFour("undefinedFilled")}>Undefined filled</button>
-                <button className={styles.StatusButton} onClick={() => setSaveStatusFour("warningAltFilled")}>Warning alt filled</button>
+              <button className={styles.StatusButton} onClick={() => setSaveStatusFour("warningAltFilled")}>Warning alt filled</button>
            </div>
-
-           
           </div> 
   		  </ul>
 		  </div>

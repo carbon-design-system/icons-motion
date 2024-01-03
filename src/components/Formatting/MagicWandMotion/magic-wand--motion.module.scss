@@ -44,7 +44,7 @@
   0% { transform: rotate(0); animation-timing-function: cubic-bezier(0.00, 0.00, 0.83, 1.00) }
   38.3% { transform: rotate(4deg); animation-timing-function: cubic-bezier(0.66, 0.00, 0.34, 1.00) }
   56.6% { transform: rotate(-4deg); animation-timing-functin: cubic-bezier(0.34, 0.00, 0.34, 1.00) }
- 80% { transform: rotate(0) }
+  80% { transform: rotate(0) }
   100% { transform: rotate(0)}
 }
 
@@ -64,7 +64,7 @@
 }
 
 @keyframes sparkle-center-scale {
-  0% { transform: scale(1) rotate(45deg);   }
+  0% { transform: scale(1) rotate(45deg); }
   23.3% { transform: scale(1) rotate(45deg); animation-timing-function: cubic-bezier(0.00, 0.00, 0.30, 1.00)  }
   50% { transform: scale(1.5) rotate(45deg); animation-timing-function: cubic-bezier(0.00, 0.00, 0.83, 1.00)  }
   66.6% { transform: scale(1) rotate(45deg); animation-timing-function: cubic-bezier(0.00, 0.00, 0.30, 1.00) }
