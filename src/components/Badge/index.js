@@ -1,5 +1,6 @@
-import BadgeContainer from './BadgeContainer';
+import BadgeIcon from './BadgeIcon';
+import BadgeIconContainer from './BadgeIconContainer';
 import DocumentTasksMotion from './DocumentTasksMotion';
 import RuleMotion from './RuleMotion';
 
-export { BadgeContainer, DocumentTasksMotion, RuleMotion } 
+export { BadgeIcon, BadgeIconContainer, DocumentTasksMotion, RuleMotion } 

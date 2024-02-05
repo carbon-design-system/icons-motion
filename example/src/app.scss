@@ -10,8 +10,7 @@
 	animation: 0.5s fade-in-and-pop 0.25s forwards linear;
 }
 
-.icon-tile,
-.toggle-icon-tile {
+.icon-tile {
 	margin: 0px;
 	padding: 12px;
 	background-color: #f4f4f4;
@@ -25,7 +24,45 @@
 	animation: 0.2s fade-in 0.38s forwards ease-in;
 }
 
+.toggle-icon-tile {
+	height: 180px;
+	width: 178px;
+	margin-bottom: 32px;
+	padding: 12px;
+	background-color: #f4f4f4;
+	border: 1px solid #e0e0e0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	cursor: pointer;
+	opacity: 0;
+	animation: 0.2s fade-in 0.38s forwards ease-in;
+}
+
+.toggle-icon-tile--one {
+	height: 180px;
+	width: 178px;
+	margin-bottom: 32px;
+	padding: 12px;
+	background-color: #f4f4f4;
+	border: 1px solid #e0e0e0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	cursor: pointer;
+	opacity: 0;
+	animation: 0.2s fade-in 0.38s forwards ease-in;
+}
+
 .icon-tile  svg {
+	margin-left: 60px;
+	margin-bottom: 58px;
+
+}
+
+.toggle-icon-tile--one svg {
 	margin-left: 60px;
 	margin-bottom: 58px;
 }

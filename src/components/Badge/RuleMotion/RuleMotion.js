@@ -11,7 +11,7 @@ const RuleMotion = (props) => {
 	   setSaveStatus(props.status)
 	 }, [props.status])
 
-	let fillColor = "#" + props.fillColor
+	// let fillColor = "#" + props.fillColor
 
 	return (
 		<div ref={iconRef}>

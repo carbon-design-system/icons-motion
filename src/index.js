@@ -5,6 +5,7 @@ export {
   CopyMotion,
   CropMotion,
   CutMotion,
+  MagicWandMotion,
   PasteMotion
 } from './components/Formatting'
 
@@ -172,8 +173,9 @@ export {
 } from './components/Status'
 
 // Badge 
-export { 
-  BadgeContainer, 
+export {
+  BadgeIcon, 
+  BadgeIconContainer,
   DocumentTasksMotion, 
   RuleMotion 
 } from './components/Badge'

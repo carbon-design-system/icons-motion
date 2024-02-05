@@ -11,7 +11,10 @@ const DocumentTasksMotion = (props) => {
 	   setSaveStatus(props.status)
 	 }, [props.status])
 
-	let fillColor = "#" + props.fillColor
+	// console.log(props.fillColor)
+
+	// let fillColor = "#" + props.fillColor
+	let fillColor = "#000000"
 	 	
 	return (
 		<div ref={iconRef}>
@@ -22,7 +25,7 @@ const DocumentTasksMotion = (props) => {
 	 		> 	
 	 			{((props.title == true ) || (typeof props.title === 'string')) ? <title>{getSvgTitle(props.title, "Save successful")}</title> : null}
 	 				 			  <path fill={ fillColor }  d="M15,28H8V4h8v6a2.0058,2.0058,0,0,0,2,2h6v6h2V10a.9092.9092,0,0,0-.3-.7l-7-7A.9087.9087,0,0,0,18,2H8A2.0058,2.0058,0,0,0,6,4V28a2.0058,2.0058,0,0,0,2,2h7ZM18,4.4,23.6,10H18Z"/>
- 				<polyline stroke={ fillColor} fill="none" stroke-miterlimit="10" stroke-width="2" points="17.7,23.4 21,26.6 28.3,19.4"/>
+ 				<polyline stroke={ fillColor } fill="none" strokeMiterlimit="10" strokeWidth="2" points="17.7,23.4 21,26.6 28.3,19.4"/>
 			</svg>
 		</div>
 	);
