@@ -1,3 +1,30 @@
+.BadgeNotRun {
+  width: 19px;
+  height: 19px;
+  margin-right: 1px;
+  border: 1px dashed gray;
+  border-radius: 50%;
+  margin-top: -31px;
+  margin-left: 15px;
+}
+
+.BadgeError {
+  width: 20px;
+  height: 20px;
+  padding-bottom: 1px;
+  background-color: #da1e28;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -31px;
+  margin-left: 15px;
+  transform: translate(0px);
+  animation: error cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
+}
 
 .BadgeSuccess {
   width: 20px;
@@ -38,7 +65,7 @@
   margin-top: -31px;
   margin-left: 15px;
   transform: translate(0px);
-  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
+  animation: warning cubic-bezier(0.4, 0.14, 0.3, 1) 1s ;
 }
 
 .BadgeWarningSvg {
@@ -49,14 +76,54 @@
   stroke-miterlimit: 10;
 }
 
-.BadgeWarningAlt {
+.ErrorFilledSvg {
+  width: 20px;
+  height: 20px;
+  margin-top: -31px;
+  margin-left: 15px;
+  transform: translate(0px);
+  animation: error-filled cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
+}
+
+.ErrorFilledBackground {
+  stroke: #da1e28;
+  fill: #da1e28;
+  stroke-width: 2px;
+}
+
+.ErrorFilledLine {
+ stroke: white;
+  fill: white;
+  stroke-width: 3px;
+} 
+
+.UndefinedFilled {
+  margin-top: -31px;
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  transform: scale(1);
+  animation: undefined-filled cubic-bezier(0.4, 0.14, 1, 1) 0.15s ;
+}
+
+.UndefinedFilledInner {
+  stroke: #8a3ffc;
+  fill: #8a3ffc;
+}
+
+.UndefinedFilledBackground {
+  stroke: white;
+  fill: white;
+}
+
+.BadgeWarningAltFilled {
   margin-top: -31px;
   margin-left: 15px;
   width: 20px;
   height: 20px;
   transform-origin: 50% 50%;
   transform: scale(1);
-  animation: undefined-pop cubic-bezier(0.4, 0.14, 0.3, 1) .25s;
+  animation: warning-alt-filled cubic-bezier(0.4, 0.14, 0.3, 1) .25s;
 }
 
 .BadgeWarningAltSvgOne {
@@ -80,81 +147,7 @@
   stroke-width: 2px;
 }
 
-.UndefinedFilled {
-  margin-top: -31px;
-  margin-left: 15px;
-  width: 20px;
-  height: 20px;
-  transform: scale(1);
-  animation: undefined-pop cubic-bezier(0.4, 0.14, 1, 1) 0.15s;
-}
-
-.UndefinedFilledInner {
-  stroke: #8a3ffc;
-  fill: #8a3ffc;
-}
-
-.UndefinedFilledBackground {
-  stroke: white;
-  fill: white;
-}
-
-.ErrorFilledSvg {
-  width: 20px;
-  height: 20px;
-  margin-top: -31px;
-  margin-left: 15px;
-  transform: translate(0px);
-  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
-}
-
-.ErrorFilledBackground {
-  stroke: #da1e28;
-  fill: #da1e28;
-  stroke-width: 2px;
-}
-
-.ErrorFilledLine {
- stroke: white;
-  fill: white;
-  stroke-width: 3px;
-} 
-
-.BadgeNotRun {
-  width: 19px;
-  height: 19px;
-  margin-right: 1px;
-  border: 1px dashed gray;
-  border-radius: 50%;
-  margin-top: -31px;
-  margin-left: 15px;
-}
-
-.BadgeError {
-  width: 20px;
-  height: 20px;
-  padding-bottom: 1px;
-  background-color: #da1e28;
-  border-radius: 50%;
-  font-size: 12px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-top: -31px;
-  margin-left: 15px;
-  transform: translate(0px);
-  animation: failed cubic-bezier(0.4, 0.14, 0.3, 1) 1s;
-}
-
-@keyframes success {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes failed {
+@keyframes error {
   0% {
     transform: translate(0px);
   }
@@ -172,8 +165,49 @@
   }
 }
 
+@keyframes success {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
-@keyframes undefined-pop {
+@keyframes warning {
+  0% {
+    transform: translate(0px);
+  }
+  4% {
+    transform: translate(-2px);
+  }
+  12% {
+    transform: translate(2px);
+  }
+  16% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes error-filled {
+  0% {
+    transform: translate(0px);
+  }
+  4% {
+    transform: translate(-2px);
+  }
+  12% {
+    transform: translate(2px);
+  }
+  16% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes undefined-filled {
   0% {
     transform: scale(1);
   }
@@ -184,4 +218,26 @@
     transform: scale(1);
   }
 }
+
+@keyframes warning-alt-filled {
+  0% {
+    transform: scale(1);
+  }
+  50% { 
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
