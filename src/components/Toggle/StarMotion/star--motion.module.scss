@@ -6,7 +6,6 @@
   100% { transform: scale(1)}
 }
 
-
 @keyframes star-filled {
   0% {
     scale: 1;
@@ -30,28 +29,22 @@
   }
 }
 
-
-.Star {
-  transform-origin: 1rem 1rem;
-  will-change: transform;
+.StarBorderUnfilled {
+  transform-origin: 50% 50%;
+  transform: scale(1);
 }
 
-.StarFilled {
-  transform-origin: 1rem 1rem;
+.StarBorderFilled {
+   transform-origin: 50% 50%;
+   animation: star 2s cubic-bezier(0.2, 0, 0.38, 0.9)
+}
+
+.StarInnerUnfilled {
   opacity: 0;
+  transform-origin: 50% 50%;
 }
 
-
-
-.isAnimating {
-  .Star {
-    animation: star 2s cubic-bezier(0.2, 0, 0.38, 0.9)
-  }
-}
-
-
-.isAnimating {
-  .StarFilled {
-    animation: star-filled 2s cubic-bezier(0.2, 0, 0.38, 0.9)
-  }
+.StarInnerFilled {
+  transform-origin: 50% 50%;
+  animation: star-filled 2s cubic-bezier(0.2, 0, 0.38, 0.9)
 }
