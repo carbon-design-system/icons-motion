@@ -2,7 +2,7 @@ import React from 'react'
 import FormattingSection from '../../components/FormattingSection'
 import NavigationSection from '../../components/NavigationSection'
 import OperationsSection from '../../components/OperationsSection'
-import ToggleSection from '../../components/ToggleSection'
+// import ToggleSection from '../../components/ToggleSection'
 import StatusSection from '../../components/StatusSection'
 
 import '../../app.scss'
