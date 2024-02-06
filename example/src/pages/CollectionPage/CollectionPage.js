@@ -18,7 +18,7 @@ const CollectionPage = () => {
       <FormattingSection></FormattingSection>
       <NavigationSection></NavigationSection>
       <OperationsSection></OperationsSection>
-      <ToggleSection></ToggleSection>
+      {/*<ToggleSection></ToggleSection>*/}
       <StatusSection></StatusSection>
     </div>
   )
