@@ -180,4 +180,16 @@ export {
   RuleMotion 
 } from './components/Badge'
 
+export {
+  AsleepLottie,
+  AsleepAwakeLottie,
+  CarouselLottie,
+  FavoriteLottie,
+  GridListLottie,
+  LightLottie,
+  LockUnlockLottie,
+  LockUnlockTwoLottie
+
+} from './components/Lottie'
+
 
