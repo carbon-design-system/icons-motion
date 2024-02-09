@@ -18,18 +18,18 @@ const AsleepAwakeLottie = (props) => {
       })
     }
 
-    anim.current.goToAndStop(179, true)
+    anim.current.goToAndStop(1, true)
   }, [])
 
   React.useEffect(() => {
     if (props.toggleOn == true) {
-      anim.current.playSegments([60,120], false)
+      anim.current.playSegments([60,90], false)
     }
     else if (props.toggleOn == false) {
-      anim.current.playSegments([120,179], false)
+      anim.current.playSegments([120,150], false)
     }
     else {
-        anim.current.goToAndStop(179, true)
+        anim.current.goToAndStop(1, true)
     }
   }, [props.toggleOn])
 
