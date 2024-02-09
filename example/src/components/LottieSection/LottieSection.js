@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import * as icons from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
-import lottie from "lottie-web";
-import styles from './lottie-section.module.scss'
+// import lottie from "lottie-web";
+// import styles from './lottie-section.module.scss'
 
 
 const LottieSection = () => {
@@ -75,13 +75,13 @@ const LottieSection = () => {
 										<icons.LockUnlockLottie  width={32} height={32} toggleOn={toggleOn} loop={false}/>
 			          	</li>
 			           
-			  {/*           <li className='lottie-icon-tile'
+  <li className='lottie-icon-tile'
 	          			  onClick={() => setLockUnlockTwoToggleOn(!lockUnlockTwoToggleOn)}
 	            		>
 	            			<h3>Lock / unlock alt</h3>
 										<icons.LockUnlockTwoLottie width={32} height={32} toggleOn={lockUnlockTwoToggleOn} loop={false}/>
 			          	</li>
-			           */}
+			            
 
 			       </ul>
 			    </div>
