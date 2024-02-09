@@ -188,7 +188,11 @@ export {
   GridListLottie,
   LightLottie,
   LockUnlockLottie,
-  LockUnlockTwoLottie
+  LockUnlockTwoLottie,
+  NotificationNewLottie,
+  NotificationOnOffLottie,
+  StarLottie,
+  ViewOnOffLottie
 
 } from './components/Lottie'
 
