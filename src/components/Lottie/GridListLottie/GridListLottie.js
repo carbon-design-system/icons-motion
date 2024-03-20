@@ -17,19 +17,14 @@ const GridListLottie = (props) => {
         loop: props.loop,
       })
     }
-
-    anim.current.goToAndStop(1, true)
   }, [])
 
   React.useEffect(() => {
     if (props.toggleOn == true) {
-      anim.current.playSegments([60,80], false)
-    }
-    else if (props.toggleOn == false) {
-      anim.current.playSegments([120,140], false)
+      anim.current.playSegments([60,120], true)
     }
     else {
-        anim.current.goToAndStop(1, true)
+      anim.current.playSegments([120,180], true)
     }
   }, [props.toggleOn])
 

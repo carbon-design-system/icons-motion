@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react'
 import lottie from "lottie-web";
-import LottieData from "./Favorite.json";
+import LottieData from "./CropLottieEvent.json";
 
-const FavoriteLottie = (props) => {
+const CropLottieEvent = (props) => {
 
   const animContainer = useRef(null)
   const anim = useRef(null)
@@ -17,14 +17,19 @@ const FavoriteLottie = (props) => {
         loop: props.loop,
       })
     }
+
+    anim.current.goToAndStop(1, true)
   }, [])
 
   React.useEffect(() => {
     if (props.toggleOn == true) {
-      anim.current.playSegments([60,120], true)
+      anim.current.playSegments([60,90], false)
+    }
+    else if (props.toggleOn == false) {
+      anim.current.playSegments([120,140], false)
     }
     else {
-      anim.current.playSegments([120,180], true)
+        anim.current.goToAndStop(1, true)
     }
   }, [props.toggleOn])
 
@@ -41,5 +46,4 @@ const FavoriteLottie = (props) => {
   )
 }
 
-export default FavoriteLottie
-
+export default CropLottieEvent

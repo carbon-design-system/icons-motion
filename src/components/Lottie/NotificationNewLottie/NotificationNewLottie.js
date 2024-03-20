@@ -4,7 +4,7 @@ import LottieData from "./NotificationNew.json";
 
 const NotificationNewLottie = (props) => {
 
-  const animContainer = useRef(null)
+ const animContainer = useRef(null)
   const anim = useRef(null)
 
   React.useEffect(() => {
@@ -17,19 +17,14 @@ const NotificationNewLottie = (props) => {
         loop: props.loop,
       })
     }
-
-    anim.current.goToAndStop(1, true)
   }, [])
 
   React.useEffect(() => {
     if (props.toggleOn == true) {
-      anim.current.playSegments([60,105], false)
-    }
-    else if (props.toggleOn == false) {
-      anim.current.playSegments([120,130], false)
+      anim.current.playSegments([60,120], true)
     }
     else {
-        anim.current.goToAndStop(1, true)
+      anim.current.playSegments([120,180], true)
     }
   }, [props.toggleOn])
 

@@ -197,3 +197,20 @@ export {
 } from './components/Lottie'
 
 
+export {
+  CleanLottieEvent,
+  CropLottieEvent,
+  ExploreLottieEvent,
+  FilterLottieEvent,
+  FilterResetLottieEvent,
+  GlobeLottieEvent,
+  MagicWandLottieEvent,
+  ModelLottieEvent,
+  RecentlyViewedLottieEvent,
+  ReplyLottieEvent,
+  ReplyAllLottieEvent,
+  ScanAltLottieEvent,
+  ViewLottieEvent
+}
+
+from './components/LottieEvents'
