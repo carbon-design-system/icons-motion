@@ -15,6 +15,7 @@
     "carbon-components": "file:../node_modules/carbon-components",
     "carbon-components-react": "file:../node_modules/carbon-components-react",
     "carbon-icons": "file:../node_modules/carbon-icons",
+    "lottie-web": "^5.12.2",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-router-dom": "^5.0.0",

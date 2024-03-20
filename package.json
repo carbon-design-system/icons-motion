@@ -57,6 +57,7 @@
   ],
   "dependencies": {
     "@carbon/ibm-products": "^2.11.0",
+    "lottie-web": "^5.12.2",
     "prop-types": "^15.8.1"
   }
 }

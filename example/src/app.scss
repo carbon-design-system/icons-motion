@@ -24,6 +24,24 @@
 	animation: 0.2s fade-in 0.38s forwards ease-in;
 }
 
+.lottie-icon-tile {
+	margin: 0px;
+	padding: 12px;
+	background-color: #f4f4f4;
+	border: 1px solid #e0e0e0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	cursor: pointer;
+	opacity: 0;
+	animation: 0.2s fade-in 0.38s forwards ease-in;
+}
+
+.lottie-icon-tile  > div {
+ 	margin: 48px 0 54px 54px;
+}
+
 .toggle-icon-tile {
 	height: 180px;
 	width: 178px;
