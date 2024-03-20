@@ -5,6 +5,8 @@ import OperationsSection from '../../components/OperationsSection'
 // import ToggleSection from '../../components/ToggleSection'
 import StatusSection from '../../components/StatusSection'
 import LottieSection from '../../components/LottieSection'
+// import LottieEventsSection from '../../components/LottieEventsSection'
+
 
 import '../../app.scss'
 
@@ -22,6 +24,7 @@ const CollectionPage = () => {
       {/*<ToggleSection></ToggleSection>*/}
       <StatusSection></StatusSection>
       <LottieSection></LottieSection>
+      {/*<LottieEventsSection></LottieEventsSection>*/}
     </div>
   )
 }
