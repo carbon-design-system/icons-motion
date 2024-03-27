@@ -34,9 +34,7 @@ App.js
 import { HomeMotion } from '@carbon/icons-motion'
 import '@carbon/icons-motion/dist/index.css'
 
-const myComponent = () => {
-  ;<HomeMotion isAnimating={false} size={32} />
-}
+const myComponent = () => <HomeMotion isAnimating={false} size={32} />
 ```
 
 The component takes two props:
