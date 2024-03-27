@@ -9,6 +9,9 @@ build
 dist
 .rpt2_cache
 
+# ide
+.vscode
+
 # misc
 .DS_Store
 .env

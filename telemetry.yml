@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://unpkg.com/@ibm/telemetry-config-schema@v1/dist/config.schema.json
+
+version: 1
+projectId: 33e86bff-4d6c-4de0-8b74-6c4f5fc981ef
+endpoint: https://collector-prod.1am6wm210aow.us-south.codeengine.appdomain.cloud/v1/metrics
+collect:
+  jsx:
+    elements:
+      allowedAttributeNames:
+        # General
+        - fillColor
+        - size
+        - title
+        # IdeaMotion
+        - isAnimating
+        # SavingMotion
+        - status
+        # React
+        - key
+        - ref
+      allowedAttributeStringValues:
+        # SavingMotion - status
+        - error
+        - inProgress
+        - success
+  npm:
+    dependencies: null
