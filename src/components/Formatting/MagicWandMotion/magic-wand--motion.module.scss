@@ -43,7 +43,7 @@
 @keyframes wand {
   0% { transform: rotate(0); animation-timing-function: cubic-bezier(0.00, 0.00, 0.83, 1.00) }
   38.3% { transform: rotate(4deg); animation-timing-function: cubic-bezier(0.66, 0.00, 0.34, 1.00) }
-  56.6% { transform: rotate(-4deg); animation-timing-functin: cubic-bezier(0.34, 0.00, 0.34, 1.00) }
+  56.6% { transform: rotate(-4deg); animation-timing-function: cubic-bezier(0.34, 0.00, 0.34, 1.00) }
   80% { transform: rotate(0) }
   100% { transform: rotate(0)}
 }
