@@ -22,7 +22,7 @@
     "style-loader": "file:../node_modules/style-loader"
   },
   "devDependencies": {
-    "@babel/plugin-transform-private-property-in-object": "^7.22.11",
+    "@babel/plugin-transform-private-property-in-object": "^8.0.0",
     "sass": "^1.51.0"
   },
   "eslintConfig": {
